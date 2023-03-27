@@ -111,7 +111,7 @@ Advanced:
 - In a pipeline, where would you store the Terraform state?
 
 
-### Containers (Docker & K8s)
+### :small_blue_diamond: Docker & K8s
 
 
 Container (Docker):
@@ -149,7 +149,7 @@ Advanced:
 - How can one build a highly availabe (HA) cluster in K8s?
 - What is the role of ETCD in K8s?
 
-### CI/CD
+### :small_blue_diamond: CI/CD
 
 
 ### DevOps methodology, practices,  & Agile
@@ -160,7 +160,7 @@ Advanced:
 - What is the blue/green deployment pattern?
 
 
-### Systems Design
+### :small_blue_diamond: System Design
 
 - What is a CDN and why would I use one?
 - What are CDN edge servers?
@@ -178,7 +178,7 @@ Advanced:
 ## BackEnd & FrontEnd
 
 
-### Golang
+### :small_blue_diamond: Golang
 
 - What is Go?
 - Why was the Go langauge created?
@@ -193,7 +193,7 @@ Advanced:
 - What are generics and how do they work?
 
 
-### Python
+### :small_blue_diamond: Python
 
 
 
