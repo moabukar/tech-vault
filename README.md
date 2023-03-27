@@ -31,15 +31,26 @@ For any fixes, updates or new additions, please make a pull-request (PR). Thank 
 
 ### :small_blue_diamond: Linux
 
+- What is Linux and difference between UNIX and Linux?
+- What is the Linux kernel?
+- 
 - What are inodes in Linux?
 - Explain the Linux boot process
 - What is a zombie process?
 - Difference between soft links and hardlinks?
 - What are namespaces and c-groups?
+- What are symbolic links?
+- What are the different types of permissions in Linux?
+- What is swap space?
 
-
+Commands:
 - What does chmod +x FILENAME do?
-- Which command will show you free/used memory? 
+- Which command will show you free/used memory?
+- Which command will show me the current directory I am in?
+- How can I terminate an on going process?
+- Write the command that will display all .yaml files including permissions of each file? ()
+- How can I found the status of a process?
+- 
 
 
 Advanced:
@@ -48,7 +59,8 @@ Advanced:
 - How can I check if a server is down?
 - What is inside /proc?
 - A process on the system can no longer log files, what can I do?
-- 
+- What is LILO?
+- I
 
 ### :small_blue_diamond: Networking
 
@@ -109,7 +121,7 @@ Advanced:
 - What is difference between Keys and Secrets in Azure Key Vault?
 - What’s the difference between Azure SQL Database and Azure SQL Managed Instance?
 - When should we use Azure Table Storage over Azure SQL?
--  Explain what is the difference between Block Blobs, Append Blobs and Page Blobs in Azure?
+- Explain what is the difference between Block Blobs, Append Blobs and Page Blobs in Azure?
 
 Advanced:
 
