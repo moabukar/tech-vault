@@ -5,7 +5,13 @@
 
 Note: A documentation of technical questions curated by experienced Engineers who have conducted many interviews. 
 
-For any fixes, updates or new additions, please make a pull-request (PR). Thank you! 
+For any fixes, updates or new additions, please make a pull-request (PR). Thank you!
+
+## Charity 
+
+- Since this is a community-based project and it is run by the community - we (the creators) do not gain any personal nor financial gain other than helping the community. Instead, any financial gain would be better suited to a charity. 
+- So we wanted to take it upon us to help those in need. We, as a community, have chosen a certified charity to donate to. Here is the link to donate to:
+    - 
 
 ## Topics overview
 
