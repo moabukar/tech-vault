@@ -203,9 +203,15 @@ Advanced:
 
 ### :small_blue_diamond: Python
 
+- 
+
+### :small_blue_diamond: Java
+
+- 
+
+### :small_blue_diamond: JavaScript (TS,nodeJS...)
 
 
-### JavaScript (TS,nodeJS...)
 
 
 
@@ -220,3 +226,8 @@ Advanced:
 
 
 ### ETL, Pipelines
+
+
+## Cyber Security & Info Security
+
+- 
