@@ -1,9 +1,21 @@
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+
 # Tech-interview-questions
+
+Note: A documentation of technical questions curated by experienced Engineers who have conducted many interviews. 
+
+For any fixes, updates or new additions, please make a pull-request (PR). Thank you! 
+
+## Topics overview
+
+- [X] [Linux](#small_blue_diamond-Linux)
+
 
 
 ## DevOps
 
-### Linux
+### :small_blue_diamond: Linux
 
 - What are inodes in Linux?
 - Explain the Linux boot process
@@ -24,7 +36,7 @@ Advanced:
 - A process on the system can no longer log files, what can I do?
 - 
 
-### Networking
+### :small_blue_diamond: Networking
 
 - What is HTTP? How is HTTPS different?
 - TCP vs UDP
@@ -35,7 +47,7 @@ Advanced:
 - When I type google.com into the browser, what actually happens? (go into as much detail as you can)
 - I can't reach a website, how can I troubleshoot? (use deep Linux + networking knowledge )
 
-### Git
+### :small_blue_diamond: Git
 
 - What is Git?
 - Difference between Git and SVN?
@@ -52,7 +64,7 @@ Advanced:
 - How can I amend an older commit?
 - What is the command to check the difference between two commits ?
 
-### AWS 
+### :small_blue_diamond: AWS
 
 -----General--------
 - What is AWS? 
@@ -69,7 +81,7 @@ Advanced:
 - 
 - 
 
-### Azure
+### :small_blue_diamond: Azure
 
 - What is Azure?
 - What are ARM templates in Azure?
@@ -88,7 +100,7 @@ Advanced:
 - 
 
 
-### Terraform
+### :small_blue_diamond: Terraform
 
 - What is Terraform state
 
