@@ -131,7 +131,20 @@ Advanced:
 
 ### :small_blue_diamond: Terraform
 
+- What is IaC? What is Terraform?
 - What is Terraform state
+- What are most common Terraform commands?
+- What is Terraform backend?
+- What are modules in Terraform?
+- What is Terragrunt?
+- Explain the workflow of the core Terraform?
+- Difference between Terraform, AWS CloudFormation and Azure ARM?
+- What is the difference between Terraform and Ansible?
+- What are provisioners in Terraform?
+- How can two people using the Terraform cloud can create two different sets of infrastructure using the same working directory?
+- What is a null resource in Terraform?
+- Which command is used to perform syntax validation on terraform configuration files?
+- How can I format my current directory of Terraform config files in the HCP format?
 - 
 
 
@@ -139,7 +152,14 @@ Advanced:
 Advanced:
 - I have 3 people in my team who want to work on the same AWS Infrastructure on Terraform as well as same state. What can I do to ensure there are no clashes?
 - In a pipeline, where would you store the Terraform state?
-
+- Can I test my terraform modules? If so, how can I test them? Is there a common framework used to Terraform modules?
+- How does state file locking work?
+- What is Checkov?
+- How can I use Terraform in a pipeline?
+- How can one export data from one module to another?
+- How can you import existing resources under Terraform management?
+- Which command can be used to reconcile the Terraform state with the actual real-world infrastructure?
+- 
 
 ### :small_blue_diamond: Docker & K8s
 
