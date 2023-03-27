@@ -54,12 +54,15 @@ Advanced:
 
 - What is HTTP? How is HTTPS different?
 - TCP vs UDP
-- 
+- What is DNS and how does it work?
+- What is TLS?
 
 Advanced:
 
 - When I type google.com into the browser, what actually happens? (go into as much detail as you can)
 - I can't reach a website, how can I troubleshoot? (use deep Linux + networking knowledge )
+- Can you break down the OSI model and what does it signify?
+- How does mTLS work and compare it to TLS? 
 
 ### :small_blue_diamond: Git
 
@@ -211,9 +214,36 @@ Advanced:
 - What is a microservice architecture and when would I consider using one?
 - 
 
+- What is the CAP Theorem?
+- Explain the difference between horizontal scaling and vertical scaling?
+- Difference between forward proxy and reverse proxy?
+- What is Load Balancing and how does it work? How does it relate to reverse proxies?
+- Name me some common load balancers
+- 
+
+### :small_blue_diamond: Databases
+
+- What is a database?
+- What is DBMS (Database Management System)?
+- What is the schema referred to in a Database?
+- What are different types of databases?
+- Advantages & Disadvantages of using relational databases?
+- Advantages & Disadvantages of using NoSQL relational databases?
+- What is a key-value database? What are some examples of this?
+- What are graph databases? Name some examples?
+- What is database replication?
+- What is master-slave replication? And what is master-master replication?
+- What is Synchronous vs Asynchronous replication?
+- What are indexes in databases?
+
+
 
 Advanced:
 
+- What are message queues? And what are message brokers?
+- How does the publish-subscribe model work?
+- Can you explain how an event-driven architecture works?
+- What is an API Gateway? How is this different from load balancers?
 - Explain why CDN (in)availability may be a problem for using WebSockets? 
 
 ## BackEnd & FrontEnd
