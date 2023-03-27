@@ -15,6 +15,9 @@ For any fixes, updates or new additions, please make a pull-request (PR). Thank 
 - [X] [AWS](#small_blue_diamond-aws)
 - [X] [Azure](#small_blue_diamond-azure)
 - [X] [Terraform](#small_blue_diamond-terraform)
+- [X] [Docker & K8s](#small_blue_diamond-docker--k8s)
+- [X] [CI/CD](#small_blue_diamond-cicd)
+- [X] [DevOps methodology, practices, & Agile](#small_blue_diamond-devops-methodology-practices-agile)
 
 
 ## DevOps
@@ -155,8 +158,9 @@ Advanced:
 
 ### :small_blue_diamond: CI/CD
 
+- 
 
-### DevOps methodology, practices,  & Agile
+### :small_blue_diamond: DevOps methodology, practices,  & Agile
 
 - What is meant by continuous integratons?
 - What are the advantages of DevOps?
