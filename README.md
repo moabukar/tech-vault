@@ -24,6 +24,7 @@ For any fixes, updates or new additions, please make a pull-request (PR). Thank 
 - [X] [Backend & Frontend](#backend--frontend)
 - [X] [Data](#data)
 - [X] [Cyber Security & InfoSecurity](#cyber-security--info-security)
+- [X]  [Interpersonal skills]()
 
 
 ## DevOps
@@ -116,6 +117,7 @@ Advanced:
 ### :small_blue_diamond: Terraform
 
 - What is Terraform state
+- 
 
 
 
@@ -161,6 +163,29 @@ Advanced:
 - What is an Ingress controller?
 - How can one build a highly availabe (HA) cluster in K8s?
 - What is the role of ETCD in K8s?
+
+### :small_blue_diamond: Ansible
+
+- What is Ansible? 
+- How does Ansible work?
+- What is Ansible Galaxy?
+- What are Ansible handlers?
+- What is Ansible Vault?
+- What aer Ansible collections?
+- How do you get a list of Ansible predefined variables?
+- How is Ansible playbook different from ad-hoc commands?
+- What is the recommended for securing secret information used within Ansible playbooks?
+- What templating language is directly supported within Ansible for creating dynamic playbooks?
+- What protocol does Ansible use for communicating with client systems?
+- What is an inventory file?
+
+
+Advanced:
+
+- Can you name some Ansible best practices? 
+- How do you handle errors in Ansible?
+- How do you test your Ansible roles and tasks?
+- What is Molecule and how does it works?
 
 ### :small_blue_diamond: CI/CD
 
