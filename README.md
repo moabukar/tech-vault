@@ -9,15 +9,11 @@ For any fixes, updates or new additions, please make a pull-request (PR). Thank 
 
 ## Topics overview
 
-- [X] [Linux](#small_blue_diamond-linux)
-- [X] [Networking](#small_blue_diamond-networking)
-- [X] [Git](#small_blue_diamond-git)
-- [X] [AWS](#small_blue_diamond-aws)
-- [X] [Azure](#small_blue_diamond-azure)
-- [X] [Terraform](#small_blue_diamond-terraform)
-- [X] [Docker & K8s](#small_blue_diamond-docker--k8s)
-- [X] [CI/CD](#small_blue_diamond-cicd)
-- [X] [DevOps methodology, practices, & Agile](#small_blue_diamond-devops-methodology-practices-agile)
+- [X] [DevOps](#devops)
+- [X] [System Design](#system-design)
+- [X] [BackEnd & FrontEnd](#backend--frontend)
+- [X] [Data](#data)
+- [X] [Cyber Security & InfoSecurity](#cyber-security--info-security)
 
 
 ## DevOps
@@ -168,7 +164,9 @@ Advanced:
 - What is the blue/green deployment pattern?
 
 
-### :small_blue_diamond: System Design
+## System Design
+
+### CDN & Caching
 
 - What is a CDN and why would I use one?
 - What are CDN edge servers?
