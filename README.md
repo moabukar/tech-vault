@@ -10,6 +10,11 @@ For any fixes, updates or new additions, please make a pull-request (PR). Thank 
 ## Topics overview
 
 - [X] [Linux](#small_blue_diamond-Linux)
+- [X] [Networking](#small_blue_diamond-Networking)
+- [X] [Git](#small_blue_diamond-Git)
+- [X] [AWS](#small_blue_diamond-AWS)
+- [X] [Azure](#small_blue_diamond-Azure)
+- [X] [Terraform](#small_blue_diamond-Terraform)
 
 
 
