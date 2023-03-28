@@ -24,7 +24,8 @@ For any fixes, updates or new additions, please make a pull-request (PR). Thank 
 - [X] [Backend & Frontend](#backend--frontend)
 - [X] [Data](#data)
 - [X] [Cyber Security & InfoSecurity](#cyber-security--info-security)
-- [X]  [Interpersonal skills]()
+- [X] [Interpersonal skills]()
+- [X] [References](#references)
 
 
 ## DevOps
@@ -340,6 +341,12 @@ Advanced:
 - 
 
 
+## References:
+
+- intellipaat.com
+- Add more links to any references.
+
 ## License
 
 This project is licensed under the Apache License. See the [LICENSE](LICENSE) file for more details.
+
