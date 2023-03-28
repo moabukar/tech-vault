@@ -43,6 +43,7 @@ For any fixes, updates or new additions, please make a pull-request (PR). Thank 
     - [Data Engineering](#data-engineering)
     - [SQL](#sql)
     - [ETL & Data Pipelines](#etl-pipelines)
+- [X] [Machine Learning](#machine-learning)
 - [X] [Cyber Security & InfoSecurity](#cyber-security--info-security)
 - [X] [Interpersonal skills]()
 - [X] [References](#references)
@@ -452,6 +453,12 @@ Advanced:
 ### ETL & Data Pipelines & more
 
 - How would I go about troubleshooting pipelines?
+
+
+
+## Machine Learning
+
+- 
 
 
 ## Cyber Security & Info Security
