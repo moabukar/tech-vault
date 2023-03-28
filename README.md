@@ -328,6 +328,23 @@ Advanced:
 
 ### Data Fundamentals
 
+Data Modelling and Schemas: 
+- Define data modelling and the benefits of implementing a data model? 
+- What are some of the design schemas used when performing data modelling? 
+- What are the three types of data models? 
+- What is a table (entity) and column (attribute)? 
+- What is normalisation/denormalisation and what is its purpose?
+- What are the main relationships which can be found in a data model? (name 3)
+- Explain the two different types of design schemas (snowflake and star)? 
+- What is a data mart? 
+- How would you describe granularity? 
+- How does data sparcity impact aggregation of data sets/sources? 
+- In the context of data modelling, what is the importance of metadata? How would you describe the role of metadata in data modelling? 
+- What is a DDL script? 
+- What is a fact and dimension? 
+- What is an ERD? Entity relationship diagram
+- What are the differences between foreign and surrogate keys? 
+- Desribe cardinality
 
 ### SQL
 
