@@ -12,9 +12,8 @@ For any fixes, updates or new additions, please make a pull-request (PR). Thank 
 - To contribute, please read our [Contributing Guidelines](CONTRIBUTING.md). For any fixes, updates or new additions, please make a pull-request (PR). Thank you!
 
 ## Charity 
-
 - Since this is a community-based project and it is run by the community - we (the creators) do not gain any personal nor financial gain other than helping the community. Instead, any financial gain would be better suited to a charity. So we wanted to take it upon us to help those in need. We, as a community, have chosen a certified charity to donate to. Here is the link to donate to:
-    - 
+
 
 
 ## Topics overview
@@ -34,7 +33,6 @@ For any fixes, updates or new additions, please make a pull-request (PR). Thank 
 
 - What is Linux and difference between UNIX and Linux?
 - What is the Linux kernel?
-- 
 - What are inodes in Linux?
 - Explain the Linux boot process
 - What is a zombie process?
@@ -51,7 +49,6 @@ Commands:
 - How can I terminate an on going process?
 - Write the command that will display all .yaml files including permissions of each file? ()
 - How can I found the status of a process?
-- 
 
 
 Advanced:
@@ -61,7 +58,6 @@ Advanced:
 - What is inside /proc?
 - A process on the system can no longer log files, what can I do?
 - What is LILO?
-- I
 
 ### :small_blue_diamond: Networking
 
@@ -111,11 +107,7 @@ Advanced:
 - What network object do you need to allow a server ingress from the internet?
 - What are the different type of load balancers in AWS?
 - Whate are subnets? and what are CIDRs? 
-- 
-
-
 - Name some managed runtimes for Lambda
-- 
 
 -----Scenario-based-----
 - In VPC with private and public subnets, database servers should ideally be launched into which subnet?
@@ -139,7 +131,6 @@ Advanced:
 Advanced:
 
 - What to use: many small Azure Storage Blob containers vs one really large container with tons of blobs?
-- 
 
 
 ### :small_blue_diamond: Terraform
@@ -158,7 +149,6 @@ Advanced:
 - What is a null resource in Terraform?
 - Which command is used to perform syntax validation on terraform configuration files?
 - How can I format my current directory of Terraform config files in the HCP format?
-- 
 
 
 
@@ -172,7 +162,6 @@ Advanced:
 - How can one export data from one module to another?
 - How can you import existing resources under Terraform management?
 - Which command can be used to reconcile the Terraform state with the actual real-world infrastructure?
-- 
 
 ### :small_blue_diamond: Docker & K8s
 
@@ -257,14 +246,14 @@ Advanced:
 - What is Cache invalidation? 
 - What are some cache invalidation methods?
 - What is a microservice architecture and when would I consider using one?
-- 
+----
 
 - What is the CAP Theorem?
 - Explain the difference between horizontal scaling and vertical scaling?
 - Difference between forward proxy and reverse proxy?
 - What is Load Balancing and how does it work? How does it relate to reverse proxies?
 - Name me some common load balancers
-- 
+
 
 ### :small_blue_diamond: Databases
 
@@ -280,7 +269,6 @@ Advanced:
 - What is master-slave replication? And what is master-master replication?
 - What is Synchronous vs Asynchronous replication?
 - What are indexes in databases?
-
 
 
 Advanced:
@@ -319,11 +307,13 @@ Advanced:
 
 ### :small_blue_diamond: JavaScript (TS,nodeJS...)
 
+- 
 
 
 ## Data
 
 ### Data Modelling and Schemas: 
+
 - Define data modelling and the benefits of implementing a data model? 
 - What are some of the design schemas used when performing data modelling? 
 - What are the three types of data models? 
@@ -341,7 +331,8 @@ Advanced:
 - What are the differences between foreign and surrogate keys? 
 - Desribe cardinality
 
-### Data Architect role
+### Data Architect
+
 - Please state an example of designing, creating, deploying and managing an end to end data architecture project?
 - What are the fundamental skills required for a data architect? 
 - What is a data block and a data file? 
@@ -360,7 +351,8 @@ Advanced:
 - How do you hamdle conflicting priorities when working on multiple projects? 
 - Which software and design patterns are you familiar with? 
 
-### Data Engineering role
+### Data Engineering
+
 - What made you choose data engineering and what does it mean to you? 
 - How would you define data engineering? 
 - What are data engineers responsible for? 
@@ -383,7 +375,7 @@ Advanced:
 - Can you describe what happens when a data block is corrupted? 
 - How would you explain file permissions in hadoop? 
 - Which process would you follow to add a node to a cluster? 
-- Can you list python libraries which can facilitate efficient data processing? 
+- Can you list python libraries which can facilitate efficient data processing?
 - What challenges came up during your recent project, and how did you overcome these challenges?
 - Have you ever transformed unstructured data into structured data? and how did you do it? 
 - Can you tell me about NameNode? What happens if NameNode crashes or comes to an end?
@@ -391,6 +383,7 @@ Advanced:
 - What is FIFO Scheduling? 
 
 ### SQL
+
 - How can you deal with duplicate data points in an SQL query?
 - List objects that are created via the CREATE statement in SQL
 - How would you see the database structure in SQL? 
@@ -437,8 +430,9 @@ Advanced:
 
 ### ETL, Pipelines
 
-- How do you troubleshoot data pipelines? 
-- 
+- How would I go about troubleshooting pipelines?
+
+
 ## Cyber Security & Info Security
 
 - 
