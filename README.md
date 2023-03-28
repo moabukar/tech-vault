@@ -265,9 +265,13 @@ Advanced:
 - What is a CDN and why would I use one?
 - What are CDN edge servers?
 - How does CDN caching work?
-- What is Cache invalidation? 
+- What is cache invalidation? 
 - What are some cache invalidation methods?
-- What is a microservice architecture and when would I consider using one?
+- What is a cache Hit?
+- What is a cache Miss?
+- Can you explain a caching workflow?
+
+
 ----
 
 - What is the CAP Theorem?
@@ -275,6 +279,7 @@ Advanced:
 - Difference between forward proxy and reverse proxy?
 - What is Load Balancing and how does it work? How does it relate to reverse proxies?
 - Name me some common load balancers
+- What is a microservice architecture and when would I consider using one?
 
 
 ### :small_blue_diamond: Databases
