@@ -19,9 +19,30 @@ For any fixes, updates or new additions, please make a pull-request (PR). Thank 
 ## Topics overview
 
 - [X] [DevOps](#devops)
+    - [Linux](#small_blue_diamond-linux)
+    - [Networking](#small_blue_diamond-networking)
+    - [Git](#small_blue_diamond-git)
+    - [AWS](#small_blue_diamond-aws)
+    - [Azure](#small_blue_diamond-azure)
+    - [Terraform](#small_blue_diamond-terraform)
+    - [Docker & K8s](#small_blue_diamond-docker--k8s)
+    - [Ansible](#small_blue_diamond-ansible)
+    - [CI/CD](#small_blue_diamond-cicd)
+    - [DevOps methodology, practices, & Agile](#small_blue_diamond-devops-methodology-practices--agile)
 - [X] [System Design](#system-design)
+    - [CDN & Caching](#small_blue_diamond-cdn--caching)
+    - [Databases](#small_blue_diamond-databases)
 - [X] [Backend & Frontend](#backend--frontend)
+    - [Golang](#small_blue_diamond-golang)
+    - [Python](#small_blue_diamond-python)
+    - [Java](#small_blue_diamond-java)
+    - [JavaScript](#small_blue_diamond-javascript-tsnodejs)
 - [X] [Data](#data)
+    - [Data Modelling & Schemas](#data-modelling-and-schemas)
+    - [Data Architect](#data-architect)
+    - [Data Engineering](#data-engineering)
+    - [SQL](#sql)
+    - [ETL & Data Pipelines](#etl-pipelines)
 - [X] [Cyber Security & InfoSecurity](#cyber-security--info-security)
 - [X] [Interpersonal skills]()
 - [X] [References](#references)
@@ -428,7 +449,7 @@ Advanced:
 - What are Local and Global variables?
 
 
-### ETL, Pipelines
+### ETL & Data Pipelines & more
 
 - How would I go about troubleshooting pipelines?
 
