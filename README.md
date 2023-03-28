@@ -119,7 +119,8 @@ Advanced:
 -----Scenario-based-----
 - In VPC with private and public subnets, database servers should ideally be launched into which subnet?
 - What are some security best pracites for EC2s?
-- 
+- I created a web application with autoscaling. I observed that the traffic on my application is the highest on Wednesdays and Fridays between 9 AM and 7 PM. What would be the best solution for me to handle the scaling?
+- You have an application running on your Amazon EC2 instance. You want to reduce the load on your instance as soon as the CPU utilization reaches 100 percent. How will you do that?
 
 ### :small_blue_diamond: Azure
 
