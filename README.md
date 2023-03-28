@@ -321,21 +321,124 @@ Advanced:
 
 
 
-
-
-
 ## Data
 
+### Data Modelling and Schemas: 
+- Define data modelling and the benefits of implementing a data model? 
+- What are some of the design schemas used when performing data modelling? 
+- What are the three types of data models? 
+- What is a table (entity) and column (attribute)? 
+- What is normalisation/denormalisation and what is its purpose?
+- What are the main relationships which can be found in a data model? (name 3)
+- Explain the two different types of design schemas (snowflake and star)? 
+- What is a data mart? 
+- How would you describe granularity? 
+- How does data sparcity impact aggregation of data sets/sources? 
+- In the context of data modelling, what is the importance of metadata? How would you describe the role of metadata in data modelling? 
+- What is a DDL script? 
+- What is a fact and dimension? 
+- What is an ERD? Entity relationship diagram
+- What are the differences between foreign and surrogate keys? 
+- Desribe cardinality
 
-### Data Fundamentals
+### Data Architect role
+- Please state an example of designing, creating, deploying and managing an end to end data architecture project?
+- What are the fundamental skills required for a data architect? 
+- What is a data block and a data file? 
+- What is data warehousing? 
+- What are the main differences between 'a view' and 'a materialised view'? 
+- What is a junk dimension? 
+- Please explain in detail data warehousing architecture
+- What are the different types of integrity constraints? 
+- Why do data architects enforce and monitor data compliance standards in data systems? 
+- Differentiate between OTLP and OLAP
+- How do you design and implement a data warehouse? 
+- How do you handle data quality issues? 
+- How do you optimise data models for performance? 
+- Describe your familiarity with big data technologies such as Hadoop and Spark
+- How do you go about gathering requirements for a new data project? 
+- How do you hamdle conflicting priorities when working on multiple projects? 
+- Which software and design patterns are you familiar with? 
 
+### Data Engineering role
+- What made you choose data engineering and what does it mean to you? 
+- How would you define data engineering? 
+- What are data engineers responsible for? 
+- What is the difference between a data architect and a data engineer? 
+- What is the difference between structured ,semi structured and unstructured data? 
+- Describe differences between a data warehouse and an operational database
+- How would you increase the revenue of a business using data analytics and big data? 
+- What are the advantages of using skewed tables in hive? 
+- Explain the hive data model and its components
+- What does COSHH/FSCK mean? 
+- Why is using a distributed system important in hadoop? 
+- Name the core features of hadoop
+- Define hadoop streaming
+- What is data locality? 
+- What does Context object do in Hadoop and why is it important? 
+- Name the three reducer phases in hadoop
+- What do args and kwargs commands do? 
+- List the differences between tuples and lists
+- What are the advantages of working with big data on the cloud? 
+- Can you describe what happens when a data block is corrupted? 
+- How would you explain file permissions in hadoop? 
+- Which process would you follow to add a node to a cluster? 
+- Can you list python libraries which can facilitate efficient data processing? 
+- What challenges came up during your recent project, and how did you overcome these challenges?
+- Have you ever transformed unstructured data into structured data? and how did you do it? 
+- Can you tell me about NameNode? What happens if NameNode crashes or comes to an end?
+- How to achieve security in Hadoop?
+- What is FIFO Scheduling? 
 
 ### SQL
+- How can you deal with duplicate data points in an SQL query?
+- List objects that are created via the CREATE statement in SQL
+- How would you see the database structure in SQL? 
+- How would you search for a specific string in a column? 
+- What are the differences between DDL, DML and DCL?
+- Difference between SQL and MySQL? 
+- How is a RDBMS different to a DBMS? 
+- What is a self join? name other join commands
+- What is the SELECT statement? 
+- What are the CRUD commands? 
+- What are UNION, MINUS and INTERSECT commands? 
+- List the type of relationships in SQL
+- How would you load data into tables using SQL? 
+- What is PostgreSQL?
+- Explain the character manipulation functions in SQL
+- What is the difference between RANK and DENSE_RANK() functions? 
+- What are tables and fields? 
+- What is a schema in a SQL server? 
+- How would you create a table with 4 columns? 
+- What is a CASE statment? 
+- Summarise differences between SQL and NoSQL
+- Difference between NOW() and CURRENT_DATE()
+- What is a BLOB and TEXT in MySQL?
+- How do you remove duplicate rows in SQL? 
+- How do you create a stored in procedure in SQL?
+- What is the difference between CHAR, VARCHAR datatypes in SQL? 
+- What are constraints in SQL? 
+- Differences in DELETE and TRUNCATE statements? 
+- What is data integrity? 
+- What do you understand by query optimisation? 
+- What are entities and relationships? 
+- Name some aggregate functions which are commonly used in SQL
+- What are the syntax and use of the COALESCE function?
+- What is the ACID property in a database?
+- What is a “Trigger” in SQL?
+- What is a subquery in SQL?
+- What is a CLAUSE in SQL?
+- What is the need for a MERGE statement?
+- How can you fetch common records from two tables?
+- What are aggregate and scalar functions?
+- What are Views used for?
+- What are Local and Global variables?
 
 
 ### ETL, Pipelines
 
-
+- How do you troubleshoot data pipelines? 
+- 
 ## Cyber Security & Info Security
 
 - 
@@ -349,4 +452,3 @@ Advanced:
 ## License
 
 This project is licensed under the Apache License. See the [LICENSE](LICENSE) file for more details.
-
