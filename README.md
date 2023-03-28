@@ -97,17 +97,28 @@ Advanced:
 
 -----General--------
 - What is AWS? 
-- What are two services of AWS where you could store secrets? 
+- What are two services of AWS where you could store secrets?
+- What is the relation between the Availability Zone and Region?
+- What is auto-scaling?
+- What services can help minimise a DDoS attack?
+- What is an AMI?
+- What are different types of load balancers?
 
 -----Networking-----
 - What is a VPC?
 - How do Subnets work?
 - What network object do you need to allow a server ingress from the internet?
 - What are the different type of load balancers in AWS?
+- Whate are subnets? and what are CIDRs? 
+- 
 
 
 - Name some managed runtimes for Lambda
 - 
+
+-----Scenario-based-----
+- In VPC with private and public subnets, database servers should ideally be launched into which subnet?
+- What are some security best pracites for EC2s?
 - 
 
 ### :small_blue_diamond: Azure
