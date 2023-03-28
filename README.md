@@ -24,7 +24,8 @@ For any fixes, updates or new additions, please make a pull-request (PR). Thank 
 - [X] [Backend & Frontend](#backend--frontend)
 - [X] [Data](#data)
 - [X] [Cyber Security & InfoSecurity](#cyber-security--info-security)
-- [X]  [Interpersonal skills]()
+- [X] [Interpersonal skills]()
+- [X] [References](#references)
 
 
 ## DevOps
@@ -320,9 +321,6 @@ Advanced:
 
 
 
-
-
-
 ## Data
 
 ### Data Modelling and Schemas: 
@@ -445,6 +443,11 @@ Advanced:
 
 - 
 
+
+## References:
+
+- intellipaat.com
+- Add more links to any references.
 
 ## License
 
