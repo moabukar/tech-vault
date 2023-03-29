@@ -5,7 +5,7 @@
 
 Note: A documentation of carefully curated technical engineering questions curated by experienced Engineers who have conducted many interviews. These are amongst popular and important engineering questions to test knowledge of candidates in interviews. 
 
-For any fixes, updates or new additions, please make a pull-request (PR). Thank you!
+Any questions taken from external references are referenced [below](#references). 
 
 ## Contributing
 
@@ -13,7 +13,6 @@ For any fixes, updates or new additions, please make a pull-request (PR). Thank 
 
 ## Charity 
 - Since this is a community-based project and it is run by the community - we (the creators) do not gain any personal nor financial gain other than helping the community. Instead, any financial gain would be better suited to a charity. So we wanted to take it upon us to help those in need. We, as a community, have chosen a certified charity to donate to. Here is the link to donate to:
-
 
 
 ## Topics overview
@@ -344,6 +343,10 @@ Advanced:
 - What is master-slave replication? And what is master-master replication?
 - What is Synchronous vs Asynchronous replication?
 - What are indexes in databases?
+- How can one improve query performance by using index hunting?
+- What do you understand by ‘Atomicity’ and ‘Aggregation’?
+- What is database partitioning?
+- 
 
 
 Advanced:
