@@ -63,15 +63,19 @@ For any fixes, updates or new additions, please make a pull-request (PR). Thank 
 - What are symbolic links?
 - What are the different types of permissions in Linux?
 - What is swap space?
+- What is chmod, chown and chgrp in Linux?
+- What are cronjobs?
 
-Commands:
+Commands (basic & advanced):
 - What does chmod +x FILENAME do?
 - Which command will show you free/used memory?
 - Which command will show me the current directory I am in?
 - How can I terminate an on going process?
 - Write the command that will display all .yaml files including permissions of each file? ()
 - How can I found the status of a process?
-
+- What is the command to show all open ports?
+- How do you find the process ID of a running process in Linux?
+- How do you find the dependencies of a package in Linux?
 
 Advanced:
 
@@ -80,6 +84,22 @@ Advanced:
 - What is inside /proc?
 - A process on the system can no longer log files, what can I do?
 - What is LILO?
+- What are syscalls in Linux and how do they work?
+- What is no route to host?
+- What is the difference between a hard link and a symbolic link in Linux?
+
+Linux Advanced (Scenario based questions)
+- Explain the linux boot process
+- A process on the system can no longer log files, how would you debug?
+- How can I check if a Linux system is healthy?
+- What happens when you type "ls" or "cd" into a terminal? (go deep and talk about what happens behind the scenes - kernel level)
+- How can I check if a server is down?
+- How are Linux processes killed on a lower level?
+- I have accidentally entered `cd/bin` and done `chmod 644 chmod` - how can I fix this?
+- How would you troubleshoot a network connectivity issue in Linux?
+- How do you troubleshoot a connectivity issue with a remote server in Linux?
+- How do you view and edit the system logs in Linux?
+- How do you troubleshoot a DNS issue in Linux?
 
 ### :small_blue_diamond: Networking
 
@@ -87,13 +107,20 @@ Advanced:
 - TCP vs UDP
 - What is DNS and how does it work?
 - What is TLS?
+- What are CIDR ranges?
+- What is ingress and egress traffic?
+- What is a switch vs a hub?
+- What is a switch vs a router?
+- What is HTTPS vs Websockets?
+- Explain how a 3 way handshake works?
 
 Advanced:
 
 - When I type google.com into the browser, what actually happens? (go into as much detail as you can)
 - I can't reach a website, how can I troubleshoot? (use deep Linux + networking knowledge )
 - Can you break down the OSI model and what does it signify?
-- How does mTLS work and compare it to TLS? 
+- How does mTLS work and compare it to TLS?
+
 
 ### :small_blue_diamond: Git
 
@@ -128,14 +155,18 @@ Advanced:
 - How do Subnets work?
 - What network object do you need to allow a server ingress from the internet?
 - What are the different type of load balancers in AWS?
-- Whate are subnets? and what are CIDRs? 
-- Name some managed runtimes for Lambda
+- Whate are subnets? and what are CIDRs?
+- How can your resources in the VPC get access to the internet?
+
 
 -----Scenario-based-----
 - In VPC with private and public subnets, database servers should ideally be launched into which subnet?
 - What are some security best pracites for EC2s?
 - I created a web application with autoscaling. I observed that the traffic on my application is the highest on Wednesdays and Fridays between 9 AM and 7 PM. What would be the best solution for me to handle the scaling?
 - You have an application running on your Amazon EC2 instance. You want to reduce the load on your instance as soon as the CPU utilization reaches 100 percent. How will you do that?
+
+-----Others-----
+- Name some managed runtimes for Lambda
 
 ### :small_blue_diamond: Azure
 
@@ -193,8 +224,12 @@ Container (Docker):
 - What are c-groups and namespaces in Linux?
 - What is Docker and how does it work?
 - When do I use Docker Compose vs Docker Swarm and K8s?
-- What is a Dockerfile used for? 
+- What is a Dockerfile used for?
 - Can you explain the basic components of a Dockerfile?
+    - What is a FROM in a Dockerfile used for?
+    - What is a COPY in a Dockerfile used for?
+    - What is a ADD in a Dockerfile used for?
+    - What is a CMD & ENTRTPOINT in a Dockerfile used for?
 - How is a container different from a virtual machine?
 
 Container Orchestration (Kubernetes = K8s):
