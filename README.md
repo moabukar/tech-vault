@@ -3,7 +3,7 @@
 
 # Tech interview questions
 
-Note: A documentation of technical engineering questions curated by experienced Engineers who have conducted many interviews.
+Note: A documentation of carefully curated technical engineering questions curated by experienced Engineers who have conducted many interviews. These are amongst popular and important engineering questions to test knowledge of candidates in interviews. 
 
 For any fixes, updates or new additions, please make a pull-request (PR). Thank you!
 
@@ -88,7 +88,8 @@ Advanced:
 - What is no route to host?
 - What is the difference between a hard link and a symbolic link in Linux?
 
-Linux Advanced (Scenario based questions)
+Linux Advanced (Scenario based questions):
+
 - Explain the linux boot process
 - A process on the system can no longer log files, how would you debug?
 - How can I check if a Linux system is healthy?
@@ -113,14 +114,21 @@ Linux Advanced (Scenario based questions)
 - What is a switch vs a router?
 - What is HTTPS vs Websockets?
 - Explain how a 3 way handshake works?
+- Stateless vs Stateful firewalls?
+- What are VPCs?
+- What is subnetting?
+- What is DHCP?
 
-Advanced:
+Advanced + Scenario based questions:
 
 - When I type google.com into the browser, what actually happens? (go into as much detail as you can)
 - I can't reach a website, how can I troubleshoot? (use deep Linux + networking knowledge )
 - Can you break down the OSI model and what does it signify?
 - How does mTLS work and compare it to TLS?
-
+- Describe the TCP/IP connection process?
+- When and why would one use a TCP over UDP?
+- Data transfer between 2 hosts is extremely slow. How can you troubleshoot?
+- 
 
 ### :small_blue_diamond: Git
 
@@ -132,12 +140,17 @@ Advanced:
 - What is the HEAD in Git ?
 - When do I use Git stash?
 - What does git reset do?
+- What is Git fork? What is difference between git fork, clone and branch?
+- What is difference between `git stash pop` and `git stash apply`?
 
 Advanced:
 - I need to update my local repos, what commands do I use ?
 - I need to rollback to a previous commit and I don't need my recent changes, what do I use ?
 - How can I amend an older commit?
-- What is the command to check the difference between two commits ?
+- What is the command to check the difference between two commits?
+- When do you use `git rebase` instead of `git merge`?
+- Do you know how to undo a git rebase?
+- 
 
 ### :small_blue_diamond: AWS
 
