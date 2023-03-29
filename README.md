@@ -172,10 +172,12 @@ Advanced:
 
 
 -----Scenario-based-----
+- I want to create a 3 Tier Architecture. Can you explain step by step of how I can go about this?
 - In VPC with private and public subnets, database servers should ideally be launched into which subnet?
 - What are some security best pracites for EC2s?
 - I created a web application with autoscaling. I observed that the traffic on my application is the highest on Wednesdays and Fridays between 9 AM and 7 PM. What would be the best solution for me to handle the scaling?
 - You have an application running on your Amazon EC2 instance. You want to reduce the load on your instance as soon as the CPU utilization reaches 100 percent. How will you do that?
+
 
 -----Others-----
 - Name some managed runtimes for Lambda
@@ -243,6 +245,17 @@ Container (Docker):
     - What is a ADD in a Dockerfile used for?
     - What is a CMD & ENTRTPOINT in a Dockerfile used for?
 - How is a container different from a virtual machine?
+- How can I run a container?
+- How can I stop and remove a container?
+- How can I attach a shell to a terminal of a running container?
+- What is a dangling image?
+- What is Docker compose and when is it used?
+- 
+
+Advanced:
+- What is the difference between COPY and ADD commands in a Dockerfile?
+- What is the difference between CMD and RUN commands in a Dockerfile?
+- What are some best practices to follow when running containers in production?
 
 Container Orchestration (Kubernetes = K8s):
 
