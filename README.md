@@ -398,7 +398,16 @@ Advanced:
 
 ### :small_blue_diamond: JavaScript (TS,nodeJS...)
 
-- 
+- What is TypeScript?
+- What are the differences between TypeScript and JavaScript?
+- Why use TypeScript?
+- What are the advantages of TypeScript?
+- What are Types in TypeScript?
+- What are Type Assertions in TypeScript?
+- What are the Primitive data types?
+- What are the special data types in TypeScript?
+- What are interfaces in TypeScript?
+- Interfaces Vs Types?
 
 
 ## Data
