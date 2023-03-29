@@ -3,7 +3,7 @@
 
 # Tech interview questions
 
-Note: A documentation of carefully curated technical engineering questions curated by experienced Engineers who have conducted many interviews. These are amongst popular and important engineering questions to test knowledge of candidates in interviews. 
+Note: A documentation of carefully curated technical engineering questions by experienced Engineers who have conducted many interviews. These are amongst popular and important engineering questions to test knowledge of candidates in interviews. 
 
 Any questions taken from external references are referenced [below](#references). 
 
