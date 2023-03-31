@@ -415,41 +415,178 @@ Advanced:
 ### Data Modelling and Schemas: 
 
 - Define data modelling and the benefits of implementing a data model? 
+
+Answer: Data modeling is the process of creating a visual representation of either a whole information system or parts of it to communicate connections between data. Data modeling concepts create a blueprint for how data is organized and managed in your organization. Data models give developers and non-technical stakeholders a simplified way to have meaningful conversations about the needs of the business and how data insights can fuel better decision making.
+
 - What are some of the design schemas used when performing data modelling? 
+
+Answer: Star Schema. Snowflake Schema. Galaxy Schema.
+
 - What are the three types of data models? 
+
+Answer: Entity models, relational and dimensional
+
 - What is a table (entity) and column (attribute)? 
+
+Answer: A row in a database table is an entity. A column header of a database table is an attribute. 
+
 - What is normalisation/denormalisation and what is its purpose?
+
+Answer: Normalization is the technique of dividing the data into multiple tables to reduce data redundancy and inconsistency and to achieve data integrity. On the other hand, Denormalization is the technique of combining the data into a single table to make data retrieval faster.
+
 - What are the main relationships which can be found in a data model? (name 3)
+
+Answer: one to one, one to many and many to many
+
 - Explain the two different types of design schemas (snowflake and star)? 
+
+Answer: Snowflake and star are two different types of design schemas used in data warehousing. In a snowflake schema, the data is organized into a hierarchy of tables, with each table having multiple child tables. In a star schema, the data is organized into a central fact table and several dimension tables that connect to it.
+
 - What is a data mart? 
+
+Answer: A data mart is a subset of a larger data warehouse that is designed to serve a specific business function or department. It contains a smaller subset of the data found in the overall data warehouse. 
+
 - How would you describe granularity? 
+
+Answer: Granularity refers to the level of detail or specificity of data. It describes how finely the data is divided and recorded.
+
 - How does data sparcity impact aggregation of data sets/sources? 
+
+Answer: Data sparcity can impact the aggregation of data sets/sources by making it more difficult to obtain accurate and meaningful results. Sparse data can result in incomplete or inaccurate analyses, as well as a loss of insights and trends.
+
 - In the context of data modelling, what is the importance of metadata? How would you describe the role of metadata in data modelling? 
+
+Answer: Metadata is important in data modelling because it provides additional information about the data being modelled. It helps to document the structure and relationships of the data, as well as its origin, quality, and meaning.
+
 - What is a DDL script? 
+
+Answer: A DDL (Data Definition Language) script is a set of commands used to create, modify, or delete database objects such as tables, indexes, or views.
+
 - What is a fact and dimension? 
-- What is an ERD? Entity relationship diagram
+
+Answer: In a data model, a fact is a measurable event or transaction, while a dimension is a descriptive attribute of that event or transaction. For example, in a sales data model, a fact might be the quantity of a product sold, while dimensions could include attributes such as the date of the sale, the customer who made the purchase, or the location where the sale occurred.
+
+- What is an ERD? Entity relationship diagram?
+
+Answer: An ERD (Entity Relationship Diagram) is a visual representation of the relationships between entities (tables) in a database. It shows how the tables are related to each other and the nature of those relationships.
+
 - What are the differences between foreign and surrogate keys? 
+
+Answer: Foreign keys are columns in a table that reference the primary key of another table. Surrogate keys are artificial primary keys that are created specifically for use in a database and have no inherent meaning outside of that context.
+
 - Desribe cardinality
+
+Answer: Cardinality refers to the number of relationships between entities in a data model. It describes how many instances of one entity can be related to another entity. Common cardinalities include one-to-one, one-to-many, and many-to-many.
 
 ### Data Architect
 
 - Please state an example of designing, creating, deploying and managing an end to end data architecture project?
+
+Answer: A company wants to implement a customer relationship management (CRM) system. The project would involve designing a data architecture to store customer data, creating the necessary databases and tables, and deploying the system. The data would need to be cleansed, transformed, and loaded into the new system. Ongoing management would involve monitoring the data for quality and making any necessary updates or modifications to the system.
+
 - What are the fundamental skills required for a data architect? 
+
+Answer: Strong knowledge of data modelling and database design
+Expertise in database management systems (DBMS) and database administration
+Experience with data warehousing and business intelligence
+Proficiency in data integration, ETL (extract, transform, load) processes, and data migration
+Familiarity with programming languages and software development methodologies
+Excellent analytical and problem-solving skills
+Strong communication and collaboration abilities
+
 - What is a data block and a data file? 
+
+Answer: A data block is the smallest unit of data that can be accessed or transferred from a database to memory. A data file is a physical storage unit used to store data in a database.
+
 - What is data warehousing? 
+
+Answer: Data warehousing is the process of collecting, storing, and managing large amounts of data from various sources to support business intelligence and decision-making. It involves organizing the data into a centralized repository or data warehouse, where it can be queried and analyzed using business intelligence tools.
+
 - What are the main differences between 'a view' and 'a materialised view'? 
-- What is a junk dimension? 
+
+Answer: A view is a virtual table that is based on a select statement and does not store data. A materialized view, on the other hand, is a physical copy of a view that stores data in a table, making it faster to retrieve.
+
+- What is a junk dimension?
+
+Answer: A junk dimension is a single table that contains several low-cardinality attributes that are not related to any specific dimension. It is used to reduce the number of dimension tables in a data warehouse and simplify the schema design.
+
 - Please explain in detail data warehousing architecture
+
+Answer: 
+The source layer, where data is collected from various sources and stored in staging tables.
+The integration layer, where data is cleansed, transformed, and combined into a single format for loading into the data warehouse.
+The storage layer, where the data is stored in a central repository or data warehouse.
+The access layer, where business intelligence tools and applications can retrieve the data for analysis and reporting.
+
 - What are the different types of integrity constraints? 
+
+Answer: 
+Entity integrity: ensures that each row in a table has a unique identifier.
+Referential integrity: ensures that relationships between tables are maintained and that foreign keys reference primary keys.
+Domain integrity: ensures that data values meet specific constraints, such as data type or format requirements.
+User-defined integrity: allows users to define their own constraints based on specific business rules or requirements.
+
 - Why do data architects enforce and monitor data compliance standards in data systems? 
+
+Answer: Data architects enforce and monitor data compliance standards in data systems to ensure that data is accurate, complete, and secure. This helps to maintain data quality and prevent data breaches or other security risks.
+
 - Differentiate between OTLP and OLAP
+
+Answer: OLTP (Online Transaction Processing) systems are designed for real-time transactional processing and are typically used for day-to-day business operations. OLAP (Online Analytical Processing) systems are designed for data analysis and reporting and are typically used for business intelligence and decision-making.
+
 - How do you design and implement a data warehouse? 
+
+Answer: 
+Analyze business requirements and identify data sources.
+Develop a conceptual data model and logical data model.
+Design the physical data model and schema.
+Develop ETL processes to extract, transform, and load data into the warehouse.
+Implement the database and BI tools.
+Test and validate the system.
+Deploy and maintain the system.
+
 - How do you handle data quality issues? 
+
+Answer: To handle data quality issues, data architects can implement data profiling and data cleansing processes. Data profiling involves analyzing the data to identify any issues or inconsistencies, such as missing or duplicate data, incorrect data types, or invalid values. Data cleansing involves correcting these issues and ensuring that the data is accurate and complete.
+
 - How do you optimise data models for performance? 
+
+Answer: 
+Normalize the data to reduce redundancy and improve consistency.
+Denormalize the data to improve query performance and simplify the schema.
+Partition large tables to improve query performance.
+Use appropriate indexing to speed up queries.
+Optimize queries to reduce the amount of data that needs to be processed.
+
 - Describe your familiarity with big data technologies such as Hadoop and Spark
+
+Answer: 
+Hadoop is an open-source software framework that is used to store and process big data in a distributed computing environment. It uses a file system called Hadoop Distributed File System (HDFS) to store data across multiple machines and a processing engine called MapReduce to distribute processing tasks across the cluster. Hadoop is particularly useful for handling unstructured and semi-structured data, such as log files, social media data, and sensor data.
+
+Spark is another open-source software framework that is designed to handle big data processing tasks in real-time. Spark is built on top of Hadoop and provides a more flexible and efficient processing engine than MapReduce. It supports various data processing tasks, including batch processing, stream processing, machine learning, and graph processing. Spark is particularly useful for handling large datasets that require real-time analysis, such as financial trading data, social media data, and sensor data.
+
 - How do you go about gathering requirements for a new data project? 
+
+Answer: 
+Meet with stakeholders to understand their business needs and goals.
+Identify the data sources and types of data that will be needed.
+Develop a data model based on the business requirements.
+Define the data quality and security requirements.
+Determine the performance and scalability requirements.
+Establish a project timeline and budget.
+
 - How do you hamdle conflicting priorities when working on multiple projects? 
+
+Answer: To handle conflicting priorities when working on multiple projects, data architects can prioritize based on business impact, urgency, and feasibility. Communication with stakeholders and project managers can also help to ensure that expectations are clear and aligned.
+
 - Which software and design patterns are you familiar with? 
+
+Answer: 
+Relational database management systems (RDBMS) such as Oracle and SQL Server.
+NoSQL databases such as MongoDB and Cassandra.
+Data integration tools such as Informatica and Talend.
+Data visualization and business intelligence tools such as Tableau and Power BI.
+Design patterns such as the star schema and snowflake schema for data warehousing.
 
 ### Data Engineering
 
