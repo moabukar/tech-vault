@@ -7,6 +7,13 @@ Note: A documentation of carefully curated technical engineering questions by ex
 
 Any questions taken from external references are referenced [below](#references). 
 
+## What is different in this repo compared to others?
+
+- These questions are real-questions that have been asked by our Engineers who have compiled them for you (obviously reworded questions)
+- We have added and are continuing to add questions that are scenari-based which are likely to be asked by interviewers themseleves. 
+- Interview questions are up to date.
+- We will continue updating these. It is brought to you by Engineers who have extensive hands-on experience. 
+
 ## Contributing
 
 - To contribute, please read our [Contributing Guidelines](CONTRIBUTING.md). For any fixes, updates or new additions, please make a pull-request (PR). Thank you!
