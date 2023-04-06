@@ -9,7 +9,7 @@ Any questions taken from external references are referenced [below](#references)
 
 ## What is different in this repo compared to others?
 
-- These questions are real-questions that have been asked by our Engineers who have compiled them for you (obviously reworded questions)
+- These questions are real-questions that have been asked by our Engineers and ones they have also asked candidates - who have compiled them for you (obviously reworded questions)
 - We have added and are continuing to add questions that are scenari-based which are likely to be asked by interviewers themseleves. 
 - Interview questions are up to date.
 - We will continue updating these. It is brought to you by Engineers who have extensive hands-on experience. 
