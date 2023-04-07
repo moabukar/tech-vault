@@ -774,16 +774,16 @@ User-defined integrity: allows users to define their own constraints based on sp
 
 - Why do data architects enforce and monitor data compliance standards in data systems? 
 
-    <details>
+   <details>
     <summary>Click here to view answer</summary>
     Answer: Data architects enforce and monitor data compliance standards in data systems to ensure that data is accurate, complete, and secure. This helps to maintain data quality and prevent data breaches or other security risks.
 
-    </details>
+   </details>
 
 
 - Differentiate between OTLP and OLAP
 
-    <details>
+   <details>
     <summary>Click here to view answer</summary>
     Answer: OLTP (Online Transaction Processing) systems are designed for real-time transactional processing and are typically used for day-to-day business operations. OLAP (Online Analytical Processing) systems are designed for data analysis and reporting and are typically used for business intelligence and decision-making.
 
