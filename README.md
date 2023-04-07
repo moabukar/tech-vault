@@ -681,7 +681,7 @@ Advanced + Scenario based questions:
   </details>
 
 
-### :small_blue_diamond: 
+### :small_blue_diamond: Git
 
 - What is Git?
   <details>
