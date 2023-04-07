@@ -324,39 +324,56 @@ Any questions taken from external references are referenced [below](#references)
 Commands (basic & advanced):
 
 - **What does chmod +x FILENAME do?**
-
   <details>
     <summary>Click here to view the answer</summary>
     
-    Content HERE
+    The command chmod +x FILENAME is used to add execute permissions to a file in a Linux or Unix-like system. By adding execute permissions, you allow the file to be run as an executable or script, provided it has the appropriate format and interpreter (e.g., a shell script, Python script, or compiled binary). The +x option specifically grants execute permission to the owner, group, and others (all users).
+
+    For example, if you have a script named myscript.sh and you want to make it executable, you would run:
+
+    `chmod +x myscript.sh`
     
   </details>
 - **Which command will show you free/used memory?**
   <details>
     <summary>Click here to view the answer</summary>
     
-    Content HERE
+    the free command is used to display information about free and used memory. The command provides details on total, used, free, shared, and available memory, as well as swap space usage.
+
+    To use the free command, simply type free in the terminal, followed by any desired options. Some common options include:
+
+    - -b: Display memory usage in bytes.
+    - -k: Display memory usage in kilobytes (default).
+    - -m: Display memory usage in megabytes.
+    - -g: Display memory usage in gigabytes.
+    - -h: Display memory usage in a human-readable format, automatically choosing the appropriate unit (e.g., B, K, M, or G).
+    - -t: Display a line containing the total amount of physical memory and swap space.
+    - -s N: Continuously display memory usage information, updating every N seconds.
+
+    For example, to display memory usage in a human-readable format, you would run:
+    
+    `free -h`
     
   </details>
 - **Which command will show me the current directory I am in?**
   <details>
     <summary>Click here to view the answer</summary>
     
-    Content HERE
+    `pwd`
     
   </details>
 - **How can I terminate an on going process?**
   <details>
     <summary>Click here to view the answer</summary>
     
-    Content HERE
+    `kill -9 PID`
     
   </details>
 - **Write the command that will display all .yaml files including permissions of each file? ()**
   <details>
     <summary>Click here to view the answer</summary>
     
-    Content HERE
+    find . -type f -name "*.yaml" -exec ls -l {} \;
     
   </details>
 - **How can I found the status of a process?**
