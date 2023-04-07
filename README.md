@@ -841,7 +841,6 @@ Spark is another open-source software framework that is designed to handle big d
 
     <details>
     <summary>Click here to view answer</summary>
-  
     Answer: 
 Meet with stakeholders to understand their business needs and goals.
 Identify the data sources and types of data that will be needed.
@@ -856,7 +855,6 @@ Establish a project timeline and budget.
 
     <details>
     <summary>Click here to view answer</summary>
-  
     Answer: To handle conflicting priorities when working on multiple projects, data architects can prioritize based on business impact, urgency, and feasibility. Communication with stakeholders and project managers can also help to ensure that expectations are clear and aligned.
 
     </details>
@@ -865,7 +863,6 @@ Establish a project timeline and budget.
 
     <details>
     <summary>Click here to view answer</summary>
-  
     Answer: 
     Relational database management systems (RDBMS) such as Oracle and SQL Server.
     NoSQL databases such as MongoDB and Cassandra.
