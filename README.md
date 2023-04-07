@@ -69,7 +69,7 @@ Any questions taken from external references are referenced [below](#references)
 
 ### :small_blue_diamond: Linux
 
-- What is Linux and difference between UNIX and Linux?
+- **What is Linux and difference between UNIX and Linux?**
     <details>
     <summary>Click to view the answer</summary>
     
@@ -81,8 +81,8 @@ Any questions taken from external references are referenced [below](#references)
     - **User base:** Linux has a broader user base, including personal computers, servers, and embedded systems, while UNIX is primarily used in enterprise environments.
     
     </details>
----
-- What is the Linux kernel?
+
+- **What is the Linux kernel?**
 
     <details>
     <summary>Click here to view answer</summary>
@@ -91,7 +91,7 @@ Any questions taken from external references are referenced [below](#references)
     
     </details>
 
-- What are inodes in Linux?
+- **What are inodes in Linux?**
 
     <details>
     <summary>Click here to view answer</summary>
@@ -102,20 +102,21 @@ Any questions taken from external references are referenced [below](#references)
 
     Here's a summary of what inodes store:
 
-    File type (regular file, directory, symbolic link, etc.)
-    File permissions (read, write, execute)
-    Ownership (user and group)
-    Timestamps (creation, modification, and access times)
-    File size
-    Number of hard links to the file
-    Location of the file's data blocks on the disk
+    - File type (regular file, directory, symbolic link, etc.)
+    - File permissions (read, write, execute)
+    - Ownership (user and group)
+    - Timestamps (creation, modification, and access times)
+    - File size
+    - Number of hard links to the file
+    - Location of the file's data blocks on the disk
+    
     It's important to note that inodes don't store the file's name or the actual file data. The file name is stored in the directory that contains the file, which associates the name with the inode number. The actual file data is stored in separate data blocks on the disk, and the inode points to these blocks.
 
     Inodes play a crucial role in managing files and directories within a Linux file system, providing an efficient way to access and manipulate file metadata.
     
     </details>
 
-- Explain the Linux boot process
+- **Explain the Linux boot process**
 
     <details>
     <summary>Click here to view answer</summary>
@@ -138,7 +139,7 @@ Any questions taken from external references are referenced [below](#references)
     
     </details>
 
-- What is a zombie process?
+- **What is a zombie process?**
     <details>
     <summary>Click here to view answer</summary>
     
@@ -154,7 +155,7 @@ Any questions taken from external references are referenced [below](#references)
     
     </details>
 
-- Difference between soft links and hardlinks?
+- **Difference between soft links and hardlinks?**
 
     <details>
     <summary>Click here to view answer</summary>
@@ -183,77 +184,79 @@ Any questions taken from external references are referenced [below](#references)
     
     </details>
 
-- What are namespaces and c-groups?
+- **What are namespaces and c-groups?**
 
 
-- What are symbolic links?
-- What are the different types of permissions in Linux?
-- What is swap space?
-- What is chmod, chown and chgrp in Linux?
-- What are cronjobs?
+
+- **What are symbolic links?**
+- **What are the different types of permissions in Linux?**
+- **What is swap space?**
+- **What is chmod, chown and chgrp in Linux?**
+- **What are cronjobs?**
 
 Commands (basic & advanced):
-- What does chmod +x FILENAME do?
-- Which command will show you free/used memory?
-- Which command will show me the current directory I am in?
-- How can I terminate an on going process?
-- Write the command that will display all .yaml files including permissions of each file? ()
-- How can I found the status of a process?
-- What is the command to show all open ports?
-- How do you find the process ID of a running process in Linux?
-- How do you find the dependencies of a package in Linux?
+
+- **What does chmod +x FILENAME do?**
+- **Which command will show you free/used memory?**
+- **Which command will show me the current directory I am in?**
+- **How can I terminate an on going process?**
+- **Write the command that will display all .yaml files including permissions of each file? ()**
+- **How can I found the status of a process?**
+- **What is the command to show all open ports?**
+- **How do you find the process ID of a running process in Linux?**
+- **How do you find the dependencies of a package in Linux?**
 
 Advanced:
 
-- Does free memory exist on Linux?
-- How can I check if a server is down?
-- What is inside /proc?
-- A process on the system can no longer log files, what can I do?
-- What is LILO?
-- What are syscalls in Linux and how do they work?
-- What is no route to host?
-- What is the difference between a hard link and a symbolic link in Linux?
+- **Does free memory exist on Linux?**
+- **How can I check if a server is down?**
+- **What is inside /proc?**
+- **A process on the system can no longer log files, what can I do?**
+- **What is LILO?**
+- **What are syscalls in Linux and how do they work?**
+- **What is no route to host?**
+- **What is the difference between a hard link and a symbolic link in Linux?**
 
 Linux Advanced (Scenario based questions):
 
-- Explain the linux boot process
-- A process on the system can no longer log files, how would you debug?
-- How can I check if a Linux system is healthy?
-- What happens when you type "ls" or "cd" into a terminal? (go deep and talk about what happens behind the scenes - kernel level)
-- How can I check if a server is down?
-- How are Linux processes killed on a lower level?
-- I have accidentally entered `cd/bin` and done `chmod 644 chmod` - how can I fix this?
-- How would you troubleshoot a network connectivity issue in Linux?
-- How do you troubleshoot a connectivity issue with a remote server in Linux?
-- How do you view and edit the system logs in Linux?
-- How do you troubleshoot a DNS issue in Linux?
+- **Explain the linux boot process**
+- **A process on the system can no longer log files, how would you debug?**
+- **How can I check if a Linux system is healthy?**
+- **What happens when you type "ls" or "cd" into a terminal? (go deep and talk about what happens behind the scenes - kernel level)**
+- **How can I check if a server is down?**
+- **How are Linux processes killed on a lower level?**
+- **I have accidentally entered `cd/bin` and done `chmod 644 chmod` - how can I fix this?**
+- **How would you troubleshoot a network connectivity issue in Linux?**
+- **How do you troubleshoot a connectivity issue with a remote server in Linux?**
+- **How do you view and edit the system logs in Linux?**
+- **How do you troubleshoot a DNS issue in Linux?**
 
 ### :small_blue_diamond: Networking
 
-- What is HTTP? How is HTTPS different?
-- TCP vs UDP
-- What is DNS and how does it work?
-- What is TLS?
-- What are CIDR ranges?
-- What is ingress and egress traffic?
-- What is a switch vs a hub?
-- What is a switch vs a router?
-- What is HTTPS vs Websockets?
-- Explain how a 3 way handshake works?
-- Stateless vs Stateful firewalls?
-- What are VPCs?
-- What is subnetting?
-- What is DHCP?
+- **What is HTTP? How is HTTPS different?**
+- **TCP vs UDP**
+- **What is DNS and how does it work?**
+- **What is TLS?**
+- **What are CIDR ranges?**
+- **What is ingress and egress traffic?**
+- **What is a switch vs a hub?**
+- **What is a switch vs a router?**
+- **What is HTTPS vs Websockets?**
+- **Explain how a 3 way handshake works?**
+- **Stateless vs Stateful firewalls?**
+- **What are VPCs?**
+- **What is subnetting?**
+- **What is DHCP?**
 
 Advanced + Scenario based questions:
 
-- When I type google.com into the browser, what actually happens? (go into as much detail as you can)
-- I can't reach a website, how can I troubleshoot? (use deep Linux + networking knowledge )
-- Can you break down the OSI model and what does it signify?
-- How does mTLS work and compare it to TLS?
-- Describe the TCP/IP connection process?
-- When and why would one use a TCP over UDP?
-- Data transfer between 2 hosts is extremely slow. How can you troubleshoot?
+- **When I type google.com into the browser, what actually happens? (go into as much detail as you can)**
+- **I can't reach a website, how can I troubleshoot? (use deep Linux + networking knowledge )**
+- **Can you break down the OSI model and what does it signify?**
+- **How does mTLS work and compare it to TLS?**
+- **Describe the TCP/IP connection process?**
+- **When and why would one use a TCP over UDP?**
+- **Data transfer between 2 hosts is extremely slow. How can you troubleshoot?**
 - 
 
 ### :small_blue_diamond: 
