@@ -90,7 +90,7 @@ Any questions taken from external references are referenced [below](#references)
     The Linux kernel is the core component of the Linux operating system. It is responsible for managing the system's resources, providing an interface between hardware and software, and facilitating essential tasks such as memory management, process scheduling, and input/output (I/O) operations.
     
     </details>
----
+
 - What are inodes in Linux?
 
     <details>
@@ -120,13 +120,72 @@ Any questions taken from external references are referenced [below](#references)
     <details>
     <summary>Click here to view answer</summary>
     
-    The Linux kernel is the core component of the Linux operating system. It is responsible for managing the system's resources, providing an interface between hardware and software, and facilitating essential tasks such as memory management, process scheduling, and input/output (I/O) operations.
+    The Linux boot process consists of several stages that initialize the system and load the operating system. Here's a brief overview of the key steps:
+
+    BIOS/UEFI: When the computer is powered on, the BIOS (Basic Input/Output System) or UEFI (Unified Extensible Firmware Interface) performs initial hardware checks and locates the boot device.
+
+    Bootloader: The bootloader (e.g., GRUB) loads from the boot device and presents the available operating systems to the user. It then loads the Linux kernel and initial RAM disk (initrd) into memory.
+
+    Kernel initialization: The Linux kernel initializes hardware, sets up memory management, starts essential processes, and mounts the initial RAM disk, which contains essential drivers and tools needed during the boot process.
+
+    Root file system: The kernel switches the root file system from the initial RAM disk to the actual root partition on the disk, typically identified by its UUID or device name (e.g., /dev/sda1).
+
+    Init process: The first user-space process, called init (e.g., Systemd, SysVinit, or Upstart), starts and manages system services and processes during the boot process and the system's runtime.
+
+    Runlevel/target: Init process initializes the predefined runlevel (SysVinit) or target (Systemd), which determines the services and processes to run at startup.
+
+    Login prompt: Once all services and processes specified in the runlevel/target have started, the system displays a login prompt, indicating that the boot process is complete and the system is ready for use.
     
     </details>
 
 - What is a zombie process?
+    <details>
+    <summary>Click here to view answer</summary>
+    
+    A zombie process, also known as a defunct process, is a process that has completed its execution but still remains in the process table. This happens because the parent process has not yet read the child process's exit status, which is required to clean up the child process's resources and remove its entry from the process table.
+
+    Zombie processes don't consume any system resources, except for the process table entry, which includes the process ID (PID) and the exit status. The operating system keeps this information so that the parent process can eventually retrieve the exit status and perform the necessary clean-up.
+
+    More info on zombie processes below:
+
+    Typically, a well-behaved parent process will use the wait() or waitpid() system call to collect the exit status of its child processes. However, if the parent process doesn't do this, either due to a programming error or because the parent is still running and hasn't reached the point where it collects the exit status, the child process becomes a zombie.
+
+    Zombie processes are usually harmless, but if a system accumulates a large number of them, it could exhaust the available PIDs and prevent new processes from being created. To resolve this issue, the parent process should be fixed to correctly handle its child processes' exit status, or if the parent process is unresponsive or terminated, a system reboot might be necessary.
+    
+    </details>
+
 - Difference between soft links and hardlinks?
+
+    <details>
+    <summary>Click here to view answer</summary>
+    
+    Soft links and hard links are two types of file links in a Unix-like file system, such as Linux. They serve different purposes and have distinct characteristics:
+
+    **Soft Link (Symbolic Link):**
+
+    - A soft link is a separate file that points to the target file or directory by storing its path.
+    - If the target file is deleted, the soft link becomes a "dangling" link, pointing to a nonexistent file.
+    - Soft links can span across different file systems and partitions.
+    - Soft links can link to directories as well as files.
+    - When a soft link is created, the link count of the target file doesn't change.
+    - Soft links have different inode numbers than their target files.
+    
+    **Hard Link:**
+
+    - A hard link is a direct reference to the data on the disk, sharing the same inode as the target file.
+    - If the target file is deleted, the hard link still points to the data, and the data remains accessible until all hard links to it are removed.
+    - Hard links can only be created within the same file system or partition.
+    - Hard links cannot link to directories, only to files.
+    - When a hard link is created, the link count of the target file increases by one.
+    - Hard links have the same inode numbers as their target files.
+
+    In summary, a soft link is a more flexible but less reliable type of link that can point to files or directories across file systems, while a hard link is a more robust link that directly references the file's data, but is limited to the same file system and cannot link to directories.
+    
+    </details>
+
 - What are namespaces and c-groups?
+
+
 - What are symbolic links?
 - What are the different types of permissions in Linux?
 - What is swap space?
