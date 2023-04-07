@@ -11,10 +11,10 @@
 
 Copy the below code:
 ```
-<details>
-  <summary>Click here to view answer</summary>
-  
-  Your content goes here. You can use **markdown** within this section as well. Just make sure to leave a blank line between the summary tag and your content.
-  
-</details>
+  <details>
+    <summary>Click here to view the answer</summary>
+    
+    Content HERE
+    
+  </details>
 ```
