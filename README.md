@@ -764,10 +764,10 @@ Strong communication and collaboration abilities
     <details>
     <summary>Click here to view answer</summary>
     Answer: 
-Entity integrity: ensures that each row in a table has a unique identifier.
-Referential integrity: ensures that relationships between tables are maintained and that foreign keys reference primary keys.
-Domain integrity: ensures that data values meet specific constraints, such as data type or format requirements.
-User-defined integrity: allows users to define their own constraints based on specific business rules or requirements.
+    Entity integrity: ensures that each row in a table has a unique identifier.
+    Referential integrity: ensures that relationships between tables are maintained and that foreign keys reference primary keys.
+    Domain integrity: ensures that data values meet specific constraints, such as data type or format requirements.
+    User-defined integrity: allows users to define their own constraints based on specific business rules or requirements.
     </details>
 
 - Why do data architects enforce and monitor data compliance standards in data systems? 
