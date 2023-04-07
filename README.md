@@ -818,11 +818,11 @@ Deploy and maintain the system.
     <details>
     <summary>Click here to view answer</summary>
     Answer: 
-Normalize the data to reduce redundancy and improve consistency.
-Denormalize the data to improve query performance and simplify the schema.
-Partition large tables to improve query performance.
-Use appropriate indexing to speed up queries.
-Optimize queries to reduce the amount of data that needs to be processed.
+    Normalize the data to reduce redundancy and improve consistency.
+    Denormalize the data to improve query performance and simplify the schema.
+    Partition large tables to improve query performance.
+    Use appropriate indexing to speed up queries.
+    Optimize queries to reduce the amount of data that needs to be processed.
 
     </details>
 
@@ -831,9 +831,9 @@ Optimize queries to reduce the amount of data that needs to be processed.
     <details>
     <summary>Click here to view answer</summary>
     Answer: 
-Hadoop is an open-source software framework that is used to store and process big data in a distributed computing environment. It uses a file system called Hadoop Distributed File System (HDFS) to store data across multiple machines and a processing engine called MapReduce to distribute processing tasks across the cluster. Hadoop is particularly useful for handling unstructured and semi-structured data, such as log files, social media data, and sensor data.
+    Hadoop is an open-source software framework that is used to store and process big data in a distributed computing environment. It uses a file system called Hadoop Distributed File System (HDFS) to store data across multiple machines and a processing engine called MapReduce to distribute processing tasks across the cluster. Hadoop is particularly useful for handling unstructured and semi-structured data, such as log files, social media data, and sensor data.
 
-Spark is another open-source software framework that is designed to handle big data processing tasks in real-time. Spark is built on top of Hadoop and provides a more flexible and efficient processing engine than MapReduce. It supports various data processing tasks, including batch processing, stream processing, machine learning, and graph processing. Spark is particularly useful for handling large datasets that require real-time analysis, such as financial trading data, social media data, and sensor data.
+    Spark is another open-source software framework that is designed to handle big data processing tasks in real-time. Spark is built on top of Hadoop and provides a more flexible and efficient processing engine than MapReduce. It supports various data processing tasks, including batch processing, stream processing, machine learning, and graph processing. Spark is particularly useful for handling large datasets that require real-time analysis, such as financial trading data, social media data, and sensor data.
 
     </details>
 
@@ -842,12 +842,12 @@ Spark is another open-source software framework that is designed to handle big d
     <details>
     <summary>Click here to view answer</summary>
     Answer: 
-Meet with stakeholders to understand their business needs and goals.
-Identify the data sources and types of data that will be needed.
-Develop a data model based on the business requirements.
-Define the data quality and security requirements.
-Determine the performance and scalability requirements.
-Establish a project timeline and budget.
+    Meet with stakeholders to understand their business needs and goals.
+    Identify the data sources and types of data that will be needed.
+    Develop a data model based on the business requirements.
+    Define the data quality and security requirements.
+    Determine the performance and scalability requirements.
+    Establish a project timeline and budget.
 
     </details>
 
