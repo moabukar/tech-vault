@@ -752,11 +752,10 @@ Strong communication and collaboration abilities
     <details>
     <summary>Click here to view answer</summary>
     Answer: 
-The source layer, where data is collected from various sources and stored in staging tables.
-The integration layer, where data is cleansed, transformed, and combined into a single format for loading into the data warehouse.
-The storage layer, where the data is stored in a central repository or data warehouse.
-The access layer, where business intelligence tools and applications can retrieve the data for analysis and reporting.
-
+    The source layer, where data is collected from various sources and stored in staging tables.
+    The integration layer, where data is cleansed, transformed, and combined into a single format for loading into the data warehouse.
+    The storage layer, where the data is stored in a central repository or data warehouse.
+    The access layer, where business intelligence tools and applications can retrieve the data for analysis and reporting.
     </details>
  
 
@@ -769,7 +768,6 @@ Entity integrity: ensures that each row in a table has a unique identifier.
 Referential integrity: ensures that relationships between tables are maintained and that foreign keys reference primary keys.
 Domain integrity: ensures that data values meet specific constraints, such as data type or format requirements.
 User-defined integrity: allows users to define their own constraints based on specific business rules or requirements.
-
     </details>
 
 - Why do data architects enforce and monitor data compliance standards in data systems? 
@@ -777,7 +775,6 @@ User-defined integrity: allows users to define their own constraints based on sp
    <details>
     <summary>Click here to view answer</summary>
     Answer: Data architects enforce and monitor data compliance standards in data systems to ensure that data is accurate, complete, and secure. This helps to maintain data quality and prevent data breaches or other security risks.
-
    </details>
 
 
@@ -786,7 +783,6 @@ User-defined integrity: allows users to define their own constraints based on sp
    <details>
     <summary>Click here to view answer</summary>
     Answer: OLTP (Online Transaction Processing) systems are designed for real-time transactional processing and are typically used for day-to-day business operations. OLAP (Online Analytical Processing) systems are designed for data analysis and reporting and are typically used for business intelligence and decision-making.
-
     </details>
 
 
@@ -802,7 +798,6 @@ Develop ETL processes to extract, transform, and load data into the warehouse.
 Implement the database and BI tools.
 Test and validate the system.
 Deploy and maintain the system.
-
     </details>
 
 - How do you handle data quality issues? 
@@ -810,7 +805,6 @@ Deploy and maintain the system.
     <details>
     <summary>Click here to view answer</summary>
     Answer: To handle data quality issues, data architects can implement data profiling and data cleansing processes. Data profiling involves analyzing the data to identify any issues or inconsistencies, such as missing or duplicate data, incorrect data types, or invalid values. Data cleansing involves correcting these issues and ensuring that the data is accurate and complete.
-
     </details>
 
 - How do you optimise data models for performance? 
@@ -823,7 +817,6 @@ Deploy and maintain the system.
     Partition large tables to improve query performance.
     Use appropriate indexing to speed up queries.
     Optimize queries to reduce the amount of data that needs to be processed.
-
     </details>
 
 - Describe your familiarity with big data technologies such as Hadoop and Spark
@@ -834,7 +827,6 @@ Deploy and maintain the system.
     Hadoop is an open-source software framework that is used to store and process big data in a distributed computing environment. It uses a file system called Hadoop Distributed File System (HDFS) to store data across multiple machines and a processing engine called MapReduce to distribute processing tasks across the cluster. Hadoop is particularly useful for handling unstructured and semi-structured data, such as log files, social media data, and sensor data.
 
     Spark is another open-source software framework that is designed to handle big data processing tasks in real-time. Spark is built on top of Hadoop and provides a more flexible and efficient processing engine than MapReduce. It supports various data processing tasks, including batch processing, stream processing, machine learning, and graph processing. Spark is particularly useful for handling large datasets that require real-time analysis, such as financial trading data, social media data, and sensor data.
-
     </details>
 
 - How do you go about gathering requirements for a new data project? 
@@ -848,7 +840,6 @@ Deploy and maintain the system.
     Define the data quality and security requirements.
     Determine the performance and scalability requirements.
     Establish a project timeline and budget.
-
     </details>
 
 - How do you hamdle conflicting priorities when working on multiple projects? 
@@ -856,7 +847,6 @@ Deploy and maintain the system.
     <details>
     <summary>Click here to view answer</summary>
     Answer: To handle conflicting priorities when working on multiple projects, data architects can prioritize based on business impact, urgency, and feasibility. Communication with stakeholders and project managers can also help to ensure that expectations are clear and aligned.
-
     </details>
 
 - Which software and design patterns are you familiar with? 
@@ -869,7 +859,6 @@ Deploy and maintain the system.
     Data integration tools such as Informatica and Talend.
     Data visualization and business intelligence tools such as Tableau and Power BI.
     Design patterns such as the star schema and snowflake schema for data warehousing.
-
     </details>
 
 ### Data Engineering
