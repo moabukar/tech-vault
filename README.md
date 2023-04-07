@@ -558,7 +558,6 @@ Advanced:
 
 <details>
     <summary>Click here to view answer</summary>
-    
     Answer: Star Schema. Snowflake Schema. Galaxy Schema.
     
     </details>
