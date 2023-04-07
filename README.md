@@ -642,87 +642,159 @@ Advanced:
 
 - In the context of data modelling, what is the importance of metadata? How would you describe the role of metadata in data modelling? 
 
-Answer: Metadata is important in data modelling because it provides additional information about the data being modelled. It helps to document the structure and relationships of the data, as well as its origin, quality, and meaning.
+    <details>
+    <summary>Click here to view answer</summary>
+    Answer: Metadata is important in data modelling because it provides additional information about the data being modelled. It helps to document the structure and relationships of the data, as well as its origin, quality, and meaning.
+    
+    </details>
+
 
 - What is a DDL script? 
 
-Answer: A DDL (Data Definition Language) script is a set of commands used to create, modify, or delete database objects such as tables, indexes, or views.
+    <details>
+    <summary>Click here to view answer</summary>
+    Answer: A DDL (Data Definition Language) script is a set of commands used to create, modify, or delete database objects such as tables, indexes, or views.
+    
+    </details>
 
 - What is a fact and dimension? 
 
-Answer: In a data model, a fact is a measurable event or transaction, while a dimension is a descriptive attribute of that event or transaction. For example, in a sales data model, a fact might be the quantity of a product sold, while dimensions could include attributes such as the date of the sale, the customer who made the purchase, or the location where the sale occurred.
+    <details>
+    <summary>Click here to view answer</summary>
+    Answer: In a data model, a fact is a measurable event or transaction, while a dimension is a descriptive attribute of that event or transaction. For example, in a sales data model, a fact might be the quantity of a product sold, while dimensions could include attributes such as the date of the sale, the customer who made the purchase, or the location where the sale occurred.
+
+    
+    </details>
 
 - What is an ERD? Entity relationship diagram?
 
-Answer: An ERD (Entity Relationship Diagram) is a visual representation of the relationships between entities (tables) in a database. It shows how the tables are related to each other and the nature of those relationships.
+    <details>
+    <summary>Click here to view answer</summary>
+    Answer: An ERD (Entity Relationship Diagram) is a visual representation of the relationships between entities (tables) in a database. It shows how the tables are related to each other and the nature of those relationships.
+
+    
+    </details>
+
 
 - What are the differences between foreign and surrogate keys? 
 
-Answer: Foreign keys are columns in a table that reference the primary key of another table. Surrogate keys are artificial primary keys that are created specifically for use in a database and have no inherent meaning outside of that context.
+    <details>
+    <summary>Click here to view answer</summary>
+    Answer: Foreign keys are columns in a table that reference the primary key of another table. Surrogate keys are artificial primary keys that are created specifically for use in a database and have no inherent meaning outside of that context.
+    
+    </details>
 
 - Desribe cardinality
 
-Answer: Cardinality refers to the number of relationships between entities in a data model. It describes how many instances of one entity can be related to another entity. Common cardinalities include one-to-one, one-to-many, and many-to-many.
+    <details>
+    <summary>Click here to view answer</summary>
+    Answer: Cardinality refers to the number of relationships between entities in a data model. It describes how many instances of one entity can be related to another entity. Common cardinalities include one-to-one, one-to-many, and many-to-many.
+
+    
+    </details>
 
 ### Data Architect
 
 - Please state an example of designing, creating, deploying and managing an end to end data architecture project?
 
-Answer: A company wants to implement a customer relationship management (CRM) system. The project would involve designing a data architecture to store customer data, creating the necessary databases and tables, and deploying the system. The data would need to be cleansed, transformed, and loaded into the new system. Ongoing management would involve monitoring the data for quality and making any necessary updates or modifications to the system.
+    <details>
+    <summary>Click here to view answer</summary>
+    Answer: A company wants to implement a customer relationship management (CRM) system. The project would involve designing a data architecture to store customer data, creating the necessary databases and tables, and deploying the system. The data would need to be cleansed, transformed, and loaded into the new system. Ongoing management would involve monitoring the data for quality and making any necessary updates or modifications to the system.
+    
+    </details>
 
 - What are the fundamental skills required for a data architect? 
 
-Answer: Strong knowledge of data modelling and database design
+    <details>
+    <summary>Click here to view answer</summary>
+    Answer: Strong knowledge of data modelling and database design
 Expertise in database management systems (DBMS) and database administration
 Experience with data warehousing and business intelligence
 Proficiency in data integration, ETL (extract, transform, load) processes, and data migration
 Familiarity with programming languages and software development methodologies
 Excellent analytical and problem-solving skills
 Strong communication and collaboration abilities
+    </details>
+
 
 - What is a data block and a data file? 
 
-Answer: A data block is the smallest unit of data that can be accessed or transferred from a database to memory. A data file is a physical storage unit used to store data in a database.
-
+    <details>
+    <summary>Click here to view answer</summary>
+    Answer: A data block is the smallest unit of data that can be accessed or transferred from a database to memory. A data file is a physical storage unit used to store data in a database.
+    </details>
+    
 - What is data warehousing? 
 
-Answer: Data warehousing is the process of collecting, storing, and managing large amounts of data from various sources to support business intelligence and decision-making. It involves organizing the data into a centralized repository or data warehouse, where it can be queried and analyzed using business intelligence tools.
+    <details>
+    <summary>Click here to view answer</summary>
+    Answer: Data warehousing is the process of collecting, storing, and managing large amounts of data from various sources to support business intelligence and decision-making. It involves organizing the data into a centralized repository or data warehouse, where it can be queried and analyzed using business intelligence tools.
+    </details>
+   
 
 - What are the main differences between 'a view' and 'a materialised view'? 
 
-Answer: A view is a virtual table that is based on a select statement and does not store data. A materialized view, on the other hand, is a physical copy of a view that stores data in a table, making it faster to retrieve.
+    <details>
+    <summary>Click here to view answer</summary>
+    Answer: A view is a virtual table that is based on a select statement and does not store data. A materialized view, on the other hand, is a physical copy of a view that stores data in a table, making it faster to retrieve.
+    </details>
+   
 
 - What is a junk dimension?
 
-Answer: A junk dimension is a single table that contains several low-cardinality attributes that are not related to any specific dimension. It is used to reduce the number of dimension tables in a data warehouse and simplify the schema design.
+    <details>
+    <summary>Click here to view answer</summary>
+    Answer: A junk dimension is a single table that contains several low-cardinality attributes that are not related to any specific dimension. It is used to reduce the number of dimension tables in a data warehouse and simplify the schema design.
+    </details>
 
 - Please explain in detail data warehousing architecture
 
-Answer: 
+    <details>
+    <summary>Click here to view answer</summary>
+    Answer: 
 The source layer, where data is collected from various sources and stored in staging tables.
 The integration layer, where data is cleansed, transformed, and combined into a single format for loading into the data warehouse.
 The storage layer, where the data is stored in a central repository or data warehouse.
 The access layer, where business intelligence tools and applications can retrieve the data for analysis and reporting.
 
+    </details>
+ 
+
 - What are the different types of integrity constraints? 
 
-Answer: 
+    <details>
+    <summary>Click here to view answer</summary>
+    Answer: 
 Entity integrity: ensures that each row in a table has a unique identifier.
 Referential integrity: ensures that relationships between tables are maintained and that foreign keys reference primary keys.
 Domain integrity: ensures that data values meet specific constraints, such as data type or format requirements.
 User-defined integrity: allows users to define their own constraints based on specific business rules or requirements.
 
+    </details>
+
 - Why do data architects enforce and monitor data compliance standards in data systems? 
 
-Answer: Data architects enforce and monitor data compliance standards in data systems to ensure that data is accurate, complete, and secure. This helps to maintain data quality and prevent data breaches or other security risks.
+    <details>
+    <summary>Click here to view answer</summary>
+    Answer: Data architects enforce and monitor data compliance standards in data systems to ensure that data is accurate, complete, and secure. This helps to maintain data quality and prevent data breaches or other security risks.
+
+    </details>
+
 
 - Differentiate between OTLP and OLAP
 
-Answer: OLTP (Online Transaction Processing) systems are designed for real-time transactional processing and are typically used for day-to-day business operations. OLAP (Online Analytical Processing) systems are designed for data analysis and reporting and are typically used for business intelligence and decision-making.
+    <details>
+    <summary>Click here to view answer</summary>
+    Answer: OLTP (Online Transaction Processing) systems are designed for real-time transactional processing and are typically used for day-to-day business operations. OLAP (Online Analytical Processing) systems are designed for data analysis and reporting and are typically used for business intelligence and decision-making.
+
+    </details>
+
 
 - How do you design and implement a data warehouse? 
 
-Answer: 
+    <details>
+    <summary>Click here to view answer</summary>
+    Answer: 
 Analyze business requirements and identify data sources.
 Develop a conceptual data model and logical data model.
 Design the physical data model and schema.
@@ -731,29 +803,46 @@ Implement the database and BI tools.
 Test and validate the system.
 Deploy and maintain the system.
 
+    </details>
+
 - How do you handle data quality issues? 
 
-Answer: To handle data quality issues, data architects can implement data profiling and data cleansing processes. Data profiling involves analyzing the data to identify any issues or inconsistencies, such as missing or duplicate data, incorrect data types, or invalid values. Data cleansing involves correcting these issues and ensuring that the data is accurate and complete.
+    <details>
+    <summary>Click here to view answer</summary>
+    Answer: To handle data quality issues, data architects can implement data profiling and data cleansing processes. Data profiling involves analyzing the data to identify any issues or inconsistencies, such as missing or duplicate data, incorrect data types, or invalid values. Data cleansing involves correcting these issues and ensuring that the data is accurate and complete.
+
+    </details>
 
 - How do you optimise data models for performance? 
 
-Answer: 
+    <details>
+    <summary>Click here to view answer</summary>
+    Answer: 
 Normalize the data to reduce redundancy and improve consistency.
 Denormalize the data to improve query performance and simplify the schema.
 Partition large tables to improve query performance.
 Use appropriate indexing to speed up queries.
 Optimize queries to reduce the amount of data that needs to be processed.
 
+    </details>
+
 - Describe your familiarity with big data technologies such as Hadoop and Spark
 
-Answer: 
+    <details>
+    <summary>Click here to view answer</summary>
+    Answer: 
 Hadoop is an open-source software framework that is used to store and process big data in a distributed computing environment. It uses a file system called Hadoop Distributed File System (HDFS) to store data across multiple machines and a processing engine called MapReduce to distribute processing tasks across the cluster. Hadoop is particularly useful for handling unstructured and semi-structured data, such as log files, social media data, and sensor data.
 
 Spark is another open-source software framework that is designed to handle big data processing tasks in real-time. Spark is built on top of Hadoop and provides a more flexible and efficient processing engine than MapReduce. It supports various data processing tasks, including batch processing, stream processing, machine learning, and graph processing. Spark is particularly useful for handling large datasets that require real-time analysis, such as financial trading data, social media data, and sensor data.
 
+    </details>
+
 - How do you go about gathering requirements for a new data project? 
 
-Answer: 
+    <details>
+    <summary>Click here to view answer</summary>
+  
+    Answer: 
 Meet with stakeholders to understand their business needs and goals.
 Identify the data sources and types of data that will be needed.
 Develop a data model based on the business requirements.
@@ -761,18 +850,30 @@ Define the data quality and security requirements.
 Determine the performance and scalability requirements.
 Establish a project timeline and budget.
 
+    </details>
+
 - How do you hamdle conflicting priorities when working on multiple projects? 
 
-Answer: To handle conflicting priorities when working on multiple projects, data architects can prioritize based on business impact, urgency, and feasibility. Communication with stakeholders and project managers can also help to ensure that expectations are clear and aligned.
+    <details>
+    <summary>Click here to view answer</summary>
+  
+    Answer: To handle conflicting priorities when working on multiple projects, data architects can prioritize based on business impact, urgency, and feasibility. Communication with stakeholders and project managers can also help to ensure that expectations are clear and aligned.
+
+    </details>
 
 - Which software and design patterns are you familiar with? 
 
-Answer: 
-Relational database management systems (RDBMS) such as Oracle and SQL Server.
-NoSQL databases such as MongoDB and Cassandra.
-Data integration tools such as Informatica and Talend.
-Data visualization and business intelligence tools such as Tableau and Power BI.
-Design patterns such as the star schema and snowflake schema for data warehousing.
+    <details>
+    <summary>Click here to view answer</summary>
+  
+    Answer: 
+    Relational database management systems (RDBMS) such as Oracle and SQL Server.
+    NoSQL databases such as MongoDB and Cassandra.
+    Data integration tools such as Informatica and Talend.
+    Data visualization and business intelligence tools such as Tableau and Power BI.
+    Design patterns such as the star schema and snowflake schema for data warehousing.
+
+    </details>
 
 ### Data Engineering
 
