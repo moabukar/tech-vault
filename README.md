@@ -14,23 +14,23 @@ Any questions taken from external references are referenced [below](#references)
 
 ## Table of Contents
 
-- [X] [Vision 🚀](#vision-🚀)
-- [X] [What is different in this repo compared to others? 🌟](#what-is-different-in-this-repo-compared-to-others-🌟)
-- [X] [Contributing 🖊️](#contributing-🖊️)
-- [X] [DevOps 🛠](#devops-🛠)
-    - [Linux 🐧](#small_blue_diamond-linux-🐧)
-    - [Networking 🌐](#small_blue_diamond-networking-🌐)
+- [X] [Vision 🚀](#vision)
+- [X] [What is different in this repo compared to others? 🌟](#what-is-different-in-this-repo-compared-to-others)
+- [X] [Contributing 🖊️](#contributing)
+- [X] [DevOps 🛠](#devops)
+    - [Linux 🐧](#small_blue_diamond-linux)
+    - [Networking 🌐](#small_blue_diamond-networking)
     - [Git](#small_blue_diamond-git)
-    - [AWS 🌩️](#small_blue_diamond-aws-🌩️)
-    - [Azure 🌩️](#small_blue_diamond-azure-🌩️)
-    - [Terraform 🏗️](#small_blue_diamond-terraform-🏗️)
-    - [Docker & K8s 🐳 🎻](#small_blue_diamond-docker--k8s-🐳-🎻)
-    - [Ansible 🔧](#small_blue_diamond-ansible-🔧)
-    - [CI/CD 🛠️](#small_blue_diamond-cicd-🛠️)
+    - [AWS 🌩️](#small_blue_diamond-aws)
+    - [Azure 🌩️](#small_blue_diamond-azure)
+    - [Terraform 🏗️](#small_blue_diamond-terraform)
+    - [Docker & K8s 🐳 🎻](#small_blue_diamond-docker--k8s)
+    - [Ansible 🔧](#small_blue_diamond-ansible)
+    - [CI/CD 🛠️](#small_blue_diamond-cicd)
     - [DevOps methodology, practices, & Agile](#small_blue_diamond-devops-methodology-practices--agile)
-- [X] [System Design 🍥](#system-design-🍥)
-    - [CDN & Caching ⚡](#small_blue_diamond-cdn--caching-⚡)
-    - [Databases 📊](#small_blue_diamond-databases-📊)
+- [X] [System Design 🍥](#system-design)
+    - [CDN & Caching ⚡](#small_blue_diamond-cdn--caching)
+    - [Databases 📊](#small_blue_diamond-databases)
 - [X] [Backend & Frontend](#backend--frontend)
     - [Golang](#small_blue_diamond-golang)
     - [Python](#small_blue_diamond-python)
@@ -39,19 +39,19 @@ Any questions taken from external references are referenced [below](#references)
 - [X] [Data](#data)
     - [Data Modelling & Schemas](#data-modelling-and-schemas)
     - [Data Architect](#data-architect)
-    - [Data Engineering](#data-engineering-📊)
+    - [Data Engineering](#data-engineering)
     - [SQL](#sql)
     - [ETL & Data Pipelines](#etl-pipelines)
-- [X] [Machine Learning 🤖](#machine-learning-🤖)
-- [X] [Cyber Security & InfoSecurity 🛡️](#cyber-security--info-security-🛡️)
+- [X] [Machine Learning 🤖](#machine-learning)
+- [X] [Cyber Security & InfoSecurity 🛡️](#cyber-security--info-security)
 - [X] [Interpersonal skills](#interpersonal--behavioural-questions)
 - [X] [References](#references)
 
-## Vision 🚀
+## Vision
 
 - Coming from a non-technical background and without experience can be difficult for many. So I and my team have decided to create this project where all, non-technical and technical tech professionals, can have a place of reference to technical interview questions and interview prep. This is maintained by a lovely community. If you wish to contribute, feel free to do so. Read this for more info >> [How to Contribute](#contributing) 
 
-## What is different in this repo compared to others? 🌟
+## What is different in this repo compared to others?
 
 1️⃣ Real questions asked by and of our Engineers (obviously reworded questions)
 
@@ -67,7 +67,7 @@ Any questions taken from external references are referenced [below](#references)
 
 ## DevOps 🛠
 
-### :small_blue_diamond: Linux 🐧
+### :small_blue_diamond: Linux
 
 - What is Linux and difference between UNIX and Linux?
     <details>
@@ -228,7 +228,7 @@ Linux Advanced (Scenario based questions):
 - How do you view and edit the system logs in Linux?
 - How do you troubleshoot a DNS issue in Linux?
 
-### :small_blue_diamond: Networking 🌐
+### :small_blue_diamond: Networking
 
 - What is HTTP? How is HTTPS different?
 - TCP vs UDP
@@ -278,7 +278,7 @@ Advanced:
 - Do you know how to undo a git rebase?
 - 
 
-### :small_blue_diamond: AWS 🌩️
+### :small_blue_diamond: AWS
 
 -----General--------
 - What is AWS? 
@@ -309,7 +309,7 @@ Advanced:
 -----Others-----
 - Name some managed runtimes for Lambda
 
-### :small_blue_diamond: Azure 🌩️
+### :small_blue_diamond: Azure
 
 - What is Azure?
 - What are ARM templates in Azure?
@@ -327,7 +327,7 @@ Advanced:
 - What to use: many small Azure Storage Blob containers vs one really large container with tons of blobs?
 
 
-### :small_blue_diamond: Terraform 🏗️
+### :small_blue_diamond: Terraform
 
 - What is IaC? What is Terraform?
 - What is Terraform state
@@ -357,7 +357,7 @@ Advanced:
 - How can you import existing resources under Terraform management?
 - Which command can be used to reconcile the Terraform state with the actual real-world infrastructure?
 
-### :small_blue_diamond: Docker & K8s 🐳 🎻
+### :small_blue_diamond: Docker & K8s
 
 
 Container (Docker):
@@ -410,7 +410,7 @@ Advanced:
 - How can one build a highly availabe (HA) cluster in K8s?
 - What is the role of ETCD in K8s?
 
-### :small_blue_diamond: Ansible 🔧
+### :small_blue_diamond: Ansible
 
 - What is Ansible? 
 - How does Ansible work?
@@ -433,7 +433,7 @@ Advanced:
 - How do you test your Ansible roles and tasks?
 - What is Molecule and how does it works?
 
-### :small_blue_diamond: CI/CD 🛠️
+### :small_blue_diamond: CI/CD
 
 - 
 
@@ -445,9 +445,9 @@ Advanced:
 - What is the blue/green deployment pattern?
 
 
-## System Design 🍥
+## System Design
 
-### :small_blue_diamond: CDN & Caching ⚡
+### :small_blue_diamond: CDN & Caching
 
 - What is a CDN and why would I use one?
 - What are CDN edge servers?
@@ -469,7 +469,7 @@ Advanced:
 - What is a microservice architecture and when would I consider using one?
 
 
-### :small_blue_diamond: Databases 📊
+### :small_blue_diamond: Databases
 
 - What is a database?
 - What is DBMS (Database Management System)?
@@ -721,7 +721,7 @@ Data integration tools such as Informatica and Talend.
 Data visualization and business intelligence tools such as Tableau and Power BI.
 Design patterns such as the star schema and snowflake schema for data warehousing.
 
-### Data Engineering 📊
+### Data Engineering
 
 - What made you choose data engineering and what does it mean to you? 
 - How would you define data engineering? 
@@ -804,12 +804,12 @@ Design patterns such as the star schema and snowflake schema for data warehousin
 
 
 
-## Machine Learning 🤖
+## Machine Learning
 
 - 
 
 
-## Cyber Security & Info Security 🛡️
+## Cyber Security & Info Security
 
 - 
 
