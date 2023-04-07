@@ -556,39 +556,90 @@ Advanced:
 
 - What are some of the design schemas used when performing data modelling? 
 
-Answer: Star Schema. Snowflake Schema. Galaxy Schema.
+<details>
+    <summary>Click here to view answer</summary>
+    
+    Answer: Star Schema. Snowflake Schema. Galaxy Schema.
+    
+    </details>
 
 - What are the three types of data models? 
 
-Answer: Entity models, relational and dimensional
+<details>
+    <summary>Click here to view answer</summary>
+    
+    Answer: Entity models, relational and dimensional
+    
+    </details>
 
 - What is a table (entity) and column (attribute)? 
 
-Answer: A row in a database table is an entity. A column header of a database table is an attribute. 
+<details>
+    <summary>Click here to view answer</summary>
+    
+    Answer: A row in a database table is an entity. A column header of a database table is an attribute. 
+    
+    </details>
+
 
 - What is normalisation/denormalisation and what is its purpose?
 
-Answer: Normalization is the technique of dividing the data into multiple tables to reduce data redundancy and inconsistency and to achieve data integrity. On the other hand, Denormalization is the technique of combining the data into a single table to make data retrieval faster.
+<details>
+    <summary>Click here to view answer</summary>
+    
+    Answer: Normalization is the technique of dividing the data into multiple tables to reduce data redundancy and inconsistency and to achieve data integrity. On the other hand, Denormalization is the technique of combining the data into a single table to make data retrieval faster.
+    
+    </details>
+
 
 - What are the main relationships which can be found in a data model? (name 3)
 
-Answer: one to one, one to many and many to many
+<details>
+    <summary>Click here to view answer</summary>
+    
+    Answer: one to one, one to many and many to many
+    
+    </details>
+
 
 - Explain the two different types of design schemas (snowflake and star)? 
 
-Answer: Snowflake and star are two different types of design schemas used in data warehousing. In a snowflake schema, the data is organized into a hierarchy of tables, with each table having multiple child tables. In a star schema, the data is organized into a central fact table and several dimension tables that connect to it.
+<details>
+    <summary>Click here to view answer</summary>
+    
+    Answer: Snowflake and star are two different types of design schemas used in data warehousing. In a snowflake schema, the data is organized into a hierarchy of tables, with each table having multiple child tables. In a star schema, the data is organized into a central fact table and several dimension tables that connect to it.
+    
+    </details>
+
 
 - What is a data mart? 
 
-Answer: A data mart is a subset of a larger data warehouse that is designed to serve a specific business function or department. It contains a smaller subset of the data found in the overall data warehouse. 
+<details>
+    <summary>Click here to view answer</summary>
+    
+    Answer: A data mart is a subset of a larger data warehouse that is designed to serve a specific business function or department. It contains a smaller subset of the data found in the overall data warehouse. 
+    
+    </details>
+
 
 - How would you describe granularity? 
 
-Answer: Granularity refers to the level of detail or specificity of data. It describes how finely the data is divided and recorded.
+<details>
+    <summary>Click here to view answer</summary>
+    
+    Answer: Granularity refers to the level of detail or specificity of data. It describes how finely the data is divided and recorded.
+    
+    </details>
+
 
 - How does data sparcity impact aggregation of data sets/sources? 
 
-Answer: Data sparcity can impact the aggregation of data sets/sources by making it more difficult to obtain accurate and meaningful results. Sparse data can result in incomplete or inaccurate analyses, as well as a loss of insights and trends.
+<details>
+    <summary>Click here to view answer</summary>
+    
+    Answer: Data sparcity can impact the aggregation of data sets/sources by making it more difficult to obtain accurate and meaningful results. Sparse data can result in incomplete or inaccurate analyses, as well as a loss of insights and trends.
+    
+    </details>
 
 - In the context of data modelling, what is the importance of metadata? How would you describe the role of metadata in data modelling? 
 
