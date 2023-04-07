@@ -4,7 +4,7 @@
 # Tech interview questions
 
 <p align="center">
-  <img width="240" src="./images/Tech-Vault.png">
+  <img width="300" src="./images/Tech-Vault.png">
 </p>
 
 
@@ -441,7 +441,13 @@ Advanced:
 
 - Define data modelling and the benefits of implementing a data model? 
 
-Answer: Data modeling is the process of creating a visual representation of either a whole information system or parts of it to communicate connections between data. Data modeling concepts create a blueprint for how data is organized and managed in your organization. Data models give developers and non-technical stakeholders a simplified way to have meaningful conversations about the needs of the business and how data insights can fuel better decision making.
+    <details>
+    <summary>Click here to view answer</summary>
+    
+    Answer: Data modeling is the process of creating a visual representation of either a whole information system or parts of it to communicate connections between data. Data modeling concepts create a blueprint for how data is organized and managed in your organization. Data models give developers and non-technical stakeholders a simplified way to have meaningful conversations about the needs of the business and how data insights can fuel better decision making.
+    
+    </details>
+
 
 - What are some of the design schemas used when performing data modelling? 
 
