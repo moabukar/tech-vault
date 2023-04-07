@@ -4,7 +4,7 @@
 # Tech Vault Interview Questions Bank
 
 <p align="center">
-  <img width="300" src="./images/Tech-Vault.png">
+  <img width="420" src="./images/Tech-Vault.png">
 </p>
 
 
