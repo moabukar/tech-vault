@@ -3,7 +3,10 @@
 
 # Tech interview questions
 
-![Alt Text](./images/Tech-Vault.png)
+<p align="center">
+  <img width="240" src="./images/Tech-Vault.png">
+</p>
+
 
 Note: A documentation of carefully curated technical engineering questions by experienced Engineers who have conducted many interviews. These are amongst popular and important engineering questions to test knowledge of candidates in interviews. 
 
