@@ -81,7 +81,6 @@ Any questions taken from external references are referenced [below](#references)
     - **User base:** Linux has a broader user base, including personal computers, servers, and embedded systems, while UNIX is primarily used in enterprise environments.
     
     </details>
-
 - **What is the Linux kernel?**
 
     <details>
@@ -90,7 +89,6 @@ Any questions taken from external references are referenced [below](#references)
     The Linux kernel is the core component of the Linux operating system. It is responsible for managing the system's resources, providing an interface between hardware and software, and facilitating essential tasks such as memory management, process scheduling, and input/output (I/O) operations.
     
     </details>
-
 - **What are inodes in Linux?**
 
     <details>
@@ -115,7 +113,6 @@ Any questions taken from external references are referenced [below](#references)
     Inodes play a crucial role in managing files and directories within a Linux file system, providing an efficient way to access and manipulate file metadata.
     
     </details>
-
 - **Explain the Linux boot process**
 
     <details>
@@ -138,7 +135,6 @@ Any questions taken from external references are referenced [below](#references)
     Login prompt: Once all services and processes specified in the runlevel/target have started, the system displays a login prompt, indicating that the boot process is complete and the system is ready for use.
     
     </details>
-
 - **What is a zombie process?**
     <details>
     <summary>Click here to view answer</summary>
@@ -154,7 +150,6 @@ Any questions taken from external references are referenced [below](#references)
     Zombie processes are usually harmless, but if a system accumulates a large number of them, it could exhaust the available PIDs and prevent new processes from being created. To resolve this issue, the parent process should be fixed to correctly handle its child processes' exit status, or if the parent process is unresponsive or terminated, a system reboot might be necessary.
     
     </details>
-
 - **Difference between soft links and hardlinks?**
 
     <details>
@@ -183,103 +178,626 @@ Any questions taken from external references are referenced [below](#references)
     In summary, a soft link is a more flexible but less reliable type of link that can point to files or directories across file systems, while a hard link is a more robust link that directly references the file's data, but is limited to the same file system and cannot link to directories.
     
     </details>
-
 - **What are namespaces and c-groups?**
 
+    <details>
+    <summary>Click here to view the answer</summary>
+    
+    Namespaces and cgroups (control groups) are two Linux kernel features that play a crucial role in implementing process isolation and resource management, especially in containerization technologies like Docker.
+    
+    **Namespaces:**
 
+    Namespaces are a feature that provides process isolation by creating separate instances of certain system resources, which can only be accessed by processes within the same namespace. This isolation helps ensure that processes running in one namespace don't interfere with processes in another namespace
 
+    There are several types of namespaces, including:
+
+    - PID namespace: Isolates process IDs, allowing each namespace to have its own set of PIDs.
+    - Mount namespace: Isolates the file system mount points, so that each namespace has its own mount tree.
+    - Network namespace: Isolates network resources, providing each namespace with its own network stack, including interfaces, routes, and firewall rules.
+    - IPC namespace: Isolates inter-process communication resources, preventing processes in one namespace from communicating with processes in another namespace.
+    - UTS namespace: Isolates system identifiers like hostname, allowing each namespace to have its own unique hostname.
+    - User namespace: Isolates user and group ID mappings, enabling each namespace to have its own set of user and group IDs.
+
+    **Cgroups (Control Groups):**
+
+    Cgroups are a kernel feature that enables the management and limitation of system resources, such as CPU, memory, and I/O, for a group of processes. Cgroups help ensure fair distribution of resources, prevent resource starvation, and enforce limits on resource usage. Some of the key features of cgroups include:
+
+    - Resource limiting: Allows setting limits on resource usage for a group of processes, such as maximum CPU usage, memory consumption, and disk I/O bandwidth.
+    - Prioritization: Enables setting priorities for resource allocation among different cgroups, helping to ensure that critical processes receive sufficient resources.
+    - Accounting: Collects resource usage statistics for processes in a cgroup, which can be useful for monitoring, profiling, and billing purposes.
+    - Control: Provides a mechanism to start, stop, or freeze processes in a cgroup, allowing for better management of process groups.
+    
+    In combination, namespaces and cgroups provide the necessary isolation and resource management capabilities required to build and run containers, enabling multiple containers to coexist on the same host without interfering with each other or consuming excessive resources.
+
+    </details>
 - **What are symbolic links?**
+
+    <details>
+    <summary>Click here to view the answer</summary>
+    
+    Symbolic links, also known as soft links or symlinks, are a type of file link in Unix-like file systems, such as Linux. A symbolic link is a special file that points to another file or directory by storing its path. Symbolic links serve as a reference to the target file or directory, allowing users and applications to access the target through the link.
+
+    Symbolic links are useful in various scenarios, such as creating shortcuts, linking to files or directories in different locations, or maintaining multiple versions of a file or directory. Some key characteristics of symbolic links are:
+
+    Symbolic links can point to files or directories, and they can span across different file systems and partitions.
+    If the target file or directory is moved or deleted, the symbolic link becomes a "dangling" link, pointing to a nonexistent location.
+    Symbolic links have different inode numbers than their target files or directories.
+    When listing files with the ls command, symbolic links are usually indicated by an "l" at the beginning of the file permissions and an arrow (->) pointing to the target file or directory.
+
+    To create a symbolic link in Linux, you can use the ln command with the -s option, followed by the target file or directory and the desired symlink name:
+
+    ```bash
+    ln -s target_file symlink_name
+
+    Example:
+
+    ln -s /path/to/original/file.txt link_to_file.txt
+
+    This command creates a symbolic link named link_to_file.txt that points to the file located at /path/to/original/file.txt.
+    ```
+    
+    </details>
 - **What are the different types of permissions in Linux?**
+  <details>
+    <summary>Click here to view the answer</summary>
+    
+    In Linux, there are three main types of permissions for files and directories, which determine how users can interact with them. These permissions are classified into categories based on the user's relationship to the file or directory: owner, group, and others (sometimes referred to as "world" or "public"). The three types of permissions are:
+
+    Read (r): Read permission allows a user to view the contents of a file or list the contents of a directory. For files, this means the user can open and read the file. For directories, the user can view the names of files and subdirectories within that directory.
+
+    Write (w): Write permission allows a user to modify the contents of a file or make changes within a directory. For files, this means the user can edit, append, or delete the file's content. For directories, the user can create, rename, or delete files and subdirectories within that directory. Note that deleting or renaming files within a directory requires write permission on the directory itself, not the individual files.
+
+    Execute (x): Execute permission allows a user to run a file as a program or script, or enter and access a directory. For files, this means the user can execute the file if it is a binary executable or script with a proper interpreter (e.g., a shell script or Python script). For directories, the user can change their current working directory to that directory, and access files and subdirectories within it.
+    
+    These permissions are usually represented using a combination of letters (r, w, x) and dashes (-) for each of the three categories: owner, group, and others. For example, the permission string -rwxr-xr-- indicates:
+
+    - The first character - indicates it's a regular file (a d would indicate a directory).
+    - The owner has read (r), write (w), and execute (x) permissions: rwx.
+    - The group has read (r) and execute (x) permissions, but not write permission: r-x.
+    - Others have only read (r) permission: r--.
+
+    Alternatively, permissions can also be represented using octal notation (base-8), where read, write, and execute permissions are assigned values of 4, 2, and 1, respectively. The permissions are then represented by a three-digit number, with each digit corresponding to the owner, group, and others. For example, the permission string -rwxr-xr-- can be represented as 754 in octal notation.
+
+  </details>
 - **What is swap space?**
+  <details>
+    <summary>Click here to view the answer</summary>
+    
+    Swap space is a dedicated area on a storage device (such as a hard drive or SSD) that functions as an extension of a computer's physical memory (RAM). It is used by the operating system to temporarily store data that does not fit into RAM or when the system experiences memory pressure due to high RAM utilization.
+
+    When the operating system needs more memory than is physically available, it can move the least recently used or less important data (called pages) from RAM to the swap space. This process is called "paging" or "swapping out." By doing so, it frees up space in RAM for more critical or frequently accessed data. If the swapped-out data is required again, the operating system will move it back into RAM, possibly swapping out other data in the process. This is called "swapping in."
+
+    Swap space can be implemented as a dedicated swap partition or a swap file. In Linux, you can manage swap space using commands such as swapon, swapoff, and mkswap. To check the current swap space usage on a Linux system, you can use the free or swapon -s commands.
+    
+  </details>
 - **What is chmod, chown and chgrp in Linux?**
+
+  <details>
+    <summary>Click here to view the answer</summary>
+    
+    **chmod**
+    chmod (change mode) is a command used to change the permissions of a file or directory. You can set read, write, and execute permissions for the owner, group, and others. Permissions can be represented in octal notation (numeric) or using symbolic notation (letters).
+
+    Example: For example, to give the owner read, write, and execute permissions, the group read and execute permissions, and others only read permission, you would use:
+    - Using octal notation: `chmod 754 file.txt`
+    - Using symbolic notation: `chmod u=rwx,g=rx,o=r file.txt`
+
+    **chown**
+
+    chown (change owner) is a command used to change the ownership of a file or directory. You can specify a new owner and an optional new group for the file or directory.
+
+    Example: For example, to change the owner of file.txt to the user john and the group to developers, you would use:
+
+    `chown john:developers file.txt`
+
+    **chgrp**
+
+    chgrp (change group) is a command used to change the group assignment of a file or directory. You can specify a new group for the file or directory.
+
+    Example: For example, to change the group of file.txt to the group developers, you would use:
+
+    `chgrp developers file.txt`
+
+    
+  </details>
 - **What are cronjobs?**
+  <details>
+    <summary>Click here to view the answer</summary>
+    
+    Cronjobs, also known as cron jobs or simply cron, are scheduled tasks that run automatically at specified intervals on Unix-like operating systems, such as Linux. The term "cron" comes from the Greek word "chronos," which means "time." Cronjobs are commonly used for automating repetitive tasks, performing system maintenance, running periodic backups, and other similar activities.
+
+    Cronjobs are managed by a daemon called "cron," which runs in the background and executes the scheduled tasks. The configuration for cron jobs is stored in a series of files called "crontabs" (short for "cron tables"). Each user on the system can have their own crontab, and there is also a system-wide crontab.
+
+    For example, a cron job that runs every day at 3:30 AM would have the following entry in the crontab:
+
+    `30 3 * * * /path/to/command arg1 arg2`
+
+    To manage cron jobs, you can use the crontab command with various options:
+
+    - crontab -l: List the current user's cron jobs.
+    - crontab -e: Edit the current user's cron jobs using the default text editor.
+    - crontab -r: Remove the current user's cron jobs.
+    - crontab -u USER: Perform an operation (list, edit, or remove) on the specified user's cron jobs (requires root privileges).
+
+  </details>
 
 Commands (basic & advanced):
 
 - **What does chmod +x FILENAME do?**
+
+  <details>
+    <summary>Click here to view the answer</summary>
+    
+    Content HERE
+    
+  </details>
 - **Which command will show you free/used memory?**
+  <details>
+    <summary>Click here to view the answer</summary>
+    
+    Content HERE
+    
+  </details>
 - **Which command will show me the current directory I am in?**
+  <details>
+    <summary>Click here to view the answer</summary>
+    
+    Content HERE
+    
+  </details>
 - **How can I terminate an on going process?**
+  <details>
+    <summary>Click here to view the answer</summary>
+    
+    Content HERE
+    
+  </details>
 - **Write the command that will display all .yaml files including permissions of each file? ()**
+  <details>
+    <summary>Click here to view the answer</summary>
+    
+    Content HERE
+    
+  </details>
 - **How can I found the status of a process?**
+  <details>
+    <summary>Click here to view the answer</summary>
+    
+    Content HERE
+    
+  </details>
 - **What is the command to show all open ports?**
+  <details>
+    <summary>Click here to view the answer</summary>
+    
+    Content HERE
+    
+  </details>
 - **How do you find the process ID of a running process in Linux?**
+  <details>
+    <summary>Click here to view the answer</summary>
+    
+    Content HERE
+    
+  </details>
 - **How do you find the dependencies of a package in Linux?**
+  <details>
+    <summary>Click here to view the answer</summary>
+    
+    Content HERE
+    
+  </details>
 
 Advanced:
 
 - **Does free memory exist on Linux?**
+  <details>
+    <summary>Click here to view the answer</summary>
+    
+    Content HERE
+    
+  </details>
 - **How can I check if a server is down?**
+  <details>
+    <summary>Click here to view the answer</summary>
+    
+    Content HERE
+    
+  </details>
 - **What is inside /proc?**
+  <details>
+    <summary>Click here to view the answer</summary>
+    
+    Content HERE
+    
+  </details>
 - **A process on the system can no longer log files, what can I do?**
+  <details>
+    <summary>Click here to view the answer</summary>
+    
+    Content HERE
+    
+  </details>
 - **What is LILO?**
+  <details>
+    <summary>Click here to view the answer</summary>
+    
+    Content HERE
+    
+  </details>
 - **What are syscalls in Linux and how do they work?**
+  <details>
+    <summary>Click here to view the answer</summary>
+    
+    Content HERE
+    
+  </details>
 - **What is no route to host?**
+  <details>
+    <summary>Click here to view the answer</summary>
+    
+    Content HERE
+    
+  </details>
 - **What is the difference between a hard link and a symbolic link in Linux?**
+  <details>
+    <summary>Click here to view the answer</summary>
+    
+    Content HERE
+    
+  </details>
 
 Linux Advanced (Scenario based questions):
 
 - **Explain the linux boot process**
+  <details>
+    <summary>Click here to view the answer</summary>
+    
+    Content HERE
+    
+  </details>
 - **A process on the system can no longer log files, how would you debug?**
+  <details>
+    <summary>Click here to view the answer</summary>
+    
+    Content HERE
+    
+  </details>
 - **How can I check if a Linux system is healthy?**
+  <details>
+    <summary>Click here to view the answer</summary>
+    
+    Content HERE
+    
+  </details>
 - **What happens when you type "ls" or "cd" into a terminal? (go deep and talk about what happens behind the scenes - kernel level)**
+  <details>
+    <summary>Click here to view the answer</summary>
+    
+    Content HERE
+    
+  </details>
 - **How can I check if a server is down?**
+  <details>
+    <summary>Click here to view the answer</summary>
+    
+    Content HERE
+    
+  </details>
 - **How are Linux processes killed on a lower level?**
+  <details>
+    <summary>Click here to view the answer</summary>
+    
+    Content HERE
+    
+  </details>
 - **I have accidentally entered `cd/bin` and done `chmod 644 chmod` - how can I fix this?**
+  <details>
+    <summary>Click here to view the answer</summary>
+    
+    Content HERE
+    
+  </details>
 - **How would you troubleshoot a network connectivity issue in Linux?**
+  <details>
+    <summary>Click here to view the answer</summary>
+    
+    Content HERE
+    
+  </details>
 - **How do you troubleshoot a connectivity issue with a remote server in Linux?**
+  <details>
+    <summary>Click here to view the answer</summary>
+    
+    Content HERE
+    
+  </details>
 - **How do you view and edit the system logs in Linux?**
+  <details>
+    <summary>Click here to view the answer</summary>
+    
+    Content HERE
+    
+  </details>
 - **How do you troubleshoot a DNS issue in Linux?**
+  <details>
+    <summary>Click here to view the answer</summary>
+    
+    Content HERE
+    
+  </details>
 
 ### :small_blue_diamond: Networking
 
 - **What is HTTP? How is HTTPS different?**
+  <details>
+    <summary>Click here to view the answer</summary>
+    
+    Content HERE
+    
+  </details>
 - **TCP vs UDP**
+  <details>
+    <summary>Click here to view the answer</summary>
+    
+    Content HERE
+    
+  </details>
 - **What is DNS and how does it work?**
+  <details>
+    <summary>Click here to view the answer</summary>
+    
+    Content HERE
+    
+  </details>
 - **What is TLS?**
+  <details>
+    <summary>Click here to view the answer</summary>
+    
+    Content HERE
+    
+  </details>
 - **What are CIDR ranges?**
+  <details>
+    <summary>Click here to view the answer</summary>
+    
+    Content HERE
+    
+  </details>
 - **What is ingress and egress traffic?**
+  <details>
+    <summary>Click here to view the answer</summary>
+    
+    Content HERE
+    
+  </details>
 - **What is a switch vs a hub?**
+  <details>
+    <summary>Click here to view the answer</summary>
+    
+    Content HERE
+    
+  </details>
 - **What is a switch vs a router?**
+  <details>
+    <summary>Click here to view the answer</summary>
+    
+    Content HERE
+    
+  </details>
 - **What is HTTPS vs Websockets?**
+  <details>
+    <summary>Click here to view the answer</summary>
+    
+    Content HERE
+    
+  </details>
 - **Explain how a 3 way handshake works?**
+  <details>
+    <summary>Click here to view the answer</summary>
+    
+    Content HERE
+    
+  </details>
 - **Stateless vs Stateful firewalls?**
+  <details>
+    <summary>Click here to view the answer</summary>
+    
+    Content HERE
+    
+  </details>
 - **What are VPCs?**
+  <details>
+    <summary>Click here to view the answer</summary>
+    
+    Content HERE
+    
+  </details>
 - **What is subnetting?**
+  <details>
+    <summary>Click here to view the answer</summary>
+    
+    Content HERE
+    
+  </details>
 - **What is DHCP?**
+  <details>
+    <summary>Click here to view the answer</summary>
+    
+    Content HERE
+    
+  </details>
 
 Advanced + Scenario based questions:
 
 - **When I type google.com into the browser, what actually happens? (go into as much detail as you can)**
+  <details>
+    <summary>Click here to view the answer</summary>
+    
+    Content HERE
+    
+  </details>
 - **I can't reach a website, how can I troubleshoot? (use deep Linux + networking knowledge )**
+  <details>
+    <summary>Click here to view the answer</summary>
+    
+    Content HERE
+    
+  </details>
 - **Can you break down the OSI model and what does it signify?**
+  <details>
+    <summary>Click here to view the answer</summary>
+    
+    Content HERE
+    
+  </details>
 - **How does mTLS work and compare it to TLS?**
+  <details>
+    <summary>Click here to view the answer</summary>
+    
+    Content HERE
+    
+  </details>
 - **Describe the TCP/IP connection process?**
+  <details>
+    <summary>Click here to view the answer</summary>
+    
+    Content HERE
+    
+  </details>
 - **When and why would one use a TCP over UDP?**
+  <details>
+    <summary>Click here to view the answer</summary>
+    
+    Content HERE
+    
+  </details>
 - **Data transfer between 2 hosts is extremely slow. How can you troubleshoot?**
-- 
+  <details>
+    <summary>Click here to view the answer</summary>
+    
+    Content HERE
+    
+  </details>
+
 
 ### :small_blue_diamond: 
 
 - What is Git?
+  <details>
+    <summary>Click here to view the answer</summary>
+    
+    Content HERE
+    
+  </details>
 - Difference between Git and SVN?
+  <details>
+    <summary>Click here to view the answer</summary>
+    
+    Content HERE
+    
+  </details>
 - What is the basic Git workflow?
+  <details>
+    <summary>Click here to view the answer</summary>
+    
+    Content HERE
+    
+  </details>
 - Difference between git pull and Git fetch
+  <details>
+    <summary>Click here to view the answer</summary>
+    
+    Content HERE
+    
+  </details>
 - What is git cherry-pick?
-- What is the HEAD in Git ?
+  <details>
+    <summary>Click here to view the answer</summary>
+    
+    Content HERE
+    
+  </details>
+- What is the HEAD in Git?
+  <details>
+    <summary>Click here to view the answer</summary>
+    
+    Content HERE
+    
+  </details>
 - When do I use Git stash?
+  <details>
+    <summary>Click here to view the answer</summary>
+    
+    Content HERE
+    
+  </details>
 - What does git reset do?
+  <details>
+    <summary>Click here to view the answer</summary>
+    
+    Content HERE
+    
+  </details>
 - What is Git fork? What is difference between git fork, clone and branch?
+  <details>
+    <summary>Click here to view the answer</summary>
+    
+    Content HERE
+    
+  </details>
 - What is difference between `git stash pop` and `git stash apply`?
+  <details>
+    <summary>Click here to view the answer</summary>
+    
+    Content HERE
+    
+  </details>
 
 Advanced:
-- I need to update my local repos, what commands do I use ?
-- I need to rollback to a previous commit and I don't need my recent changes, what do I use ?
+- I need to update my local repos, what commands do I use?
+  <details>
+    <summary>Click here to view the answer</summary>
+    
+    Content HERE
+    
+  </details>
+- I need to rollback to a previous commit and I don't need my recent changes, what do I use?
+  <details>
+    <summary>Click here to view the answer</summary>
+    
+    Content HERE
+    
+  </details>
 - How can I amend an older commit?
+  <details>
+    <summary>Click here to view the answer</summary>
+    
+    Content HERE
+    
+  </details>
 - What is the command to check the difference between two commits?
+  <details>
+    <summary>Click here to view the answer</summary>
+    
+    Content HERE
+    
+  </details>
 - When do you use `git rebase` instead of `git merge`?
+  <details>
+    <summary>Click here to view the answer</summary>
+    
+    Content HERE
+    
+  </details>
 - Do you know how to undo a git rebase?
-- 
+  <details>
+    <summary>Click here to view the answer</summary>
+    
+    Content HERE
+    
+  </details>
+
 
 ### :small_blue_diamond: AWS
 
