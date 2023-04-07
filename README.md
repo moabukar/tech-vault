@@ -708,12 +708,12 @@ Advanced:
     <details>
     <summary>Click here to view answer</summary>
     Answer: Strong knowledge of data modelling and database design
-Expertise in database management systems (DBMS) and database administration
-Experience with data warehousing and business intelligence
-Proficiency in data integration, ETL (extract, transform, load) processes, and data migration
-Familiarity with programming languages and software development methodologies
-Excellent analytical and problem-solving skills
-Strong communication and collaboration abilities
+    Expertise in database management systems (DBMS) and database administration
+    Experience with data warehousing and business intelligence
+    Proficiency in data integration, ETL (extract, transform, load) processes, and data migration
+    Familiarity with programming languages and software development methodologies
+    Excellent analytical and problem-solving skills
+    Strong communication and collaboration abilities
     </details>
 
 
