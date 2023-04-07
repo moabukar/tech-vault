@@ -791,13 +791,13 @@ Advanced:
     <details>
     <summary>Click here to view answer</summary>
     Answer: 
-Analyze business requirements and identify data sources.
-Develop a conceptual data model and logical data model.
-Design the physical data model and schema.
-Develop ETL processes to extract, transform, and load data into the warehouse.
-Implement the database and BI tools.
-Test and validate the system.
-Deploy and maintain the system.
+    Analyze business requirements and identify data sources.
+    Develop a conceptual data model and logical data model.
+    Design the physical data model and schema.
+    Develop ETL processes to extract, transform, and load data into the warehouse.
+    Implement the database and BI tools.
+    Test and validate the system.
+    Deploy and maintain the system.
     </details>
 
 - How do you handle data quality issues? 
