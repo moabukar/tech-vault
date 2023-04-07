@@ -1,7 +1,7 @@
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
-# Tech interview questions
+# Tech Vault Interview Questions Bank
 
 <p align="center">
   <img width="300" src="./images/Tech-Vault.png">
@@ -12,38 +12,25 @@ Note: A documentation of carefully curated technical engineering questions by ex
 
 Any questions taken from external references are referenced [below](#references). 
 
-## What is different in this repo compared to others?
+## Table of Contents
 
-- These questions are real-questions that have been asked by our Engineers and ones they have also asked candidates - who have compiled them for you (obviously reworded questions)
-- We have added and are continuing to add questions that are scenari-based which are likely to be asked by interviewers themseleves. 
-- Interview questions are up to date.
-- We will continue updating these. It is brought to you by Engineers who have extensive hands-on experience. 
-
-## Contributing
-
-- To contribute, please read our [Contributing Guidelines](CONTRIBUTING.md). For any fixes, updates or new additions, please make a pull-request (PR). Thank you!
-
-## Charity 
-- Since this is a community-based project and it is run by the community - we (the creators) do not gain any personal nor financial gain other than helping the community. Instead, any financial gain would be better suited to a charity. So we wanted to take it upon us to help those in need. We, as a community, have chosen a certified charity to donate to. Here is the link to donate to:
-    - To ADD charity donation links here.
-
-
-## Topics overview
-
-- [X] [DevOps](#devops)
-    - [Linux](#small_blue_diamond-linux)
-    - [Networking](#small_blue_diamond-networking)
+- [X] [Vision 🚀](#vision-🚀)
+- [X] [What is different in this repo compared to others? 🌟](#what-is-different-in-this-repo-compared-to-others-🌟)
+- [X] [Contributing 🖊️](#contributing-🖊️)
+- [X] [DevOps 🛠](#devops-🛠)
+    - [Linux 🐧](#small_blue_diamond-linux-🐧)
+    - [Networking 🌐](#small_blue_diamond-networking-🌐)
     - [Git](#small_blue_diamond-git)
-    - [AWS](#small_blue_diamond-aws)
-    - [Azure](#small_blue_diamond-azure)
-    - [Terraform](#small_blue_diamond-terraform)
-    - [Docker & K8s](#small_blue_diamond-docker--k8s)
-    - [Ansible](#small_blue_diamond-ansible)
-    - [CI/CD](#small_blue_diamond-cicd)
+    - [AWS 🌩️](#small_blue_diamond-aws-🌩️)
+    - [Azure 🌩️](#small_blue_diamond-azure-🌩️)
+    - [Terraform 🏗️](#small_blue_diamond-terraform-🏗️)
+    - [Docker & K8s 🐳 🎻](#small_blue_diamond-docker--k8s-🐳-🎻)
+    - [Ansible 🔧](#small_blue_diamond-ansible-🔧)
+    - [CI/CD 🛠️](#small_blue_diamond-cicd-🛠️)
     - [DevOps methodology, practices, & Agile](#small_blue_diamond-devops-methodology-practices--agile)
-- [X] [System Design](#system-design)
-    - [CDN & Caching](#small_blue_diamond-cdn--caching)
-    - [Databases](#small_blue_diamond-databases)
+- [X] [System Design 🍥](#system-design-🍥)
+    - [CDN & Caching ⚡](#small_blue_diamond-cdn--caching-⚡)
+    - [Databases 📊](#small_blue_diamond-databases-📊)
 - [X] [Backend & Frontend](#backend--frontend)
     - [Golang](#small_blue_diamond-golang)
     - [Python](#small_blue_diamond-python)
@@ -52,18 +39,35 @@ Any questions taken from external references are referenced [below](#references)
 - [X] [Data](#data)
     - [Data Modelling & Schemas](#data-modelling-and-schemas)
     - [Data Architect](#data-architect)
-    - [Data Engineering](#data-engineering)
+    - [Data Engineering](#data-engineering-📊)
     - [SQL](#sql)
     - [ETL & Data Pipelines](#etl-pipelines)
-- [X] [Machine Learning](#machine-learning)
-- [X] [Cyber Security & InfoSecurity](#cyber-security--info-security)
-- [X] [Interpersonal skills]()
+- [X] [Machine Learning 🤖](#machine-learning-🤖)
+- [X] [Cyber Security & InfoSecurity 🛡️](#cyber-security--info-security-🛡️)
+- [X] [Interpersonal skills](#interpersonal--behavioural-questions)
 - [X] [References](#references)
 
+## Vision 🚀
 
-## DevOps
+- Coming from a non-technical background and without experience can be difficult for many. So I and my team have decided to create this project where all, non-technical and technical tech professionals, can have a place of reference to technical interview questions and interview prep. This is maintained by a lovely community. If you wish to contribute, feel free to do so. Read this for more info >> [How to Contribute](#contributing) 
 
-### :small_blue_diamond: Linux
+## What is different in this repo compared to others? 🌟
+
+1️⃣ Real questions asked by and of our Engineers (obviously reworded questions)
+
+2️⃣ Scenario-based questions mirroring actual interviews
+
+3️⃣ Up-to-date and relevant topics
+
+4️⃣ Ongoing updates by experienced Engineers in their fields.
+
+## Contributing 🖊️
+
+- To contribute, please read our [Contributing Guidelines](CONTRIBUTING.md). For any fixes, updates or new additions, please make a pull-request (PR). Thank you!
+
+## DevOps 🛠
+
+### :small_blue_diamond: Linux 🐧
 
 - What is Linux and difference between UNIX and Linux?
     <details>
@@ -79,8 +83,47 @@ Any questions taken from external references are referenced [below](#references)
     </details>
 ---
 - What is the Linux kernel?
+
+    <details>
+    <summary>Click here to view answer</summary>
+    
+    The Linux kernel is the core component of the Linux operating system. It is responsible for managing the system's resources, providing an interface between hardware and software, and facilitating essential tasks such as memory management, process scheduling, and input/output (I/O) operations.
+    
+    </details>
+---
 - What are inodes in Linux?
+
+    <details>
+    <summary>Click here to view answer</summary>
+    
+    Inodes in Linux are data structures that store important information about files on a file system. Each file or directory in a Linux file system has an associated inode that contains metadata such as the file's size, permissions, ownership, timestamps, and the location of the file's data blocks on the disk.
+
+    When you create a file or directory, the file system assigns a unique inode number to it. The inode number serves as an identifier for the file, allowing the file system to access the inode's information and manage the file accordingly.
+
+    Here's a summary of what inodes store:
+
+    File type (regular file, directory, symbolic link, etc.)
+    File permissions (read, write, execute)
+    Ownership (user and group)
+    Timestamps (creation, modification, and access times)
+    File size
+    Number of hard links to the file
+    Location of the file's data blocks on the disk
+    It's important to note that inodes don't store the file's name or the actual file data. The file name is stored in the directory that contains the file, which associates the name with the inode number. The actual file data is stored in separate data blocks on the disk, and the inode points to these blocks.
+
+    Inodes play a crucial role in managing files and directories within a Linux file system, providing an efficient way to access and manipulate file metadata.
+    
+    </details>
+
 - Explain the Linux boot process
+
+    <details>
+    <summary>Click here to view answer</summary>
+    
+    The Linux kernel is the core component of the Linux operating system. It is responsible for managing the system's resources, providing an interface between hardware and software, and facilitating essential tasks such as memory management, process scheduling, and input/output (I/O) operations.
+    
+    </details>
+
 - What is a zombie process?
 - Difference between soft links and hardlinks?
 - What are namespaces and c-groups?
@@ -126,7 +169,7 @@ Linux Advanced (Scenario based questions):
 - How do you view and edit the system logs in Linux?
 - How do you troubleshoot a DNS issue in Linux?
 
-### :small_blue_diamond: Networking
+### :small_blue_diamond: Networking 🌐
 
 - What is HTTP? How is HTTPS different?
 - TCP vs UDP
@@ -154,7 +197,7 @@ Advanced + Scenario based questions:
 - Data transfer between 2 hosts is extremely slow. How can you troubleshoot?
 - 
 
-### :small_blue_diamond: Git
+### :small_blue_diamond: 
 
 - What is Git?
 - Difference between Git and SVN?
@@ -176,7 +219,7 @@ Advanced:
 - Do you know how to undo a git rebase?
 - 
 
-### :small_blue_diamond: AWS
+### :small_blue_diamond: AWS 🌩️
 
 -----General--------
 - What is AWS? 
@@ -207,7 +250,7 @@ Advanced:
 -----Others-----
 - Name some managed runtimes for Lambda
 
-### :small_blue_diamond: Azure
+### :small_blue_diamond: Azure 🌩️
 
 - What is Azure?
 - What are ARM templates in Azure?
@@ -225,7 +268,7 @@ Advanced:
 - What to use: many small Azure Storage Blob containers vs one really large container with tons of blobs?
 
 
-### :small_blue_diamond: Terraform
+### :small_blue_diamond: Terraform 🏗️
 
 - What is IaC? What is Terraform?
 - What is Terraform state
@@ -255,7 +298,7 @@ Advanced:
 - How can you import existing resources under Terraform management?
 - Which command can be used to reconcile the Terraform state with the actual real-world infrastructure?
 
-### :small_blue_diamond: Docker & K8s
+### :small_blue_diamond: Docker & K8s 🐳 🎻
 
 
 Container (Docker):
@@ -308,7 +351,7 @@ Advanced:
 - How can one build a highly availabe (HA) cluster in K8s?
 - What is the role of ETCD in K8s?
 
-### :small_blue_diamond: Ansible
+### :small_blue_diamond: Ansible 🔧
 
 - What is Ansible? 
 - How does Ansible work?
@@ -331,7 +374,7 @@ Advanced:
 - How do you test your Ansible roles and tasks?
 - What is Molecule and how does it works?
 
-### :small_blue_diamond: CI/CD
+### :small_blue_diamond: CI/CD 🛠️
 
 - 
 
@@ -343,9 +386,9 @@ Advanced:
 - What is the blue/green deployment pattern?
 
 
-## System Design
+## System Design 🍥
 
-### :small_blue_diamond: CDN & Caching
+### :small_blue_diamond: CDN & Caching ⚡
 
 - What is a CDN and why would I use one?
 - What are CDN edge servers?
@@ -367,7 +410,7 @@ Advanced:
 - What is a microservice architecture and when would I consider using one?
 
 
-### :small_blue_diamond: Databases
+### :small_blue_diamond: Databases 📊
 
 - What is a database?
 - What is DBMS (Database Management System)?
@@ -395,7 +438,7 @@ Advanced:
 - What is an API Gateway? How is this different from load balancers?
 - Explain why CDN (in)availability may be a problem for using WebSockets? 
 
-## BackEnd & FrontEnd
+## BackEnd & FrontEnd 
 
 
 ### :small_blue_diamond: Golang
@@ -619,7 +662,7 @@ Data integration tools such as Informatica and Talend.
 Data visualization and business intelligence tools such as Tableau and Power BI.
 Design patterns such as the star schema and snowflake schema for data warehousing.
 
-### Data Engineering
+### Data Engineering 📊
 
 - What made you choose data engineering and what does it mean to you? 
 - How would you define data engineering? 
@@ -702,20 +745,26 @@ Design patterns such as the star schema and snowflake schema for data warehousin
 
 
 
-## Machine Learning
+## Machine Learning 🤖
 
 - 
 
 
-## Cyber Security & Info Security
+## Cyber Security & Info Security 🛡️
 
 - 
+
+## Interpersonal & behavioural questions
 
 
 ## References:
 
 - intellipaat.com
 - Add more links to any references.
+
+## Charity 
+- Since this is a community-based project and it is run by the community - we (the creators) do not gain any personal nor financial gain other than helping the community. Instead, any financial gain would be better suited to a charity. So we wanted to take it upon us to help those in need. We, as a community, have chosen a certified charity to donate to. Here is the link to donate to:
+    - To ADD charity donation links here.
 
 ## License
 
