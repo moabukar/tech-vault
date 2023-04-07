@@ -3,6 +3,8 @@
 
 # Tech interview questions
 
+![Alt Text](./images/Tech-Vault.png)
+
 Note: A documentation of carefully curated technical engineering questions by experienced Engineers who have conducted many interviews. These are amongst popular and important engineering questions to test knowledge of candidates in interviews. 
 
 Any questions taken from external references are referenced [below](#references). 
@@ -61,6 +63,18 @@ Any questions taken from external references are referenced [below](#references)
 ### :small_blue_diamond: Linux
 
 - What is Linux and difference between UNIX and Linux?
+    <details>
+    <summary>Click to view the answer</summary>
+    
+    Linux is an open-source operating system based on the UNIX architecture. It was created by Linus Torvalds in 1991. UNIX, on the other hand, is a family of operating systems that was developed in the late 1960s at Bell Labs. The main differences between UNIX and Linux are:
+
+    - **License:** UNIX is proprietary, while Linux is open-source and free to use.
+    - **Development:** UNIX is developed by a few organizations (like IBM, Sun Microsystems, and HP), while Linux has a widespread community-driven development process.
+    - **Portability:** Linux is more portable and can be used on a wide range of hardware, whereas UNIX is limited to specific hardware platforms.
+    - **User base:** Linux has a broader user base, including personal computers, servers, and embedded systems, while UNIX is primarily used in enterprise environments.
+    
+    </details>
+---
 - What is the Linux kernel?
 - What are inodes in Linux?
 - Explain the Linux boot process
