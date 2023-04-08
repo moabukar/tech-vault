@@ -11,10 +11,12 @@
 
 Copy the below code:
 ```
-  <details>
-    <summary>Click here to view the answer</summary>
-    
-    Content HERE
-    
-  </details>
+
+<details>
+  <summary>Click here to view the answer</summary>
+  
+  Content HERE
+  
+</details>
+
 ```
