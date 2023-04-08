@@ -1389,34 +1389,266 @@ Advanced:
 
 ### Data Engineering
 
-- What made you choose data engineering and what does it mean to you? 
+- What made you choose data engineering and what does it mean to you?
+
+    <details>
+    <summary>Click here to view answer</summary>
+    Answer: 
+    Explaining the reasons behind choosing data engineering...
+    Data engineering means the process of designing, building, maintaining, and managing data architecture and infrastructure. It involves transforming data from different sources into a format that can be easily analyzed, processed, and stored.
+    </details>
+
 - How would you define data engineering? 
-- What are data engineers responsible for? 
+
+    <details>
+    <summary>Click here to view answer</summary>
+    Answer: 
+    Data engineering is the process of designing, building, maintaining, and managing data infrastructure that allows organizations to efficiently store, process, and analyze large volumes of data. It involves working with different data sources, transforming data into a format that is suitable for analysis, and ensuring that data is stored securely and accessed efficiently.
+    </details>- What are data engineers responsible for? 
+
 - What is the difference between a data architect and a data engineer? 
-- What is the difference between structured ,semi structured and unstructured data? 
+
+    <details>
+    <summary>Click here to view answer</summary>
+    Answer: 
+    A data architect is responsible for designing the overall data architecture and creating data models, while a data engineer is responsible for implementing the data architecture and building data pipelines.
+    </details>
+    
+- What are data engineers responsible for? 
+
+    <details>
+    <summary>Click here to view answer</summary>
+    Answer: 
+    Data engineers are responsible for designing and maintaining the data infrastructure, developing and maintaining data pipelines, ensuring data quality, optimizing data storage and retrieval, and ensuring data security. They work closely with data scientists and analysts to ensure that the data is available, reliable, and ready for analysis.
+    </details>
+
+- What is the difference between structured ,semi structured and unstructured data?
+
+    <details>
+    <summary>Click here to view answer</summary>
+    Answer: 
+    Structured data is organized and well-defined, such as data in a relational database. Semi-structured data has some structure, but it is not organized in a rigid schema, such as JSON or XML data. Unstructured data has no predefined structure, such as text documents or images.
+    </details>
+
+
 - Describe differences between a data warehouse and an operational database
+
+    <details>
+    <summary>Click here to view answer</summary>
+    Answer: 
+    An operational database is designed for transactional processing and supports real-time data updates, while a data warehouse is designed for analytical processing and supports complex queries and reporting. Data warehouses typically store historical data and provide a consolidated view of data from multiple sources, while operational databases store current data and support day-to-day operations.
+    </details>
+
 - How would you increase the revenue of a business using data analytics and big data? 
+
+   <details>
+    <summary>Click here to view answer</summary>
+    Answer: 
+    By using data analytics and big data, businesses can identify patterns and trends in customer behavior, optimize pricing and promotions, identify new market opportunities, and improve operational efficiency. These insights can be used to develop new products and services, target marketing campaigns more effectively, and improve customer satisfaction, which can all lead to increased revenue.
+    </details> 
+
 - What are the advantages of using skewed tables in hive? 
+
+    <details>
+    <summary>Click here to view answer</summary>
+    Answer: 
+    Using skewed tables in Hive can improve query performance by reducing the amount of data that needs to be processed. Skewed tables can be used to optimize queries that have high cardinality columns, where a small number of values dominate the distribution of data.
+    </details>     
+
 - Explain the hive data model and its components
-- What does COSHH/FSCK mean? 
+
+    <details>
+    <summary>Click here to view answer</summary>
+    Answer: 
+    Hive is a data warehousing tool that provides a SQL-like interface for querying large datasets stored in Hadoop. The Hive data model includes tables, partitions, buckets, and views. Tables are the basic unit of storage in Hive, and partitions are used to divide tables into smaller, more manageable segments. Buckets are a way of organizing data within partitions to improve query performance, and views are virtual tables that can be used to simplify complex queries.
+    </details>     
+
 - Why is using a distributed system important in hadoop? 
+
+    <details>
+    <summary>Click here to view answer</summary>
+    Answer: 
+    Using a distributed system in Hadoop is important because it allows for the processing of large amounts of data by dividing the workload across multiple nodes in a cluster. This enables faster processing times and the ability to handle large-scale data processing tasks that would be impossible to do on a single machine. A distributed system also provides fault tolerance and scalability, allowing for easy scaling up or down of resources as needed.
+    </details>     
+    
 - Name the core features of hadoop
+
+    <details>
+    <summary>Click here to view answer</summary>
+    Answer: 
+    The core features of Hadoop include:
+    Hadoop Distributed File System (HDFS) for distributed storage of data
+    MapReduce for distributed processing of data
+    YARN (Yet Another Resource Negotiator) for cluster resource management
+    Hadoop Common, which provides the libraries and utilities needed for Hadoop to function
+    </details>     
+
 - Define hadoop streaming
+
+    <details>
+    <summary>Click here to view answer</summary>
+    Answer: 
+    Hadoop streaming is a utility in Hadoop that allows developers to use scripts or programs written in any language that can read and write to standard input and output as MapReduce jobs. It enables developers to use languages other than Java, the primary language used in Hadoop, for data processing tasks.
+    </details>     
+    
 - What is data locality? 
+
+    <details>
+    <summary>Click here to view answer</summary>
+    Answer: 
+    Data locality is the principle that when processing data in a distributed system, the processing task should be performed on a node where the data is stored or is easily accessible. This reduces network traffic and improves processing performance by minimizing the amount of data that needs to be transferred across the network.
+    </details>     
+
 - What does Context object do in Hadoop and why is it important? 
+
+    <details>
+    <summary>Click here to view answer</summary>
+    Answer: 
+    The Context object in Hadoop is used to provide information to MapReduce tasks about the state of the job and the environment in which it is running. It allows MapReduce tasks to interact with the job configuration and provides access to counters for tracking the progress of the job. The Context object is important because it provides a mechanism for MapReduce tasks to communicate with each other and with the Hadoop framework.
+    </details>     
+
 - Name the three reducer phases in hadoop
+    
+    <details>
+    <summary>Click here to view answer</summary>
+    Answer: 
+    The three reducer phases in Hadoop are:
+    Shuffle: where the data is sorted and partitioned before being sent to the reducers
+    Sort: where the data is sorted by key before being passed to the reducer
+    Reduce: where the data is processed and output is written to the Hadoop Distributed File System (HDFS)
+    </details>     
+
 - What do args and kwargs commands do? 
+
+    <details>
+    <summary>Click here to view answer</summary>
+    Answer: 
+    args and kwargs are used in Python to pass a variable number of arguments to a function. args is used to pass a tuple of positional arguments, while kwargs is used to pass a dictionary of keyword arguments.
+    </details>     
+
 - List the differences between tuples and lists
-- What are the advantages of working with big data on the cloud? 
+
+    <details>
+    <summary>Click here to view answer</summary>
+    Answer: 
+    Tuples and lists are both used to store sequences of values in Python, but there are several key differences between them. Tuples are immutable, meaning that they cannot be changed after they are created, while lists are mutable. Tuples are also more memory-efficient than lists and can be used as keys in dictionaries, while lists cannot. Additionally, tuples are often used to represent fixed structures with a specific number of elements, while lists are more flexible and can have any number of elements.
+    </details>     
+
+- What are the advantages of working with big data on the cloud?
+
+    <details>
+    <summary>Click here to view answer</summary>
+    Answer: 
+    Working with big data on the cloud offers several advantages, including:
+    Elastic scalability, allowing for easy scaling up or down of resources as needed
+    Reduced hardware and infrastructure costs
+    Increased accessibility and collaboration, with data stored in a centralized location accessible from anywhere with an internet connection
+    Improved security and data backup, with data stored on secure cloud servers and automatic backup and disaster recovery options
+    </details>      
+
 - Can you describe what happens when a data block is corrupted? 
+
+    <details>
+    <summary>Click here to view answer</summary>
+    Answer: 
+    When a data block is corrupted in Hadoop, the NameNode detects the corruption during a routine block scan and marks the block as corrupted in its metadata. The NameNode then replicates the block from another replica or source, and the corrupted replica is deleted. The DataNode that stored the corrupted block is also notified to delete the corrupted replica. The JobTracker is then notified of the corrupted block, and it reschedules any tasks that were using the corrupted block to use a healthy replica instead.
+    </details>
+
 - How would you explain file permissions in hadoop? 
+
+    <details>
+    <summary>Click here to view answer</summary>
+    Answer: 
+    In Hadoop, file permissions are used to control access to files in the Hadoop Distributed File System (HDFS). There are three types of permissions: read, write, and execute, which can be set for the owner of the file, the group the owner belongs to, and all other users. The file owner can set the permissions using the chmod command, and the permissions can be viewed using the ls command with the -l option. Properly setting file permissions is important for ensuring that only authorized users can access or modify sensitive data.
+    </details>
+
 - Which process would you follow to add a node to a cluster? 
+
+    <details>
+    <summary>Click here to view answer</summary>
+    Answer: 
+    To add a node to a Hadoop cluster, the following process would be followed:
+
+    Set up the new node with the same version of Hadoop as the existing nodes in the cluster.
+
+    Configure the Hadoop environment variables and networking settings on the new node to match the existing nodes.
+
+    Add the new node to the cluster's hosts file and update the DNS settings as needed.
+
+    Start the Hadoop services on the new node and ensure that it can communicate with the other nodes in the cluster.
+
+    Use the Hadoop command-line tools to add the new node to the cluster's configuration files, such as hdfs-site.xml and mapred-site.xml.
+
+    Restart the Hadoop services on the existing nodes in the cluster to ensure that they recognize the new node.
+    </details>
+
 - Can you list python libraries which can facilitate efficient data processing?
+    
+    <details>
+    <summary>Click here to view answer</summary>
+    Answer: 
+    Python has several libraries that can facilitate efficient data processing, including:
+    NumPy: a library for numerical computing that provides fast and efficient operations on arrays and matrices.
+    Pandas: a library for data manipulation and analysis that provides high-performance, easy-to-use data structures and tools for working with tabular data.
+    Matplotlib: a library for data visualization that provides a wide range of plotting tools and styles.
+    Scikit-learn: a library for machine learning that provides tools for data mining and data analysis.
+    Dask: a library for parallel computing that provides an interface for working with large datasets and distributed computing frameworks like Hadoop and Spark.
+
+    </details>
+
 - What challenges came up during your recent project, and how did you overcome these challenges?
+    
+    <details>
+    <summary>Click here to view answer</summary>
+    Answer: 
+    Some common challenges that can arise during a data engineering project include data quality issues, hardware and infrastructure limitations, and scaling issues. To overcome these challenges, data engineers may use techniques like data cleansing and transformation, cloud-based infrastructure, and distributed computing frameworks like Hadoop and Spark.
+
+    </details>
+
 - Have you ever transformed unstructured data into structured data? and how did you do it? 
+
+    <details>
+    <summary>Click here to view answer</summary>
+    Answer: 
+    Transforming unstructured data into structured data is a common task for data engineers. The process typically involves using techniques like text mining, natural language processing, and machine learning to extract useful information from unstructured data sources like text files and log files. Once the data has been extracted and transformed, it can be loaded into a structured data store like a database or data warehouse for further analysis.
+  
+    </details>
+
 - Can you tell me about NameNode? What happens if NameNode crashes or comes to an end?
+    
+    <details>
+    <summary>Click here to view answer</summary>
+    Answer: 
+    The NameNode is a key component of the Hadoop Distributed File System (HDFS). It is responsible for managing the metadata of the files stored in the HDFS, including the location and attributes of each block of data. The NameNode maintains a directory tree of all files in the HDFS and keeps track of the location of each block across the cluster.
+
+    If the NameNode crashes or becomes unavailable, the HDFS becomes read-only until the NameNode is restored or replaced. During this time, no new data can be written to the HDFS, but existing data can still be read. To recover from a NameNode failure, the administrator can either restart the failed NameNode or replace it with a new one. In either case, the new NameNode must be initialized with a backup of the metadata stored in the secondary NameNode, which acts as a hot standby for the primary NameNode. Once the new NameNode is operational, it takes over the responsibility of managing the metadata of the HDFS, and the cluster can resume normal operations.
+    </details>
+
 - How to achieve security in Hadoop?
+
+    <details>
+    <summary>Click here to view answer</summary>
+    Answer: 
+    Hadoop provides several mechanisms to achieve security in the cluster, including authentication, authorization, and data encryption. Some of the ways to achieve security in Hadoop are:
+
+    Kerberos authentication: Hadoop can integrate with Kerberos to provide secure authentication for users and services in the cluster. This ensures that only authorized users can access sensitive data and services.
+
+    Access control lists (ACLs): Hadoop supports ACLs, which allow administrators to control access to files and directories in the HDFS. ACLs can be used to grant or deny specific permissions to individual users or groups.
+
+    Encryption: Hadoop supports data encryption at rest and in transit. Data can be encrypted using industry-standard encryption algorithms like AES, and keys can be managed using key management services like Key Management Service (KMS).
+
+    Firewall and network security: Hadoop clusters should be protected by firewalls to prevent unauthorized access from outside the cluster. Network security measures like Virtual Private Network (VPN) can also be used to secure data transmission across the cluster.
+
+    Auditing and monitoring: Hadoop provides tools for auditing and monitoring cluster activities, which can help identify security breaches and anomalies in the system.
+    </details>
+
 - What is FIFO Scheduling? 
+
+    <details>
+    <summary>Click here to view answer</summary>
+    Answer: 
+    FIFO scheduling is a scheduling algorithm used in Hadoop that stands for First In, First Out. In this scheduling algorithm, the tasks are executed in the order in which they are submitted to the JobTracker. The first task submitted to the JobTracker is the first one to be executed, followed by the second task, and so on. This scheduling algorithm is simple and easy to implement, but it may not be the most efficient algorithm for all workloads. In particular, it can lead to long wait times for high-priority jobs if lower-priority jobs are submitted first. Other scheduling algorithms like Fair Scheduler and Capacity Scheduler are also available in Hadoop to address these issues.
+    </details>
 
 ### SQL
 
