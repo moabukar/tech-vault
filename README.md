@@ -1653,26 +1653,225 @@ Advanced:
 ### SQL
 
 - How can you deal with duplicate data points in an SQL query?
+
+    <details>
+    <summary>Click here to view answer</summary>
+    Answer: 
+    To deal with duplicate data points in an SQL query, you can use the DISTINCT keyword in the SELECT statement. The DISTINCT keyword filters out duplicate values from the result set, returning only unique values. Alternatively, you can use the GROUP BY clause in combination with an aggregate function such as COUNT() or SUM() to group the duplicate values together and perform calculations on them.
+    </details>
+
 - List objects that are created via the CREATE statement in SQL
+
+   <details>
+    <summary>Click here to view answer</summary>
+    Answer: 
+    Objects that can be created using the CREATE statement in SQL include tables, views, indexes, sequences, procedures, functions, and triggers.
+    </details>
+
 - How would you see the database structure in SQL? 
+
+    <details>
+    <summary>Click here to view answer</summary>
+    Answer: 
+    In SQL, you can use the DESCRIBE statement to see the structure of a specific table, which shows the names, data types, and constraints of the columns in the table. Additionally, you can use the SHOW TABLES statement to see a list of all tables in the current database.
+    </details>
+
 - How would you search for a specific string in a column? 
+
+    <details>
+    <summary>Click here to view answer</summary>
+    Answer: 
+    To search for a specific string in a column, you can use the LIKE operator in a SELECT statement. The LIKE operator is used in a WHERE clause to search for a specified pattern in a column. For example, the following SQL query selects all rows from the "customers" table where the "contact_name" column contains the string "John":
+
+
+    SELECT * 
+
+    FROM customers
+
+    WHERE contact_name LIKE '%John%';
+
+    </details>
+
 - What are the differences between DDL, DML and DCL?
+
+    <details>
+    <summary>Click here to view answer</summary>
+    DDL (Data Definition Language) is used to define the database schema and includes commands such as CREATE, ALTER, and DROP. DML (Data Manipulation Language) is used to manipulate the data in the database and includes commands such as SELECT, INSERT, UPDATE, and DELETE. DCL (Data Control Language) is used to manage user access permissions and includes commands such as GRANT and REVOKE.
+    </details>
+
 - Difference between SQL and MySQL? 
+
+    <details>
+    <summary>Click here to view answer</summary>
+    SQL (Structured Query Language) is a programming language used to manage relational databases. MySQL is a popular open-source relational database management system that uses SQL as its standard programming language.
+    </details>
+
 - How is a RDBMS different to a DBMS? 
+
+    <details>
+    <summary>Click here to view answer</summary>
+    An RDBMS (Relational Database Management System) is a type of DBMS (Database Management System) that organizes data into one or more tables with a predefined structure, and uses relationships between tables to store and retrieve data. A DBMS, on the other hand, can be any system that manages data, including hierarchical, network, and object-oriented databases.
+    </details>
+
 - What is a self join? name other join commands
+
+    <details>
+    <summary>Click here to view answer</summary>
+    A self join is a join where a table is joined with itself. It is useful when a table contains a foreign key that references its own primary key. Other join commands include INNER JOIN, LEFT JOIN, RIGHT JOIN, and FULL OUTER JOIN.
+    </details>
+
 - What is the SELECT statement? 
+
+    <details>
+    <summary>Click here to view answer</summary>
+    The SELECT statement is used to retrieve data from one or more tables in a database. It is the most commonly used SQL statement and is used to retrieve specific columns and/or rows that match a specified condition.
+    </details>
+
 - What are the CRUD commands? 
+
+    <details>
+    <summary>Click here to view answer</summary>
+    CRUD (Create, Read, Update, Delete) commands are used to manipulate data in a database. CREATE is used to create new records, READ is used to retrieve records, UPDATE is used to modify existing records, and DELETE is used to delete records.
+    </details>
+
 - What are UNION, MINUS and INTERSECT commands? 
-- List the type of relationships in SQL
+
+    <details>
+    <summary>Click here to view answer</summary>
+    UNION, MINUS, and INTERSECT are set operators that allow combining, subtracting, and intersecting results from two or more SELECT statements in SQL.
+
+    UNION: returns the combined results of two or more SELECT statements, removing duplicates. The number of columns and their data types must be the same in all SELECT statements.
+
+    MINUS (also known as EXCEPT in some versions of SQL): returns the rows from the first SELECT statement that are not present in the second SELECT statement.
+
+    INTERSECT: returns only the rows that are common to both SELECT statements.
+
+    These set operators can be useful in situations where you need to combine, subtract or compare data from multiple tables or queries.
+    </details>
+
 - How would you load data into tables using SQL? 
+
+    <details>
+    <summary>Click here to view answer</summary>
+    Data can be loaded into tables using SQL by using the "INSERT" statement. This statement is used to add one or more records to a table. The syntax for inserting data into a table is as follows:
+
+
+    INSERT INTO table_name (column1, column2, column3, ...)
+    
+    VALUES (value1, value2, value3, ...);
+
+    In this syntax, "table_name" is the name of the table where data needs to be inserted, and "column1, column2, column3, ..." are the names of the columns where data needs to be inserted. "value1, value2, value3, ..." are the values that need to be inserted in the respective columns.
+    </details>
+
 - What is PostgreSQL?
+
+    <details>
+    <summary>Click here to view answer</summary>
+    PostgreSQL is a powerful open-source relational database management system (RDBMS) that supports a wide range of features including transactions, sub-selects, triggers, views, and foreign keys. It is designed to be highly scalable, and can handle large amounts of data and concurrent users. PostgreSQL is known for its stability, reliability, and data integrity.
+    </details>
+
 - Explain the character manipulation functions in SQL
+
+    <details>
+    <summary>Click here to view answer</summary>
+    Character manipulation functions in SQL are used to modify strings in a database. These functions include:
+
+    CONCAT: Used to concatenate two or more strings.
+    
+    UPPER and LOWER: Used to convert a string to uppercase or lowercase respectively.
+    
+    SUBSTRING: Used to extract a substring from a given string.
+    
+    LENGTH: Used to get the length of a string.
+    
+    TRIM: Used to remove leading or trailing spaces from a string.
+    
+    REPLACE: Used to replace a substring within a string with a new substring.
+
+    </details>
+
 - What is the difference between RANK and DENSE_RANK() functions? 
+
+    <details>
+    <summary>Click here to view answer</summary>
+    Character manipulation functions in SQL are used to modify strings in a database. These functions include:
+
+    The RANK() and DENSE_RANK() functions are used to assign a rank to each row in a result set based on the values in one or more columns. The main difference between the two functions is how they handle ties.
+
+    The RANK() function assigns the same rank to tied rows, and leaves gaps in the ranking sequence. For example, if two rows have the same value and are assigned rank 2, the next row will be assigned rank 4.
+
+    The DENSE_RANK() function, on the other hand, assigns the same rank to tied rows, but does not leave gaps in the ranking sequence. For example, if two rows have the same value and are assigned rank 2, the next row will be assigned rank 3. 
+
+    </details>
+
 - What are tables and fields? 
+
+    <details>
+    <summary>Click here to view answer</summary>
+    Tables are the fundamental objects in a database, where data is stored in rows and columns. A table is made up of one or more columns, which define the type of data that can be stored in each row of the table. Each column has a name and a data type.
+
+    Fields, also known as columns, are the individual pieces of data stored in a table. Each field has a name, a data type, and a value.
+    </details>
+
 - What is a schema in a SQL server? 
+
+    <details>
+    <summary>Click here to view answer</summary>
+    A schema in a SQL server is a logical container for database objects, such as tables, views, indexes, and stored procedures. It is a way to organize database objects into groups and assign permissions to those groups. A schema can be used to separate database objects into logical categories, and can be used to isolate different applications or users from each other.
+    </details>
+
 - How would you create a table with 4 columns? 
+
+    <details>
+    <summary>Click here to view answer</summary>
+    To create a table with 4 columns, you would use the "CREATE TABLE" statement, with the column names and data types specified as follows:
+
+    CREATE TABLE my_table (
+    
+    column_1 datatype,
+    
+    column_2 datatype,
+    
+    column_3 datatype,
+    
+    column_4 datatype
+    
+    );
+
+    </details>
+
 - What is a CASE statment? 
+
+    <details>
+    <summary>Click here to view answer</summary>
+    A CASE statement is a control flow structure in SQL that allows you to add conditional logic to a query. It evaluates a set of conditions and returns a value based on the first true condition. The basic syntax of a CASE statement is:
+
+    CASE 
+    
+    WHEN condition_1 THEN result_1
+    
+    WHEN condition_2 THEN result_2
+    
+    ...
+    
+    ELSE result_n
+    
+    END
+
+    </details>
+
 - Summarise differences between SQL and NoSQL
+
+    <details>
+    <summary>Click here to view answer</summary>
+    SQL (Structured Query Language) and NoSQL (Not Only SQL) are two types of database management systems that differ in their data model, storage architecture, and query language.
+
+    SQL databases are relational databases that store data in tables with fixed schemas. They use SQL as the query language to perform operations like CRUD (Create, Read, Update, Delete) on the data. SQL databases are known for their ability to handle complex queries and transactions, and for their strong consistency and ACID (Atomicity, Consistency, Isolation, Durability) properties. Examples of SQL databases include MySQL, Oracle, and PostgreSQL.
+
+    On the other hand, NoSQL databases are non-relational databases that store data in flexible schemas, such as key-value pairs, documents, or graphs. They typically use a query language other than SQL, such as JSON or MongoDB's query language, to retrieve and manipulate data. NoSQL databases are known for their scalability, high availability, and ability to handle unstructured and semi-structured data. However, they may sacrifice consistency and durability for performance and scalability. Examples of NoSQL databases include MongoDB, Cassandra, and Couchbase.
+
+    </details>
+    
 - Difference between NOW() and CURRENT_DATE()
 - What is a BLOB and TEXT in MySQL?
 - How do you remove duplicate rows in SQL? 
