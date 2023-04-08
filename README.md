@@ -402,295 +402,292 @@ Content HERE
 
 Advanced:
 
-- **Does free memory exist on Linux?**
-  <details>
-    <summary>Click here to view the answer</summary>
-    
-    Content HERE
-    
-  </details>
-- **How can I check if a server is down?**
-  <details>
-    <summary>Click here to view the answer</summary>
-    
-    Content HERE
-    
-  </details>
-- **What is inside /proc?**
-  <details>
-    <summary>Click here to view the answer</summary>
-    
-    Content HERE
-    
-  </details>
-- **A process on the system can no longer log files, what can I do?**
-  <details>
-    <summary>Click here to view the answer</summary>
-    
-    Content HERE
-    
-  </details>
-- **What is LILO?**
-  <details>
-    <summary>Click here to view the answer</summary>
-    
-    Content HERE
-    
-  </details>
-- **What are syscalls in Linux and how do they work?**
-  <details>
-    <summary>Click here to view the answer</summary>
-    
-    Content HERE
-    
-  </details>
-- **What is no route to host?**
-  <details>
-    <summary>Click here to view the answer</summary>
-    
-    Content HERE
-    
-  </details>
-- **What is the difference between a hard link and a symbolic link in Linux?**
-  <details>
-    <summary>Click here to view the answer</summary>
-    
-    Content HERE
-    
-  </details>
+
+<details>
+<summary>Does free memory exist on Linux?</summary>
+
+Content HERE
+
+</details>
+
+<details>
+<summary>How can I check if a server is down?</summary>
+
+Content HERE
+
+</details>
+
+<details>
+<summary>What is inside /proc?</summary>
+
+Content HERE
+
+</details>
+
+<details>
+<summary>A process on the system can no longer log files, what can I do?</summary>
+
+Content HERE
+
+</details>
+
+<details>
+<summary>What is LILO?</summary>
+
+Content HERE
+
+</details>
+
+<details>
+<summary>What are syscalls in Linux and how do they work?</summary>
+
+Content HERE
+
+</details>
+
+<details>
+<summary>What is no route to host?</summary>
+
+Content HERE
+
+</details>
+
+<details>
+<summary>What is the difference between a hard link and a symbolic link in Linux?</summary>
+
+Content HERE
+
+</details>
 
 Linux Advanced (Scenario based questions):
 
-- **Explain the linux boot process**
-  <details>
-    <summary>Click here to view the answer</summary>
-    
-    Content HERE
-    
-  </details>
-- **A process on the system can no longer log files, how would you debug?**
-  <details>
-    <summary>Click here to view the answer</summary>
-    
-    Content HERE
-    
-  </details>
-- **How can I check if a Linux system is healthy?**
-  <details>
-    <summary>Click here to view the answer</summary>
-    
-    Content HERE
-    
-  </details>
-- **What happens when you type "ls" or "cd" into a terminal? (go deep and talk about what happens behind the scenes - kernel level)**
-  <details>
-    <summary>Click here to view the answer</summary>
-    
-    Content HERE
-    
-  </details>
-- **How can I check if a server is down?**
-  <details>
-    <summary>Click here to view the answer</summary>
-    
-    Content HERE
-    
-  </details>
-- **How are Linux processes killed on a lower level?**
-  <details>
-    <summary>Click here to view the answer</summary>
-    
-    Content HERE
-    
-  </details>
-- **I have accidentally entered `cd/bin` and done `chmod 644 chmod` - how can I fix this?**
-  <details>
-    <summary>Click here to view the answer</summary>
-    
-    Content HERE
-    
-  </details>
-- **How would you troubleshoot a network connectivity issue in Linux?**
-  <details>
-    <summary>Click here to view the answer</summary>
-    
-    Content HERE
-    
-  </details>
-- **How do you troubleshoot a connectivity issue with a remote server in Linux?**
-  <details>
-    <summary>Click here to view the answer</summary>
-    
-    Content HERE
-    
-  </details>
-- **How do you view and edit the system logs in Linux?**
-  <details>
-    <summary>Click here to view the answer</summary>
-    
-    Content HERE
-    
-  </details>
-- **How do you troubleshoot a DNS issue in Linux?**
-  <details>
-    <summary>Click here to view the answer</summary>
-    
-    Content HERE
-    
-  </details>
+<details>
+<summary>Explain the linux boot process</summary>
+
+Content HERE
+
+</details>
+
+<details>
+<summary>A process on the system can no longer log files, how would you debug?</summary>
+
+Content HERE
+
+</details>
+
+<details>
+<summary>How can I check if a Linux system is healthy?</summary>
+
+Content HERE
+
+</details>
+
+<details>
+<summary>What happens when you type "ls" or "cd" into a terminal? (go deep and talk about what happens behind the scenes - kernel level)</summary>
+
+Content HERE
+
+</details>
+
+<details>
+<summary>How can I check if a server is down?</summary>
+
+Content HERE
+
+</details>
+
+<details>
+<summary>How are Linux processes killed on a lower level?</summary>
+
+Content HERE
+
+</details>
+
+<details>
+<summary>I have accidentally entered `cd/bin` and done `chmod 644 chmod` - how can I fix this?</summary>
+
+Content HERE
+
+</details>
+
+<details>
+<summary>How would you troubleshoot a network connectivity issue in Linux?</summary>
+
+Content HERE
+
+</details>
+
+<details>
+<summary>How do you troubleshoot a connectivity issue with a remote server in Linux?</summary>
+
+Content HERE
+
+</details>
+
+<details>
+<summary>How do you view and edit the system logs in Linux?</summary>
+
+Content HERE
+
+</details>
+
+<details>
+<summary>How do you troubleshoot a DNS issue in Linux?</summary>
+
+Content HERE
+
+</details>
 
 ### :small_blue_diamond: Networking
 
-- **What is HTTP? How is HTTPS different?**
-  <details>
-    <summary>Click here to view the answer</summary>
-    
-    Content HERE
-    
-  </details>
-- **TCP vs UDP**
-  <details>
-    <summary>Click here to view the answer</summary>
-    
-    Content HERE
-    
-  </details>
-- **What is DNS and how does it work?**
-  <details>
-    <summary>Click here to view the answer</summary>
-    
-    Content HERE
-    
-  </details>
-- **What is TLS?**
-  <details>
-    <summary>Click here to view the answer</summary>
-    
-    Content HERE
-    
-  </details>
-- **What are CIDR ranges?**
-  <details>
-    <summary>Click here to view the answer</summary>
-    
-    Content HERE
-    
-  </details>
-- **What is ingress and egress traffic?**
-  <details>
-    <summary>Click here to view the answer</summary>
-    
-    Content HERE
-    
-  </details>
-- **What is a switch vs a hub?**
-  <details>
-    <summary>Click here to view the answer</summary>
-    
-    Content HERE
-    
-  </details>
-- **What is a switch vs a router?**
-  <details>
-    <summary>Click here to view the answer</summary>
-    
-    Content HERE
-    
-  </details>
-- **What is HTTPS vs Websockets?**
-  <details>
-    <summary>Click here to view the answer</summary>
-    
-    Content HERE
-    
-  </details>
-- **Explain how a 3 way handshake works?**
-  <details>
-    <summary>Click here to view the answer</summary>
-    
-    Content HERE
-    
-  </details>
-- **Stateless vs Stateful firewalls?**
-  <details>
-    <summary>Click here to view the answer</summary>
-    
-    Content HERE
-    
-  </details>
-- **What are VPCs?**
-  <details>
-    <summary>Click here to view the answer</summary>
-    
-    Content HERE
-    
-  </details>
-- **What is subnetting?**
-  <details>
-    <summary>Click here to view the answer</summary>
-    
-    Content HERE
-    
-  </details>
-- **What is DHCP?**
-  <details>
-    <summary>Click here to view the answer</summary>
-    
-    Content HERE
-    
-  </details>
+<details>
+<summary>What is HTTP? How is HTTPS different?</summary>
+
+Content HERE
+
+</details>
+
+<details>
+<summary>TCP vs UDP</summary>
+
+Content HERE
+
+</details>
+
+<details>
+<summary>What is DNS and how does it work?</summary>
+
+Content HERE
+
+</details>
+
+<details>
+<summary>What is TLS?</summary>
+
+Content HERE
+
+</details>
+
+<details>
+<summary>What are CIDR ranges?</summary>
+
+Content HERE
+
+</details>
+
+<details>
+<summary>What is ingress and egress traffic?</summary>
+
+Content HERE
+
+</details>
+
+<details>
+<summary>What is a switch vs a hub?</summary>
+
+Content HERE
+
+</details>
+
+<details>
+<summary>What is a switch vs a router?</summary>
+
+Content HERE
+
+</details>
+
+<details>
+<summary>What is HTTPS vs Websockets?</summary>
+
+Content HERE
+
+</details>
+
+<details>
+<summary>Explain how a 3 way handshake works?</summary>
+
+Content HERE
+
+</details>
+
+<details>
+<summary>Stateless vs Stateful firewalls?</summary>
+
+Content HERE
+
+</details>
+
+<details>
+<summary>What are VPCs?</summary>
+
+Content HERE
+
+</details>
+
+<details>
+<summary>What is subnetting?</summary>
+
+Content HERE
+
+</details>
+
+<details>
+<summary>What is DHCP?</summary>
+
+Content HERE
+
+</details>
 
 Advanced + Scenario based questions:
 
-- **When I type google.com into the browser, what actually happens? (go into as much detail as you can)**
-  <details>
-    <summary>Click here to view the answer</summary>
-    
-    Content HERE
-    
-  </details>
-- **I can't reach a website, how can I troubleshoot? (use deep Linux + networking knowledge )**
-  <details>
-    <summary>Click here to view the answer</summary>
-    
-    Content HERE
-    
-  </details>
-- **Can you break down the OSI model and what does it signify?**
-  <details>
-    <summary>Click here to view the answer</summary>
-    
-    Content HERE
-    
-  </details>
-- **How does mTLS work and compare it to TLS?**
-  <details>
-    <summary>Click here to view the answer</summary>
-    
-    Content HERE
-    
-  </details>
-- **Describe the TCP/IP connection process?**
-  <details>
-    <summary>Click here to view the answer</summary>
-    
-    Content HERE
-    
-  </details>
-- **When and why would one use a TCP over UDP?**
-  <details>
-    <summary>Click here to view the answer</summary>
-    
-    Content HERE
-    
-  </details>
-- **Data transfer between 2 hosts is extremely slow. How can you troubleshoot?**
-  <details>
-    <summary>Click here to view the answer</summary>
-    
-    Content HERE
-    
-  </details>
+<details>
+<summary>When I type google.com into the browser, what actually happens? (go into as much detail as you can)</summary>
+
+Content HERE
+
+</details>
+
+<details>
+<summary>I can't reach a website, how can I troubleshoot? (use deep Linux + networking knowledge)</summary>
+
+Content HERE
+
+</details>
+
+<details>
+<summary>Can you break down the OSI model and what does it signify?</summary>
+
+Content HERE
+
+</details>
+
+<details>
+<summary>How does mTLS work and compare it to TLS?</summary>
+
+Content HERE
+
+</details>
+
+<details>
+<summary>Describe the TCP/IP connection process?</summary>
+
+Content HERE
+
+</details>
+
+<details>
+<summary>When and why would one use a TCP over UDP?</summary>
+
+Content HERE
+
+</details>
+
+<details>
+<summary>Data transfer between 2 hosts is extremely slow. How can you troubleshoot?</summary>
+
+Content HERE
+
+</details>
 
 ### :small_blue_diamond: Git
 
