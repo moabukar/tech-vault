@@ -804,7 +804,8 @@ Advanced:
     
     Content HERE
     
-  </details>
+  </details
+- How do you bring down updates from main branch if your local branch becomes stale?
 
 
 ### :small_blue_diamond: AWS
