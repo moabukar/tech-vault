@@ -31,7 +31,8 @@ Any questions taken from external references are referenced [below](#references)
 - [X] [System Design 🍥](#system-design)
     - [CDN & Caching ⚡](#small_blue_diamond-cdn--caching)
     - [Databases 📊](#small_blue_diamond-databases)
-- [X] [Backend & Frontend](#backend--frontend)
+- [X] [Software Engineering](#software-engineering)
+    - [General](#small_blue_diamond-general)
     - [Golang](#small_blue_diamond-golang)
     - [Python](#small_blue_diamond-python)
     - [Java](#small_blue_diamond-java)
@@ -1027,8 +1028,10 @@ Advanced:
 - What is an API Gateway? How is this different from load balancers?
 - Explain why CDN (in)availability may be a problem for using WebSockets? 
 
-## BackEnd & FrontEnd 
+## Software Engineering
 
+
+### :small_blue_diamond: General
 
 ### :small_blue_diamond: Golang
 
