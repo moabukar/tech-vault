@@ -1033,6 +1033,14 @@ Advanced:
 
 ### :small_blue_diamond: General
 
+- What are some ways that you can version an API?
+- What does it mean for an API to be idempotent?
+- How can you implement idempotency in APIs?
+- What are some ways you could authenticate an API?
+- What are benefits of working with circuit breakers? 
+- Define cascading failures and how to deal with those?
+- How can you deploy an API without disrupting traffic?
+
 ### :small_blue_diamond: Golang
 
 - What is Go?
