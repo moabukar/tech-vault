@@ -2056,10 +2056,10 @@ The client acknowledges this and sends an ACK(Acknowledgment) packet back to the
   <summary>Click here to view answer</summary>
   Answer:
   1xx – Informational responses
-2xx – Success
-3xx – Redirection
-4xx – Client-side error
-5xx – Server-side error
+  2xx – Success
+  3xx – Redirection
+  4xx – Client-side error
+  5xx – Server-side error
   </details>
   
 - Explain SSL Encryption?
@@ -2067,11 +2067,9 @@ The client acknowledges this and sends an ACK(Acknowledgment) packet back to the
   <details>
   <summary>Click here to view answer</summary>
   Answer: SSL(Secure Sockets Layer) is the industry-standard security technology creating encrypted connections between Web Server and a Browser. This is used to maintain data privacy and to protect the information in online transactions. The steps for establishing an SSL connection is as follows:
-
-A browser tries to connect to the webserver secured with SSL
+  A browser tries to connect to the webserver secured with SSL
 The browser sends a copy of its SSL certificate to the browser
-The browser checks if the SSL certificate is trustworthy or not. If it is trustworthy, then the browser sends a message to the web server requesting to establish an encrypted connection
-The web server sends an acknowledgment to start an SSL encrypted connection
+The browser checks if the SSL certificate is trustworthy or not. If it is trustworthy, then the browser sends a message to the web server requesting to establish an encrypted connection. The web server sends an acknowledgment to start an SSL encrypted connection
 SSL encrypted communication takes place between the browser and the web server
   </details>
   
@@ -2080,8 +2078,7 @@ SSL encrypted communication takes place between the browser and the web server
   <details>
   <summary>Click here to view answer</summary>
   Answer: Data Leakage is an intentional or unintentional transmission of data from within the organization to an external unauthorized destination. It is the disclosure of confidential information to an unauthorized entity. Data Leakage can be divided into 3 categories based on how it happens:
-
-Accidental Breach: An entity unintentionally send data to an unauthorized person due to a fault or a blunder
+  Accidental Breach: An entity unintentionally send data to an unauthorized person due to a fault or a blunder
 Intentional Breach: The authorized entity sends data to an unauthorized entity on purpose
 System Hack: Hacking techniques are used to cause data leakage
 Data Leakage can be prevented by using tools, software, and strategies known as DLP(Data Leakage Prevention) Tools.
@@ -2092,12 +2089,11 @@ Data Leakage can be prevented by using tools, software, and strategies known as 
   <details>
   <summary>Click here to view answer</summary>
   Answer: Port Scanning is the technique used to identify open ports and service available on a host. Hackers use port scanning to find information that can be helpful to exploit vulnerabilities. Administrators use Port Scanning to verify the security policies of the network. Some of the common Port Scanning Techniques are:
-
-Ping Scan
-TCP Half-Open
-TCP Connect
-UDP
-Stealth Scanning
+  Ping Scan
+  TCP Half-Open
+  TCP Connect
+  UDP
+  Stealth Scanning
   </details>
   
 - What are salted hashes?
@@ -2105,8 +2101,7 @@ Stealth Scanning
   <details>
   <summary>Click here to view answer</summary>
   Answer: Salt is a random data. When a properly protected password system receives a new password, it creates a hash value of that password, a random salt value, and then the combined value is stored in its database. This helps to defend against dictionary attacks and known hash attacks.
-
-Example: If someone uses the same password on two different systems and they are being used using the same hashing algorithm, the hash value would be same, however, if even one of the system uses salt with the hashes, the value will be different.
+  Example: If someone uses the same password on two different systems and they are being used using the same hashing algorithm, the hash value would be same, however, if even one of the system uses salt with the hashes, the value will be different.
   </details>  
   
 - What is Port Scanning?
@@ -2114,15 +2109,14 @@ Example: If someone uses the same password on two different systems and they are
   <details>
   <summary>Click here to view answer</summary>
   Answer: Following are some common cyber attacks that could adversely affect your system.
-
-Malware
-Phishing
-Password Attacks
-DDoS
-Man in the Middle
-Drive-By Downloads
-Malvertising
-Rogue Software
+  Malware
+  Phishing
+  Password Attacks
+  DDoS
+  Man in the Middle
+  Drive-By Downloads
+  Malvertising
+  Rogue Software
   </details>  
 
 ## Interpersonal & behavioural questions
