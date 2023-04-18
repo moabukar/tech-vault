@@ -2043,11 +2043,7 @@ Advanced:
 
   <details>
   <summary>Click here to view answer</summary>
-  Answer: A three-way handshake is a method used in a TCP/IP network to create a connection between a host and a client. It’s called a three-way handshake because it is a three-step method in which the client and server exchanges packets. The three steps are as follows:
-
-The client sends a SYN(Synchronize) packet to the server check if the server is up or has open ports
-The server sends SYN-ACK packet to the client if it has open ports
-The client acknowledges this and sends an ACK(Acknowledgment) packet back to the server
+  Answer: A three-way handshake is a method used in a TCP/IP network to create a connection between a host and a client. It’s called a three-way handshake because it is a three-step method in which the client and server exchanges packets. The three steps are as follows: The client sends a SYN(Synchronize) packet to the server check if the server is up or has open ports. The server sends SYN-ACK packet to the client if it has open ports. The client acknowledges this and sends an ACK(Acknowledgment) packet back to the server
   </details>
   
 - What are the response codes that can be received from a Web Application?
@@ -2067,10 +2063,7 @@ The client acknowledges this and sends an ACK(Acknowledgment) packet back to the
   <details>
   <summary>Click here to view answer</summary>
   Answer: SSL(Secure Sockets Layer) is the industry-standard security technology creating encrypted connections between Web Server and a Browser. This is used to maintain data privacy and to protect the information in online transactions. The steps for establishing an SSL connection is as follows:
-  A browser tries to connect to the webserver secured with SSL
-The browser sends a copy of its SSL certificate to the browser
-The browser checks if the SSL certificate is trustworthy or not. If it is trustworthy, then the browser sends a message to the web server requesting to establish an encrypted connection. The web server sends an acknowledgment to start an SSL encrypted connection
-SSL encrypted communication takes place between the browser and the web server
+  A browser tries to connect to the webserver secured with SSL. The browser sends a copy of its SSL certificate to the browse. The browser checks if the SSL certificate is trustworthy or not. If it is trustworthy, then the browser sends a message to the web server requesting to establish an encrypted connection. The web server sends an acknowledgment to start an SSL encrypted connection. SSL encrypted communication takes place between the browser and the web server
   </details>
   
 - Explain Data Leakage?
@@ -2078,10 +2071,7 @@ SSL encrypted communication takes place between the browser and the web server
   <details>
   <summary>Click here to view answer</summary>
   Answer: Data Leakage is an intentional or unintentional transmission of data from within the organization to an external unauthorized destination. It is the disclosure of confidential information to an unauthorized entity. Data Leakage can be divided into 3 categories based on how it happens:
-  Accidental Breach: An entity unintentionally send data to an unauthorized person due to a fault or a blunder
-Intentional Breach: The authorized entity sends data to an unauthorized entity on purpose
-System Hack: Hacking techniques are used to cause data leakage
-Data Leakage can be prevented by using tools, software, and strategies known as DLP(Data Leakage Prevention) Tools.
+  Accidental Breach: An entity unintentionally send data to an unauthorized person due to a fault or a blunder. Intentional Breach: The authorized entity sends data to an unauthorized entity on purpos. System Hack: Hacking techniques are used to cause data leakage. Data Leakage can be prevented by using tools, software, and strategies known as DLP(Data Leakage Prevention) Tools.
   </details>
   
 - What are some of the common Cyberattacks?
