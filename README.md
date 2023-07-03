@@ -696,28 +696,42 @@ Content HERE
   <details>
     <summary>Click here to view the answer</summary>
     
-    Content HERE
+    Most widely used modern version control system in the world today. It is used to gather code contributions from multiple users in a single place (repository). Provides full history, workflow and allows for rollback of code and patching.
     
   </details>
 - Difference between Git and SVN?
   <details>
     <summary>Click here to view the answer</summary>
     
-    Content HERE
+    SVN and Git are both powerful version control systems that each use a different approach to managing and merging code changes. Git uses a distributed model, whereas SVN uses a centralized model.
+
+    SVN’s centralized repository model makes it easier to manage contributions and contributors. Git does not support codebase access restrictions — a contributor who has access to the repository has access to the entire repository. SVN, by contrast, provides granular control, allowing for limits on particular contributors down to the directory, and file levels.
+
+    The ability to work locally and offline is one major advantage to Git. SVN requires contributors to be connected to the main repository server, which essentially eliminates working offline.
+    
+    Git also outperforms SVN when it comes to merging and conflict resolution. Git has been designed for an open-source setting where numerous contributors may be working on the same parts of a codebase. To allow for this type of collaboration, Git has built up a robust system for resolving merge conflicts that makes the process smoother, and more manageable.
+
+    
     
   </details>
 - What is the basic Git workflow?
   <details>
     <summary>Click here to view the answer</summary>
     
-    Content HERE
+    Working directory >   staging area >  local repo >   remote repo
+                  git add           git commit    git push 
     
   </details>
 - Difference between git pull and Git fetch
   <details>
     <summary>Click here to view the answer</summary>
     
-    Content HERE
+    The key difference between git fetch and pull is that git pull copies changes from a remote repository directly into your working directory, while git fetch does not. The git fetch command only copies changes into your local Git repo. The git pull command does both.
+
+    Benefit of git pull: The local Git repo is now in sync with the remote repo. The local filesystem has the latest, most up to date files.
+
+    Benefit of git fetch: If you are actively working on files tracked by Git, but you still want to update your local repository with the latest changes from a remote repository, use the git fetch command.
+
     
   </details>
 - What is git cherry-pick?
