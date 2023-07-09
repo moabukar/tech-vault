@@ -401,7 +401,13 @@ netstat -tuln
 <details>
 <summary>How do you find the dependencies of a package in Linux?</summary>
 
-Content HERE
+Debian based (Ubuntu):
+- apt depends <packagename>
+- apt-cache depends <packagename>
+
+Red Hat based (Fedora, CentOS)
+- dnf repoquery --requires <packagename>
+
 
 </details>
 
@@ -411,56 +417,103 @@ Advanced:
 <details>
 <summary>Does free memory exist on Linux?</summary>
 
-Content HERE
+On Linux systems, the concept of "free memory" may be a bit nuanced due to how Linux manages memory. While the term "free memory" is commonly used, Linux uses a sophisticated memory management system that maximizes the utilization of available memory for optimal performance.
+
+In Linux, free memory refers to the memory that is not currently being used by any active processes or cached by the system. However, this does not mean that the memory is entirely unused or wasted. Linux takes advantage of available memory by utilizing it for disk caching, buffering, and other optimizations to improve system performance.
+
+When you check the memory usage using tools like free or top, you will see several memory-related metrics, including "free," "used," "buffers," and "cache." These metrics represent different aspects of memory usage:
 
 </details>
 
 <details>
 <summary>How can I check if a server is down?</summary>
 
-Content HERE
+1) The ping command is a simple and widely used tool to check the connectivity between your Linux system and a remote server
+
+`ping <server_address>`
+
+2) The telnet command allows you to establish a connection to a specific port on a server. By attempting to connect to a server's port, you can determine if it's up and accepting connections
+
+`telnet <server_address> <port>`
+
+3) If the telnet command is not available on your system, you can use nc (netcat), which provides similar functionality. 
+
+`nc -zv <server_address> <port>`
 
 </details>
 
 <details>
 <summary>What is inside /proc?</summary>
 
-Content HERE
+The `/proc` directory is a virtual filesystem that provides an interface to access process-related information dynamically. It contains various files and folders that provide information about running processes and system configuration.
+
+- It holds details about each running process in separate folders identified by their process IDs (PIDs).
+- It also provides system-wide information such as CPU details, memory usage statistics, network-related data, and kernel parameters.
+- The content of /proc changes dynamically based on the current state of the system and running processes.
 
 </details>
 
 <details>
 <summary>A process on the system can no longer log files, what can I do?</summary>
 
-Content HERE
+- **Check file permissions**: Ensure that the process has the necessary permissions to write to the log files or directories. Verify the ownership and permissions of the log files, and make sure they are writable by the user or group associated with the process
+  
+- **Verify available disk space**:  Insufficient disk space can prevent the process from writing to log files
+- **Restart the process**
+- **Check log file size limit**: Some processes have limits on the maximum size of log files they can generate
+- **Check file system or disk errors**: Perform a file system check (fsck) on the relevant file system or check for disk errors using appropriate tools. File system errors or disk issues can sometimes interfere with file writing.
+- **Verify logging configuration**: Ensure that the log file path and other settings are correctly specified
+- **Check for system-level logging issue**: If multiple processes are unable to log files, there might be a system-wide issue with the logging infrastructure. Check system logs (e.g., /var/log/syslog or /var/log/messages) for any relevant error messages or indications of logging problems.
 
 </details>
 
 <details>
 <summary>What is LILO?</summary>
 
-Content HERE
+- LILO, short for "LInux LOader," is a boot loader program used in older versions of Linux distributions.
+- LILO's main function is to load the Linux kernel into memory and initiate the boot process.It presents a menu to the user, allowing the selection of the desired kernel or operating system to boot (if multiple operating systems are installed).
+- LILO writes itself to the Master Boot Record (MBR) of the disk, overwriting the existing boot loader.
+- Its configuration file (/etc/lilo.conf) specifies the location of the Linux kernel image and boot parameters.
+- LILO has been largely replaced by other boot loaders, particularly GRUB (Grand Unified Bootloader), which offers more advanced features and flexibility.
+- GRUB has become the default boot loader for many Linux distributions.
 
 </details>
 
 <details>
 <summary>What are syscalls in Linux and how do they work?</summary>
 
-Content HERE
+- Syscalls are the interface between user-space applications and the kernel in Linux.
+- They allow user programs to request services and access operating system resources.
+- User programs invoke syscalls using special instructions, triggering a switch from user mode to kernel mode.
 
 </details>
 
 <details>
 <summary>What is no route to host?</summary>
 
-Content HERE
+- "No route to host" is an error message that can occur in Linux when attempting to establish a network connection to a remote host
 
 </details>
 
 <details>
 <summary>What is the difference between a hard link and a symbolic link in Linux?</summary>
 
-Content HERE
+**Hard Link**
+
+- Direct reference to an existing file or directory.
+- Creates a new name or entry pointing to the same data.
+- Both the original file and hard link refer to the same underlying data.
+- Deleting one does not affect the other.
+- Essentially multiple names for the same file.
+
+**Symbolic Link (Symlink)**
+
+- Special file that acts as a pointer or shortcut.
+- Contains the path or location of the target file or directory.
+- Resolves the path to the target when accessed.
+- Can point to files or directories on different file systems or even non-existent or moved targets.
+- Deleting the original file or directory doesn't automatically delete the symlink.
+- Symlink becomes "broken" if the target is deleted or moved.
 
 </details>
 
