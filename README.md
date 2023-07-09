@@ -542,23 +542,128 @@ Content HERE
 ### :small_blue_diamond: Networking
 
 <details>
-<summary>What is HTTP? How is HTTPS different?</summary>
+<summary>What is HTTP?</summary>
 
-Content HERE
+The Hypertext Transfer Protocol (HTTP) is the foundation of the World Wide Web, and is used to load webpages using hypertext links. HTTP is an application layer protocol designed to transfer information between networked devices and runs on top of other layers of the network protocol stack. A typical flow over HTTP involves a client machine making a request to a server, which then sends a response message.
+
+HTTPS is an extension of the Hypertext Transfer Protocol. The S in HTTPS stands for “secure.” When a website is encrypted with TLS (or SSL), it uses Hypertext Transfer Protocol Secure (HTTPS). 
+
+Basically, it’s HTTP with encryption. It is used to secure communication over a computer network and is widely used on the Internet. HTTPS encrypts and decrypts user page requests and the pages returned by the web server.
+
+</details>
+
+<details>
+<summary>Difference between HTTP and HTTPS?</summary>
+
+The most significant difference between the two protocols is that HTTPS is encrypted and secured using digital certificates, while HTML is not. When you visit a website using HTTPS, your connection to that site is encrypted. Any information you send or receive on that site is also encrypted.
+
+Another difference between the protocols is that HTTPS uses port 443, while HTML uses port 80. Port 443 is the standard port for secured Hypertext Transfer Protocol (HTTPS). Port 80 is the default port for unsecured Hypertext Transfer Protocol.
+
+
+</details>
+
+<details>
+<summary>How does a typical HTTP request look like?</summary>
+
+An HTTP request is the way Internet communications platforms such as web browsers ask for the information they need to load a website.
+
+Each HTTP request made across the Internet carries with it a series of encoded data that carries different types of information. A typical HTTP request contains:
+
+1) HTTP version type
+2) a URL
+3) an HTTP method
+4) HTTP request headers
+5) Optional HTTP body
+
+</details>
+
+<details>
+<summary>What is an HTTP method?</summary>
+
+An HTTP method, sometimes referred to as an HTTP verb, indicates the action that the HTTP request expects from the queried server. For example, two of the most common HTTP methods are ‘GET’ and ‘POST’; a ‘GET’ request expects information back in return (usually in the form of a website), while a ‘POST’ request typically indicates that the client is submitting information to the web server (such as form information, e.g. a submitted username and password).
+
+</details>
+
+<details>
+<summary>What are HTTP request headers?</summary>
+
+HTTP headers contain text information stored in key-value pairs, and they are included in every HTTP request. These headers communicate core information, such as what browser the client is using and what data is being requested.
+
+</details>
+
+<details>
+<summary>What is in an HTTP request body?</summary>
+
+The body of a request is the part that contains the ‘body’ of information the request is transferring. The body of an HTTP request contains any information being submitted to the web server, such as a username and password, or any other data entered into a form.
+
+</details>
+
+<details>
+<summary>What is in an HTTP response?</summary>
+
+An HTTP response is what web clients (often browsers) receive from an Internet server in answer to an HTTP request. These responses communicate valuable information based on what was asked for in the HTTP request.
+
+A typical HTTP response contains:
+
+1) An HTTP status code
+2) HTTP response headers
+3) Optional HTTP body
+
+</details>
+
+<details>
+<summary>What’s an HTTP status code?</summary>
+
+HTTP status codes are 3-digit codes most often used to indicate whether an HTTP request has been successfully completed. Status codes are broken into the following 5 blocks:
+
+- 1xx Informational
+- 2xx Success
+- 3xx Redirection
+- 4xx Client Error
+- 5xx Server Error
+
+The “xx” refers to different numbers between 00 and 99.
+
+Status codes starting with the number ‘2’ indicate a success. For example, after a client requests a webpage, the most commonly seen responses have a status code of ‘200 OK’, indicating that the request was properly completed.
+
+If the response starts with a ‘4’ or a ‘5’ that means there was an error and the webpage will not be displayed. A status code that begins with a ‘4’ indicates a client-side error (it is very common to encounter a ‘404 NOT FOUND’ status code when making a typo in a URL). A status code beginning in ‘5’ means something went wrong on the server side. Status codes can also begin with a ‘1’ or a ‘3’, which indicate an informational response and a redirect, respectively.
+
+</details>
+
+<details>
+<summary>What are HTTP response headers?</summary>
+
+Much like an HTTP request, an HTTP response comes with headers that convey important information such as the language and format of the data being sent in the response body.
+
+</details>
+
+<details>
+<summary>What is in an HTTP response body?</summary>
+
+Successful HTTP responses to ‘GET’ requests generally have a body which contains the requested information. In most web requests, this is HTML data that a web browser will translate into a webpage.
 
 </details>
 
 <details>
 <summary>TCP vs UDP</summary>
 
-Content HERE
+Protocols are rules that govern how data is formatted and sent over a network. TCP and UDP are two different methods for doing the same job: transferring data via the internet. They enable servers and devices to communicate so you can send emails, watch Youtube, play games, and browse web pages.
+
+The main difference between TCP (transmission control protocol) and UDP (user datagram protocol) is that TCP is a connection-based protocol and UDP is connectionless. While TCP is more reliable, it transfers data more slowly. UDP is less reliable but works more quickly. This makes each protocol suited to different types of data transfers.
 
 </details>
 
 <details>
-<summary>What is DNS and how does it work?</summary>
+<summary>What is DNS?</summary>
 
-Content HERE
+The process of DNS resolution involves converting a hostname (such as www.google.com) into a computer-friendly IP address (such as 192.168.1.1). An IP address is given to each device on the Internet, and that address is necessary to find the appropriate Internet device - like a street address is used to find a particular home. When a user wants to load a webpage, a translation must occur between what a user types into their web browser (example.com) and the machine-friendly address necessary to locate the example.com webpage.
+
+</details>
+
+<details>
+<summary>How does DNS work?</summary>
+
+content HERE
 
 </details>
 
