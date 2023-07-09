@@ -496,7 +496,7 @@ The `/proc` directory is a virtual filesystem that provides an interface to acce
 </details>
 
 <details>
-<summary>What is the difference between a hard link and a symbolic link in Linux?</summary>
+<summary>What is the difference between a hard link and a symbolic link in Linux? (WITH hands-on example)</summary>
 
 **Hard Link**
 
@@ -515,28 +515,83 @@ The `/proc` directory is a virtual filesystem that provides an interface to acce
 - Deleting the original file or directory doesn't automatically delete the symlink.
 - Symlink becomes "broken" if the target is deleted or moved.
 
+**Example**
+
+Assume we have a file named "original.txt" with the content "Hello, world!" in the directory /home/user/.
+
+Hard Link:
+  - Create a hard link named "hardlink.txt" to "original.txt" using the ln command: `ln /home/user/original.txt /home/user/hardlink.txt`
+  - Both "original.txt" and "hardlink.txt" now refer to the same file and share the same data.
+  - If you modify the content of "original.txt", the changes will be visible when accessing "hardlink.txt" and vice versa.
+  - Deleting either "original.txt" or "hardlink.txt" will not affect the other file.
+
+Symbolic (soft) link:
+  - Create a symbolic link named "symlink.txt" to "original.txt" using the ln command with the -s option: `ln -s /home/user/original.txt /home/user/symlink.txt`
+  - "symlink.txt" is a separate file that acts as a pointer to "original.txt".
+  - If you modify the content of "original.txt", the changes will be reflected in "symlink.txt".
+  - Deleting "original.txt" will not automatically delete "symlink.txt", but accessing "symlink.txt" will result in a broken link if the target is not available.
+
+In summary, with a hard link, you have multiple names for the same file sharing the same data, while with a symbolic link, you have a separate file acting as a pointer to another file or directory.
+
 </details>
 
 Linux Advanced (Scenario based questions):
 
 <details>
-<summary>Explain the linux boot process</summary>
+<summary>Explain the linux boot process (detailed) </summary>
 
-Content HERE
+- BIOS/UEFI: When you power on the computer, the Basic Input/Output System (BIOS) or Unified Extensible Firmware Interface (UEFI) firmware is invoked. It performs hardware initialization, self-tests, and determines the boot device.
+
+- Bootloader: GRUB (the most common Linux bootloader) loads the operating system into memory.
+
+- Kernel Initialization: Once the bootloader hands off control, the Linux kernel is loaded into memory. It starts executing from its entry point. The kernel is responsible for managing system resources, such as memory, processes, devices, and file systems.
+
+- Init Process: The first user-space process, known as the init process, is started by the kernel. The init process has a process ID (PID) of 1 and is responsible for initializing the system further. In modern Linux distributions that use systemd as the init system, the init process is replaced by the systemd process.
+
+- Init System/Services: System services and daemons are launched.
+
+- Login Manager: A login screen or prompt appears for user authentication.
+
+- User Session: After login, the user's session starts with the desktop environment.
+
+In summary, the boot process involves firmware initialization, bootloader loading the OS, kernel taking control, system initialization, login prompt, and user session start.
 
 </details>
 
 <details>
 <summary>A process on the system can no longer log files, how would you debug?</summary>
 
-Content HERE
+- **Check File Permissions**: Verify that the process has proper permissions to write to the log files or directories. Ensure that the file permissions and ownership are correctly set to allow the process to write logs.
+- **Review Log File Configuration**: Check the configuration file (e.g., /etc/rsyslog.conf or /etc/syslog-ng/syslog-ng.conf) to ensure that the log files and their destinations are correctly defined.
+- **Check Disk Space**: Insufficient disk space can prevent file logging. Use the df command to check the available disk space. Ensure that the filesystem containing the log files has enough free space to accommodate new logs.
+- **Check System Logs**: Review the system logs (/var/log/syslog, /var/log/messages, etc.) for any relevant error messages or indications of issues related to the logging process. Look for log entries related to the process and check if any error messages are reported.
+- **Restart the Logging Service**: Restart the logging service associated with the process (if you use rsyslog for logging) >> `sudo systemctl restart rsyslog`
 
 </details>
 
 <details>
 <summary>How can I check if a Linux system is healthy?</summary>
 
-Content HERE
+- **System Resource Usage**: 
+  - Monitor CPU usage: Use tools like `top` or `htop` to check CPU usage and identify any processes consuming excessive CPU resources.
+  - Check memory usage: Use commands like `free` or `top` to examine memory usage and ensure sufficient free memory is available.
+  - Monitor disk usage: Use `df` or `du` commands to check disk space utilization and identify any partitions nearing capacity limits.
+
+- **System Services and Processes:**: 
+  - Check running processes: Use `ps` or `top` to view running processes and ensure critical services are active.
+  - Verify system services: Use service management tools like `systemctl` (systemd) or `service` (init) to check the status of essential services.
+
+- **System Logs**: 
+  - Review system logs: Examine log files in `/var/log/` (e.g., `/var/log/syslog`, `/var/log/messages`) for any error or warning messages related to system components, applications, or hardware.
+  - Monitor log files in real-time: Use the `tail` command with the -f option to track log files as new entries are added.
+
+- **Network Connectivity**: 
+  - Check network interfaces: Use `ifconfig` or `ip` command to verify the status and configuration of network interfaces.
+  - Test network connectivity: Use `ping` or `traceroute` to test connectivity to remote hosts or check for network latency or packet loss.
+
+- Hardware monitoring?
+- Security and updates?
+- Backup and recover?
 
 </details>
 
