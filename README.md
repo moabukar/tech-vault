@@ -367,7 +367,7 @@ For example, to display memory usage in a human-readable format, you would run:
 <details>
 <summary>Write the command that will display all .yaml files including permissions of each file? ()</summary>
 
-find . -type f -name "*.yaml" -exec ls -l {} \;
+`find . -type f -name "*.yaml" -exec ls -l {} \`;
 
 </details>
 
@@ -375,16 +375,16 @@ find . -type f -name "*.yaml" -exec ls -l {} \;
 <details>
 <summary>How can I found the status of a process?</summary>
 
-ps -p <PID> >> for 1 process
+`ps -p <PID>` >> for 1 process
 
-ps aux >> display a detailed list of all running processes on the system
+`ps aux` >> display a detailed list of all running processes on the system
 
 </details>
 
 <details>
 <summary>What is the command to show all open ports?</summary>
 
-netstat -tuln
+`netstat -tuln`
 
 </details>
 
@@ -392,8 +392,8 @@ netstat -tuln
 <details>
 <summary>How do you find the process ID of a running process in Linux?</summary>
 
-- ps -ef | grep <process_name>
-- ps -ef | grep chrome
+- `ps -ef | grep <process_name>`
+- `ps -ef | grep chrome`
 
 
 </details>
@@ -402,11 +402,11 @@ netstat -tuln
 <summary>How do you find the dependencies of a package in Linux?</summary>
 
 Debian based (Ubuntu):
-- apt depends <packagename>
-- apt-cache depends <packagename>
+- `apt depends <packagename>`
+- `apt-cache depends <packagename>`
 
 Red Hat based (Fedora, CentOS)
-- dnf repoquery --requires <packagename>
+- `dnf repoquery --requires <packagename>`
 
 
 </details>
@@ -535,7 +535,7 @@ In summary, with a hard link, you have multiple names for the same file sharing 
 
 </details>
 
-Linux Advanced (Scenario based questions):
+Linux Internals & Advanced (Scenario based questions):
 
 <details>
 <summary>Explain the linux boot process (detailed) </summary>
@@ -598,28 +598,68 @@ In summary, the boot process involves firmware initialization, bootloader loadin
 <details>
 <summary>What happens when you type "ls" or "cd" into a terminal? (go deep and talk about what happens behind the scenes - kernel level)</summary>
 
-Content HERE
+- The terminal program receives the command you typed and identifies the command and any arguments.
+
+- The shell then searches for the location of the command binary within the directories specified in the `PATH` environment variable. It looks for an executable file with a matching name.
+
+- Once the command binary is located, the shell initiates a system call, specifically the `execve()` system call, to load the command into memory and execute it.
+
+- The kernel allocates memory for the command and sets up file descriptors for input, output, and error handling.
+
+- The kernel performs a context switch, transitioning from the shell to the command.
+
+- The command binary is loaded into memory, and its execution begins.
+
+- As the command executes, it may make additional system calls to interact with the kernel. For example, the "ls" command might make system calls to read directory contents or retrieve file metadata.
+
+- The command may manipulate the terminal's display using control codes.
+
+- Once the command completes, the kernel returns control to the shell.
 
 </details>
 
 <details>
 <summary>How can I check if a server is down?</summary>
 
-Content HERE
+- The ping command is a simple and widely used tool to check the connectivity between your Linux system and a remote server >> `ping <server_address>`
+- The telnet command allows you to establish a connection to a specific port on a server. By attempting to connect to a server's port, you can determine if it's up and accepting connections >> `telnet <server_address> <port>`
+-  If the telnet command is not available on your system, you can use nc (netcat), which provides similar functionality >> `nc -zv <server_address> <port>`
 
 </details>
 
 <details>
 <summary>How are Linux processes killed on a lower level?</summary>
 
-Content HERE
+- In Linux, processes can be terminated or killed at a lower level using signals. Signals are software interrupts sent to a process to convey various notifications or requests. They can be used to terminate a process gracefully, forcefully, or perform other actions
+
+  - SIGTERM (Signal 15): This is the default termination signal sent to a process when you use the kill command without specifying a signal. It politely requests the process to terminate and allows it to perform cleanup operations before exiting.
+
+  - SIGKILL (Signal 9): This signal forcefully terminates a process. It does not allow the process to perform any cleanup or graceful shutdown procedures. The process is immediately terminated.
+
+  - SIGINT (Signal 2): This signal is generated when you press Ctrl+C on the keyboard. It is typically used to interrupt or terminate a process that is running in the foreground.
+
+  - SIGQUIT (Signal 3): Similar to SIGINT, this signal is generated when you press Ctrl+\ on the keyboard. It usually requests a process to terminate and provides a core dump for debugging purposes.
 
 </details>
 
 <details>
 <summary>I have accidentally entered `cd/bin` and done `chmod 644 chmod` - how can I fix this?</summary>
 
-Content HERE
+**Method 1 - Copy the file from another system**:
+- If you have compatible systems, you can always just grab a copy of chmod from another server using scp or rsync.
+
+```sh
+cd /bin
+mv chmod chmod.orig
+scp twin:/bin/chmod .
+diff chmod chmod.orig
+```
+
+**Method 2 - Restoring from Backup**:
+
+- If you have a recent backup of the affected system, you can restore the correct permissions of the `chmod` command by replacing it with the version from the backup. Copy the `chmod` binary from the backup location to the `/bin` directory, ensuring that the correct permissions are retained.
+
+Method 3
 
 </details>
 
@@ -2354,6 +2394,49 @@ Advanced:
   Malvertising
   Rogue Software
   </details>  
+
+# Encryption and Authentication
+   
+   * What is a three-way handshake?
+   * How do cookies work?
+   * How do sessions work?
+   * Explain how OAuth works.
+   * What is a public key infrastructure flow and how would I diagram it?
+   * Describe the difference between synchronous and asynchronous encryption.
+   * Describe SSL handshake.
+   * How does HMAC work?
+   * Why HMAC is designed in that way?
+   * What is the difference between authentication vs authorization name spaces?
+   * What’s the difference between Diffie-Hellman and RSA?
+   * How does Kerberos work?
+   * If you're going to compress and encrypt a file, which do you do first and why?
+   * How do I authenticate you and know you sent the message?
+   * Should you encrypt all data at rest?
+   * What is Perfect Forward Secrecy?
+  
+  # OWASP Top 10, Pentesting and/or Web Applications
+
+   * Differentiate XSS from CSRF.
+   * What do you do if a user brings you a pc that is acting 'weird'? You suspect malware.
+   * What is the difference between tcp dump and FWmonitor?
+   * Do you know what XXE is?
+   * Explain man-in-the-middle attacks.
+   * What is a Server Side Request Forgery attack?
+   * Describe what are egghunters and their use in exploit development. 
+   * How is pad lock icon in browser generated?
+   * What is Same Origin Policy and CORS?
+  
+# Compliance
+    
+   * Can you explain SOC 2?
+      * What are the five trust criteria?
+   * How is ISO27001 different?
+   * Can you list examples of controls these frameworks require?
+   * What is the difference between Governance, Risk and Compliance?  
+   * What does Zero Trust mean?
+   * What is role-based access control (RBAC) and why is it covered by compliance frameworks?
+   * What is the NIST framework and why is it influential?
+   * What is the OSI model?
 
 ## Interpersonal & behavioural questions
 
