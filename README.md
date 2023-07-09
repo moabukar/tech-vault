@@ -666,30 +666,39 @@ Method 3
 <details>
 <summary>How would you troubleshoot a network connectivity issue in Linux?</summary>
 
-Content HERE
+- **Check Network Configuration**: Verify that the network configuration is correct. Use commands like `ifconfig` or `ip` to check the status of network interfaces, IP addresses, subnet masks, and gateway settings.
+- **Ping**: Use the ping command to test basic connectivity to a remote host or IP address. For example, `ping 8.8.8.8` pings Google's public DNS server. If the ping is successful, it indicates that network connectivity is established.
+- **Check DNS Resolution**: If you are having trouble accessing websites by domain name, check if DNS resolution is functioning correctly. Use the `nslookup` or `dig` command to query DNS servers and verify if they are returning the correct IP addresses for the given domain
+- **Check Routing**: Use the `traceroute` or `tracepath` command to trace the route packets take to reach a destination. It helps identify any network hops or routing issues along the path.
+- **Firewall Configuration**: Review the firewall configuration to ensure it is not blocking the required network traffic. Check the rules in tools like `iptables`, `ufw`, or other firewall management tools.
+- **Check Network Services**: Ensure that required network services, such as DHCP (Dynamic Host Configuration Protocol) or DNS, are running and functioning properly. Use commands like `systemctl` or `service` to check the status of specific services.
+- **Inspect Network Logs**: Check system logs in `/var/log/` (e.g., `/var/log/syslog`, `/var/log/messages`) for any relevant error messages related to network interfaces, services, or connectivity issues.
+- **Test Connectivity with Different Tools**: Use network troubleshooting tools like `netcat` (nc), `curl`, or `wget` to test connectivity to specific ports or services on remote hosts.
+
 
 </details>
 
 <details>
 <summary>How do you troubleshoot a connectivity issue with a remote server in Linux?</summary>
 
-Content HERE
+- Check Network Connectivity >> `ping <server_ip_or_hostname>`
+- Verify DNS Resolution >> `nslookup <server_hostname>` or `dig`
+- Check Firewall Settings: Verify that your local firewall or any intermediate firewalls are not blocking the necessary network traffic. Temporarily disable the firewall or configure it to allow the specific ports or protocols required to communicate with the remote server.
+- Verify Port Connectivity >> `telnet <server_ip_or_hostname> <port_number>`
+- Trace Route: Use the traceroute or tracepath command to trace the network path to the remote server >> `traceroute <server_ip_or_hostname>`
+- Review Server Logs: Examine the server's logs for any error messages or indications of connectivity issues. Check logs related to the specific services running on the server, such as Apache logs for web server issues.
+- Check Server Services: Ensure that the necessary services on the remote server are running and properly configured
 
 </details>
 
 <details>
 <summary>How do you view and edit the system logs in Linux?</summary>
 
-Content HERE
+- View logs >> `cat /var/log/syslog` - use SUDO
+- Edit logs >> `vim /var/log/syslog` - use SUDO
 
 </details>
 
-<details>
-<summary>How do you troubleshoot a DNS issue in Linux?</summary>
-
-Content HERE
-
-</details>
 
 <details>
 <summary>Which command do you use to copy one file from one server to another?</summary>
