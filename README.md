@@ -375,14 +375,16 @@ find . -type f -name "*.yaml" -exec ls -l {} \;
 <details>
 <summary>How can I found the status of a process?</summary>
 
-Content HERE
+ps -p <PID> >> for 1 process
+
+ps aux >> display a detailed list of all running processes on the system
 
 </details>
 
 <details>
 <summary>What is the command to show all open ports?</summary>
 
-Content HERE
+netstat -tuln
 
 </details>
 
@@ -390,7 +392,9 @@ Content HERE
 <details>
 <summary>How do you find the process ID of a running process in Linux?</summary>
 
-Content HERE
+- ps -ef | grep <process_name>
+- ps -ef | grep chrome
+
 
 </details>
 
