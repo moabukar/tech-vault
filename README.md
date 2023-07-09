@@ -543,6 +543,21 @@ Content HERE
 
 </details>
 
+<details>
+<summary>Which command do you use to copy one file from one server to another?</summary>
+
+- scp
+
+</details>
+
+<details>
+<summary>Which command do you use to copy directories from one server to another?</summary>
+
+- scp -r
+
+</details>
+
+
 ### :small_blue_diamond: Networking
 
 <details>
