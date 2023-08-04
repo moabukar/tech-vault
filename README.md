@@ -1212,8 +1212,30 @@ Advanced:
 
 Container Orchestration (Kubernetes = K8s):
 
-- What is Kubernetes?
-- What problems does Kubernetes solve? 
+<details>
+<summary>What is Kubernetes?</summary>
+
+Kubernetes is a container orchestration tool that is used for automating the tasks of managing, monitoring, scaling, and deploying containerized applications. It creates groups of containers that can be logically discovered and managed for easy operations on containers.
+
+</details>
+
+<details>
+<summary>- What problems does Kubernetes solve? </summary>
+
+Content HERE
+
+</details>
+
+<details>
+<summary>- What are the benefits of Kubernetes? </summary>
+
+Automatic scheduling
+Automated rollback
+Horizontal scaling
+Auto-healing capabilities
+
+</details>
+
 - What is the difference between Docker and K8s?
 - What is a Pod and what does it do?
 - How can containers within a pod communicate with each other?
