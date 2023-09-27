@@ -993,25 +993,55 @@ In summary, stateless firewalls filter traffic based solely on basic information
 <details>
 <summary>What are VPCs?</summary>
 
-Content HERE
+VPC stands for Virtual Private Cloud. It is a fundamental component of cloud computing infrastructure, particularly in services like Amazon Web Services (AWS) and Microsoft Azure.
+
+**VPC (Virtual Private Cloud):**
+
+- A VPC is a logically isolated section of a cloud provider's network where you can launch and manage your virtual resources like virtual machines (VMs), databases, and storage.
+- It allows you to create your own private network within the cloud, complete with private IP addresses, subnets, route tables, and security groups.
+- VPCs provide control over network configurations, security, and communication between resources, making it possible to build secure and scalable cloud-based applications.
+- You can also connect your VPC to your on-premises data centers or other VPCs, creating a hybrid or multi-cloud network.
+- VPCs are essential for ensuring network isolation, security, and resource organization in cloud environments.
 
 </details>
 
 <details>
 <summary>What is subnetting?</summary>
 
-Content HERE
+Subnetting is the process of dividing a larger IP network into smaller, more manageable subnetworks, or "subnets." This practice is commonly used in networking to:
+
+- Improve Network Efficiency: Subnetting allows you to create smaller segments within a larger network. This can help reduce broadcast traffic and improve overall network performance by isolating traffic to specific subnets.
+
+- Enhance Security: By dividing a network into subnets, you can implement access control lists (ACLs) and firewall rules more effectively. This helps control and secure traffic between different parts of the network.
+
+- IP Address Management: Subnetting aids in efficient IP address allocation. Each subnet can have its own range of IP addresses, making it easier to manage and allocate IP addresses within an organization.
+
+- Isolation and Segmentation: Subnets can isolate different types of devices or services from each other. For example, you can place servers in one subnet and user devices in another to improve security and management.
+
+Subnetting involves dividing an IP address range into smaller, contiguous blocks, each with its own network address and a range of host addresses. This is typically done by modifying the subnet mask associated with the IP address range. The subnet mask designates which portion of the IP address is the network part and which part is the host part.
+
+For example, if you have the IP address range 192.168.0.0/24 (where "/24" indicates a subnet mask of 255.255.255.0), you can subnet it into smaller subnets like 192.168.0.0/25 and 192.168.0.128/25, each with half of the original IP address range's available host addresses.
+
 
 </details>
 
 <details>
 <summary>What is DHCP?</summary>
 
-Content HERE
+
+DHCP stands for Dynamic Host Configuration Protocol. It is a network protocol used to automate and simplify the process of assigning IP addresses and other network configuration settings to devices on a local network. Here's a concise explanation:
+
+**DHCP (Dynamic Host Configuration Protocol):**
+
+- DHCP is a client-server protocol commonly used in local area networks (LANs) and on the internet.
+- It eliminates the need for manual IP address configuration on each device in a network.
+- When a device (client) connects to a network, it sends a DHCP request to a DHCP server, typically a router or dedicated DHCP server.
+- The DHCP server responds with an available IP address, subnet mask, default gateway, DNS server addresses, and other configuration parameters.
+- The client then configures itself with the provided information, making it ready to communicate on the network.
 
 </details>
 
-Advanced + Scenario based questions:
+#### Advanced + Scenario based questions:
 
 <details>
 <summary>When I type google.com into the browser, what actually happens? (go into as much detail as you can)</summary>
