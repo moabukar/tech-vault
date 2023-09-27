@@ -973,147 +973,169 @@ Content HERE
 
 ### :small_blue_diamond: Git
 
-- What is Git?
-  <details>
-    <summary>Click here to view the answer</summary>
-    
-    Most widely used modern version control system in the world today. It is used to gather code contributions from multiple users in a single place (repository). Provides full history, workflow and allows for rollback of code and patching.
-    
-  </details>
-- Difference between Git and SVN?
-  <details>
-    <summary>Click here to view the answer</summary>
-    
-    SVN and Git are both powerful version control systems that each use a different approach to managing and merging code changes. Git uses a distributed model, whereas SVN uses a centralized model.
+<details>
+<summary>What is Git?</summary>
+  
+  Most widely used modern version control system in the world today. It is used to gather code contributions from multiple users in a single place (repository). Provides full history, workflow and allows for rollback of code and patching.
+  
+</details>
+<details>
+<summary>Difference between Git and SVN?</summary>
+  
+  SVN and Git are both powerful version control systems that each use a different approach to managing and merging code changes. Git uses a distributed model, whereas SVN uses a centralized model.
 
-    SVN’s centralized repository model makes it easier to manage contributions and contributors. Git does not support codebase access restrictions — a contributor who has access to the repository has access to the entire repository. SVN, by contrast, provides granular control, allowing for limits on particular contributors down to the directory, and file levels.
+  SVN’s centralized repository model makes it easier to manage contributions and contributors. Git does not support codebase access restrictions — a contributor who has access to the repository has access to the entire repository. SVN, by contrast, provides granular control, allowing for limits on particular contributors down to the directory, and file levels.
 
-    The ability to work locally and offline is one major advantage to Git. SVN requires contributors to be connected to the main repository server, which essentially eliminates working offline.
-    
-    Git also outperforms SVN when it comes to merging and conflict resolution. Git has been designed for an open-source setting where numerous contributors may be working on the same parts of a codebase. To allow for this type of collaboration, Git has built up a robust system for resolving merge conflicts that makes the process smoother, and more manageable.
+  The ability to work locally and offline is one major advantage to Git. SVN requires contributors to be connected to the main repository server, which essentially eliminates working offline.
+  
+  Git also outperforms SVN when it comes to merging and conflict resolution. Git has been designed for an open-source setting where numerous contributors may be working on the same parts of a codebase. To allow for this type of collaboration, Git has built up a robust system for resolving merge conflicts that makes the process smoother, and more manageable.
 
-    
-    
-  </details>
-- What is the basic Git workflow?
-  <details>
-    <summary>Click here to view the answer</summary>
-    
-    Working directory >   staging area >  local repo >   remote repo
-                  git add           git commit    git push 
-    
-  </details>
-- Difference between git pull and Git fetch
-  <details>
-    <summary>Click here to view the answer</summary>
-    
-    The key difference between git fetch and pull is that git pull copies changes from a remote repository directly into your working directory, while git fetch does not. The git fetch command only copies changes into your local Git repo. The git pull command does both.
+</details>
+<details>
+  <summary>What is the basic Git workflow?</summary>
+  
+  Working directory >   staging area >  local repo >   remote repo
+                git add           git commit    git push 
+  
+</details>
+<details>
+  <summary>Difference between git pull and Git fetch</summary>
+  
+  The key difference between git fetch and pull is that git pull copies changes from a remote repository directly into your working directory, while git fetch does not. The git fetch command only copies changes into your local Git repo. The git pull command does both.
 
-    Benefit of git pull: The local Git repo is now in sync with the remote repo. The local filesystem has the latest, most up to date files.
+  Benefit of git pull: The local Git repo is now in sync with the remote repo. The local filesystem has the latest, most up to date files.
 
-    Benefit of git fetch: If you are actively working on files tracked by Git, but you still want to update your local repository with the latest changes from a remote repository, use the git fetch command.
+  Benefit of git fetch: If you are actively working on files tracked by Git, but you still want to update your local repository with the latest changes from a remote repository, use the git fetch command.
 
-    
-  </details>
-- What is git cherry-pick?
-  <details>
-    <summary>Click here to view the answer</summary>
-    
-    Content HERE
-    
-  </details>
-- What is the HEAD in Git?
-  <details>
-    <summary>Click here to view the answer</summary>
-    
-    Content HERE
-    
-  </details>
-- When do I use Git stash?
-  <details>
-    <summary>Click here to view the answer</summary>
-    
-    Content HERE
-    
-  </details>
-- What does git reset do?
-  <details>
-    <summary>Click here to view the answer</summary>
-    
-    Content HERE
-    
-  </details>
-- What is Git fork? What is difference between git fork, clone and branch?
-  <details>
-    <summary>Click here to view the answer</summary>
-    
-    Content HERE
-    
-  </details>
-- What is difference between `git stash pop` and `git stash apply`?
-  <details>
-    <summary>Click here to view the answer</summary>
-    
-    Content HERE
-    
-  </details>
+</details>
+<details>
+  <summary>What is git cherry-pick?</summary>
+  
+  Content HERE
+  
+</details>
+<details>
+  <summary>What is the HEAD in Git?</summary>
+  
+  Content HERE
+  
+</details>
+<details>
+  <summary>When do I use Git stash?</summary>
+  
+  Content HERE
+  
+</details>
+<details>
+  <summary>What does git reset do?</summary>
+  
+  Content HERE
+  
+</details>
+<details>
+  <summary>What is Git fork? What is difference between git fork, clone and branch?</summary>
+  
+  Content HERE
+  
+</details>
+<details>
+  <summary>What is difference between `git stash pop` and `git stash apply`?</summary>
+  
+  Content HERE
+  
+</details>
 
-Advanced:
-- I need to update my local repos, what commands do I use?
-  <details>
-    <summary>Click here to view the answer</summary>
-    
-    Content HERE
-    
-  </details>
-- I need to rollback to a previous commit and I don't need my recent changes, what do I use?
-  <details>
-    <summary>Click here to view the answer</summary>
-    
-    Content HERE
-    
-  </details>
-- How can I amend an older commit?
-  <details>
-    <summary>Click here to view the answer</summary>
-    
-    Content HERE
-    
-  </details>
-- What is the command to check the difference between two commits?
-  <details>
-    <summary>Click here to view the answer</summary>
-    
-    Content HERE
-    
-  </details>
-- When do you use `git rebase` instead of `git merge`?
-  <details>
-    <summary>Click here to view the answer</summary>
-    
-    Content HERE
-    
-  </details>
-- Do you know how to undo a git rebase?
-  <details>
-    <summary>Click here to view the answer</summary>
-    
-    Content HERE
-    
-  </details
-- How do you bring down updates from main branch if your local branch becomes stale?
+#### Advanced:
 
+<details>
+  <summary>I need to update my local repos, what commands do I use?</summary>
+  
+  Content HERE
+  
+</details>
+<details>
+  <summary>I need to rollback to a previous commit and I don't need my recent changes, what do I use?</summary>
+  
+  Content HERE
+  
+</details>
+<details>
+  <summary>How can I amend an older commit?</summary>
+  
+  Content HERE
+  
+</details>
+<details>
+  <summary>What is the command to check the difference between two commits?</summary>
+  
+  Content HERE
+  
+</details>
+<details>
+  <summary>When do you use `git rebase` instead of `git merge`?</summary>
+  
+  Content HERE
+  
+</details>
+<details>
+  <summary>Do you know how to undo a git rebase?</summary>
+  
+  Content HERE
+  
+</details>
+<details>
+  <summary>How do you bring down updates from main branch if your local branch becomes stale?</summary>
+  
+  Content HERE
+  
+</details>
 
 ### :small_blue_diamond: AWS
 
 -----General--------
-- What is AWS? 
-- What are two services of AWS where you could store secrets?
-- What is the relation between the Availability Zone and Region?
-- What is auto-scaling?
-- What services can help minimise a DDoS attack?
-- What is an AMI?
-- What are different types of load balancers?
+<details>
+  <summary>What is AWS?</summary>
+  
+  Content HERE
+  
+</details>
+<details>
+  <summary>What are two services of AWS where you could store secrets?</summary>
+  
+  Content HERE
+  
+</details>
+<details>
+  <summary>What is the relation between the Availability Zone and Region?</summary>
+  
+  Content HERE
+  
+</details>
+<details>
+  <summary>What is auto-scaling?</summary>
+  
+  Content HERE
+  
+</details>
+<details>
+  <summary>What services can help minimise a DDoS attack?</summary>
+  
+  Content HERE
+  
+</details>
+<details>
+  <summary>What is an AMI?</summary>
+  
+  Content HERE
+  
+</details>
+<details>
+  <summary>What are different types of load balancers?</summary>
+  
+  Content HERE
+  
+</details>
+
 
 -----Networking-----
 - What is a VPC?
