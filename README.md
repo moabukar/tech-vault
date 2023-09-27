@@ -1399,807 +1399,634 @@ Advanced:
 
 ### Data Modelling and Schemas: 
 
-- Define data modelling and the benefits of implementing a data model? 
+<details>
+<summary>Define data modelling and the benefits of implementing a data model?</summary>
 
-    <details>
-    <summary>Click here to view answer</summary>
-    
-    Answer: Data modeling is the process of creating a visual representation of either a whole information system or parts of it to communicate connections between data. Data modeling concepts create a blueprint for how data is organized and managed in your organization. Data models give developers and non-technical stakeholders a simplified way to have meaningful conversations about the needs of the business and how data insights can fuel better decision making.
-    
-    </details>
+Data modeling is the process of creating a visual representation of either a whole information system or parts of it to communicate connections between data. Data modeling concepts create a blueprint for how data is organized and managed in your organization. Data models give developers and non-technical stakeholders a simplified way to have meaningful conversations about the needs of the business and how data insights can fuel better decision making.
 
+</details>
 
-- What are some of the design schemas used when performing data modelling? 
+<details>
+<summary>What are some of the design schemas used when performing data modelling? </summary>
 
-    <details>
-    <summary>Click here to view answer</summary>
-    Answer: Star Schema. Snowflake Schema. Galaxy Schema.
-    
-    </details>
+- Star Schema
+- Snowflake Schema
+- Galaxy Schema
 
-- What are the three types of data models? 
+</details>
 
-    <details>
-    <summary>Click here to view answer</summary>
-    
-    Answer: Entity models, relational and dimensional
-    
-    </details>
+<details>
+<summary>What are the three types of data models?</summary>
 
-- What is a table (entity) and column (attribute)? 
+Entity models, relational and dimensional
 
-    <details>
-    <summary>Click here to view answer</summary>
-    
-    Answer: A row in a database table is an entity. A column header of a database table is an attribute. 
-    
-    </details>
+</details>
+
+- 
+
+<details>
+<summary>What is a table (entity) and column (attribute)? </summary>
+
+A row in a database table is an entity. A column header of a database table is an attribute. 
+
+</details>
 
 
-- What is normalisation/denormalisation and what is its purpose?
+<details>
+<summary>What is normalisation/denormalisation and what is its purpose?</summary>
 
-    <details>
-    <summary>Click here to view answer</summary>
-    
-    Answer: Normalization is the technique of dividing the data into multiple tables to reduce data redundancy and inconsistency and to achieve data integrity. On the other hand, Denormalization is the technique of combining the data into a single table to make data retrieval faster.
-    
-    </details>
+Normalization is the technique of dividing the data into multiple tables to reduce data redundancy and inconsistency and to achieve data integrity. On the other hand, Denormalization is the technique of combining the data into a single table to make data retrieval faster.
+
+</details>
 
 
-- What are the main relationships which can be found in a data model? (name 3)
+<details>
+<summary>What are the main relationships which can be found in a data model? (name 3)</summary>
 
-    <details>
-    <summary>Click here to view answer</summary>
-    
-    Answer: one to one, one to many and many to many
-    
-    </details>
+one to one, one to many and many to many
 
+</details>
 
-- Explain the two different types of design schemas (snowflake and star)? 
+<details>
+<summary>Explain the two different types of design schemas (snowflake and star)? </summary>
 
-    <details>
-    <summary>Click here to view answer</summary>
-    
-    Answer: Snowflake and star are two different types of design schemas used in data warehousing. In a snowflake schema, the data is organized into a hierarchy of tables, with each table having multiple child tables. In a star schema, the data is organized into a central fact table and several dimension tables that connect to it.
-    
-    </details>
+Snowflake and star are two different types of design schemas used in data warehousing. In a snowflake schema, the data is organized into a hierarchy of tables, with each table having multiple child tables. In a star schema, the data is organized into a central fact table and several dimension tables that connect to it.
+
+</details>
 
 
-- What is a data mart? 
+<details>
+<summary>What is a data mart?</summary>
 
-    <details>
-    <summary>Click here to view answer</summary>
-    
-    Answer: A data mart is a subset of a larger data warehouse that is designed to serve a specific business function or department. It contains a smaller subset of the data found in the overall data warehouse. 
-    
-    </details>
+A data mart is a subset of a larger data warehouse that is designed to serve a specific business function or department. It contains a smaller subset of the data found in the overall data warehouse. 
+
+</details>
 
 
-- How would you describe granularity? 
+<details>
+<summary>How would you describe granularity?</summary>
 
-    <details>
-    <summary>Click here to view answer</summary>
-    
-    Answer: Granularity refers to the level of detail or specificity of data. It describes how finely the data is divided and recorded.
-    
-    </details>
+Granularity refers to the level of detail or specificity of data. It describes how finely the data is divided and recorded.
+
+</details>
 
 
-- How does data sparcity impact aggregation of data sets/sources? 
+<details>
+<summary>How does data sparcity impact aggregation of data sets/sources? </summary>
 
-    <details>
-    <summary>Click here to view answer</summary>
-    
-    Answer: Data sparcity can impact the aggregation of data sets/sources by making it more difficult to obtain accurate and meaningful results. Sparse data can result in incomplete or inaccurate analyses, as well as a loss of insights and trends.
-    
-    </details>
+Data sparcity can impact the aggregation of data sets/sources by making it more difficult to obtain accurate and meaningful results. Sparse data can result in incomplete or inaccurate analyses, as well as a loss of insights and trends.
 
-- In the context of data modelling, what is the importance of metadata? How would you describe the role of metadata in data modelling? 
+</details>
 
-    <details>
-    <summary>Click here to view answer</summary>
-    Answer: Metadata is important in data modelling because it provides additional information about the data being modelled. It helps to document the structure and relationships of the data, as well as its origin, quality, and meaning.
-    
-    </details>
+<details>
+<summary>In the context of data modelling, what is the importance of metadata? How would you describe the role of metadata in data modelling?</summary>
+Metadata is important in data modelling because it provides additional information about the data being modelled. It helps to document the structure and relationships of the data, as well as its origin, quality, and meaning.
 
+</details>
 
-- What is a DDL script? 
+<details>
+<summary>What is a DDL script?</summary>
+A DDL (Data Definition Language) script is a set of commands used to create, modify, or delete database objects such as tables, indexes, or views.
 
-    <details>
-    <summary>Click here to view answer</summary>
-    Answer: A DDL (Data Definition Language) script is a set of commands used to create, modify, or delete database objects such as tables, indexes, or views.
-    
-    </details>
+</details>
 
-- What is a fact and dimension? 
-
-    <details>
-    <summary>Click here to view answer</summary>
-    Answer: In a data model, a fact is a measurable event or transaction, while a dimension is a descriptive attribute of that event or transaction. For example, in a sales data model, a fact might be the quantity of a product sold, while dimensions could include attributes such as the date of the sale, the customer who made the purchase, or the location where the sale occurred.
-
-    
-    </details>
-
-- What is an ERD? Entity relationship diagram?
-
-    <details>
-    <summary>Click here to view answer</summary>
-    Answer: An ERD (Entity Relationship Diagram) is a visual representation of the relationships between entities (tables) in a database. It shows how the tables are related to each other and the nature of those relationships.
-
-    
-    </details>
+<details>
+<summary>What is a fact and dimension?</summary>
+In a data model, a fact is a measurable event or transaction, while a dimension is a descriptive attribute of that event or transaction. For example, in a sales data model, a fact might be the quantity of a product sold, while dimensions could include attributes such as the date of the sale, the customer who made the purchase, or the location where the sale occurred.
 
 
-- What are the differences between foreign and surrogate keys? 
+</details>
 
-    <details>
-    <summary>Click here to view answer</summary>
-    Answer: Foreign keys are columns in a table that reference the primary key of another table. Surrogate keys are artificial primary keys that are created specifically for use in a database and have no inherent meaning outside of that context.
-    
-    </details>
 
-- Desribe cardinality
+<details>
+<summary>What is an ERD? Entity relationship diagram?</summary>
+An ERD (Entity Relationship Diagram) is a visual representation of the relationships between entities (tables) in a database. It shows how the tables are related to each other and the nature of those relationships.
 
-    <details>
-    <summary>Click here to view answer</summary>
-    Answer: Cardinality refers to the number of relationships between entities in a data model. It describes how many instances of one entity can be related to another entity. Common cardinalities include one-to-one, one-to-many, and many-to-many.
 
-    
-    </details>
+</details>
+
+<details>
+<summary>What are the differences between foreign and surrogate keys?</summary>
+Foreign keys are columns in a table that reference the primary key of another table. Surrogate keys are artificial primary keys that are created specifically for use in a database and have no inherent meaning outside of that context.
+
+</details>
+
+
+<details>
+<summary>Desribe cardinality</summary>
+Cardinality refers to the number of relationships between entities in a data model. It describes how many instances of one entity can be related to another entity. Common cardinalities include one-to-one, one-to-many, and many-to-many.
+
+
+</details>
 
 ### Data Architect
 
-- Please state an example of designing, creating, deploying and managing an end to end data architecture project?
 
-    <details>
-    <summary>Click here to view answer</summary>
-    Answer: A company wants to implement a customer relationship management (CRM) system. The project would involve designing a data architecture to store customer data, creating the necessary databases and tables, and deploying the system. The data would need to be cleansed, transformed, and loaded into the new system. Ongoing management would involve monitoring the data for quality and making any necessary updates or modifications to the system.
-    
-    </details>
+<details>
+<summary>Please state an example of designing, creating, deploying and managing an end to end data architecture project?</summary>
+A company wants to implement a customer relationship management (CRM) system. The project would involve designing a data architecture to store customer data, creating the necessary databases and tables, and deploying the system. The data would need to be cleansed, transformed, and loaded into the new system. Ongoing management would involve monitoring the data for quality and making any necessary updates or modifications to the system.
 
-- What are the fundamental skills required for a data architect? 
+</details>
 
-    <details>
-    <summary>Click here to view answer</summary>
-    Answer: Strong knowledge of data modelling and database design
-    Expertise in database management systems (DBMS) and database administration
-    Experience with data warehousing and business intelligence
-    Proficiency in data integration, ETL (extract, transform, load) processes, and data migration
-    Familiarity with programming languages and software development methodologies
-    Excellent analytical and problem-solving skills
-    Strong communication and collaboration abilities
-    </details>
+<details>
+<summary>What are the fundamental skills required for a data architect?</summary>
+
+Strong knowledge of data modelling and database design
+Expertise in database management systems (DBMS) and database administration
+Experience with data warehousing and business intelligence
+Proficiency in data integration, ETL (extract, transform, load) processes, and data migration
+Familiarity with programming languages and software development methodologies
+Excellent analytical and problem-solving skills
+Strong communication and collaboration abilities
+</details>
 
 
-- What is a data block and a data file? 
+<details>
+<summary>What is a data block and a data file?</summary>
+A data block is the smallest unit of data that can be accessed or transferred from a database to memory. A data file is a physical storage unit used to store data in a database.
+</details>
 
-    <details>
-    <summary>Click here to view answer</summary>
-    Answer: A data block is the smallest unit of data that can be accessed or transferred from a database to memory. A data file is a physical storage unit used to store data in a database.
-    </details>
-    
-- What is data warehousing? 
+<details>
+<summary>What is data warehousing? </summary>
+Data warehousing is the process of collecting, storing, and managing large amounts of data from various sources to support business intelligence and decision-making. It involves organizing the data into a centralized repository or data warehouse, where it can be queried and analyzed using business intelligence tools.
+</details>
 
-    <details>
-    <summary>Click here to view answer</summary>
-    Answer: Data warehousing is the process of collecting, storing, and managing large amounts of data from various sources to support business intelligence and decision-making. It involves organizing the data into a centralized repository or data warehouse, where it can be queried and analyzed using business intelligence tools.
-    </details>
-   
+<details>
+<summary>What are the main differences between 'a view' and 'a materialised view'?</summary>
+A view is a virtual table that is based on a select statement and does not store data. A materialized view, on the other hand, is a physical copy of a view that stores data in a table, making it faster to retrieve.
+</details>
 
-- What are the main differences between 'a view' and 'a materialised view'? 
+<details>
+<summary>What is a junk dimension?</summary>
+A junk dimension is a single table that contains several low-cardinality attributes that are not related to any specific dimension. It is used to reduce the number of dimension tables in a data warehouse and simplify the schema design.
+</details>
 
-    <details>
-    <summary>Click here to view answer</summary>
-    Answer: A view is a virtual table that is based on a select statement and does not store data. A materialized view, on the other hand, is a physical copy of a view that stores data in a table, making it faster to retrieve.
-    </details>
-   
-
-- What is a junk dimension?
-
-    <details>
-    <summary>Click here to view answer</summary>
-    Answer: A junk dimension is a single table that contains several low-cardinality attributes that are not related to any specific dimension. It is used to reduce the number of dimension tables in a data warehouse and simplify the schema design.
-    </details>
-
-- Please explain in detail data warehousing architecture
-
-    <details>
-    <summary>Click here to view answer</summary>
-    Answer: 
-    The source layer, where data is collected from various sources and stored in staging tables.
-    The integration layer, where data is cleansed, transformed, and combined into a single format for loading into the data warehouse.
-    The storage layer, where the data is stored in a central repository or data warehouse.
-    The access layer, where business intelligence tools and applications can retrieve the data for analysis and reporting.
-    </details>
- 
-
-- What are the different types of integrity constraints? 
-
-    <details>
-    <summary>Click here to view answer</summary>
-    Answer: 
-    Entity integrity: ensures that each row in a table has a unique identifier.
-    Referential integrity: ensures that relationships between tables are maintained and that foreign keys reference primary keys.
-    Domain integrity: ensures that data values meet specific constraints, such as data type or format requirements.
-    User-defined integrity: allows users to define their own constraints based on specific business rules or requirements.
-    </details>
-
-- Why do data architects enforce and monitor data compliance standards in data systems? 
-
-   <details>
-    <summary>Click here to view answer</summary>
-    Answer: Data architects enforce and monitor data compliance standards in data systems to ensure that data is accurate, complete, and secure. This helps to maintain data quality and prevent data breaches or other security risks.
-   </details>
+<details>
+<summary>Please explain in detail data warehousing architecture</summary>
+The source layer, where data is collected from various sources and stored in staging tables.
+The integration layer, where data is cleansed, transformed, and combined into a single format for loading into the data warehouse.
+The storage layer, where the data is stored in a central repository or data warehouse.
+The access layer, where business intelligence tools and applications can retrieve the data for analysis and reporting.
+</details>
 
 
-- Differentiate between OTLP and OLAP
+<details>
+<summary>What are the different types of integrity constraints?</summary>
+Entity integrity: ensures that each row in a table has a unique identifier.
+Referential integrity: ensures that relationships between tables are maintained and that foreign keys reference primary keys.
+Domain integrity: ensures that data values meet specific constraints, such as data type or format requirements.
+User-defined integrity: allows users to define their own constraints based on specific business rules or requirements.
+</details>
 
-   <details>
-    <summary>Click here to view answer</summary>
-    Answer: OLTP (Online Transaction Processing) systems are designed for real-time transactional processing and are typically used for day-to-day business operations. OLAP (Online Analytical Processing) systems are designed for data analysis and reporting and are typically used for business intelligence and decision-making.
-    </details>
+<details>
+<summary>Why do data architects enforce and monitor data compliance standards in data systems?</summary>
+Data architects enforce and monitor data compliance standards in data systems to ensure that data is accurate, complete, and secure. This helps to maintain data quality and prevent data breaches or other security risks.
+</details>
 
+<details>
+<summary>Differentiate between OTLP and OLAP</summary>
+OLTP (Online Transaction Processing) systems are designed for real-time transactional processing and are typically used for day-to-day business operations. OLAP (Online Analytical Processing) systems are designed for data analysis and reporting and are typically used for business intelligence and decision-making.
+</details>
 
-- How do you design and implement a data warehouse? 
+<details>
+<summary>How do you design and implement a data warehouse?</summary> 
+Analyze business requirements and identify data sources.
+Develop a conceptual data model and logical data model.
+Design the physical data model and schema.
+Develop ETL processes to extract, transform, and load data into the warehouse.
+Implement the database and BI tools.
+Test and validate the system.
+Deploy and maintain the system.
+</details>
 
-    <details>
-    <summary>Click here to view answer</summary>
-    Answer: 
-    Analyze business requirements and identify data sources.
-    Develop a conceptual data model and logical data model.
-    Design the physical data model and schema.
-    Develop ETL processes to extract, transform, and load data into the warehouse.
-    Implement the database and BI tools.
-    Test and validate the system.
-    Deploy and maintain the system.
-    </details>
+<details>
+<summary>How do you handle data quality issues? </summary>
+To handle data quality issues, data architects can implement data profiling and data cleansing processes. Data profiling involves analyzing the data to identify any issues or inconsistencies, such as missing or duplicate data, incorrect data types, or invalid values. Data cleansing involves correcting these issues and ensuring that the data is accurate and complete.
+</details>
 
-- How do you handle data quality issues? 
+<details>
+<summary>How do you optimise data models for performance? </summary>
+Normalize the data to reduce redundancy and improve consistency.
+Denormalize the data to improve query performance and simplify the schema.
+Partition large tables to improve query performance.
+Use appropriate indexing to speed up queries.
+Optimize queries to reduce the amount of data that needs to be processed.
+</details>
 
-    <details>
-    <summary>Click here to view answer</summary>
-    Answer: To handle data quality issues, data architects can implement data profiling and data cleansing processes. Data profiling involves analyzing the data to identify any issues or inconsistencies, such as missing or duplicate data, incorrect data types, or invalid values. Data cleansing involves correcting these issues and ensuring that the data is accurate and complete.
-    </details>
+<details>
+<summary>Describe your familiarity with big data technologies such as Hadoop and Spark</summary>
+Hadoop is an open-source software framework that is used to store and process big data in a distributed computing environment. It uses a file system called Hadoop Distributed File System (HDFS) to store data across multiple machines and a processing engine called MapReduce to distribute processing tasks across the cluster. Hadoop is particularly useful for handling unstructured and semi-structured data, such as log files, social media data, and sensor data.
 
-- How do you optimise data models for performance? 
+Spark is another open-source software framework that is designed to handle big data processing tasks in real-time. Spark is built on top of Hadoop and provides a more flexible and efficient processing engine than MapReduce. It supports various data processing tasks, including batch processing, stream processing, machine learning, and graph processing. Spark is particularly useful for handling large datasets that require real-time analysis, such as financial trading data, social media data, and sensor data.
+</details>
 
-    <details>
-    <summary>Click here to view answer</summary>
-    Answer: 
-    Normalize the data to reduce redundancy and improve consistency.
-    Denormalize the data to improve query performance and simplify the schema.
-    Partition large tables to improve query performance.
-    Use appropriate indexing to speed up queries.
-    Optimize queries to reduce the amount of data that needs to be processed.
-    </details>
+<details>
+<summary>How do you go about gathering requirements for a new data project?</summary>
+Meet with stakeholders to understand their business needs and goals.
+Identify the data sources and types of data that will be needed.
+Develop a data model based on the business requirements.
+Define the data quality and security requirements.
+Determine the performance and scalability requirements.
+Establish a project timeline and budget.
+</details>
 
-- Describe your familiarity with big data technologies such as Hadoop and Spark
+<details>
+<summary>How do you hamdle conflicting priorities when working on multiple projects?</summary>
+To handle conflicting priorities when working on multiple projects, data architects can prioritize based on business impact, urgency, and feasibility. Communication with stakeholders and project managers can also help to ensure that expectations are clear and aligned.
+</details>
 
-    <details>
-    <summary>Click here to view answer</summary>
-    Answer: 
-    Hadoop is an open-source software framework that is used to store and process big data in a distributed computing environment. It uses a file system called Hadoop Distributed File System (HDFS) to store data across multiple machines and a processing engine called MapReduce to distribute processing tasks across the cluster. Hadoop is particularly useful for handling unstructured and semi-structured data, such as log files, social media data, and sensor data.
+<details>
+<summary>Which software and design patterns are you familiar with?</summary>
 
-    Spark is another open-source software framework that is designed to handle big data processing tasks in real-time. Spark is built on top of Hadoop and provides a more flexible and efficient processing engine than MapReduce. It supports various data processing tasks, including batch processing, stream processing, machine learning, and graph processing. Spark is particularly useful for handling large datasets that require real-time analysis, such as financial trading data, social media data, and sensor data.
-    </details>
-
-- How do you go about gathering requirements for a new data project? 
-
-    <details>
-    <summary>Click here to view answer</summary>
-    Answer: 
-    Meet with stakeholders to understand their business needs and goals.
-    Identify the data sources and types of data that will be needed.
-    Develop a data model based on the business requirements.
-    Define the data quality and security requirements.
-    Determine the performance and scalability requirements.
-    Establish a project timeline and budget.
-    </details>
-
-- How do you hamdle conflicting priorities when working on multiple projects? 
-
-    <details>
-    <summary>Click here to view answer</summary>
-    Answer: To handle conflicting priorities when working on multiple projects, data architects can prioritize based on business impact, urgency, and feasibility. Communication with stakeholders and project managers can also help to ensure that expectations are clear and aligned.
-    </details>
-
-- Which software and design patterns are you familiar with? 
-
-    <details>
-    <summary>Click here to view answer</summary>
-    Answer: 
-    Relational database management systems (RDBMS) such as Oracle and SQL Server.
-    NoSQL databases such as MongoDB and Cassandra.
-    Data integration tools such as Informatica and Talend.
-    Data visualization and business intelligence tools such as Tableau and Power BI.
-    Design patterns such as the star schema and snowflake schema for data warehousing.
-    </details>
+Relational database management systems (RDBMS) such as Oracle and SQL Server.
+NoSQL databases such as MongoDB and Cassandra.
+Data integration tools such as Informatica and Talend.
+Data visualization and business intelligence tools such as Tableau and Power BI.
+Design patterns such as the star schema and snowflake schema for data warehousing.
+</details>
 
 ### Data Engineering
 
-- What made you choose data engineering and what does it mean to you?
 
-    <details>
-    <summary>Click here to view answer</summary>
-    Answer: 
-    Explaining the reasons behind choosing data engineering...
-    Data engineering means the process of designing, building, maintaining, and managing data architecture and infrastructure. It involves transforming data from different sources into a format that can be easily analyzed, processed, and stored.
-    </details>
+<details>
+<summary>What made you choose data engineering and what does it mean to you?</summary>
 
-- How would you define data engineering? 
-
-    <details>
-    <summary>Click here to view answer</summary>
-    Answer: 
-    Data engineering is the process of designing, building, maintaining, and managing data infrastructure that allows organizations to efficiently store, process, and analyze large volumes of data. It involves working with different data sources, transforming data into a format that is suitable for analysis, and ensuring that data is stored securely and accessed efficiently.
-    </details>- What are data engineers responsible for? 
-
-- What is the difference between a data architect and a data engineer? 
-
-    <details>
-    <summary>Click here to view answer</summary>
-    Answer: 
-    A data architect is responsible for designing the overall data architecture and creating data models, while a data engineer is responsible for implementing the data architecture and building data pipelines.
-    </details>
-    
-- What are data engineers responsible for? 
-
-    <details>
-    <summary>Click here to view answer</summary>
-    Answer: 
-    Data engineers are responsible for designing and maintaining the data infrastructure, developing and maintaining data pipelines, ensuring data quality, optimizing data storage and retrieval, and ensuring data security. They work closely with data scientists and analysts to ensure that the data is available, reliable, and ready for analysis.
-    </details>
-
-- What is the difference between structured ,semi structured and unstructured data?
-
-    <details>
-    <summary>Click here to view answer</summary>
-    Answer: 
-    Structured data is organized and well-defined, such as data in a relational database. Semi-structured data has some structure, but it is not organized in a rigid schema, such as JSON or XML data. Unstructured data has no predefined structure, such as text documents or images.
-    </details>
+Explaining the reasons behind choosing data engineering...
+Data engineering means the process of designing, building, maintaining, and managing data architecture and infrastructure. It involves transforming data from different sources into a format that can be easily analyzed, processed, and stored.
+</details>
 
 
-- Describe differences between a data warehouse and an operational database
+<details>
+<summary>How would you define data engineering? </summary>
+Data engineering is the process of designing, building, maintaining, and managing data infrastructure that allows organizations to efficiently store, process, and analyze large volumes of data. It involves working with different data sources, transforming data into a format that is suitable for analysis, and ensuring that data is stored securely and accessed efficiently.
+</details>
 
-    <details>
-    <summary>Click here to view answer</summary>
-    Answer: 
-    An operational database is designed for transactional processing and supports real-time data updates, while a data warehouse is designed for analytical processing and supports complex queries and reporting. Data warehouses typically store historical data and provide a consolidated view of data from multiple sources, while operational databases store current data and support day-to-day operations.
-    </details>
 
-- How would you increase the revenue of a business using data analytics and big data? 
+<details>
+<summary>What is the difference between a data architect and a data engineer? </summary>
+A data architect is responsible for designing the overall data architecture and creating data models, while a data engineer is responsible for implementing the data architecture and building data pipelines.
+</details>
 
-   <details>
-    <summary>Click here to view answer</summary>
-    Answer: 
-    By using data analytics and big data, businesses can identify patterns and trends in customer behavior, optimize pricing and promotions, identify new market opportunities, and improve operational efficiency. These insights can be used to develop new products and services, target marketing campaigns more effectively, and improve customer satisfaction, which can all lead to increased revenue.
-    </details> 
+<details>
+<summary>What are data engineers responsible for? </summary>
+Data engineers are responsible for designing and maintaining the data infrastructure, developing and maintaining data pipelines, ensuring data quality, optimizing data storage and retrieval, and ensuring data security. They work closely with data scientists and analysts to ensure that the data is available, reliable, and ready for analysis.
+</details>
 
-- What are the advantages of using skewed tables in hive? 
+<details>
+<summary>What is the difference between structured ,semi structured and unstructured data?</summary>
+Structured data is organized and well-defined, such as data in a relational database. Semi-structured data has some structure, but it is not organized in a rigid schema, such as JSON or XML data. Unstructured data has no predefined structure, such as text documents or images.
+</details>
 
-    <details>
-    <summary>Click here to view answer</summary>
-    Answer: 
-    Using skewed tables in Hive can improve query performance by reducing the amount of data that needs to be processed. Skewed tables can be used to optimize queries that have high cardinality columns, where a small number of values dominate the distribution of data.
-    </details>     
+<details>
+<summary>Describe differences between a data warehouse and an operational database</summary>
+An operational database is designed for transactional processing and supports real-time data updates, while a data warehouse is designed for analytical processing and supports complex queries and reporting. Data warehouses typically store historical data and provide a consolidated view of data from multiple sources, while operational databases store current data and support day-to-day operations.
+</details>
 
-- Explain the hive data model and its components
 
-    <details>
-    <summary>Click here to view answer</summary>
-    Answer: 
-    Hive is a data warehousing tool that provides a SQL-like interface for querying large datasets stored in Hadoop. The Hive data model includes tables, partitions, buckets, and views. Tables are the basic unit of storage in Hive, and partitions are used to divide tables into smaller, more manageable segments. Buckets are a way of organizing data within partitions to improve query performance, and views are virtual tables that can be used to simplify complex queries.
-    </details>     
+<details>
+<summary>How would you increase the revenue of a business using data analytics and big data?</summary>
+By using data analytics and big data, businesses can identify patterns and trends in customer behavior, optimize pricing and promotions, identify new market opportunities, and improve operational efficiency. These insights can be used to develop new products and services, target marketing campaigns more effectively, and improve customer satisfaction, which can all lead to increased revenue.
+</details> 
 
-- Why is using a distributed system important in hadoop? 
+<details>
+<summary>What are the advantages of using skewed tables in Hive?</summary>
+Using skewed tables in Hive can improve query performance by reducing the amount of data that needs to be processed. Skewed tables can be used to optimize queries that have high cardinality columns, where a small number of values dominate the distribution of data.
+</details>
 
-    <details>
-    <summary>Click here to view answer</summary>
-    Answer: 
-    Using a distributed system in Hadoop is important because it allows for the processing of large amounts of data by dividing the workload across multiple nodes in a cluster. This enables faster processing times and the ability to handle large-scale data processing tasks that would be impossible to do on a single machine. A distributed system also provides fault tolerance and scalability, allowing for easy scaling up or down of resources as needed.
-    </details>     
-    
-- Name the core features of hadoop
+<details>
+<summary>Explain the hive data model and its components</summary>
+Hive is a data warehousing tool that provides a SQL-like interface for querying large datasets stored in Hadoop. The Hive data model includes tables, partitions, buckets, and views. Tables are the basic unit of storage in Hive, and partitions are used to divide tables into smaller, more manageable segments. Buckets are a way of organizing data within partitions to improve query performance, and views are virtual tables that can be used to simplify complex queries.
+</details>
 
-    <details>
-    <summary>Click here to view answer</summary>
-    Answer: 
-    The core features of Hadoop include:
-    Hadoop Distributed File System (HDFS) for distributed storage of data
-    MapReduce for distributed processing of data
-    YARN (Yet Another Resource Negotiator) for cluster resource management
-    Hadoop Common, which provides the libraries and utilities needed for Hadoop to function
-    </details>     
+-  
 
-- Define hadoop streaming
+<details>
+<summary>Why is using a distributed system important in hadoop?</summary>
+Using a distributed system in Hadoop is important because it allows for the processing of large amounts of data by dividing the workload across multiple nodes in a cluster. This enables faster processing times and the ability to handle large-scale data processing tasks that would be impossible to do on a single machine. A distributed system also provides fault tolerance and scalability, allowing for easy scaling up or down of resources as needed.
+</details>
 
-    <details>
-    <summary>Click here to view answer</summary>
-    Answer: 
-    Hadoop streaming is a utility in Hadoop that allows developers to use scripts or programs written in any language that can read and write to standard input and output as MapReduce jobs. It enables developers to use languages other than Java, the primary language used in Hadoop, for data processing tasks.
-    </details>     
-    
-- What is data locality? 
+<details>
+<summary>Name the core features of hadoop</summary>
+The core features of Hadoop include:
+Hadoop Distributed File System (HDFS) for distributed storage of data
+MapReduce for distributed processing of data
+YARN (Yet Another Resource Negotiator) for cluster resource management
+Hadoop Common, which provides the libraries and utilities needed for Hadoop to function
+</details>
 
-    <details>
-    <summary>Click here to view answer</summary>
-    Answer: 
-    Data locality is the principle that when processing data in a distributed system, the processing task should be performed on a node where the data is stored or is easily accessible. This reduces network traffic and improves processing performance by minimizing the amount of data that needs to be transferred across the network.
-    </details>     
+<details>
+<summary>Define hadoop streaming</summary>
+Hadoop streaming is a utility in Hadoop that allows developers to use scripts or programs written in any language that can read and write to standard input and output as MapReduce jobs. It enables developers to use languages other than Java, the primary language used in Hadoop, for data processing tasks.
+</details>
 
-- What does Context object do in Hadoop and why is it important? 
+<details>
+<summary>What is data locality?</summary>
+Data locality is the principle that when processing data in a distributed system, the processing task should be performed on a node where the data is stored or is easily accessible. This reduces network traffic and improves processing performance by minimizing the amount of data that needs to be transferred across the network.
+</details>
 
-    <details>
-    <summary>Click here to view answer</summary>
-    Answer: 
-    The Context object in Hadoop is used to provide information to MapReduce tasks about the state of the job and the environment in which it is running. It allows MapReduce tasks to interact with the job configuration and provides access to counters for tracking the progress of the job. The Context object is important because it provides a mechanism for MapReduce tasks to communicate with each other and with the Hadoop framework.
-    </details>     
+<details>
+<summary>What does Context object do in Hadoop and why is it important? </summary>
+The Context object in Hadoop is used to provide information to MapReduce tasks about the state of the job and the environment in which it is running. It allows MapReduce tasks to interact with the job configuration and provides access to counters for tracking the progress of the job. The Context object is important because it provides a mechanism for MapReduce tasks to communicate with each other and with the Hadoop framework.
+</details>
 
-- Name the three reducer phases in hadoop
-    
-    <details>
-    <summary>Click here to view answer</summary>
-    Answer: 
-    The three reducer phases in Hadoop are:
-    Shuffle: where the data is sorted and partitioned before being sent to the reducers
-    Sort: where the data is sorted by key before being passed to the reducer
-    Reduce: where the data is processed and output is written to the Hadoop Distributed File System (HDFS)
-    </details>     
 
-- What do args and kwargs commands do? 
+<details>
+<summary>Name the three reducer phases in hadoop</summary>
+The three reducer phases in Hadoop are:
+Shuffle: where the data is sorted and partitioned before being sent to the reducers
+Sort: where the data is sorted by key before being passed to the reducer
+Reduce: where the data is processed and output is written to the Hadoop Distributed File System (HDFS)
+</details>
 
-    <details>
-    <summary>Click here to view answer</summary>
-    Answer: 
-    args and kwargs are used in Python to pass a variable number of arguments to a function. args is used to pass a tuple of positional arguments, while kwargs is used to pass a dictionary of keyword arguments.
-    </details>     
+<details>
+<summary>What do args and kwargs commands do? </summary>
+args and kwargs are used in Python to pass a variable number of arguments to a function. args is used to pass a tuple of positional arguments, while kwargs is used to pass a dictionary of keyword arguments.
+</details>     
 
-- List the differences between tuples and lists
 
-    <details>
-    <summary>Click here to view answer</summary>
-    Answer: 
-    Tuples and lists are both used to store sequences of values in Python, but there are several key differences between them. Tuples are immutable, meaning that they cannot be changed after they are created, while lists are mutable. Tuples are also more memory-efficient than lists and can be used as keys in dictionaries, while lists cannot. Additionally, tuples are often used to represent fixed structures with a specific number of elements, while lists are more flexible and can have any number of elements.
-    </details>     
+<details>
+<summary>List the differences between tuples and lists</summary>
+Tuples and lists are both used to store sequences of values in Python, but there are several key differences between them. Tuples are immutable, meaning that they cannot be changed after they are created, while lists are mutable. Tuples are also more memory-efficient than lists and can be used as keys in dictionaries, while lists cannot. Additionally, tuples are often used to represent fixed structures with a specific number of elements, while lists are more flexible and can have any number of elements.
+</details>
 
-- What are the advantages of working with big data on the cloud?
+<details>
+<summary>What are the advantages of working with big data on the cloud?</summary>
+Working with big data on the cloud offers several advantages, including:
+Elastic scalability, allowing for easy scaling up or down of resources as needed
+Reduced hardware and infrastructure costs
+Increased accessibility and collaboration, with data stored in a centralized location accessible from anywhere with an internet connection
+Improved security and data backup, with data stored on secure cloud servers and automatic backup and disaster recovery options
+</details>
 
-    <details>
-    <summary>Click here to view answer</summary>
-    Answer: 
-    Working with big data on the cloud offers several advantages, including:
-    Elastic scalability, allowing for easy scaling up or down of resources as needed
-    Reduced hardware and infrastructure costs
-    Increased accessibility and collaboration, with data stored in a centralized location accessible from anywhere with an internet connection
-    Improved security and data backup, with data stored on secure cloud servers and automatic backup and disaster recovery options
-    </details>      
 
-- Can you describe what happens when a data block is corrupted? 
+<details>
+<summary>Can you describe what happens when a data block is corrupted?</summary>
+When a data block is corrupted in Hadoop, the NameNode detects the corruption during a routine block scan and marks the block as corrupted in its metadata. The NameNode then replicates the block from another replica or source, and the corrupted replica is deleted. The DataNode that stored the corrupted block is also notified to delete the corrupted replica. The JobTracker is then notified of the corrupted block, and it reschedules any tasks that were using the corrupted block to use a healthy replica instead.
+</details>
 
-    <details>
-    <summary>Click here to view answer</summary>
-    Answer: 
-    When a data block is corrupted in Hadoop, the NameNode detects the corruption during a routine block scan and marks the block as corrupted in its metadata. The NameNode then replicates the block from another replica or source, and the corrupted replica is deleted. The DataNode that stored the corrupted block is also notified to delete the corrupted replica. The JobTracker is then notified of the corrupted block, and it reschedules any tasks that were using the corrupted block to use a healthy replica instead.
-    </details>
 
-- How would you explain file permissions in hadoop? 
+<details>
+<summary>How would you explain file permissions in hadoop?</summary>
+In Hadoop, file permissions are used to control access to files in the Hadoop Distributed File System (HDFS). There are three types of permissions: read, write, and execute, which can be set for the owner of the file, the group the owner belongs to, and all other users. The file owner can set the permissions using the chmod command, and the permissions can be viewed using the ls command with the -l option. Properly setting file permissions is important for ensuring that only authorized users can access or modify sensitive data.
+</details>
 
-    <details>
-    <summary>Click here to view answer</summary>
-    Answer: 
-    In Hadoop, file permissions are used to control access to files in the Hadoop Distributed File System (HDFS). There are three types of permissions: read, write, and execute, which can be set for the owner of the file, the group the owner belongs to, and all other users. The file owner can set the permissions using the chmod command, and the permissions can be viewed using the ls command with the -l option. Properly setting file permissions is important for ensuring that only authorized users can access or modify sensitive data.
-    </details>
+<details>
+<summary>Which process would you follow to add a node to a cluster?</summary>
+To add a node to a Hadoop cluster, the following process would be followed:
 
-- Which process would you follow to add a node to a cluster? 
+Set up the new node with the same version of Hadoop as the existing nodes in the cluster.
 
-    <details>
-    <summary>Click here to view answer</summary>
-    Answer: 
-    To add a node to a Hadoop cluster, the following process would be followed:
+Configure the Hadoop environment variables and networking settings on the new node to match the existing nodes.
 
-    Set up the new node with the same version of Hadoop as the existing nodes in the cluster.
+Add the new node to the cluster's hosts file and update the DNS settings as needed.
 
-    Configure the Hadoop environment variables and networking settings on the new node to match the existing nodes.
+Start the Hadoop services on the new node and ensure that it can communicate with the other nodes in the cluster.
 
-    Add the new node to the cluster's hosts file and update the DNS settings as needed.
+Use the Hadoop command-line tools to add the new node to the cluster's configuration files, such as hdfs-site.xml and mapred-site.xml.
 
-    Start the Hadoop services on the new node and ensure that it can communicate with the other nodes in the cluster.
+Restart the Hadoop services on the existing nodes in the cluster to ensure that they recognize the new node.
+</details>
 
-    Use the Hadoop command-line tools to add the new node to the cluster's configuration files, such as hdfs-site.xml and mapred-site.xml.
 
-    Restart the Hadoop services on the existing nodes in the cluster to ensure that they recognize the new node.
-    </details>
+<details>
+<summary>Can you list python libraries which can facilitate efficient data processing?</summary>
+Python has several libraries that can facilitate efficient data processing, including:
+NumPy: a library for numerical computing that provides fast and efficient operations on arrays and matrices.
+Pandas: a library for data manipulation and analysis that provides high-performance, easy-to-use data structures and tools for working with tabular data.
+Matplotlib: a library for data visualization that provides a wide range of plotting tools and styles.
+Scikit-learn: a library for machine learning that provides tools for data mining and data analysis.
+Dask: a library for parallel computing that provides an interface for working with large datasets and distributed computing frameworks like Hadoop and Spark.
 
-- Can you list python libraries which can facilitate efficient data processing?
-    
-    <details>
-    <summary>Click here to view answer</summary>
-    Answer: 
-    Python has several libraries that can facilitate efficient data processing, including:
-    NumPy: a library for numerical computing that provides fast and efficient operations on arrays and matrices.
-    Pandas: a library for data manipulation and analysis that provides high-performance, easy-to-use data structures and tools for working with tabular data.
-    Matplotlib: a library for data visualization that provides a wide range of plotting tools and styles.
-    Scikit-learn: a library for machine learning that provides tools for data mining and data analysis.
-    Dask: a library for parallel computing that provides an interface for working with large datasets and distributed computing frameworks like Hadoop and Spark.
+</details>
 
-    </details>
 
-- What challenges came up during your recent project, and how did you overcome these challenges?
-    
-    <details>
-    <summary>Click here to view answer</summary>
-    Answer: 
-    Some common challenges that can arise during a data engineering project include data quality issues, hardware and infrastructure limitations, and scaling issues. To overcome these challenges, data engineers may use techniques like data cleansing and transformation, cloud-based infrastructure, and distributed computing frameworks like Hadoop and Spark.
+<details>
+<summary>What challenges came up during your recent project, and how did you overcome these challenges?</summary>
+Some common challenges that can arise during a data engineering project include data quality issues, hardware and infrastructure limitations, and scaling issues. To overcome these challenges, data engineers may use techniques like data cleansing and transformation, cloud-based infrastructure, and distributed computing frameworks like Hadoop and Spark.
 
-    </details>
+</details>
 
-- Have you ever transformed unstructured data into structured data? and how did you do it? 
+<details>
+<summary>Have you ever transformed unstructured data into structured data? and how did you do it? </summary>
+Transforming unstructured data into structured data is a common task for data engineers. The process typically involves using techniques like text mining, natural language processing, and machine learning to extract useful information from unstructured data sources like text files and log files. Once the data has been extracted and transformed, it can be loaded into a structured data store like a database or data warehouse for further analysis.
 
-    <details>
-    <summary>Click here to view answer</summary>
-    Answer: 
-    Transforming unstructured data into structured data is a common task for data engineers. The process typically involves using techniques like text mining, natural language processing, and machine learning to extract useful information from unstructured data sources like text files and log files. Once the data has been extracted and transformed, it can be loaded into a structured data store like a database or data warehouse for further analysis.
-  
-    </details>
+</details>
 
-- Can you tell me about NameNode? What happens if NameNode crashes or comes to an end?
-    
-    <details>
-    <summary>Click here to view answer</summary>
-    Answer: 
-    The NameNode is a key component of the Hadoop Distributed File System (HDFS). It is responsible for managing the metadata of the files stored in the HDFS, including the location and attributes of each block of data. The NameNode maintains a directory tree of all files in the HDFS and keeps track of the location of each block across the cluster.
 
-    If the NameNode crashes or becomes unavailable, the HDFS becomes read-only until the NameNode is restored or replaced. During this time, no new data can be written to the HDFS, but existing data can still be read. To recover from a NameNode failure, the administrator can either restart the failed NameNode or replace it with a new one. In either case, the new NameNode must be initialized with a backup of the metadata stored in the secondary NameNode, which acts as a hot standby for the primary NameNode. Once the new NameNode is operational, it takes over the responsibility of managing the metadata of the HDFS, and the cluster can resume normal operations.
-    </details>
+<details>
+<summary>Can you tell me about NameNode? What happens if NameNode crashes or comes to an end?</summary>
+The NameNode is a key component of the Hadoop Distributed File System (HDFS). It is responsible for managing the metadata of the files stored in the HDFS, including the location and attributes of each block of data. The NameNode maintains a directory tree of all files in the HDFS and keeps track of the location of each block across the cluster.
 
-- How to achieve security in Hadoop?
+If the NameNode crashes or becomes unavailable, the HDFS becomes read-only until the NameNode is restored or replaced. During this time, no new data can be written to the HDFS, but existing data can still be read. To recover from a NameNode failure, the administrator can either restart the failed NameNode or replace it with a new one. In either case, the new NameNode must be initialized with a backup of the metadata stored in the secondary NameNode, which acts as a hot standby for the primary NameNode. Once the new NameNode is operational, it takes over the responsibility of managing the metadata of the HDFS, and the cluster can resume normal operations.
+</details>
 
-    <details>
-    <summary>Click here to view answer</summary>
-    Answer: 
-    Hadoop provides several mechanisms to achieve security in the cluster, including authentication, authorization, and data encryption. Some of the ways to achieve security in Hadoop are:
 
-    Kerberos authentication: Hadoop can integrate with Kerberos to provide secure authentication for users and services in the cluster. This ensures that only authorized users can access sensitive data and services.
+<details>
+<summary>How to achieve security in Hadoop?</summary>
+Hadoop provides several mechanisms to achieve security in the cluster, including authentication, authorization, and data encryption. Some of the ways to achieve security in Hadoop are:
 
-    Access control lists (ACLs): Hadoop supports ACLs, which allow administrators to control access to files and directories in the HDFS. ACLs can be used to grant or deny specific permissions to individual users or groups.
+Kerberos authentication: Hadoop can integrate with Kerberos to provide secure authentication for users and services in the cluster. This ensures that only authorized users can access sensitive data and services.
 
-    Encryption: Hadoop supports data encryption at rest and in transit. Data can be encrypted using industry-standard encryption algorithms like AES, and keys can be managed using key management services like Key Management Service (KMS).
+Access control lists (ACLs): Hadoop supports ACLs, which allow administrators to control access to files and directories in the HDFS. ACLs can be used to grant or deny specific permissions to individual users or groups.
 
-    Firewall and network security: Hadoop clusters should be protected by firewalls to prevent unauthorized access from outside the cluster. Network security measures like Virtual Private Network (VPN) can also be used to secure data transmission across the cluster.
+Encryption: Hadoop supports data encryption at rest and in transit. Data can be encrypted using industry-standard encryption algorithms like AES, and keys can be managed using key management services like Key Management Service (KMS).
 
-    Auditing and monitoring: Hadoop provides tools for auditing and monitoring cluster activities, which can help identify security breaches and anomalies in the system.
-    </details>
+Firewall and network security: Hadoop clusters should be protected by firewalls to prevent unauthorized access from outside the cluster. Network security measures like Virtual Private Network (VPN) can also be used to secure data transmission across the cluster.
 
-- What is FIFO Scheduling? 
+Auditing and monitoring: Hadoop provides tools for auditing and monitoring cluster activities, which can help identify security breaches and anomalies in the system.
+</details>
 
-    <details>
-    <summary>Click here to view answer</summary>
-    Answer: 
-    FIFO scheduling is a scheduling algorithm used in Hadoop that stands for First In, First Out. In this scheduling algorithm, the tasks are executed in the order in which they are submitted to the JobTracker. The first task submitted to the JobTracker is the first one to be executed, followed by the second task, and so on. This scheduling algorithm is simple and easy to implement, but it may not be the most efficient algorithm for all workloads. In particular, it can lead to long wait times for high-priority jobs if lower-priority jobs are submitted first. Other scheduling algorithms like Fair Scheduler and Capacity Scheduler are also available in Hadoop to address these issues.
-    </details>
+<details>
+<summary>What is FIFO Scheduling? </summary>
+FIFO scheduling is a scheduling algorithm used in Hadoop that stands for First In, First Out. In this scheduling algorithm, the tasks are executed in the order in which they are submitted to the JobTracker. The first task submitted to the JobTracker is the first one to be executed, followed by the second task, and so on. This scheduling algorithm is simple and easy to implement, but it may not be the most efficient algorithm for all workloads. In particular, it can lead to long wait times for high-priority jobs if lower-priority jobs are submitted first. Other scheduling algorithms like Fair Scheduler and Capacity Scheduler are also available in Hadoop to address these issues.
+</details>
 
 ### SQL
 
-- How can you deal with duplicate data points in an SQL query?
+<details>
+<summary>How can you deal with duplicate data points in an SQL query?</summary>
+To deal with duplicate data points in an SQL query, you can use the DISTINCT keyword in the SELECT statement. The DISTINCT keyword filters out duplicate values from the result set, returning only unique values. Alternatively, you can use the GROUP BY clause in combination with an aggregate function such as COUNT() or SUM() to group the duplicate values together and perform calculations on them.
+</details>
 
-    <details>
-    <summary>Click here to view answer</summary>
-    Answer: 
-    To deal with duplicate data points in an SQL query, you can use the DISTINCT keyword in the SELECT statement. The DISTINCT keyword filters out duplicate values from the result set, returning only unique values. Alternatively, you can use the GROUP BY clause in combination with an aggregate function such as COUNT() or SUM() to group the duplicate values together and perform calculations on them.
-    </details>
 
-- List objects that are created via the CREATE statement in SQL
+<details>
+<summary>List objects that are created via the CREATE statement in SQL</summary>
+Objects that can be created using the CREATE statement in SQL include tables, views, indexes, sequences, procedures, functions, and triggers.
+</details>
 
-   <details>
-    <summary>Click here to view answer</summary>
-    Answer: 
-    Objects that can be created using the CREATE statement in SQL include tables, views, indexes, sequences, procedures, functions, and triggers.
-    </details>
+<details>
+<summary>How would you see the database structure in SQL? </summary>
+In SQL, you can use the DESCRIBE statement to see the structure of a specific table, which shows the names, data types, and constraints of the columns in the table. Additionally, you can use the SHOW TABLES statement to see a list of all tables in the current database.
+</details>
 
-- How would you see the database structure in SQL? 
 
-    <details>
-    <summary>Click here to view answer</summary>
-    Answer: 
-    In SQL, you can use the DESCRIBE statement to see the structure of a specific table, which shows the names, data types, and constraints of the columns in the table. Additionally, you can use the SHOW TABLES statement to see a list of all tables in the current database.
-    </details>
+<details>
+<summary>How would you search for a specific string in a column?</summary>
+To search for a specific string in a column, you can use the LIKE operator in a SELECT statement. The LIKE operator is used in a WHERE clause to search for a specified pattern in a column. For example, the following SQL query selects all rows from the "customers" table where the "contact_name" column contains the string "John":
 
-- How would you search for a specific string in a column? 
 
-    <details>
-    <summary>Click here to view answer</summary>
-    Answer: 
-    To search for a specific string in a column, you can use the LIKE operator in a SELECT statement. The LIKE operator is used in a WHERE clause to search for a specified pattern in a column. For example, the following SQL query selects all rows from the "customers" table where the "contact_name" column contains the string "John":
+SELECT * 
 
+FROM customers
 
-    SELECT * 
+WHERE contact_name LIKE '%John%';
 
-    FROM customers
+</details>
 
-    WHERE contact_name LIKE '%John%';
+<details>
+<summary>What are the differences between DDL, DML and DCL?</summary>
+DDL (Data Definition Language) is used to define the database schema and includes commands such as CREATE, ALTER, and DROP. DML (Data Manipulation Language) is used to manipulate the data in the database and includes commands such as SELECT, INSERT, UPDATE, and DELETE. DCL (Data Control Language) is used to manage user access permissions and includes commands such as GRANT and REVOKE.
+</details>
 
-    </details>
 
-- What are the differences between DDL, DML and DCL?
+<details>
+<summary>Difference between SQL and MySQL? </summary>
+SQL (Structured Query Language) is a programming language used to manage relational databases. MySQL is a popular open-source relational database management system that uses SQL as its standard programming language.
+</details>
 
-    <details>
-    <summary>Click here to view answer</summary>
-    DDL (Data Definition Language) is used to define the database schema and includes commands such as CREATE, ALTER, and DROP. DML (Data Manipulation Language) is used to manipulate the data in the database and includes commands such as SELECT, INSERT, UPDATE, and DELETE. DCL (Data Control Language) is used to manage user access permissions and includes commands such as GRANT and REVOKE.
-    </details>
 
-- Difference between SQL and MySQL? 
+<details>
+<summary>How is a RDBMS different to a DBMS?</summary>
+An RDBMS (Relational Database Management System) is a type of DBMS (Database Management System) that organizes data into one or more tables with a predefined structure, and uses relationships between tables to store and retrieve data. A DBMS, on the other hand, can be any system that manages data, including hierarchical, network, and object-oriented databases.
+</details>
 
-    <details>
-    <summary>Click here to view answer</summary>
-    SQL (Structured Query Language) is a programming language used to manage relational databases. MySQL is a popular open-source relational database management system that uses SQL as its standard programming language.
-    </details>
+<details>
+<summary>What is a self join? name other join commands</summary>
+A self join is a join where a table is joined with itself. It is useful when a table contains a foreign key that references its own primary key. Other join commands include INNER JOIN, LEFT JOIN, RIGHT JOIN, and FULL OUTER JOIN.
+</details>
 
-- How is a RDBMS different to a DBMS? 
 
-    <details>
-    <summary>Click here to view answer</summary>
-    An RDBMS (Relational Database Management System) is a type of DBMS (Database Management System) that organizes data into one or more tables with a predefined structure, and uses relationships between tables to store and retrieve data. A DBMS, on the other hand, can be any system that manages data, including hierarchical, network, and object-oriented databases.
-    </details>
+<details>
+<summary>What is the SELECT statement?</summary>
+The SELECT statement is used to retrieve data from one or more tables in a database. It is the most commonly used SQL statement and is used to retrieve specific columns and/or rows that match a specified condition.
+</details>
 
-- What is a self join? name other join commands
+<details>
+<summary>What are the CRUD commands? </summary>
+CRUD (Create, Read, Update, Delete) commands are used to manipulate data in a database. CREATE is used to create new records, READ is used to retrieve records, UPDATE is used to modify existing records, and DELETE is used to delete records.
+</details>
 
-    <details>
-    <summary>Click here to view answer</summary>
-    A self join is a join where a table is joined with itself. It is useful when a table contains a foreign key that references its own primary key. Other join commands include INNER JOIN, LEFT JOIN, RIGHT JOIN, and FULL OUTER JOIN.
-    </details>
 
-- What is the SELECT statement? 
+<details>
+<summary>What are UNION, MINUS and INTERSECT commands? </summary>
+UNION, MINUS, and INTERSECT are set operators that allow combining, subtracting, and intersecting results from two or more SELECT statements in SQL.
 
-    <details>
-    <summary>Click here to view answer</summary>
-    The SELECT statement is used to retrieve data from one or more tables in a database. It is the most commonly used SQL statement and is used to retrieve specific columns and/or rows that match a specified condition.
-    </details>
+UNION: returns the combined results of two or more SELECT statements, removing duplicates. The number of columns and their data types must be the same in all SELECT statements.
 
-- What are the CRUD commands? 
+MINUS (also known as EXCEPT in some versions of SQL): returns the rows from the first SELECT statement that are not present in the second SELECT statement.
 
-    <details>
-    <summary>Click here to view answer</summary>
-    CRUD (Create, Read, Update, Delete) commands are used to manipulate data in a database. CREATE is used to create new records, READ is used to retrieve records, UPDATE is used to modify existing records, and DELETE is used to delete records.
-    </details>
+INTERSECT: returns only the rows that are common to both SELECT statements.
 
-- What are UNION, MINUS and INTERSECT commands? 
+These set operators can be useful in situations where you need to combine, subtract or compare data from multiple tables or queries.
+</details>
+ 
 
-    <details>
-    <summary>Click here to view answer</summary>
-    UNION, MINUS, and INTERSECT are set operators that allow combining, subtracting, and intersecting results from two or more SELECT statements in SQL.
+<details>
+<summary>How would you load data into tables using SQL?</summary>
+Data can be loaded into tables using SQL by using the "INSERT" statement. This statement is used to add one or more records to a table. The syntax for inserting data into a table is as follows:
 
-    UNION: returns the combined results of two or more SELECT statements, removing duplicates. The number of columns and their data types must be the same in all SELECT statements.
 
-    MINUS (also known as EXCEPT in some versions of SQL): returns the rows from the first SELECT statement that are not present in the second SELECT statement.
+INSERT INTO table_name (column1, column2, column3, ...)
 
-    INTERSECT: returns only the rows that are common to both SELECT statements.
+VALUES (value1, value2, value3, ...);
 
-    These set operators can be useful in situations where you need to combine, subtract or compare data from multiple tables or queries.
-    </details>
+In this syntax, "table_name" is the name of the table where data needs to be inserted, and "column1, column2, column3, ..." are the names of the columns where data needs to be inserted. "value1, value2, value3, ..." are the values that need to be inserted in the respective columns.
+</details>
 
-- How would you load data into tables using SQL? 
+<details>
+<summary>What is PostgreSQL?</summary>
+PostgreSQL is a powerful open-source relational database management system (RDBMS) that supports a wide range of features including transactions, sub-selects, triggers, views, and foreign keys. It is designed to be highly scalable, and can handle large amounts of data and concurrent users. PostgreSQL is known for its stability, reliability, and data integrity.
+</details>
 
-    <details>
-    <summary>Click here to view answer</summary>
-    Data can be loaded into tables using SQL by using the "INSERT" statement. This statement is used to add one or more records to a table. The syntax for inserting data into a table is as follows:
+<details>
+<summary>Explain the character manipulation functions in SQL</summary>
+Character manipulation functions in SQL are used to modify strings in a database. These functions include:
 
+CONCAT: Used to concatenate two or more strings.
 
-    INSERT INTO table_name (column1, column2, column3, ...)
-    
-    VALUES (value1, value2, value3, ...);
+UPPER and LOWER: Used to convert a string to uppercase or lowercase respectively.
 
-    In this syntax, "table_name" is the name of the table where data needs to be inserted, and "column1, column2, column3, ..." are the names of the columns where data needs to be inserted. "value1, value2, value3, ..." are the values that need to be inserted in the respective columns.
-    </details>
+SUBSTRING: Used to extract a substring from a given string.
 
-- What is PostgreSQL?
+LENGTH: Used to get the length of a string.
 
-    <details>
-    <summary>Click here to view answer</summary>
-    PostgreSQL is a powerful open-source relational database management system (RDBMS) that supports a wide range of features including transactions, sub-selects, triggers, views, and foreign keys. It is designed to be highly scalable, and can handle large amounts of data and concurrent users. PostgreSQL is known for its stability, reliability, and data integrity.
-    </details>
+TRIM: Used to remove leading or trailing spaces from a string.
 
-- Explain the character manipulation functions in SQL
+REPLACE: Used to replace a substring within a string with a new substring.
 
-    <details>
-    <summary>Click here to view answer</summary>
-    Character manipulation functions in SQL are used to modify strings in a database. These functions include:
+</details>
 
-    CONCAT: Used to concatenate two or more strings.
-    
-    UPPER and LOWER: Used to convert a string to uppercase or lowercase respectively.
-    
-    SUBSTRING: Used to extract a substring from a given string.
-    
-    LENGTH: Used to get the length of a string.
-    
-    TRIM: Used to remove leading or trailing spaces from a string.
-    
-    REPLACE: Used to replace a substring within a string with a new substring.
 
-    </details>
+<details>
+<summary>What is the difference between RANK and DENSE_RANK() functions?</summary>
+Character manipulation functions in SQL are used to modify strings in a database. These functions include:
 
-- What is the difference between RANK and DENSE_RANK() functions? 
+The RANK() and DENSE_RANK() functions are used to assign a rank to each row in a result set based on the values in one or more columns. The main difference between the two functions is how they handle ties.
 
-    <details>
-    <summary>Click here to view answer</summary>
-    Character manipulation functions in SQL are used to modify strings in a database. These functions include:
+The RANK() function assigns the same rank to tied rows, and leaves gaps in the ranking sequence. For example, if two rows have the same value and are assigned rank 2, the next row will be assigned rank 4.
 
-    The RANK() and DENSE_RANK() functions are used to assign a rank to each row in a result set based on the values in one or more columns. The main difference between the two functions is how they handle ties.
+The DENSE_RANK() function, on the other hand, assigns the same rank to tied rows, but does not leave gaps in the ranking sequence. For example, if two rows have the same value and are assigned rank 2, the next row will be assigned rank 3. 
 
-    The RANK() function assigns the same rank to tied rows, and leaves gaps in the ranking sequence. For example, if two rows have the same value and are assigned rank 2, the next row will be assigned rank 4.
+</details>
 
-    The DENSE_RANK() function, on the other hand, assigns the same rank to tied rows, but does not leave gaps in the ranking sequence. For example, if two rows have the same value and are assigned rank 2, the next row will be assigned rank 3. 
+<details>
+<summary>What are tables and fields?r</summary>
+Tables are the fundamental objects in a database, where data is stored in rows and columns. A table is made up of one or more columns, which define the type of data that can be stored in each row of the table. Each column has a name and a data type.
 
-    </details>
+Fields, also known as columns, are the individual pieces of data stored in a table. Each field has a name, a data type, and a value.
+</details>
 
-- What are tables and fields? 
+<details>
+<summary>What is a schema in a SQL server?</summary>
+A schema in a SQL server is a logical container for database objects, such as tables, views, indexes, and stored procedures. It is a way to organize database objects into groups and assign permissions to those groups. A schema can be used to separate database objects into logical categories, and can be used to isolate different applications or users from each other.
+</details>
 
-    <details>
-    <summary>Click here to view answer</summary>
-    Tables are the fundamental objects in a database, where data is stored in rows and columns. A table is made up of one or more columns, which define the type of data that can be stored in each row of the table. Each column has a name and a data type.
 
-    Fields, also known as columns, are the individual pieces of data stored in a table. Each field has a name, a data type, and a value.
-    </details>
+<details>
+<summary>How would you create a table with 4 columns</summary>
+To create a table with 4 columns, you would use the "CREATE TABLE" statement, with the column names and data types specified as follows:
 
-- What is a schema in a SQL server? 
+CREATE TABLE my_table (
 
-    <details>
-    <summary>Click here to view answer</summary>
-    A schema in a SQL server is a logical container for database objects, such as tables, views, indexes, and stored procedures. It is a way to organize database objects into groups and assign permissions to those groups. A schema can be used to separate database objects into logical categories, and can be used to isolate different applications or users from each other.
-    </details>
+column_1 datatype,
 
-- How would you create a table with 4 columns? 
+column_2 datatype,
 
-    <details>
-    <summary>Click here to view answer</summary>
-    To create a table with 4 columns, you would use the "CREATE TABLE" statement, with the column names and data types specified as follows:
+column_3 datatype,
 
-    CREATE TABLE my_table (
-    
-    column_1 datatype,
-    
-    column_2 datatype,
-    
-    column_3 datatype,
-    
-    column_4 datatype
-    
-    );
+column_4 datatype
 
-    </details>
+);
 
-- What is a CASE statment? 
+</details>
 
-    <details>
-    <summary>Click here to view answer</summary>
-    A CASE statement is a control flow structure in SQL that allows you to add conditional logic to a query. It evaluates a set of conditions and returns a value based on the first true condition. The basic syntax of a CASE statement is:
+<details>
+<summary>What is a CASE statment?</summary>
+A CASE statement is a control flow structure in SQL that allows you to add conditional logic to a query. It evaluates a set of conditions and returns a value based on the first true condition. The basic syntax of a CASE statement is:
 
-    CASE 
-    
-    WHEN condition_1 THEN result_1
-    
-    WHEN condition_2 THEN result_2
-    
-    ...
-    
-    ELSE result_n
-    
-    END
+CASE 
 
-    </details>
+WHEN condition_1 THEN result_1
 
-- Summarise differences between SQL and NoSQL
+WHEN condition_2 THEN result_2
 
-    <details>
-    <summary>Click here to view answer</summary>
-    SQL (Structured Query Language) and NoSQL (Not Only SQL) are two types of database management systems that differ in their data model, storage architecture, and query language.
+...
 
-    SQL databases are relational databases that store data in tables with fixed schemas. They use SQL as the query language to perform operations like CRUD (Create, Read, Update, Delete) on the data. SQL databases are known for their ability to handle complex queries and transactions, and for their strong consistency and ACID (Atomicity, Consistency, Isolation, Durability) properties. Examples of SQL databases include MySQL, Oracle, and PostgreSQL.
+ELSE result_n
 
-    On the other hand, NoSQL databases are non-relational databases that store data in flexible schemas, such as key-value pairs, documents, or graphs. They typically use a query language other than SQL, such as JSON or MongoDB's query language, to retrieve and manipulate data. NoSQL databases are known for their scalability, high availability, and ability to handle unstructured and semi-structured data. However, they may sacrifice consistency and durability for performance and scalability. Examples of NoSQL databases include MongoDB, Cassandra, and Couchbase.
+END
 
-    </details>
+</details>
+
+<details>
+<summary>Summarise differences between SQL and NoSQL</summary>
+SQL (Structured Query Language) and NoSQL (Not Only SQL) are two types of database management systems that differ in their data model, storage architecture, and query language.
+
+SQL databases are relational databases that store data in tables with fixed schemas. They use SQL as the query language to perform operations like CRUD (Create, Read, Update, Delete) on the data. SQL databases are known for their ability to handle complex queries and transactions, and for their strong consistency and ACID (Atomicity, Consistency, Isolation, Durability) properties. Examples of SQL databases include MySQL, Oracle, and PostgreSQL.
+
+On the other hand, NoSQL databases are non-relational databases that store data in flexible schemas, such as key-value pairs, documents, or graphs. They typically use a query language other than SQL, such as JSON or MongoDB's query language, to retrieve and manipulate data. NoSQL databases are known for their scalability, high availability, and ability to handle unstructured and semi-structured data. However, they may sacrifice consistency and durability for performance and scalability. Examples of NoSQL databases include MongoDB, Cassandra, and Couchbase.
+
+</details>
     
 - Difference between NOW() and CURRENT_DATE()
 - What is a BLOB and TEXT in MySQL?
@@ -2228,194 +2055,156 @@ Advanced:
 
 - How would I go about troubleshooting pipelines?
 
-
-
 ## Machine Learning
-
-- 
 
 
 ## Cyber Security & Info Security
 
-- What is a firewall, and how does it work?
+<details>
+<summary>What is a firewall, and how does it work?</summary>
+A firewall is a network security device that monitors and controls incoming and outgoing network traffic based on predetermined security rules. It can be hardware, software, or a combination of both, and it is designed to prevent unauthorized access to a network while allowing legitimate traffic to pass through. Firewalls typically work by analyzing packets of data and either allowing or blocking them based on rules established by the network administrator.
+</details>
 
-  <details>
-  <summary>Click here to view answer</summary>
-  Answer: A firewall is a network security device that monitors and controls incoming and outgoing network traffic based on predetermined security rules. It can be hardware, software, or a combination of both, and it is designed to prevent unauthorized access to a network while allowing legitimate traffic to pass through. Firewalls typically work by analyzing packets of data and either allowing or blocking them based on rules established by the network administrator.
-  </details>
+
+<details>
+<summary>What is a vulnerability assessment, and how is it different from a penetration test?</summary>
+A vulnerability assessment is a process of identifying and assessing potential vulnerabilities in a system or network. It is typically done using automated tools or manual testing techniques to identify vulnerabilities that could be exploited by an attacker. A penetration test, on the other hand, is a simulated attack on a system or network designed to test its security controls and identify potential weaknesses. While both vulnerability assessments and penetration tests are used to identify security vulnerabilities, the main difference is that vulnerability assessments are more focused on identifying potential vulnerabilities, while penetration tests are designed to actually test the effectiveness of security controls in place.
+</details>
   
-- What is a vulnerability assessment, and how is it different from a penetration test?
 
-  <details>
-  <summary>Click here to view answer</summary>
-  Answer: A vulnerability assessment is a process of identifying and assessing potential vulnerabilities in a system or network. It is typically done using automated tools or manual testing techniques to identify vulnerabilities that could be exploited by an attacker. A penetration test, on the other hand, is a simulated attack on a system or network designed to test its security controls and identify potential weaknesses. While both vulnerability assessments and penetration tests are used to identify security vulnerabilities, the main difference is that vulnerability assessments are more focused on identifying potential vulnerabilities, while penetration tests are designed to actually test the effectiveness of security controls in place.
-  </details>
+<details>
+<summary>What is encryption, and how is it used in cybersecurity?</summary>
+Encryption is the process of converting plain text into a coded format to protect it from unauthorized access. It is used in cybersecurity to protect sensitive information like passwords, credit card numbers, and other confidential data. Encryption works by using mathematical algorithms to convert the original data into a ciphertext that can only be read by someone who has the key to decrypt it back into plain text.
+</details>
   
-- What is encryption, and how is it used in cybersecurity?
 
-  <details>
-  <summary>Click here to view answer</summary>
-  Answer: Encryption is the process of converting plain text into a coded format to protect it from unauthorized access. It is used in cybersecurity to protect sensitive information like passwords, credit card numbers, and other confidential data. Encryption works by using mathematical algorithms to convert the original data into a ciphertext that can only be read by someone who has the key to decrypt it back into plain text.
-  </details>
+<details>
+<summary>What is a Denial of Service (DoS) attack, and how does it work?</summary>
+A Denial of Service (DoS) attack is an attack on a computer system or network that disrupts its normal functioning by overwhelming it with traffic or requests. The attacker typically sends a large number of requests or packets to the target system or network, making it difficult or impossible for legitimate traffic to get through. This can cause the system or network to crash or become unavailable to users.
+</details>
+
+
+<details>
+<summary>What is phishing, and how can you identify and prevent it?</summary>
+Phishing is a type of cyber attack where an attacker tries to trick a user into revealing sensitive information like passwords, credit card numbers, or other personal data. This is typically done by sending an email that appears to be from a legitimate source, such as a bank or other trusted organization, and asking the user to click on a link or provide their login credentials. To identify and prevent phishing attacks, users should be cautious when opening emails or clicking on links from unknown sources. They should also look for signs of a phishing email, such as poor grammar, misspellings, or requests for personal information.
+</details>
+
+<details>
+<summary>What is a DDoS attack and how does it work?</summary>
+A DDoS (Distributed Denial of Service) attack is a type of cyber attack that involves flooding a target system or network with traffic from multiple sources, in order to overload it and make it unavailable to legitimate users. DDoS attacks can be carried out using a variety of techniques, including botnets, amplification attacks, and SYN floods.
+</details>
   
-- What is a Denial of Service (DoS) attack, and how does it work?
+- 
 
-  <details>
-  <summary>Click here to view answer</summary>
-  Answer: A Denial of Service (DoS) attack is an attack on a computer system or network that disrupts its normal functioning by overwhelming it with traffic or requests. The attacker typically sends a large number of requests or packets to the target system or network, making it difficult or impossible for legitimate traffic to get through. This can cause the system or network to crash or become unavailable to users.
-  </details>
+<details>
+<summary>What is the CIA triad and why is it important in cyber security?</summary>
+The CIA triad stands for Confidentiality, Integrity, and Availability. It is an essential concept in cybersecurity that refers to the three key objectives of securing sensitive information: maintaining its confidentiality, ensuring its integrity, and guaranteeing its availability to authorized users.
+</details>
+
+<details>
+<summary>What is the difference between a virus and a worm?</summary>
+A virus is a malicious software that replicates itself and spreads to other computers through infected files, while a worm is a self-replicating malicious software that spreads through computer networks and exploits security vulnerabilities in the system.
+</details>
+
+<details>
+<summary>What is multi-factor authentication and why is it important?</summary>
+Multi-factor authentication (MFA) is a security mechanism that requires users to provide two or more forms of authentication before they are granted access to a system or application. MFA helps to prevent unauthorized access by making it more difficult for attackers to gain access, even if they have stolen a user's password or other authentication credentials.
+</details>
+
+<details>
+<summary>What is social engineering, and how can it be prevented?</summary>
+Social engineering is a technique used by cybercriminals to manipulate people into divulging sensitive information or performing an action that can compromise their security. It can be prevented by educating employees about the risks of social engineering and implementing security policies and procedures that minimize the risk of social engineering attacks.
+</details>
   
-- What is phishing, and how can you identify and prevent it?
 
-  <details>
-  <summary>Click here to view answer</summary>
-  Answer: Phishing is a type of cyber attack where an attacker tries to trick a user into revealing sensitive information like passwords, credit card numbers, or other personal data. This is typically done by sending an email that appears to be from a legitimate source, such as a bank or other trusted organization, and asking the user to click on a link or provide their login credentials. To identify and prevent phishing attacks, users should be cautious when opening emails or clicking on links from unknown sources. They should also look for signs of a phishing email, such as poor grammar, misspellings, or requests for personal information.
-  </details>
+<details>
+<summary>What is the difference between symmetric and asymmetric encryption?</summary>
+Symmetric encryption uses the same key for both encryption and decryption, while asymmetric encryption uses different keys for encryption and decryption.
+</details>  
+
+
+<details>
+<summary>What is an intrusion detection system (IDS), and how does it work?</summary>
+An intrusion detection system is a network security technology that monitors network traffic for signs of malicious activity or policy violations. It works by analyzing network traffic in real-time and comparing it against a set of predetermined rules or policies to detect potential security threats.
+</details>
+
+<details>
+<summary>What is a security information and event management (SIEM) system, and how does it work?</summary>
+A security information and event management system is a technology that provides real-time analysis of security alerts generated by network hardware and applications. It works by collecting and correlating security events from multiple sources to identify potential security threats.
+</details>
+
+<details>
+<summary>What is a honeypot and how is it used in cybersecurity?</summary>
+A honeypot is a decoy system designed to attract attackers and gather information about their methods and motivations. It can be used to detect new types of attacks, collect threat intelligence, and analyze attacker behavior.
+</details>
   
-- What is a DDoS attack and how does it work?
-
-  <details>
-  <summary>Click here to view answer</summary>
-  Answer: A DDoS (Distributed Denial of Service) attack is a type of cyber attack that involves flooding a target system or network with traffic from multiple sources, in order to overload it and make it unavailable to legitimate users. DDoS attacks can be carried out using a variety of techniques, including botnets, amplification attacks, and SYN floods.
-  </details>
+<details>
+<summary>What is a man-in-the-middle attack and how can it be prevented?</summary>
+A man-in-the-middle (MITM) attack is a type of cyber attack where an attacker intercepts communication between two parties, often to steal sensitive information. To prevent MITM attacks, users should avoid using public Wi-Fi networks, use encrypted communications channels, and verify the identity of the party they are communicating with.
+</details>
   
-- What is the CIA triad and why is it important in cyber security?
 
-  <details>
-  <summary>Click here to view answer</summary>
-  Answer: The CIA triad stands for Confidentiality, Integrity, and Availability. It is an essential concept in cybersecurity that refers to the three key objectives of securing sensitive information: maintaining its confidentiality, ensuring its integrity, and guaranteeing its availability to authorized users.
-  </details>
+<details>
+<summary>What is the difference between IDS and IPS?</summary>
+IDS is Intrusion Detection System and it only detects intrusions and the administrator has to take care of preventing the intrusion. Whereas, in IPS i.e., Intrusion Prevention System, the system detects the intrusion and also takes actions to prevent the intrusion.
+</details>
   
-- What is the difference between a virus and a worm?
 
-  <details>
-  <summary>Click here to view answer</summary>
-  Answer: A virus is a malicious software that replicates itself and spreads to other computers through infected files, while a worm is a self-replicating malicious software that spreads through computer networks and exploits security vulnerabilities in the system.
-  </details>
-
-- What is multi-factor authentication and why is it important?
-
-  <details>
-  <summary>Click here to view answer</summary>
-  Answer: Multi-factor authentication (MFA) is a security mechanism that requires users to provide two or more forms of authentication before they are granted access to a system or application. MFA helps to prevent unauthorized access by making it more difficult for attackers to gain access, even if they have stolen a user's password or other authentication credentials.
-  </details>
-
-- What is social engineering, and how can it be prevented?
-
-  <details>
-  <summary>Click here to view answer</summary>
-  Answer: Social engineering is a technique used by cybercriminals to manipulate people into divulging sensitive information or performing an action that can compromise their security. It can be prevented by educating employees about the risks of social engineering and implementing security policies and procedures that minimize the risk of social engineering attacks.
-  </details>
+<details>
+<summary>How is Encryption different from Hashing?</summary>
+Both Encryption and Hashing are used to convert readable data into an unreadable format. The difference is that the encrypted data can be converted back to original data by the process of decryption but the hashed data cannot be converted back to original data.
+</details>
   
-- What is the difference between symmetric and asymmetric encryption?
 
-  <details>
-  <summary>Click here to view answer</summary>
-  Answer: Symmetric encryption uses the same key for both encryption and decryption, while asymmetric encryption uses different keys for encryption and decryption.
-  </details>  
+<details>
+<summary>What is a three-way handshake?</summary>
+A three-way handshake is a method used in a TCP/IP network to create a connection between a host and a client. It’s called a three-way handshake because it is a three-step method in which the client and server exchanges packets. The three steps are as follows: The client sends a SYN(Synchronize) packet to the server check if the server is up or has open ports. The server sends SYN-ACK packet to the client if it has open ports. The client acknowledges this and sends an ACK(Acknowledgment) packet back to the server
+</details>
 
-- What is an intrusion detection system (IDS), and how does it work?
-
-  <details>
-  <summary>Click here to view answer</summary>
-  Answer: An intrusion detection system is a network security technology that monitors network traffic for signs of malicious activity or policy violations. It works by analyzing network traffic in real-time and comparing it against a set of predetermined rules or policies to detect potential security threats.
-  </details>
-
-- What is a security information and event management (SIEM) system, and how does it work?
-
-  <details>
-  <summary>Click here to view answer</summary>
-  Answer: A security information and event management system is a technology that provides real-time analysis of security alerts generated by network hardware and applications. It works by collecting and correlating security events from multiple sources to identify potential security threats.
-  </details>
-
-- What is a honeypot and how is it used in cybersecurity?
-
-  <details>
-  <summary>Click here to view answer</summary>
-  Answer: A honeypot is a decoy system designed to attract attackers and gather information about their methods and motivations. It can be used to detect new types of attacks, collect threat intelligence, and analyze attacker behavior.
-  </details>
+<details>
+<summary>CWhat are the response codes that can be received from a Web Application?</summary>
+1xx – Informational responses
+2xx – Success
+3xx – Redirection
+4xx – Client-side error
+5xx – Server-side error
+</details>
   
-- What is a man-in-the-middle attack and how can it be prevented?
 
-  <details>
-  <summary>Click here to view answer</summary>
-  Answer: A man-in-the-middle (MITM) attack is a type of cyber attack where an attacker intercepts communication between two parties, often to steal sensitive information. To prevent MITM attacks, users should avoid using public Wi-Fi networks, use encrypted communications channels, and verify the identity of the party they are communicating with.
-  </details>
+<details>
+<summary>Explain SSL Encryption?</summary>
+SSL(Secure Sockets Layer) is the industry-standard security technology creating encrypted connections between Web Server and a Browser. This is used to maintain data privacy and to protect the information in online transactions. The steps for establishing an SSL connection is as follows:
+A browser tries to connect to the webserver secured with SSL. The browser sends a copy of its SSL certificate to the browse. The browser checks if the SSL certificate is trustworthy or not. If it is trustworthy, then the browser sends a message to the web server requesting to establish an encrypted connection. The web server sends an acknowledgment to start an SSL encrypted connection. SSL encrypted communication takes place between the browser and the web server
+</details>
   
-- What is the difference between IDS and IPS?
 
-  <details>
-  <summary>Click here to view answer</summary>
-  Answer: IDS is Intrusion Detection System and it only detects intrusions and the administrator has to take care of preventing the intrusion. Whereas, in IPS i.e., Intrusion Prevention System, the system detects the intrusion and also takes actions to prevent the intrusion.
-  </details>
+<details>
+<summary>Explain Data Leakage?</summary>
+Data Leakage is an intentional or unintentional transmission of data from within the organization to an external unauthorized destination. It is the disclosure of confidential information to an unauthorized entity. Data Leakage can be divided into 3 categories based on how it happens:
+Accidental Breach: An entity unintentionally send data to an unauthorized person due to a fault or a blunder. Intentional Breach: The authorized entity sends data to an unauthorized entity on purpos. System Hack: Hacking techniques are used to cause data leakage. Data Leakage can be prevented by using tools, software, and strategies known as DLP(Data Leakage Prevention) Tools.
+</details>
   
-- How is Encryption different from Hashing?
-
-  <details>
-  <summary>Click here to view answer</summary>
-  Answer: Both Encryption and Hashing are used to convert readable data into an unreadable format. The difference is that the encrypted data can be converted back to original data by the process of decryption but the hashed data cannot be converted back to original data.
-  </details>
+<details>
+<summary>What are some of the common Cyberattacks?</summary>
+Port Scanning is the technique used to identify open ports and service available on a host. Hackers use port scanning to find information that can be helpful to exploit vulnerabilities. Administrators use Port Scanning to verify the security policies of the network. Some of the common Port Scanning Techniques are:
+Ping Scan
+TCP Half-Open
+TCP Connect
+UDP
+Stealth Scanning
+</details>
   
-- What is a three-way handshake?
 
-  <details>
-  <summary>Click here to view answer</summary>
-  Answer: A three-way handshake is a method used in a TCP/IP network to create a connection between a host and a client. It’s called a three-way handshake because it is a three-step method in which the client and server exchanges packets. The three steps are as follows: The client sends a SYN(Synchronize) packet to the server check if the server is up or has open ports. The server sends SYN-ACK packet to the client if it has open ports. The client acknowledges this and sends an ACK(Acknowledgment) packet back to the server
-  </details>
+<details>
+<summary>What are salted hashes?</summary>
+Salt is a random data. When a properly protected password system receives a new password, it creates a hash value of that password, a random salt value, and then the combined value is stored in its database. This helps to defend against dictionary attacks and known hash attacks.
+Example: If someone uses the same password on two different systems and they are being used using the same hashing algorithm, the hash value would be same, however, if even one of the system uses salt with the hashes, the value will be different.
+</details>  
   
-- What are the response codes that can be received from a Web Application?
 
   <details>
-  <summary>Click here to view answer</summary>
-  Answer:
-  1xx – Informational responses
-  2xx – Success
-  3xx – Redirection
-  4xx – Client-side error
-  5xx – Server-side error
-  </details>
-  
-- Explain SSL Encryption?
-
-  <details>
-  <summary>Click here to view answer</summary>
-  Answer: SSL(Secure Sockets Layer) is the industry-standard security technology creating encrypted connections between Web Server and a Browser. This is used to maintain data privacy and to protect the information in online transactions. The steps for establishing an SSL connection is as follows:
-  A browser tries to connect to the webserver secured with SSL. The browser sends a copy of its SSL certificate to the browse. The browser checks if the SSL certificate is trustworthy or not. If it is trustworthy, then the browser sends a message to the web server requesting to establish an encrypted connection. The web server sends an acknowledgment to start an SSL encrypted connection. SSL encrypted communication takes place between the browser and the web server
-  </details>
-  
-- Explain Data Leakage?
-
-  <details>
-  <summary>Click here to view answer</summary>
-  Answer: Data Leakage is an intentional or unintentional transmission of data from within the organization to an external unauthorized destination. It is the disclosure of confidential information to an unauthorized entity. Data Leakage can be divided into 3 categories based on how it happens:
-  Accidental Breach: An entity unintentionally send data to an unauthorized person due to a fault or a blunder. Intentional Breach: The authorized entity sends data to an unauthorized entity on purpos. System Hack: Hacking techniques are used to cause data leakage. Data Leakage can be prevented by using tools, software, and strategies known as DLP(Data Leakage Prevention) Tools.
-  </details>
-  
-- What are some of the common Cyberattacks?
-
-  <details>
-  <summary>Click here to view answer</summary>
-  Answer: Port Scanning is the technique used to identify open ports and service available on a host. Hackers use port scanning to find information that can be helpful to exploit vulnerabilities. Administrators use Port Scanning to verify the security policies of the network. Some of the common Port Scanning Techniques are:
-  Ping Scan
-  TCP Half-Open
-  TCP Connect
-  UDP
-  Stealth Scanning
-  </details>
-  
-- What are salted hashes?
-
-  <details>
-  <summary>Click here to view answer</summary>
-  Answer: Salt is a random data. When a properly protected password system receives a new password, it creates a hash value of that password, a random salt value, and then the combined value is stored in its database. This helps to defend against dictionary attacks and known hash attacks.
-  Example: If someone uses the same password on two different systems and they are being used using the same hashing algorithm, the hash value would be same, however, if even one of the system uses salt with the hashes, the value will be different.
-  </details>  
-  
-- What is Port Scanning?
-
-  <details>
-  <summary>Click here to view answer</summary>
-  Answer: Following are some common cyber attacks that could adversely affect your system.
+  <summary>What is Port Scanning?</summary>
+  Following are some common cyber attacks that could adversely affect your system.
   Malware
   Phishing
   Password Attacks
