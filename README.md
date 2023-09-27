@@ -1326,43 +1326,53 @@ Try transferring data between each host and other devices on the network to dete
 <details>
 <summary>What is Git?</summary>
   
-  Most widely used modern version control system in the world today. It is used to gather code contributions from multiple users in a single place (repository). Provides full history, workflow and allows for rollback of code and patching.
+Most widely used modern version control system in the world today. It is used to gather code contributions from multiple users in a single place (repository). Provides full history, workflow and allows for rollback of code and patching.
   
 </details>
 <details>
 <summary>Difference between Git and SVN?</summary>
   
-  SVN and Git are both powerful version control systems that each use a different approach to managing and merging code changes. Git uses a distributed model, whereas SVN uses a centralized model.
+SVN and Git are both powerful version control systems that each use a different approach to managing and merging code changes. Git uses a distributed model, whereas SVN uses a centralized model.
 
-  SVN’s centralized repository model makes it easier to manage contributions and contributors. Git does not support codebase access restrictions — a contributor who has access to the repository has access to the entire repository. SVN, by contrast, provides granular control, allowing for limits on particular contributors down to the directory, and file levels.
+SVN’s centralized repository model makes it easier to manage contributions and contributors. Git does not support codebase access restrictions — a contributor who has access to the repository has access to the entire repository. SVN, by contrast, provides granular control, allowing for limits on particular contributors down to the directory, and file levels.
 
-  The ability to work locally and offline is one major advantage to Git. SVN requires contributors to be connected to the main repository server, which essentially eliminates working offline.
-  
-  Git also outperforms SVN when it comes to merging and conflict resolution. Git has been designed for an open-source setting where numerous contributors may be working on the same parts of a codebase. To allow for this type of collaboration, Git has built up a robust system for resolving merge conflicts that makes the process smoother, and more manageable.
+The ability to work locally and offline is one major advantage to Git. SVN requires contributors to be connected to the main repository server, which essentially eliminates working offline.
+
+Git also outperforms SVN when it comes to merging and conflict resolution. Git has been designed for an open-source setting where numerous contributors may be working on the same parts of a codebase. To allow for this type of collaboration, Git has built up a robust system for resolving merge conflicts that makes the process smoother, and more manageable.
 
 </details>
 <details>
   <summary>What is the basic Git workflow?</summary>
   
-  Working directory >   staging area >  local repo >   remote repo
-                git add           git commit    git push 
+Working directory >   staging area >  local repo >   remote repo
+              git add           git commit    git push 
   
 </details>
 <details>
   <summary>Difference between git pull and Git fetch</summary>
   
-  The key difference between git fetch and pull is that git pull copies changes from a remote repository directly into your working directory, while git fetch does not. The git fetch command only copies changes into your local Git repo. The git pull command does both.
+The key difference between git fetch and pull is that git pull copies changes from a remote repository directly into your working directory, while git fetch does not. The git fetch command only copies changes into your local Git repo. The git pull command does both.
 
-  Benefit of git pull: The local Git repo is now in sync with the remote repo. The local filesystem has the latest, most up to date files.
+Benefit of git pull: The local Git repo is now in sync with the remote repo. The local filesystem has the latest, most up to date files.
 
-  Benefit of git fetch: If you are actively working on files tracked by Git, but you still want to update your local repository with the latest changes from a remote repository, use the git fetch command.
+Benefit of git fetch: If you are actively working on files tracked by Git, but you still want to update your local repository with the latest changes from a remote repository, use the git fetch command.
 
 </details>
 <details>
-  <summary>What is git cherry-pick?</summary>
-  
-  Content HERE
-  
+<summary>What is git cherry-pick?</summary>
+
+git cherry-pick is a Git command used to apply a specific commit (or a range of commits) from one branch to another. It allows you to select and "cherry-pick" individual commits from one branch's history and apply them onto another branch. This can be useful when you want to bring specific changes or fixes from one branch into another without merging the entire branch.
+
+The basic syntax of git cherry-pick is as follows:
+
+```bash
+
+git cherry-pick <commit-hash>
+
+<commit-hash> is the unique identifier (SHA-1 hash) of the commit you want to apply.
+
+```
+
 </details>
 <details>
   <summary>What is the HEAD in Git?</summary>
