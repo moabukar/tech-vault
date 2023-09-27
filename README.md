@@ -1029,7 +1029,7 @@ For example, if you have the IP address range 192.168.0.0/24 (where "/24" indica
 <summary>What is DHCP?</summary>
 
 
-DHCP stands for Dynamic Host Configuration Protocol. It is a network protocol used to automate and simplify the process of assigning IP addresses and other network configuration settings to devices on a local network. Here's a concise explanation:
+DHCP stands for Dynamic Host Configuration Protocol. It is a network protocol used to automate and simplify the process of assigning IP addresses and other network configuration settings to devices on a local network.
 
 **DHCP (Dynamic Host Configuration Protocol):**
 
@@ -1044,51 +1044,280 @@ DHCP stands for Dynamic Host Configuration Protocol. It is a network protocol us
 #### Advanced + Scenario based questions:
 
 <details>
-<summary>When I type google.com into the browser, what actually happens? (go into as much detail as you can)</summary>
+<summary>When I type google.com into the browser, what actually happens? (basic version)</summary>
 
-Content HERE
+When you type "google.com" into your web browser's address bar and hit Enter, several steps occur behind the scenes to display the Google homepage. Here's a simple breakdown of what happens:
+
+**DNS Resolution:**
+
+- Your web browser first checks its local cache to see if it already knows the IP address associated with "google.com." If it does, it skips the next steps.
+- If not found in the cache, your browser sends a DNS (Domain Name System) resolution request to a DNS resolver. This is usually provided by your internet service provider (ISP) or a public DNS service like Google's 8.8.8.8.
+- The DNS resolver checks its cache to see if it has the IP address for "google.com." If not, it initiates the DNS resolution process.
+
+**DNS Resolution Process:**
+
+- The DNS resolver queries root DNS servers to find the authoritative DNS server for the top-level domain (TLD), which is "com" in this case.
+- The root DNS server responds with the IP address of the authoritative DNS server for the "com" TLD.
+- The resolver then queries the authoritative DNS server for the "com" TLD to find the authoritative DNS server for "google.com."
+- The authoritative DNS server for "google.com" responds with the IP address associated with "google.com."
+
+**IP Address Retrieval:**
+
+- The DNS resolver returns the IP address of "google.com" to your web browser.
+
+**HTTP Request:**
+
+- Your browser initiates an HTTP (Hypertext Transfer Protocol) request to the IP address it received for "google.com."
+- The request includes additional information like the specific web page you're trying to access (e.g., "/", which typically represents the homepage).
+
+**Server Processing:**
+
+- Google's web server, located at the provided IP address, receives the HTTP request.
+- The server processes the request and generates an appropriate response.
+
+**Response Transmission:**
+
+- The web server sends back an HTTP response, which includes the HTML, CSS, JavaScript, and other resources needed to render the Google homepage.
+
+**Rendering the Web Page:**
+
+Your browser receives the HTTP response and begins rendering the Google homepage on your screen.
+It may also make additional requests for images, stylesheets, and scripts referenced in the HTML to fully load and display the page.
+
+**Page Display:**
+
+Once all resources are loaded, your web browser displays the Google homepage on your screen, and you can interact with it.
+In summary, when you type "google.com" into your browser, a complex series of steps involving DNS resolution, HTTP requests, and server responses occurs to retrieve and display the webpage you requested. This process ensures that you can access websites using human-readable domain names while the internet works behind the scenes using IP addresses to route and deliver content.
 
 </details>
 
 <details>
 <summary>I can't reach a website, how can I troubleshoot? (use deep Linux + networking knowledge)</summary>
 
-Content HERE
+**Check Network Connectivity:**
+
+- Ensure your Linux machine has a working internet connection. Try pinging a reliable website or an IP address (e.g., `ping google.com` or `ping 8.8.8.8` for Google's DNS).
+
+**DNS Resolution:**
+
+- Verify that DNS resolution is working correctly. Try to resolve the website's IP address using `nslookup` or `dig` (e.g., `nslookup website.com` or `dig website.com`).
+- Check your DNS server configuration in /etc/resolv.conf. Ensure it points to a valid DNS server (e.g., `nameserver 8.8.8.8` for Google's DNS).
+
+**Check Hosts File:**
+
+- Make sure the website is not blocked by entries in the `/etc/hosts` file. Check for any entries that may be redirecting the website.
+
+**Firewall Rules:**
+
+- Check if a firewall is blocking outgoing or incoming traffic. Use the `iptables` or firewall-cmd command to inspect firewall rules.
+
+**Web Proxy:**
+
+- If you are behind a proxy server, ensure that proxy settings are correctly configured in your environment, including `HTTP_PROXY` and `HTTPS_PROXY` environment variables.
+
+**Browser Issues:**
+
+- Try accessing the website from a different web browser or an incognito/private browsing window to rule out browser-related problems.
+
+**SSL/TLS Issues:**
+
+- If you are getting SSL/TLS-related errors, ensure your system has up-to-date CA certificates installed. You can also check for SSL/TLS issues using the openssl command (e.g., `openssl s_client -connect website.com:443`).
+
+**Check DNS Cache:**
+
+- If you've made changes to DNS configurations, clear your DNS cache using `systemctl restart systemd-resolved` (on systems using systemd-resolved) or `sudo /etc/init.d/nscd restart` (on systems using nscd).
+
+**Trace Route (Traceroute):**
+
+- Use the traceroute or tracepath command to trace the network path to the website (e.g., `traceroute website.com` or `tracepath website.com`).
+
+**Check System Logs:**
+
+- Inspect system logs in `/var/log` (e.g., `/var/log/syslog`, `/var/log/messages`, `/var/log/auth.log`) for any network-related errors or issues.
+
+**Check DNS Server Status:**
+
+- Verify the availability and responsiveness of your DNS servers by pinging them or using tools like `dig`.
+
+**Check Website Status:**
+
+It's possible that the website itself is down. Check its status on a service like "DownDetector" or "Is It Down Right Now?".
+
+**Packet Capture (Optional):**
+
+- As a last resort, you can use packet capture tools like `tcpdump` or `wireshark` to capture network traffic and analyze it for issues.
 
 </details>
 
 <details>
 <summary>Can you break down the OSI model and what does it signify?</summary>
 
-Content HERE
+The OSI (Open Systems Interconnection) model is a conceptual framework that standardizes and defines the functions of a telecommunication or networking system. It consists of seven distinct layers, each responsible for specific tasks in the communication process. Here's a breakdown of the OSI model and what each layer signifies:
+
+**Physical Layer (Layer 1):**
+
+Significance: This layer deals with the physical medium and transmission of raw binary data over a physical network.
+Responsibilities: It defines the physical characteristics of the network, such as cables, connectors, electrical voltages, and transmission speeds. It also specifies how bits are represented, encoded, and transmitted over the network medium.
+
+**Data Link Layer (Layer 2):**
+
+Significance: This layer focuses on reliable data transfer between directly connected devices on a local network.
+Responsibilities: It manages the framing of data into frames, error detection and correction, and flow control. Ethernet and Wi-Fi operate at this layer. MAC (Media Access Control) addresses are used for device identification.
+
+**Network Layer (Layer 3):**
+
+Significance: The network layer is responsible for routing packets across different networks to reach their destination.
+Responsibilities: It handles logical addressing, routing, and packet forwarding. The Internet Protocol (IP) operates at this layer, and IP addresses are used to identify devices on different networks.
+
+**Transport Layer (Layer 4):**
+
+Significance: This layer ensures end-to-end communication and data reliability between devices on different networks.
+Responsibilities: It manages data segmentation, flow control, error detection, and retransmission. TCP (Transmission Control Protocol) and UDP (User Datagram Protocol) are commonly used transport layer protocols.
+
+**Session Layer (Layer 5):**
+
+Significance: The session layer establishes, manages, and terminates communication sessions between two devices.
+Responsibilities: It handles session setup, maintenance, and teardown, including synchronization, checkpointing, and recovery of data in case of interruptions.
+
+**Presentation Layer (Layer 6):**
+
+Significance: This layer ensures that data is presented in a readable format for the application layer.
+Responsibilities: It handles data translation, encryption, compression, and character encoding to ensure that data sent by one device can be understood by another.
+
+**Application Layer (Layer 7):**
+
+Significance: The application layer is the top layer and represents the actual software applications that users interact with.
+Responsibilities: It provides a platform-independent interface for application software to communicate with the lower layers. This layer includes protocols like HTTP, FTP, SMTP, and DNS, which enable specific application-level functions.
 
 </details>
 
 <details>
 <summary>How does mTLS work and compare it to TLS?</summary>
 
-Content HERE
+mTLS (mutual Transport Layer Security) is an extension of the traditional TLS (Transport Layer Security) protocol. Both TLS and mTLS are cryptographic protocols used to secure data transmission over a network, but they differ in how they authenticate and secure the communication.
+
+**TLS (Transport Layer Security):**
+
+- TLS is used to establish secure, encrypted communication between a client (such as a web browser) and a server (such as a web server).
+- In a typical TLS handshake, the server presents its digital certificate to prove its identity to the client.
+- The client verifies the server's certificate against a trusted certificate authority (CA) to ensure it's valid.
+- Once the server's identity is verified, a symmetric encryption key is exchanged, and encrypted communication begins.
+- TLS is primarily used for server authentication and encryption of data in transit between a client and a server.
+
+**mTLS (Mutual Transport Layer Security):**
+
+- mTLS, also known as two-way TLS or client-side TLS, extends TLS by requiring both the client and the server to present digital certificates and authenticate each other.
+- In an mTLS handshake, the client and server exchange certificates and verify each other's identities.
+- The client verifies the server's certificate, just like in traditional TLS.
+- The server, in turn, verifies the client's certificate to ensure it's valid and belongs to an authorized client.
+- Once both parties are authenticated, a symmetric encryption key is exchanged, and encrypted communication begins.
+- mTLS is used when both parties (client and server) need to be authenticated and data encryption is required. It's often used in scenarios like secure API communication and IoT device authentication.
+
+In summary, TLS and mTLS are both cryptographic protocols for securing data transmission, but mTLS goes a step further by requiring mutual authentication, where both the client and server authenticate each other using digital certificates. This added layer of security is useful in scenarios where bidirectional trust is essential, such as in securing APIs, web services, or IoT device communication.
 
 </details>
 
 <details>
 <summary>Describe the TCP/IP connection process?</summary>
 
-Content HERE
+
+The TCP/IP (Transmission Control Protocol/Internet Protocol) connection process involves several steps that occur when two devices communicate over a network. Key steps include:
+
+**1. Initialization:**
+
+The client initiates the connection by sending a TCP segment with the SYN (synchronize) flag set to the server.
+This initiates the "three-way handshake" process.
+
+**2. Three-Way Handshake:**
+
+SYN (Synchronize): The client sends a TCP segment with the SYN flag set, indicating its intent to establish a connection. It also selects an initial sequence number.
+SYN-ACK (Synchronize-Acknowledgment): The server responds with a TCP segment that has the SYN and ACK (acknowledge) flags set. It acknowledges the client's sequence number and selects its own initial sequence number.
+ACK (Acknowledgment): The client sends an acknowledgment back to the server, acknowledging the server's sequence number. At this point, the connection is established, and both parties are synchronized.
+
+**3. Data Transfer:**
+
+Once the connection is established, data can be transmitted in both directions.
+Data is divided into segments, each with a sequence number for tracking and reordering.
+
+**4. Termination:**
+
+When one party wishes to close the connection, it sends a TCP segment with the FIN (finish) flag set.
+The other party acknowledges the FIN and may also send its own FIN.
+This initiates a "four-way handshake" to ensure that both sides agree to close the connection gracefully.
+
+**5. Four-Way Handshake (Connection Termination):**
+
+FIN (Finish): One party sends a TCP segment with the FIN flag set to indicate the intent to close the connection.
+ACK (Acknowledgment): The other party acknowledges the FIN.
+FIN: The acknowledging party may also send its own FIN to close the connection from its side.
+ACK: The initial party acknowledges the FIN from the other side, completing the termination process.
+
+**6. Connection Closed:**
+
+After the four-way handshake, the connection is closed, and no further data can be exchanged.
 
 </details>
 
 <details>
 <summary>When and why would one use a TCP over UDP?</summary>
 
-Content HERE
+TCP (Transmission Control Protocol) and UDP (User Datagram Protocol) are two transport layer protocols used in networking, and each has its own strengths and weaknesses. The choice between TCP and UDP depends on the specific requirements of the application or service being used. Here's when and why you might choose TCP over UDP:
+
+**Use TCP When:**
+
+- Reliability is Critical: TCP provides a reliable and error-checked connection. It ensures that data is delivered accurately and in the correct order. This makes it suitable for applications where data integrity is crucial, such as file transfers, email, and web browsing.
+
+- Ordered Data Delivery: If your application requires data to be delivered in the same order it was sent, TCP is the better choice. It maintains a sequencing mechanism to guarantee ordered data delivery.
+
+- Flow Control: TCP includes flow control mechanisms to prevent overwhelming the receiver with too much data too quickly. This is essential for applications that require rate limiting, like streaming video or real-time communication apps.
+
+- Error Recovery: TCP can detect and recover from errors that may occur during transmission. It retransmits lost or corrupted packets to ensure data reliability.
+
+- Connection-Oriented: TCP establishes a connection before data transfer begins and releases it after the transfer is complete. This connection-oriented nature is suitable for applications that require a reliable, well-defined start and end to communication sessions.
+
+**Use UDP When:**
+
+- Low Latency is Critical: UDP is faster than TCP due to its minimal overhead. It's suitable for applications that prioritize low latency, such as online gaming, live streaming, and VoIP (Voice over IP).
+
+- Loss Tolerance: UDP does not guarantee data delivery or order, so it's a good choice for applications where occasional packet loss is acceptable, such as real-time data feeds, video conferencing, and some IoT applications.
+
+- Reduced Network Overhead: UDP has less overhead than TCP because it doesn't involve establishing connections, maintaining sequencing, or performing extensive error checking. This can be advantageous for applications with limited bandwidth or high data rates.
+
+- Broadcast or Multicast: UDP supports broadcast and multicast communication, which allows data to be sent to multiple recipients simultaneously. This is useful for applications like online gaming and video streaming.
+
+- Simple Implementation: UDP is easier to implement because it doesn't have the complexities of connection establishment and error recovery. This makes it a good choice for lightweight applications and protocols.
+
+In summary, use TCP when data reliability, ordered delivery, and error recovery are critical. Choose UDP when low latency, reduced overhead, and loss tolerance are more important, and you can handle potential data loss or out-of-order delivery at the application level. The decision depends on the specific needs of your application and the trade-offs you are willing to make between reliability and performance.
 
 </details>
 
 <details>
 <summary>Data transfer between 2 hosts is extremely slow. How can you troubleshoot?</summary>
 
-Content HERE
+**Check Network Connectivity:**
+
+Verify that both hosts have a stable and functioning network connection. Ensure that cables, switches, and routers are working correctly.
+
+**Test Other Network Services:**
+
+Determine if the slowness is specific to data transfer or if it affects other network services as well. Try accessing websites, pinging other hosts, or testing other network applications to see if the issue is widespread or isolated.
+
+**Check Host Resource Utilization:**
+
+Monitor the CPU, memory, and disk utilization on both hosts. High resource usage can lead to slow data transfer. Identify any resource-intensive processes or applications that may be affecting performance.
+
+**Review Network Configuration:**
+
+Verify that the network configurations on both hosts are correct, including IP addresses, subnet masks, gateways, and DNS settings. Ensure there are no conflicts or misconfigurations.
+
+**Check for Network Congestion:**
+
+Network congestion can slow down data transfer. Monitor network traffic and identify any bottlenecks or excessive usage on the network segments between the two hosts.
+
+**Test Connectivity to Other Hosts:**
+
+Try transferring data between each host and other devices on the network to determine if the issue is specific to the connection between these two hosts.
+
 
 </details>
 
