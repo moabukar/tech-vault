@@ -1504,22 +1504,29 @@ git cherry-pick <commit-hash>
 Answer goes here
 
 </details>
+
 <details>
 <summary>How do Subnets work?</summary>
 
 Answer goes here
 
 </details>
+
+<details>
 <summary>What network object do you need to allow a server ingress from the internet?</summary>
 
 Answer goes here
 
 </details>
+
+<details>
 <summary>What are the different type of load balancers in AWS?</summary>
 
 Answer goes here
 
 </details>
+
+<details>
 <summary>How can your resources in the VPC get access to the internet?</summary>
 
 Answer goes here
