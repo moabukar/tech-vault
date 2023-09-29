@@ -50,7 +50,7 @@ Any questions taken from external references are referenced [below](#references)
 
 ## Vision
 
-- Coming from a non-technical background and without experience can be difficult for many. So I and my team have decided to create this project where all, non-technical and technical tech professionals, can have a place of reference to technical interview questions and interview prep. This is maintained by a lovely community. If you wish to contribute, feel free to do so. Read this for more info >> [How to Contribute](#contributing) 
+- Coming from a non-technical background and without experience can be difficult for many. So my Team & I have decided to create this project where all, non-technical and technical tech professionals, can have a place of reference to technical interview questions and interview prep. This is maintained by a lovely community. If you wish to contribute, feel free to do so. Read this for more info >> [How to Contribute](#contributing-🖊️s) 
 
 ## What is different in this repo compared to others?
 
@@ -1498,12 +1498,33 @@ git cherry-pick <commit-hash>
 
 
 -----Networking-----
-- What is a VPC?
-- How do Subnets work?
-- What network object do you need to allow a server ingress from the internet?
-- What are the different type of load balancers in AWS?
-- Whate are subnets? and what are CIDRs?
-- How can your resources in the VPC get access to the internet?
+<details>
+<summary>What is a VPC?</summary>
+
+Answer goes here
+
+</details>
+<details>
+<summary>How do Subnets work?</summary>
+
+Answer goes here
+
+</details>
+<summary>What network object do you need to allow a server ingress from the internet?</summary>
+
+Answer goes here
+
+</details>
+<summary>What are the different type of load balancers in AWS?</summary>
+
+Answer goes here
+
+</details>
+<summary>How can your resources in the VPC get access to the internet?</summary>
+
+Answer goes here
+
+</details>
 
 
 -----Scenario-based-----
