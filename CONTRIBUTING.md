@@ -10,13 +10,14 @@
 ## How to add a collapsible for answers on markdown
 
 Copy the below code:
+
 ```
 
 <details>
-  <summary>Click here to view the answer</summary>
-  
-  Content HERE
-  
+<summary>Add question here</summary>
+
+Answer goes here
+
 </details>
 
 ```
