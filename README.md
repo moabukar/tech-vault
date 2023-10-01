@@ -1864,6 +1864,11 @@ Answer goes here
 - How can one export data from one module to another?
 - How can you import existing resources under Terraform management?
 - Which command can be used to reconcile the Terraform state with the actual real-world infrastructure?
+- What are some best practices when using Terraform modules?
+- How do you handle secrets and sensitive data in Terraform?
+- What are some best practices when writing Terraform code?
+- How do you export data from one module to another?
+
 
 ### :small_blue_diamond: Docker & K8s
 
@@ -1885,7 +1890,7 @@ Container (Docker):
 - How can I attach a shell to a terminal of a running container?
 - What is a dangling image?
 - What is Docker compose and when is it used?
-- 
+
 
 **Advanced:**
 
@@ -1929,7 +1934,7 @@ Container Orchestration (Kubernetes = K8s):
 - How can one build a highly availabe (HA) cluster in K8s?
 - What is the role of ETCD in K8s?
 - Explain what are Taints and Tolerations in K8s?
-- 
+
 
 ### :small_blue_diamond: Ansible
 
@@ -1947,7 +1952,7 @@ Container Orchestration (Kubernetes = K8s):
 - What is an inventory file?
 
 
-Advanced:
+**Advanced:**
 
 - Can you name some Ansible best practices? 
 - How do you handle errors in Ansible?
@@ -1958,6 +1963,9 @@ Advanced:
 
 - What is meant by Continuous Integration?
 - Explain blue-green deployment
+- What is a CI/CD pipeline?
+- What is a canary deployment?
+- What is a rolling deployment?
 
 ### :small_blue_diamond: DevOps methodology, practices,  & Agile
 
@@ -2111,7 +2119,7 @@ Advanced:
 - Does Java support multiple inheritance?
 - What is the difference between == and .equals()?
 - Explain marshalling and unmarshalling?
-- 
+
 
 ### :small_blue_diamond: JavaScript (TS,nodeJS...)
 
@@ -2429,7 +2437,6 @@ Using skewed tables in Hive can improve query performance by reducing the amount
 Hive is a data warehousing tool that provides a SQL-like interface for querying large datasets stored in Hadoop. The Hive data model includes tables, partitions, buckets, and views. Tables are the basic unit of storage in Hive, and partitions are used to divide tables into smaller, more manageable segments. Buckets are a way of organizing data within partitions to improve query performance, and views are virtual tables that can be used to simplify complex queries.
 </details>
 
--  
 
 <details>
 <summary>Why is using a distributed system important in hadoop?</summary>
@@ -2824,8 +2831,7 @@ Phishing is a type of cyber attack where an attacker tries to trick a user into 
 <summary>What is a DDoS attack and how does it work?</summary>
 A DDoS (Distributed Denial of Service) attack is a type of cyber attack that involves flooding a target system or network with traffic from multiple sources, in order to overload it and make it unavailable to legitimate users. DDoS attacks can be carried out using a variety of techniques, including botnets, amplification attacks, and SYN floods.
 </details>
-  
-- 
+
 
 <details>
 <summary>What is the CIA triad and why is it important in cyber security?</summary>
