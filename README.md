@@ -1636,11 +1636,99 @@ With these configurations, resources in your VPC can send and receive traffic to
 
 
 -----Scenario-based-----
-- I want to create a 3 Tier Architecture. Can you explain step by step of how I can go about this?
-- In VPC with private and public subnets, database servers should ideally be launched into which subnet?
-- What are some security best pracites for EC2s?
-- I created a web application with autoscaling. I observed that the traffic on my application is the highest on Wednesdays and Fridays between 9 AM and 7 PM. What would be the best solution for me to handle the scaling?
-- You have an application running on your Amazon EC2 instance. You want to reduce the load on your instance as soon as the CPU utilization reaches 100 percent. How will you do that?
+<details>
+<summary>I want to create a 3 Tier Architecture. Can you explain step by step of how I can go about this?</summary>
+
+1. **Presentation Layer (Web):**
+
+Step 1: Launch an Amazon EC2 instance for your web server. This instance will host your website or web application.
+Step 2: Configure security groups to allow incoming web traffic (HTTP/HTTPS) to the web server.
+Step 3: Optionally, attach an Elastic IP (EIP) for a static public IP address.
+
+2. **Application Layer (App):**
+
+Step 4: Launch another EC2 instance for your application server(s). This instance runs the business logic of your application.
+Step 5: Configure security groups to allow incoming traffic from the web server to the application server on the necessary ports.
+Step 6: Install and configure any middleware or application software required for your application.
+
+3. **Data Layer (Database):**
+
+Step 7: Create an Amazon RDS (Relational Database Service) instance or set up a database server (e.g., on EC2) for your database layer.
+Step 8: Configure security groups to allow incoming database connections only from the application server(s).
+Step 9: Create your database schema and tables, and configure database access and permissions.
+
+</details>
+<details>
+
+<summary>In VPC with private and public subnets, database servers should ideally be launched into which subnet?</summary>
+
+- In a VPC with both private and public subnets, database servers should ideally be launched into the **private subnets**. Placing database servers in private subnets ensures that they are not directly accessible from the internet, which enhances security. Public subnets are typically used for resources that need to be accessible from the internet, like web servers.
+
+</details>
+
+<details>
+<summary>What are some security best pracites for EC2s?</summary>
+
+- **Use Security Groups**: Configure security groups to control incoming and outgoing traffic to your EC2 instances. Only allow necessary ports and sources.
+
+- **Use Key Pairs**: Authenticate access to your EC2 instances using key pairs (SSH keys for Linux or RDP keys for Windows) instead of passwords.
+
+- **Regular Updates**: Keep your EC2 instances and their software up to date with security patches and updates.
+
+- **Use IAM Roles**: Assign IAM roles to EC2 instances to grant them specific permissions, reducing the need for storing access keys on the instance.
+
+- **Enable Monitoring**: Use Amazon CloudWatch to monitor performance and set up alarms for unusual activity or resource exhaustion.
+
+- **Data Encryption**: Encrypt data at rest using services like Amazon EBS encryption and in-transit using SSL/TLS.
+
+- **Snapshot Backups**: Create EBS snapshots and AMIs regularly to back up your instances, ensuring data recovery in case of failures.
+
+- **Instance Isolation**: Separate instances into public and private subnets within a Virtual Private Cloud (VPC) for network isolation.
+
+- **Disable Root Access**: Disable remote root login on Linux instances and use a sudo user for administrative tasks.
+
+**IAM Policies**: Use fine-grained IAM policies to restrict access based on the principle of least privilege.
+
+- **Use Bastion Hosts**: If necessary, employ a bastion host (jump server) to access private instances securely.
+
+- **Monitor Access**: Monitor and audit access to your EC2 instances, including login attempts and user actions.
+
+- **Automate Security**: Implement automation tools like AWS Systems Manager and AWS Config to enforce security policies.
+
+</details>
+
+<details>
+<summary>I created a web application with autoscaling. I observed that the traffic on my application is the highest on Wednesdays and Fridays between 9 AM and 7 PM. What would be the best solution for me to handle the scaling?</summary>
+
+To handle scaling for your web application with high traffic on Wednesdays and Fridays between 9 AM and 7 PM, you can:
+
+- **Schedule-Based Auto Scaling**: Use AWS Auto Scaling's scheduled scaling feature. Set up a schedule to increase the desired number of instances during the peak hours on Wednesdays and Fridays and decrease it during off-peak hours.
+
+- **Target Tracking Scaling Policy**: Create a target tracking scaling policy based on a metric like CPU utilization or request count per instance. Set the target to automatically adjust the number of instances to maintain a specific metric value. This can help handle traffic fluctuations efficiently.
+
+By combining these approaches, your application can automatically adjust its capacity to meet demand, ensuring it scales up during peak times and scales down during quieter periods, optimizing cost and performance.
+
+</details>
+
+<details>
+<summary>You have an application running on your Amazon EC2 instance. You want to reduce the load on your instance as soon as the CPU utilization reaches 100 percent. How will you do that?</summary>
+
+To automatically reduce the load on your Amazon EC2 instance when CPU utilization reaches 100 percent, follow these steps:
+
+- **Create an Auto Scaling Group**: Set up an Auto Scaling Group for your EC2 instance if you haven't already.
+
+- **Create a Target Tracking Scaling Policy**: Within the Auto Scaling Group configuration, create a Target Tracking Scaling Policy.
+
+- **Select CPU Utilization as the Metric**: Choose CPU utilization as the metric to track.
+
+- **Set the Target Value**: Specify the target CPU utilization level at which you want to take action, such as 80 or 90 percent, not 100 percent, to avoid any performance issues. AWS Auto Scaling will automatically adjust the number of instances to maintain this target value.
+
+- **Define Scaling Actions**: Configure scaling actions for when the CPU utilization exceeds the target value. You can specify actions to increase or decrease the number of instances based on your requirements.
+
+- **Apply the Policy**: Apply the Target Tracking Scaling Policy to your Auto Scaling Group.
+
+
+</details>
 
 
 -----Others-----
