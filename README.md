@@ -2154,7 +2154,6 @@ Entity models, relational and dimensional
 
 </details>
 
-- 
 
 <details>
 <summary>What is a table (entity) and column (attribute)? </summary>
