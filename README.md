@@ -315,7 +315,7 @@ To manage cron jobs, you can use the crontab command with various options:
 
 </details>
 
-Commands (basic & advanced):
+**Commands (basic & advanced):**
 
 <details>
 <summary>What does chmod +x FILENAME do?</summary>
@@ -411,8 +411,7 @@ Red Hat based (Fedora, CentOS)
 
 </details>
 
-Advanced:
-
+**Advanced:**
 
 <details>
 <summary>Does free memory exist on Linux?</summary>
@@ -535,7 +534,7 @@ In summary, with a hard link, you have multiple names for the same file sharing 
 
 </details>
 
-Linux Internals & Advanced (Scenario based questions):
+**Linux Internals & Advanced (Scenario based questions):**
 
 <details>
 <summary>Explain the linux boot process (detailed) </summary>
@@ -1754,24 +1753,108 @@ Advanced:
 
 ### :small_blue_diamond: Terraform
 
-- What is IaC? What is Terraform?
-- What is Terraform state
-- What are most common Terraform commands?
-- What is Terraform backend?
-- What are modules in Terraform?
-- What is Terragrunt?
-- Explain the workflow of the core Terraform?
-- Difference between Terraform, AWS CloudFormation and Azure ARM?
-- What is the difference between Terraform and Ansible?
-- What are provisioners in Terraform?
-- How can two people using the Terraform cloud can create two different sets of infrastructure using the same working directory?
-- What is a null resource in Terraform?
-- Which command is used to perform syntax validation on terraform configuration files?
-- How can I format my current directory of Terraform config files in the HCP format?
+<details>
+<summary>What is IaC? What is Terraform?</summary>
+
+Answer goes here
+
+</details>
+
+<details>
+<summary>What is Terraform state?</summary>
+
+Answer goes here
+
+</details>
+
+<details>
+<summary>What are most common Terraform commands?</summary>
+
+Answer goes here
+
+</details>
+
+<details>
+<summary>What is Terraform backend?</summary>
+
+Answer goes here
+
+</details>
+
+<details>
+<summary>What are modules in Terraform?</summary>
+
+Answer goes here
+
+</details>
 
 
+<details>
+<summary>What is Terragrunt?</summary>
 
-Advanced:
+Answer goes here
+
+</details>
+
+<details>
+<summary>Explain the workflow of the core Terraform?</summary>
+
+Answer goes here
+
+</details>
+
+
+<details>
+<summary>Difference between Terraform, AWS CloudFormation and Azure ARM?</summary>
+
+Answer goes here
+
+</details>
+
+<details>
+<summary>What is the difference between Terraform and Ansible?</summary>
+
+Answer goes here
+
+</details>
+
+<details>
+<summary>What are provisioners in Terraform?</summary>
+
+Answer goes here
+
+</details>
+
+<details>
+<summary>How can two people using the Terraform cloud can create two different sets of infrastructure using the same working directory?</summary>
+
+Answer goes here
+
+</details>
+
+<details>
+<summary>What is a null resource in Terraform?</summary>
+
+Answer goes here
+
+</details>
+
+<details>
+<summary>Which command is used to perform syntax validation on terraform configuration files?</summary>
+
+`terraform validate`
+
+</details>
+
+<details>
+<summary>How can I format my current directory of Terraform config files in the HCP format?</summary>
+
+`terraform fmt --recursive`
+
+</details>
+
+
+**Advanced:**
 - I have 3 people in my team who want to work on the same AWS Infrastructure on Terraform as well as same state. What can I do to ensure there are no clashes?
 - In a pipeline, where would you store the Terraform state?
 - Can I test my terraform modules? If so, how can I test them? Is there a common framework used to Terraform modules?
