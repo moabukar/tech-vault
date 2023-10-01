@@ -1517,46 +1517,69 @@ Here are the primary functions of `git reset`:
 
 -----General--------
 <details>
-  <summary>What is AWS?</summary>
-  
-  Content HERE
-  
+<summary>What is AWS?</summary>
+
+
+AWS (Amazon Web Services) is a cloud computing platform provided by Amazon. It offers a wide range of on-demand computing services and resources, such as servers, storage, databases, networking, and more, over the internet. AWS allows businesses and individuals to access and utilize these services without the need to own and manage physical hardware. It's commonly used for hosting websites, running applications, and storing data, offering scalability and flexibility to meet various computing needs.
+
 </details>
 <details>
-  <summary>What are two services of AWS where you could store secrets?</summary>
-  
-  Content HERE
-  
+<summary>What are two services of AWS where you could store secrets?</summary>
+
+
+Two AWS services for storing secrets securely are:
+
+- **AWS Secrets Manager**: A service specifically designed for managing and rotating sensitive information like database passwords, API keys, and other credentials. It provides encryption, automated rotation, and access control for secrets.
+
+- **AWS Parameter Store**: A service that allows you to store and manage configuration data, including secrets, in a hierarchical structure. It's often used for storing application configuration parameters and secrets in a secure manner.
+
 </details>
 <details>
-  <summary>What is the relation between the Availability Zone and Region?</summary>
-  
-  Content HERE
-  
+<summary>What is the relation between the Availability Zone and Region in AWS?</summary>
+
+
+- A **Region** is a geographical area that consists of multiple, isolated Availability Zones. AWS Regions are entirely separate from one another and are spread across the world to provide geographic diversity and redundancy.
+
+- An **Availability Zone (AZ**) is a data center or facility within an AWS Region. Each Availability Zone is physically separate from the others and is designed to be isolated from failures in other Availability Zones within the same Region. This isolation ensures high availability and fault tolerance.
+
+In summary, AWS Regions are composed of multiple Availability Zones. When you choose a Region for your resources, you're selecting a specific geographical location with multiple isolated data centers (Availability Zones) to host your services and data. This setup enables redundancy, scalability, and resilience for your applications and infrastructure.
+
 </details>
 <details>
-  <summary>What is auto-scaling?</summary>
-  
-  Content HERE
-  
+<summary>What is auto-scaling?</summary>
+
+- Auto-scaling is a cloud computing feature that automatically adjusts the number of resources (such as servers) allocated to your application based on real-time demand. It helps ensure that your application can handle varying levels of traffic efficiently by adding or removing resources as needed, thereby improving performance and cost-efficiency.
+
 </details>
 <details>
-  <summary>What services can help minimise a DDoS attack?</summary>
-  
-  Content HERE
-  
+<summary>What services can help minimise a DDoS attack?</summary>
+
+
+To minimize a Distributed Denial of Service (DDoS) attack on your infrastructure, you can use services like:
+
+- **AWS Shield**: AWS Shield is a managed DDoS protection service that safeguards your applications against large-scale, sophisticated attacks.
+
 </details>
 <details>
-  <summary>What is an AMI?</summary>
-  
-  Content HERE
-  
+<summary>What is an AMI?</summary>
+
+- An **AMI (Amazon Machine Image)** is a pre-configured and templated virtual machine image used to create virtual servers (EC2 instances) in Amazon Web Services (AWS). It contains an operating system, software applications, and any custom configurations needed for your cloud-based servers. AMIs enable you to quickly launch and replicate server instances, making it easier to scale your infrastructure and deploy consistent computing environments.
+
 </details>
 <details>
-  <summary>What are different types of load balancers?</summary>
-  
-  Content HERE
-  
+<summary>What are different types of load balancers?</summary>
+
+
+There are three main types of load balancers:
+
+- **Application Load Balancer (ALB)**: ALBs operate at the application layer (Layer 7) and are ideal for routing HTTP and HTTPS traffic. They are capable of content-based routing, SSL termination, and support for container-based applications.
+
+- **Network Load Balancer (NLB)**: NLBs function at the transport layer (Layer 4) and are designed for handling TCP, UDP, and TLS traffic. They are highly performant and suitable for low-latency and high-throughput workloads.
+
+- **Classic Load Balancer (CLB)**: CLBs are the legacy load balancers in AWS, offering basic Layer 4 and Layer 7 load balancing capabilities. They are typically used for simple traffic distribution requirements.
+
+Each type of load balancer has specific use cases and features, allowing you to choose the one that best suits your application's needs.
+
 </details>
 
 
