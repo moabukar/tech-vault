@@ -1887,10 +1887,21 @@ Container (Docker):
 - What is Docker compose and when is it used?
 - 
 
-Advanced:
+**Advanced:**
+
 - What is the difference between COPY and ADD commands in a Dockerfile?
 - What is the difference between CMD and RUN commands in a Dockerfile?
 - What are some best practices to follow when running containers in production?
+- Name some limitations of containers vs VMs
+- Is it good practice to run stateful applications in containers?
+- Is it possible to generate a Dockerfile from an image
+  - `$ docker history --no-trunc <IMAGE_ID>`
+- How does virtualisation work at a lower level?
+- What is an orphant volume? And how can you remove it?
+- When you limit the memory for a container, does it reserve that memory for the container?
+- What is the difference between Docker RUN, CMD and ENTRYPOINT?
+- What is the difference between "expose" and "publish" in Docker?
+- How do containers work at a lower level?
 
 Container Orchestration (Kubernetes = K8s):
 
@@ -1908,7 +1919,7 @@ Container Orchestration (Kubernetes = K8s):
 - What is the role of the kube-apiserver?
 
 
-Advanced:
+**Advanced:**
 
 - Can you mention some good practices to follow when creating containers?
 - Can you explain a simple K8s cluster architecture and the components within it?
@@ -1917,6 +1928,8 @@ Advanced:
 - What is an Ingress controller?
 - How can one build a highly availabe (HA) cluster in K8s?
 - What is the role of ETCD in K8s?
+- Explain what are Taints and Tolerations in K8s?
+- 
 
 ### :small_blue_diamond: Ansible
 
@@ -1970,7 +1983,6 @@ Advanced:
 - What are some best practices for caching?
 
 
-----
 
 - What is the CAP Theorem?
 - What is a Partition in CAP theorem?
@@ -2026,7 +2038,7 @@ Advanced:
 - How can one improve query performance by using index hunting?
 - What do you understand by ‘Atomicity’ and ‘Aggregation’?
 - What is database partitioning?
-- 
+- What is database sharding?
 
 
 **Advanced:**
@@ -2049,6 +2061,7 @@ Advanced:
 - What are benefits of working with circuit breakers? 
 - Define cascading failures and how to deal with those?
 - How can you deploy an API without disrupting traffic?
+- Explain what a Race condition is to a 5 year old?
 
 ### :small_blue_diamond: Golang
 
