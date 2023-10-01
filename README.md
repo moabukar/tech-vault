@@ -1587,35 +1587,50 @@ Each type of load balancer has specific use cases and features, allowing you to 
 <details>
 <summary>What is a VPC?</summary>
 
-Answer goes here
+A VPC (Virtual Private Cloud) is a virtual network environment provided by Amazon Web Services (AWS). It allows you to create and configure a logically isolated section of the AWS cloud where you can launch AWS resources like virtual servers (EC2 instances), databases, and more.
+
+Key features of a VPC include:
+
+- **Isolation**: VPCs provide network isolation, allowing you to create private and public subnets to control access to resources.
+
+- **Custom IP Address Ranges**: You can define your IP address range for the VPC, enabling you to design your network architecture.
+
+- **Security Groups and Network ACLs**: These allow you to control inbound and outbound traffic to and from resources within the VPC.
+
+- **Connectivity Options**: VPCs can be connected to other VPCs, on-premises networks, and the internet using various networking options.
+
+- **Subnets**: VPCs are divided into subnets, each associated with a specific Availability Zone. Subnets are used to distribute resources and provide high availability.
+
+In summary, a VPC is a fundamental networking component in AWS that lets you create a virtual network environment to host and manage your cloud-based resources with control over network architecture and security.
 
 </details>
 
 <details>
 <summary>How do Subnets work?</summary>
 
-Answer goes here
+- Subnets are like separate neighborhoods within your cloud network. Each subnet has its own area of IP addresses and is isolated from the others. They're often placed in different parts of the cloud for extra safety, and you can control how traffic flows in and out of each subnet. This helps keep your cloud resources organized and secure.
 
 </details>
 
 <details>
 <summary>What network object do you need to allow a server ingress from the internet?</summary>
 
-Answer goes here
-
-</details>
-
-<details>
-<summary>What are the different type of load balancers in AWS?</summary>
-
-Answer goes here
+- To allow a server to receive incoming traffic from the internet, you typically need to configure a **security group (in AWS)** or **a firewall rule** aka NACL (in general networking terms) to permit incoming traffic on the specific ports or protocols you want to allow. This enables your server to accept requests from the internet while still maintaining security by specifying which traffic is allowed.
 
 </details>
 
 <details>
 <summary>How can your resources in the VPC get access to the internet?</summary>
 
-Answer goes here
+To allow resources in your VPC to access the internet, you need to set up the following:
+
+- **Internet Gateway (IGW)**: Attach an Internet Gateway to your VPC. It acts as a bridge between your VPC and the internet.
+
+- **Route Table**: Modify the route table associated with your subnets to include a route (0.0.0.0/0) pointing to the Internet Gateway.
+
+- **Elastic IP (EIP)**: For resources like EC2 instances that need a static public IP, allocate and associate an Elastic IP address.
+
+With these configurations, resources in your VPC can send and receive traffic to and from the internet through the Internet Gateway while maintaining network security through security groups and network ACLs.
 
 </details>
 
