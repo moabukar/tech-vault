@@ -1943,7 +1943,8 @@ Advanced:
 
 ### :small_blue_diamond: CI/CD
 
-- 
+- What is meant by Continuous Integration?
+- Explain blue-green deployment
 
 ### :small_blue_diamond: DevOps methodology, practices,  & Agile
 
@@ -1965,17 +1966,48 @@ Advanced:
 - What is a cache Hit?
 - What is a cache Miss?
 - Can you explain a caching workflow?
+- Explain why CDN availability may be a problem for using WebSockets?
+- What are some best practices for caching?
 
 
 ----
 
 - What is the CAP Theorem?
+- What is a Partition in CAP theorem?
+- What are A and P in CAP theorem and the difference between them?
+- Explain when CA is used and when CP is used?
 - Explain the difference between horizontal scaling and vertical scaling?
 - Difference between forward proxy and reverse proxy?
 - What is Load Balancing and how does it work? How does it relate to reverse proxies?
 - Name me some common load balancers
 - What is a microservice architecture and when would I consider using one?
 
+### :small_blue_diamond: API Design
+
+- What is an API?
+- What is REST?
+- What is a RESTful API?
+- What is a RESTful Web Service?
+- What is a RESTful Web API?
+- What is a RESTful Web Application?
+- What is API design?
+- What is API documentation?
+- What are the core components of a HTTP request?
+- What are the core components of a HTTP response?
+- What is a cached response?
+- What is the difference between a HTTP GET and POST request?
+- What is the difference between a HTTP PUT and PATCH request?
+- What is the difference between a HTTP 301 and 302 response?
+- What is the difference between a HTTP 401 and 403 response?
+- What is the difference between a HTTP 404 and 410 response?
+- What is the difference between a HTTP 500 and 503 response?
+- What is the difference between a HTTP 200 and 201 response?
+- What is payload?
+- What is a HTTP header?
+- What is a HTTP body?
+- Explain cache-control header?
+- Name some best practices for better RESTful API design?
+- 
 
 ### :small_blue_diamond: Databases
 
@@ -1997,7 +2029,7 @@ Advanced:
 - 
 
 
-Advanced:
+**Advanced:**
 
 - What are message queues? And what are message brokers?
 - How does the publish-subscribe model work?
@@ -2026,6 +2058,18 @@ Advanced:
 - What is the difference between the = and := operator?
 - What are goroutines?
 - Does Go have exceptions?
+- Can you return multiple values from a function?
+- What is a channel?
+- What is a struct?
+- What is a slice?
+- What is a map?
+- What is a method?
+- What is a package?
+- What is a module?
+- What is a pointer?
+- What is a pointer receiver?
+- How to check if a Map contains a key in Go?
+- When is the `init()` function run?
 
 
 Advanced:
@@ -2039,6 +2083,21 @@ Advanced:
 
 ### :small_blue_diamond: Java
 
+- What is JVM?
+- What is JRE?
+- What is JDK?
+- What is the difference between JDK and JRE?
+- What is the difference between JVM and JRE?
+- How does a HashMap work in Java?
+- What is the difference between an Interface and an Abstract class?
+- How does Garbage Collection work in Java?
+- How does Garbage Collection prevent a Java application from going out of memory?
+- What is the difference between a stack and a heap?
+- What's a deadlock?
+- What is the difference between an ArrayList and a LinkedList?
+- Does Java support multiple inheritance?
+- What is the difference between == and .equals()?
+- Explain marshalling and unmarshalling?
 - 
 
 ### :small_blue_diamond: JavaScript (TS,nodeJS...)
