@@ -918,3 +918,65 @@ BONUS:
 For the sake of this exercise, you can assume that you have AWS credentials set up, and you're familiar with basic OPA and Terraform commands. If the OPA policies fail, Terraform should not provision the S3 bucket.
 
 ```
+
+## 24. Create Immutable AMIs with Packer
+
+Solution here >> [Solution](./code/q24/README.md) >> Only look once you have attemptesd the question.
+
+```bash
+
+**Context**
+
+You're tasked to create a system where EC2 instances are disposable and can be replaced easily without manual intervention. You decide to go with Immutable Infrastructure by creating custom AMIs using Packer.
+
+**Objective**
+
+- Create a Packer script to build an Amazon Machine Image (AMI) with a web server (e.g., Nginx) pre-installed.
+- Deploy an EC2 instance using the generated AMI via Terraform.
+- Validate that the EC2 instance is serving the web server correctly.
+
+**Constraints**
+
+- Use Packer to create the AMI.
+- Deploy the EC2 instance with Terraform.
+- The instance should be in a public subnet and accessible over HTTP.
+
+**Deliverables**
+
+- Packer script file (packer.json).
+- Terraform files for infrastructure deployment.
+- README with instructions on how to build the AMI and deploy the EC2 instance.
+
+```
+
+## 25. Secrets Management with HashiCorp Vault
+
+Solution here >> [Solution](./code/q25/README.md) >> Only look once you have attemptesd the question.
+
+```bash
+
+**Context**
+
+You're responsible for the secure storage and management of secrets. You choose HashiCorp Vault as your tool for this task.
+
+**Objective**
+
+- Deploy a Vault server using Docker or directly on an EC2 instance.
+- Initialize and unseal the Vault.
+- Store a secret (e.g., database credentials) in the Vault.
+- Use Terraform to deploy an EC2 instance.
+- Configure the EC2 instance to read the secret from the Vault and write it to a text file.
+
+**Constraints**
+
+- Deploy Vault either as a Docker container or directly on an EC2 instance.
+- Use Terraform for deploying any infrastructure.
+- The secret should only be accessible by the EC2 instance and not exposed to the outside world.
+
+**Deliverables**
+
+- Vault configuration files, if any.
+- Terraform files for Vault and/or EC2 instance deployment.
+- README explaining how to deploy Vault, store a secret, and how the EC2 instance fetches it.
+
+```
