@@ -4,6 +4,7 @@
 
 ```bash
 
+Scenario:
 
 A company wants to roll out a web service built on Kubernetes. To make this happen, complete a file stub located at /home/ubuntu/tech-vault-q1/special-definition.yml with the steps that do the following:
 
@@ -24,13 +25,15 @@ A company wants to roll out a web service built on Kubernetes. To make this happ
 
 ```bash
 
+Scenario:
+
 Complete the file stub located at `/home/ubuntu/tech-vault-q2/runscript.sh` with one or more commands to achieve the following tasks:
 
-- **Task 1**: Extract the archive located at `/home/ubuntu/2025-linux-perm-adjustment/backup.tar.gz`.
-- **Task 2**: Set permission "0664" for all the files that were just extracted.
-- **Task 3**: Set permission "0775" for all the directories that were just extracted.
-- **Task 4**: Change the owner to "anonymous" and the group to "no-team" for all the extracted files and directories.
-- **Task 5**: Create a new archive with the adjusted files and directories, naming it `/tmp/fixed-archive.tar.gz`.
+- Extract the archive located at `/home/ubuntu/2025-linux-perm-adjustment/backup.tar.gz`.
+- Set permission "0664" for all the files that were just extracted.
+- Set permission "0775" for all the directories that were just extracted.
+- Change the owner to "anonymous" and the group to "no-team" for all the extracted files and directories.
+- Create a new archive with the adjusted files and directories, naming it `/tmp/fixed-archive.tar.gz`.
 
 **Notes:**
 
@@ -43,6 +46,8 @@ Complete the file stub located at `/home/ubuntu/tech-vault-q2/runscript.sh` with
 ## 3. K8s enhancements (multiple choice)
 
 ```bash
+
+Scenario:
 
 While working on Kubernetes cluster enhancements, you need to set up a recurring task that makes a call to a remote API. Which of the following commands is correct to perform this action?
 
@@ -60,33 +65,35 @@ Pick ONE option:
 
 - The correct answer will be evaluated on its ability to perform the task as described.
 
-
 ```
 
-## 4. Certificates
+## 4. SSL Certificates
 
 ```bash
 
+Scenario:
+
 In the directory `/home/ubuntu/tech-vault-q4/taskrunner.sh`, you have an SSL certificate named `security.crt` and a private key named `secrecy.key`. Complete the `taskrunner.sh` file with steps to accomplish the following:
 
-- **Task 1**: Create a new User entry in Kubeconfig named `operator` using the `security.crt` and `secrecy.key` located in `/home/ubuntu/2022-kube-rbac-cert-setup/`.
+- **Task 1**: Create a new User entry in Kubeconfig named `operator` using the `security.crt` and `secrecy.key` located in `/home/ubuntu/tech-vault-q4/`.
   
 - **Task 2**: Create a new Context entry named `operator` in Kubeconfig for the newly created User `operator`.
 
 **Notes**
 
-- The completed solution will be evaluated in a fresh environment. Make sure all your changes are in the `taskrunner.sh` file located in `/home/ubuntu/tech-vault/`. Manual changes will not be preserved.
+- The completed solution will be evaluated in a fresh environment. Make sure all your changes are in the `taskrunner.sh` file located in `/home/ubuntu/tech-vault-q4/`. Manual changes will not be preserved.
   
 - Run `sudo execute` from the question directory to test the solution. (Hint: use alias)
   
 - Sudo privileges are available, if needed.
-
 
 ```
 
 ## 5. Service roles
 
 ```bash
+
+Scenario:
 
 You are required to complete the definition file located at `/home/ubuntu/tech-vault-q5/cluster-role-def.yml`. The file should have configurations to perform the following actions:
 
@@ -96,7 +103,7 @@ You are required to complete the definition file located at `/home/ubuntu/tech-v
 
 - **Step 3**: Create a Cluster Role Binding named `chiefadmin-monitor` that binds the newly created Service Account `chief-admin` with the Cluster Role `monitor`.
 
-### Important Notes
+### Notes
 
 - The completed solution will be verified in a fresh, untouched environment. Ensure all your changes are confined to the `cluster-role-def.yml` file in `/home/ubuntu/tech-vault-q5`.
 
