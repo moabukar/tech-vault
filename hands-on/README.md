@@ -382,3 +382,117 @@ Create a `docker-compose.yml` file that:
   - Any design choices or assumptions you made.
 
 ```
+
+## 12. AWS Cloud Security
+
+```bash
+
+### Context
+You are a DevOps engineer in a company that is migrating its on-premises applications to AWS. You've been tasked with ensuring the security posture of your cloud environment.
+
+### Objective
+Create an Infrastructure as Code (IaC) template using Terraform that accomplishes the following:
+
+1. Sets up a VPC (Virtual Private Cloud) with private and public subnets.
+2. Deploys an EC2 instance into the private subnet.
+3. Sets up a Security Group that allows only necessary ports to be open.
+4. Uses IAM Roles to grant the EC2 instance only the permissions it needs (Least Privilege).
+5. Sets up CloudTrail to log API calls for your account.
+6. Enable encryption for any storage services you use (EBS, S3, etc.)
+
+### Constraints
+- Use Terraform to create your infrastructure.
+- Make use of modules to make your code re-usable.
+- Incorporate best practices for AWS security (e.g., enable VPC flow logs, disable root user, etc.)
+
+### Bonus
+- Implement AWS Config to enforce security policies.
+- Set up a CloudWatch Alarm that triggers if any unauthorized actions are performed.
+- Use AWS Secrets Manager to store any sensitive information.
+
+### Deliverables
+- Terraform files (.tf) for your infrastructure.
+- A README file that explains:
+  - How to deploy your infrastructure.
+  - Security best practices that you implemented.
+  - Any assumptions or design choices you made.
+
+```
+
+
+## 13. Azure Security Challenge
+
+```bash
+
+### Context
+You are a DevOps engineer at a software company that's planning to use Azure services for hosting a new web application. You have been given the responsibility to ensure the security of the application and its surrounding environment.
+
+### Objective
+Create an Azure ARM template or use Terraform to accomplish the following tasks:
+
+1. Create a Virtual Network with a defined range of IP addresses.
+2. Deploy a Virtual Machine into the Virtual Network, and make sure it is not directly accessible from the Internet.
+3. Set up Network Security Groups (NSGs) to restrict inbound and outbound traffic to the Virtual Machine.
+4. Implement Azure Key Vault to manage application secrets.
+5. Enable Azure Monitor and Azure Security Center to collect performance and security metrics.
+6. Set up Azure Active Directory and implement RBAC (Role-Based Access Control).
+
+### Constraints
+
+- You must use Infrastructure as Code (IaC) for all deployments.
+- Wherever possible, apply the principle of Least Privilege.
+- Enable Azure Multi-Factor Authentication for critical roles.
+
+### Bonus
+
+- Enable Azure DDoS Protection Standard for the Virtual Network.
+- Implement Azure Policy to enforce organizational requirements.
+- Create an Azure Logic App to send notifications if high-severity security incidents are detected.
+
+### Deliverables
+- All the code files used for setting up the environment.
+- A README file that explains:
+  - Steps to deploy the environment.
+  - Best practices you've implemented.
+  - Any assumptions or design choices you've made.
+
+
+
+```
+
+## 14. GCP Security Challenge
+
+```bash
+
+### Context
+You're a DevOps engineer at a start-up that's rapidly scaling its infrastructure on GCP. Your boss has asked you to ensure that the GCP environment adheres to industry security standards.
+
+### Objective
+Use Terraform, Deployment Manager, or your preferred Infrastructure as Code (IaC) tool to accomplish the following tasks:
+
+1. Create a custom VPC with a private subnet and a public subnet.
+2. Deploy a Compute Engine instance within the private subnet and ensure it is not accessible from the public internet.
+3. Implement firewall rules to control the inbound and outbound traffic within the VPC.
+4. Set up Cloud Key Management Service (KMS) to encrypt sensitive application data.
+5. Enable Stackdriver (Cloud Monitoring and Cloud Logging) for monitoring and logging activities.
+6. Implement Identity and Access Management (IAM) with roles that follow the principle of Least Privilege.
+
+### Constraints
+- All resources must be deployed using IaC.
+- Use Service Accounts to enable secure communication between different GCP services.
+- Enable two-factor authentication for accounts with admin access.
+
+### Bonus
+- Implement a Cloud Function that triggers an alert based on a security condition (e.g., repeated login failures, firewall rule changes).
+- Use Cloud Security Command Center to continuously monitor and secure your environment.
+- Apply VPC Service Controls to limit the risk of data exfiltration.
+
+### Deliverables
+- All code files used for setting up the environment.
+- A README file that explains:
+  - The steps needed to deploy the environment.
+  - Security best practices that were implemented.
+  - Any assumptions or design choices you've made.
+
+
+```
