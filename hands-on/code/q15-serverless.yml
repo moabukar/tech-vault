@@ -1,0 +1,43 @@
+service: todo-api
+
+provider:
+  name: aws
+  runtime: nodejs14.x
+  stage: dev
+  region: us-east-1
+
+functions:
+  create:
+    handler: handler.create
+    events:
+      - http:
+          path: todos
+          method: post
+
+  get:
+    handler: handler.get
+    events:
+      - http:
+          path: todos/{id}
+          method: get
+
+  list:
+    handler: handler.list
+    events:
+      - http:
+          path: todos
+          method: get
+
+  update:
+    handler: handler.update
+    events:
+      - http:
+          path: todos/{id}
+          method: put
+
+  delete:
+    handler: handler.delete
+    events:
+      - http:
+          path: todos/{id}
+          method: delete

@@ -496,3 +496,36 @@ Use Terraform, Deployment Manager, or your preferred Infrastructure as Code (IaC
 
 
 ```
+
+## 15. AWS Serverless Challenge
+
+```bash
+
+Create a Serverless REST API that allows users to manage a "to-do" list. Each to-do item should have a title and a status (completed or not).
+
+## Requirements
+
+1. DynamoDB Table: Create a DynamoDB table that will store the to-do items
+
+2. AWS Lambda Functions: Implement Lambda functions for the CRUD operations:
+    - Create a new item
+    - Read an item by ID
+    - Update an item by ID
+    - Delete an item by ID
+    - List all items
+
+3. API Gateway: Create an API Gateway to expose these Lambda functions via HTTP endpoints.
+
+
+4. IAM Roles: Make sure to assign appropriate IAM roles to your Lambda functions.
+
+5. Terraform: Write the Terraform files to deploy these resources.
+
+Files to Submit
+
+- main.tf (or others/more) - This should contain the Terraform scripts to set up your infrastructure.
+- handler.js (or any language you are comfortable with) - This should contain the code for your Lambda functions.
+
+
+```
+
