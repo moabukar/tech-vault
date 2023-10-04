@@ -1,0 +1,9 @@
+---
+- name: Configure OSPF
+  hosts: routers
+  tasks:
+    - name: Set OSPF
+      ios_config:
+        lines:
+          - router ospf 1
+          - network 0.0.0.0 255.255.255.255 area 0

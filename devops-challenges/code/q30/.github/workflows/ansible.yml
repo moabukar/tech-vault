@@ -1,0 +1,31 @@
+name: Run Ansible Playbooks
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  run-ansible:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repo
+      uses: actions/checkout@v2
+
+    - name: Setup Ansible
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y ansible
+
+    - name: Run Backup Config Playbook
+      run: ansible-playbook -i inventory.ini playbooks/backup_config.yml
+
+    - name: Run Set VLAN Playbook
+      run: ansible-playbook -i inventory.ini playbooks/set_vlan.yml
+
+    - name: Run Set OSPF Playbook
+      run: ansible-playbook -i inventory.ini playbooks/set_ospf.yml
+
+    - name: Run Set ACL Playbook
+      run: ansible-playbook -i inventory.ini playbooks/set_acl.yml
