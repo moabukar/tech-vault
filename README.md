@@ -17,7 +17,7 @@ Any questions taken from external references are referenced [below](#references)
 - [X] [Vision 🚀](#vision)
 - [X] [What is different in this repo compared to others? 🌟](#what-is-different-in-this-repo-compared-to-others)
 - [X] [Contributing 🖊️](#contributing)
-- [X] [Hands-on questions](./hands-on/README.md)
+- [X] [DevOps Challenges](./devops-challenges/README.md)
 - [X] [DevOps 🛠](#devops)
     - [Linux 🐧](#small_blue_diamond-linux)
     - [Networking 🌐](#small_blue_diamond-networking)
@@ -63,7 +63,7 @@ Any questions taken from external references are referenced [below](#references)
 
 4️⃣ Ongoing updates by experienced Engineers in their fields.
 
-5️⃣ Hands-on questions that are similar to real-life scenarios
+5️⃣ Hands-on questions that are similar to real-life scenarios aka DevOps Challenges
 
 ## Contributing 🖊️
 
