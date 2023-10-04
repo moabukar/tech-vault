@@ -868,7 +868,7 @@ Test the routing by accessing the service endpoint multiple times. You should se
 
 ## 23. OPA with Terraform (Security as Code)
 
-Solution here >> [Solution](./code/q23/README.md)
+Solution here >> [Solution](./code/q23/README.md) >> Only look once you have attemptesd the question.
 
 ```bash
 
