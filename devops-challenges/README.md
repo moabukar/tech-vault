@@ -1,4 +1,4 @@
-# Hands on-questions (Use Ubuntu machine ideally)
+# DevOps Challenges (Use Ubuntu machine ideally)
 
 ## 1. K8s deployment
 
@@ -635,3 +635,166 @@ S3 bucket correctly configured and accessible by the Lambda function.
 4. main.tf: IAM role permissions not sufficient for Lambda to write logs.
 
 </details>
+
+## 18. DevOps Troubleshooting Challenge with Docker Compose
+
+```bash
+
+**Context**
+
+You have been provided with a Docker Compose YAML file that supposedly sets up a basic stack including an Nginx web server, a PostgreSQL database, and a Redis cache. The development team has reported that they are unable to get the services up and running, and they have passed the YAML file to you for investigation.
+
+**Your Task**
+
+Your task is to identify the issues that prevent the stack from running as expected. You are responsible for:
+
+Identifying the errors in the Docker Compose YAML file.
+Fixing the issues to ensure all services are up and running.
+Document the changes you've made and explain why you made them.
+
+Provided Docker Compose File
+Here is the Docker Compose file you've been provided:
+
+#######################################################
+version: '3'
+services:
+  web:
+    image: nginx
+    ports:
+      - "8080:80"
+    depends_on:
+      - databse
+  database:
+    image: postgres
+    environment:
+      POSTGRES_DB: mydatabase
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+  redis:
+    image: redis
+    ports:
+      - "6379:6739"
+#######################################################
+
+**Evaluation Criteria**
+
+- Successful deployment of services.
+- Clear documentation explaining the errors and the steps you took to correct them.
+
+```
+
+## 19. Linux Monitoring Automation
+
+```bash
+
+**Context**
+
+You're the new DevOps Engineer at XYZ Corp. The team has been having issues keeping track of system metrics for their Linux-based application servers. Your task is to write a script that will be run periodically to collect some system metrics and output them to a log file.
+
+**Your Task**
+
+Your Bash script should do the following:
+
+- Capture the current CPU usage.
+- Capture the current Memory usage.
+- Capture the Disk usage for the / partition.
+- Output all these metrics with timestamps to a log file located at /var/log/sys_metrics.log.
+
+**Script Requirements**
+
+- The script must be executable.
+- All output must be appended to the log file; do not overwrite the previous logs.
+
+Example Log File Output:
+
+#######################################################
+
+[Timestamp] CPU: x%, Memory: x%, Disk: x%
+[Timestamp] CPU: x%, Memory: x%, Disk: x%
+
+#######################################################
+
+**Evaluation Criteria**
+
+Accurate capture of system metrics.
+Successful logging of metrics to the log file.
+Proper error handling and script execution permissions.
+
+**Hints**
+You can use commands like top, free, df and utilities like awk to capture the system metrics.
+
+Please note, the users must have sudo permissions to write to /var/log/sys_metrics.log or another approach would be to execute the script as a superuser.
+
+```
+
+## 20. ArgoCD Deployment Challenge
+
+```bash
+
+**Scenario**
+
+You've just joined the DevOps team at Quantum Corp. The team is working on automating the deployment process for a new Kubernetes-based application. They've chosen ArgoCD as their GitOps tool. Your task is to set up an ArgoCD pipeline to deploy an example application from a Git repository to a Kubernetes cluster.
+
+**Requirements**
+
+- Fork the sample application repository provided by the company. (For the sake of this example, let's assume it's a simple Nginx application on a K8s deployment.)
+
+- Install ArgoCD on a Kubernetes cluster. You can use Minikube or Rancher Desktop for local development.
+
+- Create an ArgoCD Application that deploys the sample application from the forked repository.
+
+- Make a change in the application and push it to the Git repository. Validate that ArgoCD picks up this change and deploys it automatically.
+
+- Set up a Rollback strategy for the ArgoCD Application.
+
+- Document the steps you've taken to complete the above tasks, and any scripts or YAML definitions you've created.
+
+**Evaluation Criteria**
+
+- Proper installation and configuration of ArgoCD.
+- Successful GitOps-based deployment of the application.
+- Ability to automatically update the application based on Git commits.
+- Successful rollback of a deployment.
+- Proper documentation and code quality.
+
+```
+
+## 21. Terraform Kubernetes Cluster Deployment Challenge
+
+```bash
+
+**Scenario**
+
+Welcome to RocketCorp's DevOps team! We're migrating our applications to Kubernetes and are relying on Terraform to manage our infrastructure. Your task is to deploy a Kubernetes cluster along with some essential resources using Terraform.
+
+**Requirements**
+
+- Initialize a new Terraform project in your own Git repository.
+
+- Use a Terraform module to create a Kubernetes cluster on a cloud provider of your choice (AWS, GCP, Azure).
+
+Once the cluster is up, use Terraform to deploy the following Kubernetes resources:
+
+- A `Namespace` named `rocket-app`
+- A `Deployment` running the Nginx image under the `rocket-app` namespace
+- A `Service` of type `LoadBalancer` to expose the Nginx deployment
+- Output the LoadBalancer's IP or domain name at the end of the Terraform execution.
+- Document all the steps in a README.md, explaining how to run your code to bring up the Kubernetes cluster and how to tear it down.
+
+**Additional Constraints**
+
+- Ensure that your Terraform code is idempotent.
+- Add comments to your Terraform files explaining your choices.
+
+**Evaluation Criteria**
+
+- Successful creation of a Kubernetes cluster.
+- Successful deployment of specified Kubernetes resources.
+- Idempotent code.
+- Code quality and organization.
+- Detailed README.md explaining the steps to run the code.
+
+Please submit the URL of your Git repository that includes all your Terraform files and a README.md for review as a PR in this repository.
+
+
+```
