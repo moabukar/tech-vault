@@ -1,0 +1,6 @@
+# Prometheus config
+scrape_configs:
+  - job_name: 'flask_app'
+    static_configs:
+      - targets: ['flask_app:5000']
+

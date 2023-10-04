@@ -1,0 +1,13 @@
+{
+    "accountName": "test",
+    "cloudProvider": "aws",
+    "credentials": {
+      "accessKey": "ACCESS_KEY",
+      "secretKey": "SECRET_KEY"
+    },
+    "regions": ["us-west-1"],
+    "chaosTarget": "Auto Scaling Group Name",
+    "meanTimeBetweenKillsInWorkDays": 3,
+    "minTimeBetweenKillsInWorkDays": 1
+  }
+  
