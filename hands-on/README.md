@@ -579,4 +579,59 @@ project-root/
 
 </details>
 
-## 17. 
+## 17. AWS Lambda/Terraform Troubleshooting
+
+[All files located here](./code/q17/README.md)
+
+```bash
+
+project-root/
+|-- terraform/
+|   |-- main.tf
+|   |-- variables.tf
+|   |-- outputs.tf
+|-- lambda/
+|   |-- handler.py
+|   |-- requirements.txt
+|-- README.md
+
+Welcome to SuperCoolTech, a leading tech company that specialises in cloud-native solutions. You are part of the DevOps team and are responsible for managing and maintaining the infrastructure. Everything at SuperCoolTech is deployed as code, and you use Terraform extensively for provisioning AWS resources.
+
+Late one evening, you receive a notification that there are issues with a newly deployed Lambda function. The Lambda function is throwing errors, and there are issues with the S3 bucket where it's supposed to store data. You suspect there might also be some IAM role issues, but you're not sure yet.
+
+**Your task** is to identify and resolve the issues as quickly as possible. You have a brief window late at night to fix this, as that is the least traffic period, and you need to ensure minimal disruption.
+
+## Your Mission
+
+Fork the existing project repo and clone it locally.
+Navigate through the Terraform files, Lambda function code, and other project components to identify what's wrong.
+Fix the broken parts and ensure that the Terraform configuration is idempotent and applies without errors.
+Test to confirm that the Lambda function is now working as expected and the S3 bucket is correctly configured.
+Document the changes you've made and what each change accomplishes.
+
+## Constraints
+
+You cannot change the Terraform provider settings.
+You are limited to the current AWS services and can't introduce a new service for this task.
+All changes should be implemented via code (Infrastructure as Code).
+
+## Success Criteria
+
+Terraform code applies without any errors.
+Lambda function executes successfully and performs its task.
+S3 bucket correctly configured and accessible by the Lambda function.
+
+```
+
+<details>
+<summary>Q17 Answers - ONLY LOOK once done (or for interviewers)</summary>
+
+1. main.tf: s3_key for aws_lambda_function is wrong, as the zip file doesn't exist.
+
+2. handler.py: Missing an import for json.
+
+3. README.md: No mention of deploying the Lambda function code to the S3 bucket.
+
+4. main.tf: IAM role permissions not sufficient for Lambda to write logs.
+
+</details>
