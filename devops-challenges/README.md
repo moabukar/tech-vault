@@ -980,3 +980,80 @@ You're responsible for the secure storage and management of secrets. You choose 
 - README explaining how to deploy Vault, store a secret, and how the EC2 instance fetches it.
 
 ```
+
+## 26. Infrastructure as Code Refactor
+
+Solution here >> [Solution](./code/q26/README.md) >> Only look once you have attemptesd the question.
+
+```bash
+
+**Context**
+
+Your organisation has AWS CloudFormation templates. Your task is to migrate those to Terraform.
+
+**Objective**
+
+Take an existing CloudFormation template.
+Convert it to a Terraform configuration.
+Deploy resources using both and compare.
+
+```
+
+## 27. Chaos Engineering
+
+Solution here >> [Solution](./code/q27/README.md) >> Only look once you have attemptesd the question.
+
+```bash
+
+**Context**
+
+You are the lead engineer responsible for the resilience of a microservice-based system deployed on AWS. To ensure that the system can handle failure gracefully, you have decided to introduce chaos into the system using Chaos Monkey.
+
+**Objective**
+
+- Install and configure Chaos Monkey on an AWS EC2 instance.
+- Use Chaos Monkey to terminate instances in a specified Auto Scaling Group.
+- Monitor the behavior of the system using AWS CloudWatch when instances are terminated.
+
+**Constraints**
+
+- Assume you have full access to the AWS environment.
+- You can use any programming/scripting languages you are comfortable with.
+
+**Deliverables**
+
+- Configuration file used for Chaos Monkey.
+- CloudWatch alert and monitoring configuration.
+- Brief documentation explaining the steps taken, and observations during the chaos tests.
+
+```
+
+
+## 28. Monitoring and Alerting
+
+Solution here >> [Solution](./code/q28/README.md) >> Only look once you have attemptesd the question.
+
+```bash
+
+**Context**
+
+You are responsible for ensuring that a Python Flask web application is operating efficiently. You have decided to set up monitoring and alerting using Prometheus and Grafana, both of which are installed in a Kubernetes cluster.
+
+**Objective**
+
+- Configure Prometheus to scrape metrics from the Flask application, which exposes metrics at /metrics.
+- Set up a Grafana dashboard to visualize these metrics.
+- Create a Grafana alert to notify you when CPU usage goes above 80%.
+
+**Constraints**
+
+- Assume you have full access to the Kubernetes cluster.
+- You can use any programming/scripting languages you are comfortable with.
+
+**Deliverables**
+
+- Prometheus configuration file.
+- Grafana dashboard and alert configuration.
+- Documentation detailing your monitoring and alerting setup.
+
+```

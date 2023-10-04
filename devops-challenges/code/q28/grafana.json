@@ -1,0 +1,25 @@
+{
+  "name": "High CPU Usage",
+  "conditions": [
+    {
+      "evaluator": {
+        "params": [80],
+        "type": "gt"
+      },
+      "operator": {
+        "type": "and"
+      },
+      "query": {
+        "model": {
+          "target": "cpu_usage"
+        },
+        "params": ["5m"]
+      },
+      "reducer": {
+        "params": [],
+        "type": "avg"
+      },
+      "type": "query"
+    }
+  ]
+}
