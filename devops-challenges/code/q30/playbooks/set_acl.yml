@@ -1,0 +1,8 @@
+---
+- name: Set ACL
+  hosts: routers
+  tasks:
+    - name: Configure ACL
+      ios_config:
+        lines:
+          - access-list 1 permit 192.168.1.0 0.0.0.255

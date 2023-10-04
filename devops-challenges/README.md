@@ -1096,3 +1096,53 @@ Brief documentation explaining:
 - Instructions for deploying and tearing down the infrastructure.
 
 ```
+
+
+## 30. Network Automation with Ansible
+
+Solution here >> [Solution](./code/q30/README.md) >> Only look once you have attemptesd the question.
+
+```bash
+
+**Context**
+
+You're responsible for automating the network configurations of an organization with multiple routers and switches. Traditionally, changes have been done manually, leading to a lot of human errors and inefficiency.
+
+**Objective**
+
+Automate the network configurations using Ansible.
+
+1. Setup Ansible to manage network devices.
+2. Automate the following configurations:
+  - VLAN setups
+  - OSPF routing protocol configurations
+  - Access Control Lists (ACLs)
+3. Write a playbook that:
+  - Backs up the current configurations
+  - Applies the new configurations
+  - Rolls back in case of failure
+4. Integrate this with a CI/CD pipeline to automate the deployment.
+
+**Constraints**
+
+- Use Ansible for automation.
+- Target devices are Cisco routers and switches.
+- For CI/CD, use Jenkins or any CI/CD tool you're comfortable with.
+
+**Deliverables**
+
+- Ansible playbooks for each automation task.
+- A CI/CD pipeline configuration file.
+- Brief documentation explaining:
+  - How to set up the project
+  - Any credentials or environment variables used
+
+
+For this project, you'd typically need:
+
+- Ansible installed on a control node.
+- Network access to the routers/switches.
+- Relevant credentials to access these devices.
+- The Ansible playbooks would interact with the network devices via protocols like SSH, SNMP, etc. You can manage the playbooks' source code in a Git repo and use Jenkins or another CI/CD tool to deploy changes automatically.
+
+```

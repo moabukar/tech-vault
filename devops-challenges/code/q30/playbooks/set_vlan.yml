@@ -1,0 +1,9 @@
+---
+- name: Set VLAN
+  hosts: routers
+  tasks:
+    - name: Create VLAN
+      ios_config:
+        lines:
+          - name VLAN 10
+          - exit
