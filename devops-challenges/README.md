@@ -796,5 +796,125 @@ Once the cluster is up, use Terraform to deploy the following Kubernetes resourc
 
 Please submit the URL of your Git repository that includes all your Terraform files and a README.md for review as a PR in this repository.
 
+```
+
+## 22. Istio with Kubernetes
+
+```bash
+
+**Scenario:**
+
+Create a simple Istio project where you'll deploy a couple of microservices on a Kubernetes cluster with Istio installed. The main idea is to use Istio to manage traffic between these services.
+
+**Prerequisites**
+
+- Kubernetes cluster up and running (use local minikube or rancher desktop)
+- Istio installed on the cluster
+
+Files Needed
+1. service-a-deployment.yaml
+
+#######################################################
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: service-a
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: service-a
+  template:
+    metadata:
+      labels:
+        app: service-a
+    spec:
+      containers:
+        - name: service-a
+          image: nginx
+          ports:
+            - containerPort: 80
+#######################################################
+
+2. service-b-deployment.yaml
+
+#######################################################
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: service-b
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: service-b
+  template:
+    metadata:
+      labels:
+        app: service-b
+    spec:
+      containers:
+        - name: service-b
+          image: nginx
+          ports:
+            - containerPort: 80
+#######################################################
+
+Your task is to create the routing rules using Istio.
+
+Test the routing by accessing the service endpoint multiple times. You should see the traffic is distributed according to the weights defined in the virtual service.
+
+```
+
+## 23. OPA with Terraform (Security as Code)
+
+Solution here >> [Solution](./code/q23/README.md)
+
+```bash
+
+```bash
+
+**Context**
+
+You're a DevOps engineer at a growing startup. The company uses Terraform to manage its cloud infrastructure, and the management has decided to enforce specific policies for cloud resources to maintain a certain standard and compliance. Open Policy Agent (OPA) has been chosen to evaluate these policies.
+
+**Objective**
+
+- Use Terraform to provision an AWS S3 bucket.
+
+Write OPA policies that validate:
+  - The S3 bucket must have versioning enabled.
+  - The S3 bucket must not be publicly accessible.
+- Integrate the OPA policies within the Terraform flow, so that terraform apply will validate against your policies.
+
+**Constraints**
+
+- You have to use Terraform for provisioning resources.
+- OPA policies should be written in Rego.
+- The task should be accomplishable via a simple terraform apply command, assuming OPA is correctly configured.
+
+**Prerequisites**
+
+- Terraform installed
+- OPA installed
+- AWS CLI configured
+
+**Deliverables**
+
+- Terraform configuration files (main.tf, variables.tf, outputs.tf).
+- OPA policy file(s) in Rego format.
+
+A README explaining:
+- How to set up the environment.
+- How to run the Terraform configuration and OPA policies.
+- How to verify that the policies are enforced.
+
+BONUS:
+- Write some tests for the OPA policy (in Rego)
+
+**Notes**
+
+- Hint: You may use OPA playground to assist and for testing
+For the sake of this exercise, you can assume that you have AWS credentials set up, and you're familiar with basic OPA and Terraform commands. If the OPA policies fail, Terraform should not provision the S3 bucket.
 
 ```
