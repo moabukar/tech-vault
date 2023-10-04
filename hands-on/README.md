@@ -529,3 +529,54 @@ Files to Submit
 
 ```
 
+## 16. DevOps Troubleshooting Challenge: The Broken CI/CD Pipeline
+
+[All files located here](./code/q16/README.md)
+
+```bash
+
+## Objective
+You've just been onboarded onto a new project and found out the CI/CD pipeline hasn't been working for days. Your task is to identify and fix whatever is wrong with it. The pipeline is supposed to test the code, build a Docker image, and then push it to a container registry.
+
+## Starting State
+GitHub Repository: A GitHub repo containing a simple Python Flask app.
+GitHub Actions: A .github/workflows/main.yml file that defines the pipeline.
+DockerHub: Where the Docker image should be pushed.
+Unit Tests: Some failing, some passing.
+
+## Requirements
+
+Identify Issues: List down the problems you discover in the existing pipeline.
+Fix Unit Tests: Ensure all unit tests are passing.
+GitHub Actions: Make sure the pipeline successfully tests the code and builds the Docker image.
+DockerHub: Ensure the pipeline pushes the Docker image to DockerHub.
+Documentation: Update the README.md to reflect any steps needed to fix the pipeline or any dependencies that must be installed.
+
+project-root/
+|-- .github/
+|   |-- workflows/
+|   |   |-- main.yml
+|-- tests/
+|   |-- test_app.py
+|-- Dockerfile
+|-- app.py
+|-- requirements.txt
+|-- README.md
+
+
+```
+
+<details>
+<summary>Q16 Answers - ONLY LOOK once done (or for interviewers)</summary>
+
+1. main.yml: Typo in the Docker build command: dockr instead of docker.
+
+2. Dockerfile: Typo in the pip install command: -no-cache-dir instead of --no-cache-dir.
+
+3. test_app.py: Incorrect comparison of bytes and string in the test assertion.
+
+4. README.md: No mention of setting up GitHub Actions secrets for DockerHub.
+
+</details>
+
+## 17. 
