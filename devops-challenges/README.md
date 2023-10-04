@@ -1057,3 +1057,42 @@ You are responsible for ensuring that a Python Flask web application is operatin
 - Documentation detailing your monitoring and alerting setup.
 
 ```
+
+## 29. Traefik with ECS
+
+Solution here >> [Solution](./code/q29/README.md) >> Only look once you have attemptesd the question.
+
+```bash
+
+**Context**
+
+You're working for a startup that wants to deploy a microservices-based application on AWS ECS. They've chosen Traefik as their reverse proxy and load balancer due to its ease of use and configuration options. Your task is to set up the infrastructure and deployment pipeline.
+
+**Objective**
+
+- Create an ECS cluster using Terraform.
+- Deploy at least two different services (could be simple web apps) in the ECS cluster.
+- Implement Traefik as the reverse proxy for routing traffic to these services.
+- Ensure SSL termination at the Traefik level.
+- Make sure the services are accessible only via Traefik and not directly.
+
+**Constraints**
+
+- Use AWS ECS for container orchestration.
+- Use Traefik v2.x for reverse proxy.
+- Use Terraform for infrastructure as code.
+- For SSL, you can use Let's Encrypt or any other method you're comfortable with.
+
+**Deliverables**
+
+- Terraform code files.
+- ECS task and service definitions in JSON or YAML format.
+- A Traefik configuration file.
+
+Brief documentation explaining:
+
+- Your setup and architecture.
+- Any challenges you faced and how you overcame them.
+- Instructions for deploying and tearing down the infrastructure.
+
+```
