@@ -9,7 +9,7 @@
   - [3. K8s enhancements (multiple choice)](#3-k8s-enhancements-multiple-choice)
   - [4. SSL Certificates](#4-ssl-certificates)
   - [5. Service roles in K8s](#5-service-roles-in-k8s)
-  - [6. 3 Tier Terraform Architecture](#6-3-tier-terraform-architecture)
+  - [6. Three Tier Terraform Architecture](#6-three-tier-terraform-architecture)
   - [7. Ansible Basics](#7-ansible-basics)
   - [8. CI/CD Pipeline Exercise with GitHub Actions](#8-cicd-pipeline-exercise-with-github-actions)
   - [9. Docker Multi-Stage Build Exercise](#9-docker-multi-stage-build-exercise)
@@ -150,7 +150,7 @@ You are required to complete the definition file located at `/home/ubuntu/tech-v
 
 Give me some Terraform questions as well.
 
-## 6. 3 Tier Terraform Architecture
+## 6. Three Tier Terraform Architecture
 
 ```bash
 
