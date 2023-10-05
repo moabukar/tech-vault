@@ -1,9 +1,9 @@
 # DevOps Challenges
 
-## Challenges
+## Table of Contents
 
 - [DevOps Challenges](#devops-challenges)
-  - [Challenges](#challenges)
+  - [Table of Contents](#table-of-contents)
   - [1. K8s deployment](#1-k8s-deployment)
   - [2. Linux Automation](#2-linux-automation)
   - [3. K8s enhancements (multiple choice)](#3-k8s-enhancements-multiple-choice)
@@ -1181,3 +1181,5 @@ For this project, you'd typically need:
 - The Ansible playbooks would interact with the network devices via protocols like SSH, SNMP, etc. You can manage the playbooks' source code in a Git repo and use Jenkins or another CI/CD tool to deploy changes automatically.
 
 ```
+
+Go to the top of the page link >> [Top](#devops-challenges)
