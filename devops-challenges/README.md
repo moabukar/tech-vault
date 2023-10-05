@@ -1,4 +1,39 @@
-# DevOps Challenges (Use Ubuntu machine ideally)
+# DevOps Challenges
+
+## Challenges
+
+- [DevOps Challenges](#devops-challenges)
+  - [Challenges](#challenges)
+  - [1. K8s deployment](#1-k8s-deployment)
+  - [2. Linux](#2-linux)
+  - [3. K8s enhancements (multiple choice)](#3-k8s-enhancements-multiple-choice)
+  - [4. SSL Certificates](#4-ssl-certificates)
+  - [5. Service roles](#5-service-roles)
+  - [6. Terraform test](#6-terraform-test)
+  - [7. Ansible](#7-ansible)
+  - [8. CI/CD Pipeline Exercise with GitHub Actions](#8-cicd-pipeline-exercise-with-github-actions)
+  - [9. Docker Multi-Stage Build Exercise](#9-docker-multi-stage-build-exercise)
+  - [10. Terraform modules exercise](#10-terraform-modules-exercise)
+  - [11. Docker compose exercise (Advanced multi-container)](#11-docker-compose-exercise-advanced-multi-container)
+  - [12. AWS Cloud Security](#12-aws-cloud-security)
+  - [13. Azure Security Challenge](#13-azure-security-challenge)
+  - [14. GCP Security Challenge](#14-gcp-security-challenge)
+  - [15. AWS Serverless Challenge](#15-aws-serverless-challenge)
+  - [16. DevOps Troubleshooting Challenge: The Broken CI/CD Pipeline](#16-devops-troubleshooting-challenge-the-broken-cicd-pipeline)
+  - [17. AWS Lambda/Terraform Troubleshooting](#17-aws-lambdaterraform-troubleshooting)
+  - [18. DevOps Troubleshooting Challenge with Docker Compose](#18-devops-troubleshooting-challenge-with-docker-compose)
+  - [19. Linux Monitoring Automation](#19-linux-monitoring-automation)
+  - [20. ArgoCD Deployment Challenge](#20-argocd-deployment-challenge)
+  - [21. Terraform Kubernetes Cluster Deployment Challenge](#21-terraform-kubernetes-cluster-deployment-challenge)
+  - [22. Istio with Kubernetes](#22-istio-with-kubernetes)
+  - [23. OPA with Terraform (Security as Code)](#23-opa-with-terraform-security-as-code)
+  - [24. Create Immutable AMIs with Packer](#24-create-immutable-amis-with-packer)
+  - [25. Secrets Management with HashiCorp Vault](#25-secrets-management-with-hashicorp-vault)
+  - [26. Infrastructure as Code Refactor](#26-infrastructure-as-code-refactor)
+  - [27. Chaos Engineering](#27-chaos-engineering)
+  - [28. Monitoring and Alerting](#28-monitoring-and-alerting)
+  - [29. Traefik with ECS](#29-traefik-with-ecs)
+  - [30. Network Automation with Ansible](#30-network-automation-with-ansible)
 
 ## 1. K8s deployment
 
