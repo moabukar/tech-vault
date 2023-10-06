@@ -1,0 +1,10 @@
+---
+- name: Install Node.js
+  apt:
+    name: nodejs
+    state: present
+
+- name: Deploy App Configuration
+  template:
+    src: app_config.j2
+    dest: /path/to/app/config.js

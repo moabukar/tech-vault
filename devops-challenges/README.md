@@ -34,6 +34,11 @@
   - [28. Monitoring and Alerting](#28-monitoring-and-alerting)
   - [29. Traefik with ECS](#29-traefik-with-ecs)
   - [30. Network Automation with Ansible](#30-network-automation-with-ansible)
+  - [31. K8s with Secrets Management Challenge](#31-k8s-with-secrets-management-challenge)
+  - [32. Docker-Compose Challenge (2)](#32-docker-compose-challenge-2)
+  - [33. Ansible Advanced (1)](#33-ansible-advanced-1)
+  - [34. Helm Deployment Challenge](#34-helm-deployment-challenge)
+  - [35. Advanced Helm Challenge](#35-advanced-helm-challenge)
 
 ## 1. K8s deployment
 
@@ -1183,3 +1188,248 @@ For this project, you'd typically need:
 ```
 
 Go to the top of the page link >> [Top](#devops-challenges)
+
+## 31. K8s with Secrets Management Challenge
+
+Solution here >> [Solution](./code/q31/README.md) >> Only look once you have attemptesd the question.
+
+```
+
+## Overview
+
+This challenge involves setting up Kubernetes deployments and services, either on a cloud-based Kubernetes service like EKS/AKS/GKE, or locally via Minikube.
+
+### Objectives
+
+1. Create a Kubernetes deployment and service.
+   - **Bonus**: Implement a Horizontal Pod Autoscaler (HPA).
+
+2. The deployment must use a secret named `KEY_SECRET`.
+
+3. Mount this secret in the deployment.
+
+4. `KEY_SECRET` should be used in the container in two ways:
+   - As a volume mount.
+   - As an environment variable.
+
+---
+
+## Requirements
+
+- You may use simple applications like `nginx`, `httpd`, etc.
+- Feel free to use any programming language or open-source tools.
+- Additional code can be written in Terraform or as scripts.
+
+### Criteria
+
+1. Provide all YAML manifest files, pipelines, and scripts used.
+2. Code should be clean and well-documented.
+3. Document your steps in a `README.md` file.
+4. Use either public cloud-based Kubernetes (EKS, AKS, GKE) or local Kubernetes (Minikube).
+5. Create a dedicated service account for the deployment.
+6. Always maintain at least 2 running pods.
+7. Utilize a NodePort type service for the deployment.
+8. Only 1 pod should be unavailable during rolling updates (Hint: Use the `maxUnavailable` parameter wisely).
+
+### Bonus Points
+
+- Scan containers before deployment; fail the pipeline if severity is high or critical.
+- Containers should not run as root.
+
+```
+
+## 32. Docker-Compose Challenge (2)
+
+Solution here >> [Solution](./code/q32/README.md) >> Only look once you have attemptesd the question.
+
+```bash
+
+Create a simple local development environment using the `docker-compose` tool.  
+
+The environment should have two development services supporting `centos` OS in version `8.4.2105`:  
+- a `backend` service running a `ruby` image in version `3.0` with local directory `backend` bound into `/project/backend`  
+- a `frontend` service running a `aspnet` image in version `4.8` with local directory `frontend` bound into `project/frontend`  
+
+and one database service:  
+- `db` running a `mysql` image in version `5.7.37`  
+
+Additionally, the `backend` service should expose its port `6000` from container to a publicly exposed port `6000` via the UDP protocol for local DHCP services.  
+The `frontend` service should expose its port `8080` from the contier to a publicly exposed port `80` via the TCP protocol.  
+Make sure to use *long* syntax for port definitions and *short* syntax for volume defintions.  
+
+The `frontend` service should be exposed via an external network called `fend-ingress`, while the `backend` and `db` services should use a local network called `database`.  
+
+The services should start in the follwoing order: `db, backend, frontend`.
+
+
+```
+
+## 33. Ansible Advanced (1)
+
+Solution here >> [Solution](./code/q33/README.md) >> Only look once you have attemptesd the question.
+
+```bash
+
+**Ansible Role-Based Deployment Exercise**
+
+**Context**
+
+You're a DevOps engineer at a startup that's transitioning from manual configurations to automated infrastructure. The team has selected Ansible as the automation tool. You're responsible for automating the setup and management of a three-tier architecture: load balancer, application server, and database server.
+
+**Objective**
+
+Use Ansible to provision a load balancer (HAProxy), application server (running a Node.js app), and a database server (MySQL).
+
+Create Ansible roles for:
+- Load Balancer
+- Application Server
+- Database Server
+Make sure the configurations are idempotent and can be re-run multiple times without causing errors.
+
+**Constraints**
+
+- You must use Ansible for provisioning and configuration.
+- Divide the project into roles for better manageability.
+- The Ansible playbook should be run with a single command.
+
+**Prerequisites**
+
+- Ansible installed
+- Vagrant or a cloud provider to host your virtual machines
+- SSH access to the virtual machines
+
+**Deliverables**
+
+- Ansible roles for the Load Balancer, Application Server, and Database Server.
+- An Ansible playbook that uses these roles.
+
+A README explaining:
+
+- How to set up the environment.
+- How to run the Ansible playbook and roles.
+- How to verify the setup works as expected.
+
+Notes
+
+- This project aims to test your ability to create reusable Ansible roles and manage a multi-tier architecture.
+- Feel free to create your roles locally, or use Ansible Galaxy to pull pre-configured roles, then modify them to suit your needs.
+- The configurations should be secure, taking into account things like firewall rules, minimal permissions, etc.
+
+```
+
+## 34. Helm Deployment Challenge
+
+Solution here >> [Solution](./code/q34/README.md) >> Only look once you have attemptesd the question.
+
+```bash
+
+# Helm Deployment Exercise
+
+## Context
+
+You're a DevOps engineer at a software development company that's leveraging Kubernetes for its new microservices-based architecture. You've been given the task of packaging, sharing, and deploying services using Helm, the package manager for Kubernetes.
+
+## Objective
+
+- **Package an existing Kubernetes service into a Helm chart.**
+- **Deploy a Redis cluster using a community Helm chart.**
+- **Override specific values in the Redis Helm chart according to given requirements.**
+- **Create a Helm chart for a custom Node.js application and deploy it.**
+
+## Requirements
+
+### Task 1: Package Kubernetes Service
+
+You have an existing Kubernetes deployment and service (YAML files) for a simple Python Flask application. Your task is to convert these YAML files into a Helm chart.
+
+### Task 2: Deploy Redis Cluster
+
+- Use a Helm chart from the community charts to deploy a Redis cluster into the same Kubernetes cluster.
+- The Redis cluster should have at least 1 master and 2 slave nodes.
+
+### Task 3: Customize Redis Cluster
+
+- Override the default password for the Redis cluster.
+- Set resource limits and requests for CPU and Memory on Redis nodes.
+
+### Task 4: Custom Node.js App
+
+- Create a Helm chart for deploying a custom Node.js application that connects to the Redis cluster.
+- The Node.js application should have environment variables to connect to the Redis cluster.
+
+## Constraints
+
+- Helm should be used for all deployments.
+- All Helm charts should be stored in a centralized Helm repository.
+- Use Helm 3.x for this project.
+- Work with any Kubernetes distribution of your choice (EKS, AKS, GKE, Minikube, etc.).
+
+## Deliverables
+
+- Helm charts for all the services.
+- A README.md file that explains:
+  - How to install the Helm charts.
+  - How to customize the Helm charts.
+  - How to verify that the deployments were successful.
+
+## Bonus Points
+
+- Implement Helm hooks for database schema migration.
+- Use Helm to rollback one of the deployments to its previous version.
+
+
+```
+
+## 35. Advanced Helm Challenge
+
+Solution here >> [Solution](./code/q35/README.md) >> Only look once you have attemptesd the question.
+
+```bash
+
+# Advanced Helm and Helmfile Project Scenario
+
+## Context
+You are a DevOps engineer at a company that heavily utilizes Kubernetes for its applications. You are tasked to improve the deployment process using advanced Helm features and Helmfile for orchestrating multiple releases.
+
+## Objective
+
+1. Create Helm charts for a frontend and a backend application.
+2. Create a Helmfile that orchestrates these charts with different environments (dev, staging, and prod).
+3. Use Helm hooks to run database migrations during the release process.
+4. Enable monitoring on these applications using Helm's built-in support for Prometheus and Grafana.
+
+## Requirements
+
+- Each application (frontend and backend) must have its own Helm chart.
+- Helmfile should manage the releases.
+- Implement a database migration script that will run as a Helm hook.
+- Use a community Helm chart for setting up Prometheus and Grafana.
+
+## Constraints
+
+- You should be using Helm v3.x
+- Helmfile should be properly installed and configured.
+
+## Deliverables
+
+- Helm charts for frontend and backend.
+- Helmfile configuration(s).
+- Any script(s) used for database migrations.
+- A README.md file documenting the steps taken, and how to run and manage the project.
+
+## Evaluation Criteria
+
+- Following best practices for Helm and Helmfile.
+- Clarity and maintainability of code.
+- Successful deployment of both frontend and backend using Helmfile.
+- Working Prometheus and Grafana setup.
+
+## Bonus Points
+
+- Demonstrate how to rollback a failed release using Helmfile.
+- Show how to securely manage sensitive data using Helm secrets or any other secure storage.
+
+Good luck! This task is designed to gauge your understanding of Helm and Helmfile, focusing on their advanced features for managing complex deployments. Feel free to ask if you have any questions or face any challenges! 🚀
+
+
+```
