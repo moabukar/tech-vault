@@ -1,0 +1,9 @@
+replicaCount: 1
+
+image:
+  repository: my-python-app
+  tag: latest
+
+service:
+  type: ClusterIP
+  port: 80

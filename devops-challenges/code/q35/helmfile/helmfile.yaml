@@ -1,0 +1,34 @@
+helmDefaults:
+  wait: true
+
+environments:
+  dev:
+    values:
+      - env/dev.yaml
+  staging:
+    values:
+      - env/staging.yaml
+  prod:
+    values:
+      - env/prod.yaml
+
+releases:
+  - name: my-frontend
+    namespace: my-namespace
+    chart: ../charts/my-frontend
+    values:
+      - frontendValues.yaml
+
+  - name: my-backend
+    namespace: my-namespace
+    chart: ../charts/my-backend
+    values:
+      - backendValues.yaml
+
+  - name: prometheus
+    namespace: monitoring
+    chart: prometheus-community/prometheus
+  
+  - name: grafana
+    namespace: monitoring
+    chart: grafana/grafana

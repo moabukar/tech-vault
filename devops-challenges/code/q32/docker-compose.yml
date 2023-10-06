@@ -1,0 +1,39 @@
+version: "centos8.4.2105"
+networks:
+     network1:
+       external: true
+       name: frontend-ingress
+     network2:
+       external: false
+       name: database
+services:
+     backend:
+       depends_on: database
+       image: ruby:3.0
+       volumes:
+         - backend:/project/backend
+     ports:
+       - target: 6000
+         published: 6000
+         protocol: udp
+         mode: host
+     networks:
+       - database
+
+     frontend:
+       depends_on: backend
+       image: aspnet:4.8
+       volumes:
+       - frontend:/project/frontend
+       ports:
+       - target: 8080
+         published: 80
+         protocol: tcp
+         mode: ingress
+       networks:
+        - fend-ingress
+
+     db:
+       image: mysql:5.7.37
+       networks:
+       - database

@@ -1,0 +1,10 @@
+---
+- name: Install MySQL
+  apt:
+    name: mysql-server
+    state: present
+
+- name: Deploy DB Configuration
+  template:
+    src: db_config.j2
+    dest: /etc/mysql/my.cnf

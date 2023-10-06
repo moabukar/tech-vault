@@ -1,0 +1,49 @@
+version: '3.8'
+
+services:
+  db:
+    image: mysql:5.7.37
+    networks:
+      - database
+    environment:
+      MYSQL_ROOT_PASSWORD: root_password_here
+    ports:
+      - target: 3306
+        published: 3306
+        protocol: tcp
+    volumes:
+      - db_data:/var/lib/mysql
+
+  backend:
+    image: ruby:3.0
+    networks:
+      - database
+    volumes:
+      - ./backend:/project/backend
+    ports:
+      - target: 6000
+        published: 6000
+        protocol: udp
+    depends_on:
+      - db
+
+  frontend:
+    image: mcr.microsoft.com/dotnet/framework/aspnet:4.8
+    networks:
+      - fend-ingress
+    volumes:
+      - ./frontend:/project/frontend
+    ports:
+      - target: 8080
+        published: 80
+        protocol: tcp
+    depends_on:
+      - backend
+
+networks:
+  database:
+  fend-ingress:
+    external: true
+
+volumes:
+  db_data:
