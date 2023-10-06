@@ -39,6 +39,7 @@
   - [33. Ansible Advanced (1)](#33-ansible-advanced-1)
   - [34. Helm Deployment Challenge](#34-helm-deployment-challenge)
   - [35. Advanced Helm Challenge](#35-advanced-helm-challenge)
+  - [36. Bash Automation Challenge](#36-bash-automation-challenge)
 
 ## 1. K8s deployment
 
@@ -1433,3 +1434,65 @@ Good luck! This task is designed to gauge your understanding of Helm and Helmfil
 
 
 ```
+
+## 36. Bash Automation Challenge
+
+Solution here >> [Solution](./code/q36/README.md) >> Only look once you have attemptesd the question.
+
+```bash
+
+## Context
+
+You're an automation engineer, and your team often needs to set up new environments for testing and development. They rely on a mix of different databases and web servers for their tasks. Manually installing and configuring these components is time-consuming and error-prone. You decide to create a Bash script to automate this process.
+
+## Objective
+
+Your task is to create a Bash script that can install, configure, and manage the following software components on a Ubuntu machine:
+
+- MySQL
+- PostgreSQL
+- Nginx
+- Apache HTTP Server
+
+### Specific Requirements
+
+1. **Interactivity**: 
+    - The script should interactively ask the user which software they want to install.
+    - Offer a menu of choices and allow multiple selections.
+  
+2. **Installation and Configuration**: 
+    - For MySQL and PostgreSQL, set the root password, create a database, and create a user.
+    - For Nginx and Apache, configure a virtual host.
+
+3. **Logging**: 
+    - All actions, errors, and user inputs should be logged to a log file with a timestamp.
+
+4. **Status Checks**: 
+    - Add an option in the script to check the status of all installed services.
+
+5. **Uninstallation**: 
+    - Provide an option to uninstall any of the installed software and remove any configurations made by the script.
+
+## Constraints
+
+- The Bash script must be compatible with Ubuntu.
+- No third-party scripting languages or packages; stick to Bash and standard Ubuntu utilities.
+
+## Deliverables
+
+- Your Bash script.
+- A `README.md` file explaining:
+  - How to set up the environment.
+  - How to run the script.
+  - How to verify that the software components are installed and configured correctly.
+
+## Bonus Points
+
+- **Error Handling**: 
+    - Robust error handling and informative error messages.
+  
+- **Dry-Run Mode**: 
+    - Add a 'dry-run' mode that only displays the commands that would be executed, without actually running them.
+
+```
+
