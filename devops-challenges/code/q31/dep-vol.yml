@@ -1,0 +1,35 @@
+## deployment - mounted a secret using a volume mount and using a dedicated service account.
+## with 1 pod maxUnavailable
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: k8stest
+  name: k8stest
+spec:
+  replicas: 4
+  selector:
+    matchLabels:
+      app: k8stest
+  strategy: 
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 25%
+  template:
+    metadata:
+      labels:
+        app: k8stest
+    spec:
+      serviceAccountName: k8s-sa
+      containers:
+      - image: nginx
+        name: nginx
+        volumeMounts:
+        - name: k8s-vol
+          mountPath: /etc/foo
+          readOnly: true
+      volumes:
+      - name: k8s-vol
+        secret:
+          secretName: key-secret

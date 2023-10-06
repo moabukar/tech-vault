@@ -1,0 +1,37 @@
+## deployment - mounted a secret using an env variable and using a dedicated service account.
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: k8stest
+  name: k8stest
+spec:
+  replicas: 4
+  selector:
+    matchLabels:
+      app: k8stest
+  strategy: 
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 25%
+  template:
+    metadata:
+      labels:
+        app: k8stest
+    spec:
+      serviceAccountName: k8s-sa
+      containers:
+      - image: nginx
+        name: nginx
+        env:
+         - name: SECRET_USER
+           valueFrom:
+              secretKeyRef:
+                name: key-secret
+                key: user
+         - name: SECRET_PASS
+           valueFrom:
+              secretKeyRef:
+                name: key-secret
+                key: pass
