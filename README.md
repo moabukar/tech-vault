@@ -1,14 +1,14 @@
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
-# Tech Vault Interview Questions Bank
+# Tech Vault 🛠️
 
 <p align="center">
   <img width="1000" src="./images/Tech-Vault.png">
 </p>
 
 
-Note: A documentation of carefully curated technical engineering questions by experienced Engineers who have conducted many interviews. These are amongst popular and important engineering questions to test knowledge of candidates in interviews. 
+Note: A documentation of carefully curated technical engineering questions & challenges by experienced Engineers who have conducted many interviews. These are amongst popular and important engineering questions to test knowledge of candidates in interviews. 
 
 Any questions taken from external references are referenced [below](#references).  
 
@@ -64,6 +64,7 @@ Any questions taken from external references are referenced [below](#references)
 4️⃣ Ongoing updates by experienced Engineers in their fields.
 
 5️⃣ Hands-on questions that are similar to real-life scenarios aka DevOps Challenges
+  - I have created these for that want more hands-on experience when it comes to DevOps.
 
 ## Contributing 🖊️
 
