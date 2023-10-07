@@ -4,6 +4,23 @@
 
 1. Make sure you have Tilt and Docker installed on your machine.
 
+```bash
+
+`brew install tilt-dev/tap/tilt` # macOS
+
+OR
+
+`curl -fsSL https://raw.githubusercontent.com/tilt-dev/tilt/master/scripts/install.sh | bash` # Linux
+OR
+
+iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/tilt-dev/tilt/master/scripts/install.ps1')) # Windows
+
+To verify installation, run:
+
+`tilt version`
+
+```
+
 2. Clone this repository:
     ```bash
     git clone https://github.com/your-repo.git
