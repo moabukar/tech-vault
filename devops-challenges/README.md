@@ -1,9 +1,6 @@
 # DevOps Challenges
 
-## Table of Contents
-
 - [DevOps Challenges](#devops-challenges)
-  - [Table of Contents](#table-of-contents)
   - [1. K8s deployment](#1-k8s-deployment)
   - [2. Linux Automation](#2-linux-automation)
   - [3. K8s enhancements (multiple choice)](#3-k8s-enhancements-multiple-choice)
