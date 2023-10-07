@@ -1,0 +1,6 @@
+---
+- name: Copy authorized keys for access
+  authorized_key:
+    user: "{{ user }}"
+    key: "{{ lookup('file', item) }}"
+  loop: "{{ public_keys }}"

@@ -1,0 +1,5 @@
+# Only include essential SSHD config settings here
+Port 22
+Protocol 2
+PermitRootLogin no
+AllowUsers {{ authorized_users | join(' ') }}

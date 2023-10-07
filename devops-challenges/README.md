@@ -41,6 +41,9 @@
   - [35. Advanced Helm Challenge](#35-advanced-helm-challenge)
   - [36. Bash Automation Challenge](#36-bash-automation-challenge)
   - [37. Development with Tiltfiles](#37-development-with-tiltfiles)
+  - [38. Secure Access to Production Systems](#38-secure-access-to-production-systems)
+  - [39. Automated Backup and Restore Process](#39-automated-backup-and-restore-process)
+  - [40. Configuration Management with Puppet](#40-configuration-management-with-puppet)
 
 ## 1. K8s deployment
 
@@ -1546,5 +1549,143 @@ You're a DevOps Engineer responsible for setting up local development environmen
 
 - Use Tilt extensions to further simplify the development workflow.
 - Include logging and monitoring solutions for your local environment using Tilt's built-in features.
+
+```
+
+## 38. Secure Access to Production Systems
+
+Solution here >> [Solution](./code/q38/README.md) >> Only look once you have attemptesd the question.
+
+```bash
+
+# Secure Access to Production Systems
+
+## Scenario
+
+You are a DevOps Engineer at an emerging tech company. As the company grows, securing access to production servers becomes increasingly crucial. However, you also need to ensure that the flow of development and deployment doesn't slow down. Your task is to set up a system that allows secure access to production servers.
+
+## Objectives
+
+- **SSH Jump Host**: Set up a jump host that will act as an intermediary between the developers and the production servers. Developers will SSH into the jump host first, and from there, access the production servers.
+- **Ansible for Access Control**: Use Ansible to automate the process of updating SSH keys and other access controls for the production servers. This automation should run through the jump host.
+
+## Constraints
+
+- The jump host should be a minimal, hardened system, with only essential services running.
+- You should use Ansible roles and playbooks to manage configurations.
+- Document how to add or remove a user's access.
+
+## Prerequisites
+
+- Ansible installed on your local machine.
+- Two or more remote servers (Production Servers).
+- One remote server for the Jump Host.
+- SSH access to all servers.
+
+## Deliverables
+
+1. Ansible Playbooks and roles for setting up the jump host and managing SSH access.
+2. A secure and minimal setup on the jump host.
+3. Documentation on:
+    - How to set up the environment.
+    - How to run the Ansible playbooks.
+    - How to verify that the setup is secure and functional.
+
+## Notes
+
+- Assume that you have root access to all the servers involved.
+- The configuration should be idempotent. Running the Ansible playbooks multiple times should not change the state of the system beyond the first successful run.
+
+
+```
+
+
+## 39. Automated Backup and Restore Process
+
+Solution here >> [Solution](./code/q39/README.md) >> Only look once you have attemptesd the question.
+
+```bash
+
+# Automated Backup and Restore Process
+
+## Scenario
+
+Your mission is to implement an automated backup process for critical systems and databases. Time is money, and we need to make sure we can get our systems back up and running ASAP if something goes awry.
+
+## Objectives
+
+1. **Automate Database Backups**: Use bash scripting to automate backups for a MySQL database.
+2. **Remote Storage**: Store the database backups in a remote location like S3 or Azure Blob Storage.
+3. **Automate Restore Process**: Create a bash script that can restore the database from a backup.
+
+## Tasks
+
+### Automate Database Backups
+
+1. Create a bash script that will backup a MySQL database and save it locally.
+2. The script should log its activities, so you know if something went wrong.
+
+### Remote Storage
+
+1. Modify your bash script to upload the backup to a remote storage service like S3 or Azure Blob Storage.
+2. Secure the backup with encryption before sending it off to remote storage.
+
+### Automate Restore Process
+
+1. Create a bash script to restore the database from a backup stored in S3 or Azure Blob Storage.
+2. The script should log its activities and any errors.
+
+### Bonus
+
+- Implement email notifications for successful backups and restores, and for failures.
+
+## Deliverables
+
+1. Bash script for automated backups.
+2. Bash script for automated restores.
+3. A README guide on how to set up and use your scripts.
+
+
+```
+
+## 40. Configuration Management with Puppet
+
+Solution here >> [Solution](./code/q40/README.md) >> Only look once you have attemptesd the question.
+
+```bash
+
+# Configuration Management with Puppet
+
+## Scenario
+You are responsible for maintaining a large fleet of servers that need to have standardized configurations. You've decided to use Puppet for configuration management. Additionally, you want to adopt a test-driven approach to ensure reliability.
+
+## Objectives
+
+1. **Set up Puppet Master and Agent**: Configure a Puppet master and at least one Puppet agent. Validate successful communication between them.
+   
+2. **Implement Standard Configurations**: Create Puppet manifests to standardize the following configurations across all servers:
+    - Install and manage a web server (e.g., Apache or Nginx).
+    - Set up user accounts with specific permissions.
+    - Ensure specific packages are installed or removed.
+   
+3. **Test-Driven Development (TDD)**: Before deploying any changes to configurations, write tests to validate them. Use `rspec-puppet` or a similar testing framework for this.
+
+4. **Monitoring**: Make sure to include monitoring checks to verify configurations.
+
+5. **Documentation**: Provide a README file with setup instructions, how to run your Puppet configurations, and how to execute tests.
+
+## Bonus
+- **Scalability**: Show how your solution can scale to handle more servers.
+- **Security**: Implement some basic security practices like firewall rules or file integrity checks.
+
+## Tips
+- Make sure to document your steps well.
+- Try to automate as much as possible.
+
+## Deliverables
+- All Puppet manifests.
+- Testing scripts.
+- A README.md with instructions.
+
 
 ```
