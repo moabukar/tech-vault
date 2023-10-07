@@ -65,8 +65,11 @@ Any questions taken from external references are referenced [below](#references)
 
 5️⃣ Hands-on questions that are similar to real-life scenarios aka DevOps Challenges
   - I have created these for that want more hands-on experience when it comes to DevOps.
+  
 
-## Contributing 🖊️
+6 [Random Question Generator](./misc/README>.md)
+
+## Cibuting 🖊️
 
 - To contribute, please read our [Contributing Guidelines](CONTRIBUTING.md). For any fixes, updates or new additions, please make a pull-request (PR). Thank you!
 
