@@ -40,6 +40,7 @@
   - [34. Helm Deployment Challenge](#34-helm-deployment-challenge)
   - [35. Advanced Helm Challenge](#35-advanced-helm-challenge)
   - [36. Bash Automation Challenge](#36-bash-automation-challenge)
+  - [37. Development with Tiltfiles](#37-development-with-tiltfiles)
 
 ## 1. K8s deployment
 
@@ -1496,3 +1497,54 @@ Your task is to create a Bash script that can install, configure, and manage the
 
 ```
 
+## 37. Development with Tiltfiles
+
+Solution here >> [Solution](./code/q37/README.md) >> Only look once you have attemptesd the question.
+
+```bash
+
+## Context
+
+You're a DevOps Engineer responsible for setting up local development environments. The engineering team works on a microservices architecture, and there's a need to simplify the development workflow. Tilt has been chosen as the tool to automate the local setup and make the developer experience smoother.
+
+## Objective
+
+- Use Tilt to set up a local development environment.
+- The environment should include three microservices: a `frontend`, a `backend`, and a `database`.
+- `frontend` should be a simple React application.
+- `backend` should be a simple REST API built using Python's Flask.
+# - `database` should be a MongoDB instance.
+
+## Requirements
+
+- Each microservice should run in its own Docker container.
+- The Tiltfile should be configured to live reload the `frontend` and `backend` services upon code changes.
+- Implement a way to seed initial data into the MongoDB database.
+- Ensure the services are inter-communicable and can talk to each other.
+
+## Constraints
+
+- You have to use Docker for containerization.
+- The configuration should be done using a Tiltfile.
+
+## Prerequisites
+
+- Tilt installed
+- Docker installed
+
+## Deliverables
+
+- Source code for `frontend` and `backend` services.
+- Dockerfiles for each service.
+- The main Tiltfile to orchestrate the local environment.
+- A README.md file that explains:
+  - How to set up the environment.
+  - How to run the local development setup.
+  - How to verify that everything is running correctly.
+
+## Bonus Points
+
+- Use Tilt extensions to further simplify the development workflow.
+- Include logging and monitoring solutions for your local environment using Tilt's built-in features.
+
+```

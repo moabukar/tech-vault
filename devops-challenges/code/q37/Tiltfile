@@ -1,0 +1,50 @@
+# docker_compose('docker-compose.yml')
+
+# k8s_yaml('k8s.yaml')
+
+# local_resource(
+#   'db_init',
+#   'mongoimport --host=database --db=mydb --collection=mycollection --file=initial_data.json',
+#   resource_deps=['database']
+# )
+
+# # Live update settings
+# local_resource(
+#   'frontend',
+#   'npm run build',
+#   deps=['frontend/src/'],
+#   resource_deps=['frontend']
+# )
+
+# local_resource(
+#   'backend',
+#   'flask run',
+#   deps=['backend/'],
+#   resource_deps=['backend']
+# )
+#####################
+
+
+k8s_yaml('backend.yml')
+docker_build('backend', 'backend',
+  live_update=[
+    sync('./backend/src/', '/app/src/')
+  ]
+)
+
+# Frontend service
+k8s_yaml('frontend.yml')
+docker_build('frontend', 'frontend', 
+  live_update=[
+    sync('./frontend/src/', '/app/src/')
+  ]
+)
+
+
+## K8s
+k8s_resource('backend', port_forwards={'5000': 5000})
+k8s_resource('frontend', port_forwards={'3000': 3000})
+
+
+
+
