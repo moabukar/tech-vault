@@ -11,14 +11,15 @@
 
 ```bash
 
-brew install tilt-dev/tap/tilt # macOS
+# macOS
 
-OR
+brew install tilt-dev/tap/tilt 
 
-curl -fsSL https://raw.githubusercontent.com/tilt-dev/tilt/master/scripts/install.sh | bash # Linux
-OR
+# Linux
+curl -fsSL https://raw.githubusercontent.com/tilt-dev/tilt/master/scripts/install.sh | bash 
 
-iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/tilt-dev/tilt/master/scripts/install.ps1')) # Windows
+# Windows
+iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/tilt-dev/tilt/master/scripts/install.ps1')
 
 To verify installation, run:
 
