@@ -1,5 +1,10 @@
 # Tilt DevOps Project Runbook
 
+## Pre-requisites
+
+- [Tilt](https://docs.tilt.dev/install.html)
+- [Docker](https://docs.docker.com/get-docker/)
+
 ## Getting Started
 
 1. Make sure you have Tilt and Docker installed on your machine.
