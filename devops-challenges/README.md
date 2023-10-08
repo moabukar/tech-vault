@@ -1,7 +1,15 @@
 # DevOps Challenges
 
+## Task level
+
+The tasks below have been ranked based on seniority level, these are just recommendations and can be different based on your own experience.
+
+- Junior Engineer
+- Mid Engineer
+- Senior Engineer
+
 - [DevOps Challenges](#devops-challenges)
-  - [1. K8s deployment](#1-k8s-deployment)
+  - [1. K8s deployment (Junior)](#1-k8s-deployment-junior)
   - [2. Linux Automation](#2-linux-automation)
   - [3. K8s enhancements (multiple choice)](#3-k8s-enhancements-multiple-choice)
   - [4. SSL Certificates](#4-ssl-certificates)
@@ -42,7 +50,7 @@
   - [39. Automated Backup and Restore Process](#39-automated-backup-and-restore-process)
   - [40. Configuration Management with Puppet](#40-configuration-management-with-puppet)
 
-## 1. K8s deployment
+## 1. K8s deployment (Junior)
 
 ```bash
 
@@ -63,7 +71,7 @@ A company wants to roll out a web service built on Kubernetes. To make this happ
 
 ```
 
-## 2. Linux Automation
+## 2. Linux Automation (Junior/Mid)
 
 ```bash
 
@@ -85,7 +93,7 @@ Complete the file stub located at `/home/ubuntu/tech-vault-q2/runscript.sh` with
 
 ```
 
-## 3. K8s enhancements (multiple choice)
+## 3. K8s enhancements (Junior/Mid)
 
 ```bash
 
@@ -109,7 +117,7 @@ Pick ONE option:
 
 ```
 
-## 4. SSL Certificates
+## 4. SSL Certificates Junior
 
 ```bash
 
@@ -1686,3 +1694,56 @@ You are responsible for maintaining a large fleet of servers that need to have s
 
 
 ```
+
+## 41. Advanced Ansible with Molecule Testing
+
+Solution here >> [Solution](./code/q41/README.md) >> Only look once you have attemptesd the question.
+
+```bash
+
+## 41. Advanced Ansible with Molecule Testing
+
+### Scenario:
+You're tasked with automating server provisioning and configurations for a new microservices application. To ensure the Ansible roles and playbooks work as expected, you also need to integrate a testing framework called Molecule.
+
+### Objectives:
+1. Create Ansible roles for configuring a web server, a database, and a caching layer.
+2. Utilize Ansible Vault for sensitive information.
+3. Use Molecule to test the Ansible roles.
+4. Provide documentation on how to run the Ansible playbooks and Molecule tests.
+
+### Skills Required:
+- Ansible
+- Ansible Vault
+- Molecule
+- YAML
+- Bash Scripting
+- Git
+- Docker (optional for Molecule testing)
+
+### Tasks:
+1. Install Ansible, Molecule, and any other required dependencies.
+2. Initialize a new Ansible role for each of the three layers (web server, database, caching).
+3. Write playbooks that utilize these roles.
+4. Encrypt sensitive data using Ansible Vault.
+5. Write Molecule scenarios to test the functionality of each Ansible role.
+6. Use Git to version control your code.
+7. Write a README file explaining how to execute the Ansible playbooks and run the Molecule tests.
+
+### Bonus:
+1. Integrate this Ansible project into a CI/CD pipeline.
+2. Utilize advanced Ansible features like loops, conditionals, and handlers.
+
+### Testing:
+- Use Molecule to perform the tests on your Ansible roles.
+- Make sure to cover idempotency tests, and syntax checks.
+
+### Deliverables:
+- Ansible roles and playbooks
+- Molecule test scenarios
+- README file
+- Git repository link
+
+
+```
+

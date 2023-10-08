@@ -1,0 +1,13 @@
+---
+- name: Verify
+  hosts: all
+  tasks:
+    - name: Check if nginx is installed
+      command: nginx -v
+      register: nginx_version
+      changed_when: false
+
+    - name: Assert nginx installed
+      assert:
+        that:
+          - "'nginx version' in nginx_version.stderr"
