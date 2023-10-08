@@ -1747,3 +1747,41 @@ You're tasked with automating server provisioning and configurations for a new m
 
 ```
 
+## 42. Terraform with Terratest Challenge
+
+Solution here >> [Solution](./code/q42/README.md) >> Only look once you have attemptesd the question.
+
+```bash
+
+## Terraform Infrastructure Deployment with Terratest for Testing
+
+### Scenario:
+You are tasked with creating a scalable and maintainable AWS infrastructure for a new web application. The team wants to be sure that the infrastructure is stable and meets all the requirements before and after deployment. Hence, you'll write automated tests using Terratest to validate the Terraform code.
+
+### Objectives:
+1. Create AWS infrastructure using Terraform:
+   - VPC, Subnets, EC2 instances, Load Balancer
+2. Use remote backends like S3 to store the Terraform state files.
+3. Write tests using Terratest to validate the infrastructure.
+   - Test if the VPC is created.
+   - Test if the number of EC2 instances matches the requirement.
+   - Test if the Load Balancer is distributing traffic.
+4. Automate the testing process using a CI/CD pipeline.
+
+### Prerequisites:
+- Basic understanding of AWS services
+- Familiarity with Terraform and Go language
+
+### Tools Needed:
+- Terraform
+- AWS CLI
+- Go
+- Terratest
+- A CI/CD tool like Jenkins or GitHub Actions
+
+### Bonus:
+1. Use a Makefile to streamline the test execution.
+2. Integrate Slack notifications for test results.
+
+
+```
