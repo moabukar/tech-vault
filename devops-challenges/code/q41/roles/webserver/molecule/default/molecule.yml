@@ -1,0 +1,8 @@
+---
+dependency:
+  name: galaxy
+driver:
+  name: docker
+platforms:
+  - name: ubuntu
+    image: geerlingguy/docker-ubuntu1804-ansible
