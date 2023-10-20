@@ -8,6 +8,10 @@ This script will go through the list of questions and generate a random question
 
 python3 randomiser.py
 
+Keep pressing enter to get a new question.
+
+Type 'x' and press enter to exit.
+
 ```
 
 ## Repo Question
