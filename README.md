@@ -1881,8 +1881,21 @@ Answer goes here
 
 
 Container (Docker):
-- What is a container and what are its fundamentals?
-- What are c-groups and namespaces in Linux?
+<details>
+<summary>What is a container and what are its fundamentals?</summary>
+Containers are packages of software that contain all of the necessary elements to run in any environment. In this way, containers virtualize the operating system and run anywhere, from a private data center to the public cloud or even on a developer's personal machine.
+</details>
+
+
+<details>
+<summary>What are c-groups and namespaces in Linux?</summary>
+Control groups, which are called by their shorter name cgroups. Cgroups allow administrator to allocate resources — such as CPU time, system memory, network bandwidth, or combinations of these resources — among user-defined groups of tasks (processes) running on a system.
+
+A namespace wraps a global system resource in an abstraction that makes it appear to the processes within the namespace that they have their own isolated instance of the global resource.  Changes to the global resource are visible to other processes that are members of the namespace, but are invisible to other processes. One use of namespaces is to implement containers.
+</details>
+
+
+- 
 - What is Docker and how does it work?
 - When do I use Docker Compose vs Docker Swarm and K8s?
 - What is a Dockerfile used for?
