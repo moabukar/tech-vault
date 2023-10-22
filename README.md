@@ -1881,7 +1881,11 @@ Answer goes here
 
 
 Container (Docker):
-- What is a container and what are its fundamentals?
+<details>
+<summary>What is a container and what are its fundamentals?</summary>
+Containers are packages of software that contain all of the necessary elements to run in any environment. In this way, containers virtualize the operating system and run anywhere, from a private data center to the public cloud or even on a developer's personal machine.
+</details>
+
 - What are c-groups and namespaces in Linux?
 - What is Docker and how does it work?
 - When do I use Docker Compose vs Docker Swarm and K8s?
