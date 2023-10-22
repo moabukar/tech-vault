@@ -1883,7 +1883,12 @@ Answer goes here
 Container (Docker):
 - What is a container and what are its fundamentals?
 - What are c-groups and namespaces in Linux?
-- What is Docker and how does it work?
+  
+<details>
+<summary>What is Docker and how does it work?</summary>
+Docker a software platform that allows you to build, test, and deploy applications quickly using containers. Containers allow a developer to package up an application with all of the parts it needs, such as libraries and other dependencies, and ship it all out as one package.
+</details>
+
 - When do I use Docker Compose vs Docker Swarm and K8s?
 - What is a Dockerfile used for?
 - Can you explain the basic components of a Dockerfile?
