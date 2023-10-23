@@ -1881,6 +1881,14 @@ Answer goes here
 
 
 Container (Docker):
+- What is a container and what are its fundamentals?
+- What are c-groups and namespaces in Linux?
+  
+<details>
+<summary>What is Docker and how does it work?</summary>
+Docker a software platform that allows you to build, test, and deploy applications quickly using containers. Containers allow a developer to package up an application with all of the parts it needs, such as libraries and other dependencies, and ship it all out as one package.
+</details>
+
 <details>
 <summary>What is a container and what are its fundamentals?</summary>
 Containers are packages of software that contain all of the necessary elements to run in any environment. In this way, containers virtualize the operating system and run anywhere, from a private data center to the public cloud or even on a developer's personal machine.
@@ -1895,7 +1903,6 @@ A namespace wraps a global system resource in an abstraction that makes it appea
 </details>
 
 
-- 
 - What is Docker and how does it work?
 - When do I use Docker Compose vs Docker Swarm and K8s?
 - What is a Dockerfile used for?
