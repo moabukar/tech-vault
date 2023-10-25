@@ -2981,7 +2981,7 @@ Example: If someone uses the same password on two different systems and they are
   Rogue Software
   </details>  
 
-# Encryption and Authentication
+### Encryption and Authentication
    
    * What is a three-way handshake?
    * How do cookies work?
@@ -3000,7 +3000,7 @@ Example: If someone uses the same password on two different systems and they are
    * Should you encrypt all data at rest?
    * What is Perfect Forward Secrecy?
   
-  # OWASP Top 10, Pentesting and/or Web Applications
+### OWASP Top 10, Pentesting and/or Web Applications
 
    * Differentiate XSS from CSRF.
    * What do you do if a user brings you a pc that is acting 'weird'? You suspect malware.
@@ -3012,7 +3012,7 @@ Example: If someone uses the same password on two different systems and they are
    * How is pad lock icon in browser generated?
    * What is Same Origin Policy and CORS?
   
-# Compliance
+### Compliance
     
    * Can you explain SOC 2?
       * What are the five trust criteria?
