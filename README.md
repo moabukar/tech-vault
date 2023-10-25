@@ -65,9 +65,11 @@ Any questions taken from external references are referenced [below](#references)
 
 5️⃣ Hands-on questions that are similar to real-life scenarios aka DevOps Challenges
   - I have created these for that want more hands-on experience when it comes to DevOps.
+  - 
 
 6️⃣ [Random Question Generator](./misc/README.md)
 
+7️⃣ [Tech Vault CLI tool](https://github.com/moabukar/tech-vault-cli)
 
 ## Contributing 🖊️
 
