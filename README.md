@@ -1895,8 +1895,11 @@ A namespace wraps a global system resource in an abstraction that makes it appea
 </details>
 
 
-- 
-- What is Docker and how does it work?
+<details>
+<summary>What is Docker and how does it work?</summary>
+Docker is an open source software platform used to create, deploy and manage virtualized application containers on a common operating system. Docker gives software developers a faster and more efficient way to build and test containerized portions of an overall software application. Docker uses resource isolation in the OS kernel to run multiple containers on the same OS. This is different than virtual machines, which encapsulate an entire OS with executable code on top of an abstracted layer of physical hardware resources.
+</details>
+
 - When do I use Docker Compose vs Docker Swarm and K8s?
 - What is a Dockerfile used for?
 - Can you explain the basic components of a Dockerfile?
