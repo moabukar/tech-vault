@@ -1909,8 +1909,16 @@ A namespace wraps a global system resource in an abstraction that makes it appea
 Docker is an open source software platform used to create, deploy and manage virtualized application containers on a common operating system. Docker gives software developers a faster and more efficient way to build and test containerized portions of an overall software application. Docker uses resource isolation in the OS kernel to run multiple containers on the same OS. This is different than virtual machines, which encapsulate an entire OS with executable code on top of an abstracted layer of physical hardware resources.
 </details>
 
-- When do I use Docker Compose vs Docker Swarm and K8s?
-- What is a Dockerfile used for?
+<details>
+<summary>When do I use Docker Compose vs Docker Swarm and K8s?</summary>
+The difference between Docker Swarm and Docker Compose is that Compose is used for configuring multiple containers in the same host. Docker Swarm is different in that it is a container orchestration tool. This means that Docker Swarm lets you connect containers to multiple hosts similar to Kubernetes. Kubernetes can manage containers deployed across multiple nodes. This makes Kubernetes useful for large-scale applications and a large number of developers.
+</details>
+
+<details>
+<summary>What is a Dockerfile used for?</summary>
+A Dockerfile is a text document that contains all the commands a user could call on the command line to assemble an image. Dockerfiles can start simple and grow with your needs to support more complex scenarios.
+</details>
+
 - Can you explain the basic components of a Dockerfile?
     - What is a FROM in a Dockerfile used for?
     - What is a COPY in a Dockerfile used for?
