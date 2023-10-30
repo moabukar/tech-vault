@@ -65,9 +65,11 @@ Any questions taken from external references are referenced [below](#references)
 
 5️⃣ Hands-on questions that are similar to real-life scenarios aka DevOps Challenges
   - I have created these for that want more hands-on experience when it comes to DevOps.
+  - 
 
 6️⃣ [Random Question Generator](./misc/README.md)
 
+7️⃣ [Tech Vault CLI tool](https://github.com/moabukar/tech-vault-cli)
 
 ## Contributing 🖊️
 
@@ -1881,6 +1883,14 @@ Answer goes here
 
 
 Container (Docker):
+- What is a container and what are its fundamentals?
+- What are c-groups and namespaces in Linux?
+  
+<details>
+<summary>What is Docker and how does it work?</summary>
+Docker a software platform that allows you to build, test, and deploy applications quickly using containers. Containers allow a developer to package up an application with all of the parts it needs, such as libraries and other dependencies, and ship it all out as one package.
+</details>
+
 <details>
 <summary>What is a container and what are its fundamentals?</summary>
 Containers are packages of software that contain all of the necessary elements to run in any environment. In this way, containers virtualize the operating system and run anywhere, from a private data center to the public cloud or even on a developer's personal machine.
@@ -1894,12 +1904,12 @@ Control groups, which are called by their shorter name cgroups. Cgroups allow ad
 A namespace wraps a global system resource in an abstraction that makes it appear to the processes within the namespace that they have their own isolated instance of the global resource.  Changes to the global resource are visible to other processes that are members of the namespace, but are invisible to other processes. One use of namespaces is to implement containers.
 </details>
 
-
 <details>
 <summary>What is Docker and how does it work?</summary>
 Docker is an open source software platform used to create, deploy and manage virtualized application containers on a common operating system. Docker gives software developers a faster and more efficient way to build and test containerized portions of an overall software application. Docker uses resource isolation in the OS kernel to run multiple containers on the same OS. This is different than virtual machines, which encapsulate an entire OS with executable code on top of an abstracted layer of physical hardware resources.
 </details>
 
+- What is Docker and how does it work?
 - When do I use Docker Compose vs Docker Swarm and K8s?
 - What is a Dockerfile used for?
 - Can you explain the basic components of a Dockerfile?
@@ -2975,7 +2985,7 @@ Example: If someone uses the same password on two different systems and they are
   Rogue Software
   </details>  
 
-# Encryption and Authentication
+### Encryption and Authentication
    
    * What is a three-way handshake?
    * How do cookies work?
@@ -2994,7 +3004,7 @@ Example: If someone uses the same password on two different systems and they are
    * Should you encrypt all data at rest?
    * What is Perfect Forward Secrecy?
   
-  # OWASP Top 10, Pentesting and/or Web Applications
+### OWASP Top 10, Pentesting and/or Web Applications
 
    * Differentiate XSS from CSRF.
    * What do you do if a user brings you a pc that is acting 'weird'? You suspect malware.
@@ -3006,7 +3016,7 @@ Example: If someone uses the same password on two different systems and they are
    * How is pad lock icon in browser generated?
    * What is Same Origin Policy and CORS?
   
-# Compliance
+### Compliance
     
    * Can you explain SOC 2?
       * What are the five trust criteria?
