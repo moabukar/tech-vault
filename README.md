@@ -1881,11 +1881,6 @@ Answer goes here
 
 ### :small_blue_diamond: Docker & K8s
 
-
-Container (Docker):
-- What is a container and what are its fundamentals?
-- What are c-groups and namespaces in Linux?
-  
 <details>
 <summary>What is Docker and how does it work?</summary>
 Docker a software platform that allows you to build, test, and deploy applications quickly using containers. Containers allow a developer to package up an application with all of the parts it needs, such as libraries and other dependencies, and ship it all out as one package.
@@ -1919,11 +1914,25 @@ The difference between Docker Swarm and Docker Compose is that Compose is used f
 A Dockerfile is a text document that contains all the commands a user could call on the command line to assemble an image. Dockerfiles can start simple and grow with your needs to support more complex scenarios.
 </details>
 
-- Can you explain the basic components of a Dockerfile?
-    - What is a FROM in a Dockerfile used for?
-    - What is a COPY in a Dockerfile used for?
-    - What is a ADD in a Dockerfile used for?
-    - What is a CMD & ENTRTPOINT in a Dockerfile used for?
+<details>
+<summary>
+Can you explain the basic components of a Dockerfile?
+  
+* What is a FROM in a Dockerfile used for?
+* What is a COPY in a Dockerfile used for?
+* What is a ADD in a Dockerfile used for?
+* What is a CMD & ENTRYPOINT in a Dockerfile used for?
+</summary>
+Basic components of a Dockerfile are ADD, COPY, ENV, EXPOSE, FROM, LABEL, USER, VOLUME, CMD.
+  
+* FROM in a Dockerfile defines the base image used to start the build process.
+* COPY in a Dockerfile allows us to copy a file or folder from the host system into the docker image.
+* ADD in Dockerfile is used to copy files/directories into a Docker image.
+* CMD in Dockerfile defines the default executable of a Docker image.
+* ENTRYPOINT in Dockerfile is used to configure the executables that will always run after the container is initiated.
+</details>
+
+
 - How is a container different from a virtual machine?
 - How can I run a container?
 - How can I stop and remove a container?
