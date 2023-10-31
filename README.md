@@ -1933,7 +1933,11 @@ Basic components of a Dockerfile are ADD, COPY, ENV, EXPOSE, FROM, LABEL, USER, 
 </details>
 
 
-- How is a container different from a virtual machine?
+<details>
+<summary>How is a container different from a virtual machine?</summary>
+Containers are more lightweight than virtual machines, containers virtualize the operating system so the application can run independently on any platform. Virtual machines virtualize physical machines, so you can use your hardware resources efficiently.
+</details>
+
 - How can I run a container?
 - How can I stop and remove a container?
 - How can I attach a shell to a terminal of a running container?
