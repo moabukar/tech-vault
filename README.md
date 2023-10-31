@@ -1937,12 +1937,29 @@ Basic components of a Dockerfile are ADD, COPY, ENV, EXPOSE, FROM, LABEL, USER, 
 Containers are more lightweight than virtual machines, containers virtualize the operating system so the application can run independently on any platform. Virtual machines virtualize physical machines, so you can use your hardware resources efficiently.
 </details>
 
-- How can I run a container?
-- How can I stop and remove a container?
-- How can I attach a shell to a terminal of a running container?
-- What is a dangling image?
-- What is Docker compose and when is it used?
+<summary>How can I run a container?</summary>
+The <code>docker run</code> command runs a command in a new container, pulling the image if needed and starting the container.
+</details>
 
+<details>
+<summary>How can I stop and remove a container?</summary>
+To stop one or more running Docker containers, you can use the <code>docker stop</code> command.
+</details>
+
+<details>
+<summary>How can I attach a shell to a terminal of a running container?</summary>
+One way to attach to a running Docker container is by using the command <code>docker attach</code>
+</details>
+
+<details>
+<summary>What is a dangling image?</summary>
+Dangling images are layers that have no relationship to any tagged images. They are created when they are overwritten with a new image with the same name and tag.
+</details>
+
+<details>
+<summary>What is Docker compose and when is it used?</summary>
+Docker Compose is used for running multiple containers as a single service. With Compose, you use a YAML file to configure your application's services.
+</details>
 
 **Advanced:**
 
