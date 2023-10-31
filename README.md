@@ -1880,11 +1880,6 @@ Answer goes here
 
 
 ### :small_blue_diamond: Docker & K8s
-
-
-Container (Docker):
-- What is a container and what are its fundamentals?
-- What are c-groups and namespaces in Linux?
   
 <details>
 <summary>What is Docker and how does it work?</summary>
@@ -1904,22 +1899,68 @@ Control groups, which are called by their shorter name cgroups. Cgroups allow ad
 A namespace wraps a global system resource in an abstraction that makes it appear to the processes within the namespace that they have their own isolated instance of the global resource.  Changes to the global resource are visible to other processes that are members of the namespace, but are invisible to other processes. One use of namespaces is to implement containers.
 </details>
 
+<details>
+<summary>What is Docker and how does it work?</summary>
+Docker is an open source software platform used to create, deploy and manage virtualized application containers on a common operating system. Docker gives software developers a faster and more efficient way to build and test containerized portions of an overall software application. Docker uses resource isolation in the OS kernel to run multiple containers on the same OS. This is different than virtual machines, which encapsulate an entire OS with executable code on top of an abstracted layer of physical hardware resources.
+</details>
 
-- What is Docker and how does it work?
-- When do I use Docker Compose vs Docker Swarm and K8s?
-- What is a Dockerfile used for?
-- Can you explain the basic components of a Dockerfile?
-    - What is a FROM in a Dockerfile used for?
-    - What is a COPY in a Dockerfile used for?
-    - What is a ADD in a Dockerfile used for?
-    - What is a CMD & ENTRTPOINT in a Dockerfile used for?
-- How is a container different from a virtual machine?
-- How can I run a container?
-- How can I stop and remove a container?
-- How can I attach a shell to a terminal of a running container?
-- What is a dangling image?
-- What is Docker compose and when is it used?
+<details>
+<summary>When do I use Docker Compose vs Docker Swarm and K8s?</summary>
+The difference between Docker Swarm and Docker Compose is that Compose is used for configuring multiple containers in the same host. Docker Swarm is different in that it is a container orchestration tool. This means that Docker Swarm lets you connect containers to multiple hosts similar to Kubernetes. Kubernetes can manage containers deployed across multiple nodes. This makes Kubernetes useful for large-scale applications and a large number of developers.
+</details>
 
+<details>
+<summary>What is a Dockerfile used for?</summary>
+A Dockerfile is a text document that contains all the commands a user could call on the command line to assemble an image. Dockerfiles can start simple and grow with your needs to support more complex scenarios.
+</details>
+
+<details>
+<summary>
+Can you explain the basic components of a Dockerfile?
+
+* What is a FROM in a Dockerfile used for?
+* What is a COPY in a Dockerfile used for?
+* What is a ADD in a Dockerfile used for?
+* What is a CMD & ENTRYPOINT in a Dockerfile used for?
+</summary>
+Basic components of a Dockerfile are ADD, COPY, ENV, EXPOSE, FROM, LABEL, USER, VOLUME, CMD.
+
+* FROM in a Dockerfile defines the base image used to start the build process.
+* COPY in a Dockerfile allows us to copy a file or folder from the host system into the docker image.
+* ADD in Dockerfile is used to copy files/directories into a Docker image.
+* CMD in Dockerfile defines the default executable of a Docker image.
+* ENTRYPOINT in Dockerfile is used to configure the executables that will always run after the container is initiated.
+</details>
+
+<details>
+<summary>How is a container different from a virtual machine?</summary>
+Containers are more lightweight than virtual machines, containers virtualize the operating system so the application can run independently on any platform. Virtual machines virtualize physical machines, so you can use your hardware resources efficiently.
+</details>
+
+<details>
+<summary>How can I run a container?</summary>
+The <code>docker run</code> command runs a command in a new container, pulling the image if needed and starting the container.
+</details>
+
+<details>
+<summary>How can I stop and remove a container?</summary>
+To stop one or more running Docker containers, you can use the <code>docker stop</code> command.
+</details>
+
+<details>
+<summary>How can I attach a shell to a terminal of a running container?</summary>
+One way to attach to a running Docker container is by using the command <code>docker attach</code>
+</details>
+
+<details>
+<summary>What is a dangling image?</summary>
+Dangling images are layers that have no relationship to any tagged images. They are created when they are overwritten with a new image with the same name and tag.
+</details>
+
+<details>
+<summary>What is Docker compose and when is it used?</summary>
+Docker Compose is used for running multiple containers as a single service. With Compose, you use a YAML file to configure your application's services.
+</details>
 
 **Advanced:**
 
