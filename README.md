@@ -1932,7 +1932,6 @@ Basic components of a Dockerfile are ADD, COPY, ENV, EXPOSE, FROM, LABEL, USER, 
 * ENTRYPOINT in Dockerfile is used to configure the executables that will always run after the container is initiated.
 </details>
 
-
 <details>
 <summary>How is a container different from a virtual machine?</summary>
 Containers are more lightweight than virtual machines, containers virtualize the operating system so the application can run independently on any platform. Virtual machines virtualize physical machines, so you can use your hardware resources efficiently.
