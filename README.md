@@ -1937,6 +1937,7 @@ Basic components of a Dockerfile are ADD, COPY, ENV, EXPOSE, FROM, LABEL, USER, 
 Containers are more lightweight than virtual machines, containers virtualize the operating system so the application can run independently on any platform. Virtual machines virtualize physical machines, so you can use your hardware resources efficiently.
 </details>
 
+<details>
 <summary>How can I run a container?</summary>
 The <code>docker run</code> command runs a command in a new container, pulling the image if needed and starting the container.
 </details>
