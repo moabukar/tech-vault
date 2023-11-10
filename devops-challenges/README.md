@@ -77,9 +77,9 @@ A company wants to roll out a web service built on Kubernetes. To make this happ
 
 Scenario:
 
-Complete the file stub located at `/home/ubuntu/tech-vault-q2/runscript.sh` with one or more commands to achieve the following tasks:
+Complete the file stub located at `q2/runscript.sh` with one or more commands to achieve the following tasks:
 
-- Extract the archive located at `/home/ubuntu/2025-linux-perm-adjustment/backup.tar.gz`.
+- Extract the archive located at `/q2/backup.tar.gz`.
 - Set permission "0664" for all the files that were just extracted.
 - Set permission "0775" for all the directories that were just extracted.
 - Change the owner to "anonymous" and the group to "no-team" for all the extracted files and directories.
@@ -87,7 +87,7 @@ Complete the file stub located at `/home/ubuntu/tech-vault-q2/runscript.sh` with
 
 **Notes:**
 
-- Your solution will be evaluated in a new, clean setup. Make sure all work is performed in the `/home/ubuntu/tech-vault` directory.
+- Your solution will be evaluated in a new, clean setup. Make sure all work is performed in the `/q2` directory.
 - Execute all tasks with a single `sudo activate` command run from within the question directory. (Hint: use alias)
 - You have sudo permissions, if needed.
 
