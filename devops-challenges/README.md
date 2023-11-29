@@ -1254,22 +1254,19 @@ Solution here >> [Solution](./code/q32/README.md) >> Only look once you have att
 
 ```bash
 
-Create a simple local development environment using the `docker-compose` tool.  
+Set up a basic local development environment using `docker-compose`. 
 
-The environment should have two development services supporting `centos` OS in version `8.4.2105`:  
-- a `backend` service running a `ruby` image in version `3.0` with local directory `backend` bound into `/project/backend`  
-- a `frontend` service running a `aspnet` image in version `4.8` with local directory `frontend` bound into `project/frontend`  
+This environment will include three services:
 
-and one database service:  
-- `db` running a `mysql` image in version `5.7.37`  
+1. **Backend Service**: Utilize a `ruby` image, updated to the latest version. Bind the local `backend` directory to `/project/backend` within the container. This service should also expose port `6000` for UDP traffic, facilitating local DHCP services. Use the latest `centos` OS version available.
 
-Additionally, the `backend` service should expose its port `6000` from container to a publicly exposed port `6000` via the UDP protocol for local DHCP services.  
-The `frontend` service should expose its port `8080` from the contier to a publicly exposed port `80` via the TCP protocol.  
-Make sure to use *long* syntax for port definitions and *short* syntax for volume defintions.  
+2. **Frontend Service**: Employ an `aspnet` image, also using the latest version. Bind the local `frontend` directory to `/project/frontend` in the container. This service should expose port `8080` from the container to port `80` externally using TCP. Connect this service to an external network named `fend-ingress`.
 
-The `frontend` service should be exposed via an external network called `fend-ingress`, while the `backend` and `db` services should use a local network called `database`.  
+3. **Database Service**: Run a `mysql` image, opting for the latest stable version. This service should be part of a local network called `database`.
 
-The services should start in the follwoing order: `db, backend, frontend`.
+Ensure that the `backend` service's port mapping uses the extended syntax, while the volume definitions for both `backend` and `frontend` services employ the concise syntax.
+
+The services should initiate in the sequence: `db`, followed by `backend`, and finally `frontend`.
 
 
 ```
