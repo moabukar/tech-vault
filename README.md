@@ -1942,6 +1942,7 @@ Container Orchestration (Kubernetes = K8s):
 - What is Kubernetes?
 - What problems does Kubernetes solve? 
 - What is the difference between Docker and K8s?
+- What are the core components of the control plane and data plane? What are the components used for?
 - What is a Pod and what does it do?
 - How can containers within a pod communicate with each other?
 - What is a K8s cluster ?
@@ -1955,6 +1956,7 @@ Container Orchestration (Kubernetes = K8s):
 
 **Advanced:**
 
+- Take me through a full cycle of an app deployment from code to an app running on a pod/deployment. 
 - Can you mention some good practices to follow when creating containers?
 - Can you explain a simple K8s cluster architecture and the components within it?
 - What happens when a master node fails? 
