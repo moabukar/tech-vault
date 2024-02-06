@@ -103,13 +103,13 @@ While working on Kubernetes cluster enhancements, you need to set up a recurring
 
 Pick ONE option:
 
-1. `kubectl run scheduler task --image=toolbox --schedule="*/1 * * * * -- curl -s https://api.cyber-widget.com/refresh"`
+1. `kubectl run cronjob task --image=toolbox --schedule="*/1 * * * * -- curl -s https://api.cyber-widget.com/refresh"`
   
 2. `kubecmd create periodic-task --image=toolbox --timing="/1 * * * * -- curl -s https://api.cyber-widget.com/refresh"`
   
 3. `kubecmd run periodic task --image=toolbox --timing="*/1 * * * * -- curl -s https://api.cyber-widget.com/refresh"`
   
-4. `kubectl create scheduler task --image=toolbox --schedule="*/1 * * * * -- curl -s https://api.cyber-widget.com/refresh"`
+4. `kubectl create cronjob task --image=toolbox --schedule="*/1 * * * * -- curl -s https://api.cyber-widget.com/refresh"`
 
 **Notes:**
 
