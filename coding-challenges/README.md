@@ -1,4 +1,4 @@
-# Hands-on chllenges
+# Hands-on challenges
 
 1. Build a Simple REST API with CRUD Operations and Sorting Algorithm (in Golang but you may also do a similar project in Python or Java)
 
