@@ -104,7 +104,7 @@ Documentation: Provide a README that explains how to run your code and use your 
 
 **Constraints**
 
-Stick to Golang's standard library. You can use a package like Gorilla Mux for routing. Keep your application as stateless as possible. Please make sure to comment your code.
+Stick to Golang's standard library if possible. You can use a package like Gorilla Mux for routing, or a desired backend framework of your choice (e.g. Quarkus, Spring Boot). Keep your application as stateless as possible. Please make sure to comment your code.
 Success Criteria
 All endpoints should work without any errors.
 Searching algorithm should correctly return the blogs that contain the search query.
