@@ -60,7 +60,7 @@ AlphaTech is developing a new microservice for a blogging platform. They want to
 JWT Authentication: 
 
 - Implement endpoints for user sign up, login, logout and delete.
-- Upon successful authentication (login), issue a JWT containing user information and necessary claims (e.g. user ID, iat, exp)
+- Upon successful authentication (login), issue a JWT containing user information and necessary claims (e.g. user ID, token, iat, exp)
 
 REST API: Your API should have endpoints to:
 
@@ -70,6 +70,7 @@ REST API: Your API should have endpoints to:
 - Delete a user (protected route)
 
 Protected routes:
+
 - Create a blog
 - Read a blog
 - Update a blog
@@ -78,7 +79,7 @@ Protected routes:
 
 Protected routes:
 
-Data Structures: use simple struct for a user, which includes:
+Data Structures: use simple struct for a user and blog, which includes:
 
 User:
   - ID
@@ -110,6 +111,3 @@ Searching algorithm should correctly return the blogs that contain the search qu
 Test cases should cover basic scenarios and edge cases for the searchin algorithm.
 
 ```
-
-
-
