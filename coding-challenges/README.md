@@ -47,3 +47,69 @@ Sorting algorithm should correctly sort the products in ascending order based on
 Test cases should cover basic scenarios and edge cases for the sorting algorithm.
 
 ```
+
+2. Build a REST API with CRUD operations for 2 models (can use a Database of your choice. e.g. MongoDB) and JWT Authentication.
+
+```
+**Context**
+
+AlphaTech is developing a new microservice for a blogging platform. They want to implement a secure authentication mechanism using JWT to ensure only authenticated users can create, edit, and delete blog posts. User password must be hashed to provide security.
+
+**Requirements**
+
+JWT Authentication: 
+
+- Implement endpoints for user sign up, login, logout and delete.
+- Upon successful authentication (login), issue a JWT containing user information and necessary claims (e.g. user ID, iat, exp)
+
+REST API: Your API should have endpoints to:
+
+- Create a user
+- Read a user (protected route)
+- Update a user (protected route)
+- Delete a user (protected route)
+
+Protected routes:
+- Create a blog
+- Read a blog
+- Update a blog
+- Delete a blog
+- List all blogs of user
+
+Protected routes:
+
+Data Structures: use simple struct for a user, which includes:
+
+User:
+  - ID
+  - Username
+  - Password
+
+Blog:
+  - ID 
+  - Title 
+  - Description
+  - Author ID (user's ID)
+
+Security: 
+- Use a library like BCrypt to hash passwords securely before storing in the database.
+- Use JWT securely, including proper signing and token validation.
+
+Searching Algorithm: Implement a searching function which returns all blogs which contain the search query, make sure it's case-insensitive.
+
+Bonus: Implement Rate Limiting middleware.
+
+Documentation: Provide a README that explains how to run your code and use your API and include instructions on how to interact with the authentication endpoints.
+
+**Constraints**
+
+Stick to Golang's standard library. You can use a package like Gorilla Mux for routing. Keep your application as stateless as possible. Please make sure to comment your code.
+Success Criteria
+All endpoints should work without any errors.
+Searching algorithm should correctly return the blogs that contain the search query.
+Test cases should cover basic scenarios and edge cases for the searchin algorithm.
+
+```
+
+
+
