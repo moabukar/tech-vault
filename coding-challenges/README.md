@@ -99,7 +99,6 @@ Security:
 Searching Algorithm: Implement a searching function which returns all blogs which contain the search query, make sure it's case-insensitive.
 
 Bonus: 
-
 - Implement Rate Limiting middleware.
 - Implement a Regular Expression pattern for password validation.
 
