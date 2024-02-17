@@ -98,7 +98,10 @@ Security:
 
 Searching Algorithm: Implement a searching function which returns all blogs which contain the search query, make sure it's case-insensitive.
 
-Bonus: Implement Rate Limiting middleware.
+Bonus: 
+
+- Implement Rate Limiting middleware.
+- Implement a Regular Expression pattern for password validation.
 
 Documentation: Provide a README that explains how to run your code and use your API and include instructions on how to interact with the authentication endpoints.
 
