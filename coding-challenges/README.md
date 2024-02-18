@@ -46,7 +46,7 @@ All endpoints should work without any errors.
 Sorting algorithm should correctly sort the products in ascending order based on price.
 Test cases should cover basic scenarios and edge cases for the sorting algorithm.
 
-```
+```bash
 
 2. Build a REST API with CRUD operations for 2 models (can use a Database of your choice. e.g. MongoDB) and JWT Authentication.
 
@@ -104,9 +104,7 @@ Bonus:
 
 Documentation: Provide a README that explains how to run your code and use your API and include instructions on how to interact with the authentication endpoints.
 
-**Constraints**
-
-Stick to Golang's standard library if possible. You can use a package like Gorilla Mux for routing, or a desired backend framework of your choice (e.g. Quarkus, Spring Boot, Flask, ExpressJS). Keep your application as stateless as possible. Please make sure to comment your code.
+You can use a backend framework of your choice (e.g. Quarkus, Spring Boot, Flask, ExpressJS). Keep your application as stateless as possible. Please make sure to comment your code.
 Success Criteria
 All endpoints should work without any errors.
 Searching algorithm should correctly return the blogs that contain the search query.
