@@ -46,11 +46,11 @@ All endpoints should work without any errors.
 Sorting algorithm should correctly sort the products in ascending order based on price.
 Test cases should cover basic scenarios and edge cases for the sorting algorithm.
 
-```bash
+```
 
 2. Build a REST API with CRUD operations for 2 models (can use a Database of your choice. e.g. MongoDB) and JWT Authentication.
 
-```
+```bash
 **Context**
 
 AlphaTech is developing a new microservice for a blogging platform. They want to implement a secure authentication mechanism using JWT to ensure only authenticated users can create, edit, and delete blog posts. User password must be hashed to provide security.
