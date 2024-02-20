@@ -1675,7 +1675,7 @@ Step 9: Create your database schema and tables, and configure database access an
 </details>
 
 <details>
-<summary>What are some security best pracites for EC2s?</summary>
+<summary>What are some security best practices for EC2s?</summary>
 
 - **Use Security Groups**: Configure security groups to control incoming and outgoing traffic to your EC2 instances. Only allow necessary ports and sources.
 
