@@ -142,7 +142,7 @@ You are tasked with developing a simple CLI tool that performs basic file manage
    - Implement proper error handling to provide informative error messages to users.
 
 5. **Documentation**:
-   - Provide clear documentation within the CLI tool itself or in a separate README file explaining how to use each command and any available options.
+   - Create a `help` command which provides comprehensive details about the different commands in the CLI tool.
 
 **Bonus**:
 - Implement additional commands for more advanced file management tasks (e.g., copying files, moving files).
@@ -152,7 +152,8 @@ You are tasked with developing a simple CLI tool that performs basic file manage
 **Constraints**
 
 - Keep the project simple and beginner-friendly.
-- Use a programming language commonly used for building command line tools (e.g., Python, Bash).
+- Use a programming language commonly used for building command line tools (e.g., Python).
+- Do not use Bash, the challenge would be too easy with Bash.
 - Ensure that the CLI tool is easy to install and run on a Linux system.
 
 **Success Criteria**
