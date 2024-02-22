@@ -112,7 +112,6 @@ Test cases should cover basic scenarios and edge cases for the searching algorit
 
 ```
 
-
 3.Implement a Basic Linux Command Line Interface (CLI) Tool
 
 ```bash
@@ -163,4 +162,3 @@ You are tasked with developing a simple CLI tool that performs basic file manage
 - The CLI tool should provide clear and helpful feedback to users, including error messages when necessary.
 - Documentation should be comprehensive and easy to understand for beginners.
 ```
-
