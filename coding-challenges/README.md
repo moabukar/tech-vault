@@ -112,7 +112,7 @@ Test cases should cover basic scenarios and edge cases for the searching algorit
 
 ```
 
-3.Implement a Basic Linux Command Line Interface (CLI) Tool
+3. Implement a Basic Linux Command Line Interface (CLI) Tool
 
 ```bash
 **Context**
