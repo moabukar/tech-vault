@@ -161,5 +161,5 @@ You are tasked with developing a simple CLI tool that performs basic file manage
 - All commands should function correctly without errors.
 - File management operations should be performed accurately and safely.
 - The CLI tool should provide clear and helpful feedback to users, including error messages when necessary.
-- Documentation should be comprehensive and easy to understand for beginners.
+- Documentation should be comprehensive and easy to understand for beginners, and provide documentation on the installation of the tool.
 ```
