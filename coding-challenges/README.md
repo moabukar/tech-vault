@@ -128,7 +128,7 @@ You are tasked with developing a simple CLI tool that performs basic file manage
 1. **CLI Commands**:
     - Implement commands for basic file management tasks, including:
     - `create`: Create a new file.
-    - `list`: List the contents of a 
+    - `list`: List the contents of a file.
     - `rename`: Rename a file.
     - `delete`: Delete a file.
 
