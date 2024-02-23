@@ -127,13 +127,12 @@ You are tasked with developing a simple CLI tool that performs basic file manage
 
 1. **CLI Commands**:
     - Implement commands for basic file management tasks, including:
-    - `create`: Create a new file.     
+    - `create`: Create a new file.
     - `list`: List the contents of a file.
     - `rename`: Rename a file.
     - `delete`: Delete a file.
     
-
-  Note: When using the `create` command, if the folders leading to the file you want to create don't exist yet, the command should create those folders as well. For instance, if you're creating a file at `lib/admin/index.ts`, but the `lib` and `admin` folders are missing, the `create` command should create them along with the file.
+Note: When using the `create` command, if the folders leading to the file you want to create don't exist yet, the command should create those folders as well. For instance, if you're creating a file at `lib/admin/index.ts`, but the `lib` and `admin` folders are missing, the `create` command should create them along with the file.
 
 2. **Command Syntax**:
    - Define a clear and intuitive syntax for each command, along with any required arguments or options.
