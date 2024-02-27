@@ -111,3 +111,57 @@ Searching algorithm should correctly return the blogs that contain the search qu
 Test cases should cover basic scenarios and edge cases for the searching algorithm.
 
 ```
+
+3. Implement a Basic Linux Command Line Interface (CLI) Tool
+
+```bash
+**Context**
+
+To broaden the scope of learning and provide hands-on experience with command line tools, we want to introduce a challenge focused on building a basic Linux Command Line Interface (CLI) tool. This will allow beginners to get familiar with common Linux commands and to provide as a starting point to working with the terminal.
+
+**The Project**
+
+You are tasked with developing a simple CLI tool that performs basic file management tasks. Users should be able to interact with the tool via the command line to perform actions such as creating files, listing directory contents, renaming files, and deleting files.
+
+**Requirements**
+
+1. **CLI Commands**:
+    - Implement commands for basic file management tasks, including:
+    - `create`: Create a new file.
+    - `list`: List the contents of a file.
+    - `rename`: Rename a file.
+    - `delete`: Delete a file.
+    
+Note: When using the `create` command, if the folders leading to the file you want to create don't exist yet, the command should create those folders as well. For instance, if you're creating a file at `lib/admin/index.ts`, but the `lib` and `admin` folders are missing, the `create` command should create them along with the file.
+
+2. **Command Syntax**:
+   - Define a clear and intuitive syntax for each command, along with any required arguments or options.
+
+3. **File Management**:
+   - Ensure that file management operations are performed safely and accurately.
+
+4. **Error Handling**:
+   - Implement proper error handling to provide informative error messages to users.
+
+5. **Documentation**:
+   - Create a `help` command which provides comprehensive details about the different commands in the CLI tool.
+
+**Bonus**:
+- Implement additional commands for more advanced file management tasks (e.g., copying files, moving files).
+- Add support for working with directories (e.g., creating directories, navigating between directories).
+- Implement interactive mode for the CLI tool to enhance user experience.
+
+**Constraints**
+
+- Keep the project simple and beginner-friendly.
+- Use a programming language commonly used for building command line tools (e.g., Python).
+- Do not use Bash, the challenge would be too easy with Bash.
+- Ensure that the CLI tool is easy to install and run on a Linux system.
+
+**Success Criteria**
+
+- All commands should function correctly without errors.
+- File management operations should be performed accurately and safely.
+- The CLI tool should provide clear and helpful feedback to users, including error messages when necessary.
+- Documentation should be comprehensive and easy to understand for beginners, and provide documentation on the installation of the tool.
+```
