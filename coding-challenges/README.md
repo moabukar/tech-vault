@@ -165,3 +165,66 @@ Note: When using the `create` command, if the folders leading to the file you wa
 - The CLI tool should provide clear and helpful feedback to users, including error messages when necessary.
 - Documentation should be comprehensive and easy to understand for beginners, and provide documentation on the installation of the tool.
 ```
+
+4. Build a chat application using Socket.IO (WebSockets)
+
+```bash
+**Context**
+
+AlphaTech is planning to build a real-time chat application to facilitate communication among users. The application should support instant messaging and group chats in real-time.
+
+**The Project**
+
+You are assigned to develop a real-time chat application using Socket.IO for real-time communication and ReactJS for the frontend interface. Users should be able to create accounts, join chat rooms, send messages, and receive messages instantly without the need for page refresh.
+
+**Requirements**
+
+Frontend (ReactJS):
+
+- Create a user-friendly interface for the chat application.
+- Implement components for displaying chat rooms, messages, user lists, and message input.
+- Include features for joining chat rooms, sending messages, and receiving messages in real-time.
+- Use React Router for navigation between different pages, such as the login page, chat room page, and user profile page.
+
+Backend (Node.js with ExpressJS and Socket.IO):
+
+- Set up a Node.js backend with ExpressJS to handle HTTP requests and serve the frontend application.
+- Use Socket.IO for real-time communication between clients and the server.
+- Implement authentication endpoints for user registration, login, and logout.
+- Create endpoints for managing chat rooms, sending messages, and fetching message history.
+
+Database (MongoDB):
+
+- Set up a MongoDB database to store user data, chat room data, and message history.
+
+Security:
+
+- Implement secure authentication mechanisms using JWT tokens to authenticate users.
+- Ensure that only authenticated users can access chat rooms and send messages.
+- Protect sensitive routes and endpoints from unauthorized access.
+
+Bonus Features:
+
+- Add support for creating private chat rooms and inviting specific users to join.
+- Implement message encryption to secure message content during transmission.
+- Include features for sending multimedia files such as images and videos in chat messages.
+- Implement typing indicators and read receipts to enhance the user experience.
+
+Documentation:
+
+- Provide a README that explains how to run both the frontend and backend applications.
+- Include instructions on setting up the MongoDB database and configuring the frontend and backend environments.
+
+**Constraints**
+
+- Use Socket.IO for real-time communication between clients and the server.
+- Ensure that the application is scalable and can handle multiple concurrent users.
+- Keep the project well-organized and maintainable by following best practices and conventions.
+
+**Success Criteria**
+
+- Users should be able to create accounts, join chat rooms, send messages, and receive messages in real-time.
+- The application should provide a smooth and responsive user experience without any latency.
+- User data and chat history should be stored securely in the MongoDB database.
+- Documentation should be clear and comprehensive, enabling users to set up and run the application easily.
+```
