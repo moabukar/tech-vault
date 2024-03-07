@@ -233,7 +233,7 @@ Documentation:
 
 Note: Use websites that allow web scraping for the sake of respecting digital law:
 
-[Scrape This Site](https://www.scrapethissite.com/pages/)
+[Scrape This Site](https://www.scrapethissite.com/pages/),
 [Books to Scrape](https://books.toscrape.com/)
 
 ```bash
