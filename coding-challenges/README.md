@@ -244,7 +244,7 @@ AlphaTech wants to stay updated with the latest news related to their industry a
 **Requirements**
 
     Website Scraping:
-    - Implement a web scraping mechanism capable of traversing websites andcollecting data.
+    - Implement a web scraping mechanism capable of traversing websites and collecting data.
     - Use HTML parsing libraries or techniques (e.g., BeautifulSoup, Scrapy) to extract structured data from web pages.
 
 Data Storage:
