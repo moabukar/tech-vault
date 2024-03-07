@@ -231,6 +231,11 @@ Documentation:
 
 5. Build a Web Scraper Tool that can scrape various pages and store in database.
 
+Note: Use websites that allow web scraping for the sake of respecting digital law:
+
+[Scrape This Site](https://www.scrapethissite.com/pages/)
+[Books to Scrape](https://books.toscrape.com/)
+
 ```bash
 **Context**
 
@@ -241,11 +246,6 @@ AlphaTech wants to stay updated with the latest news related to their industry a
     Website Scraping:
     - Implement a web scraping mechanism capable of traversing websites andcollecting data.
     - Use HTML parsing libraries or techniques (e.g., BeautifulSoup, Scrapy) to extract structured data from web pages.
-
-Note: Use websites that allow web scraping for the sake of respecting digital law:
-
-[Scrape This Site](https://www.scrapethissite.com/pages/)
-[Books to Scrape](https://books.toscrape.com/)
 
 Data Storage:
 
