@@ -261,7 +261,7 @@ Bonus Features:
 
   - Add support for custom user-defined rules and filters to scrape specific type
 s of information based on keywords.
-  - Develop a user interface for browsing and searching news articles in the database, with features such as filtering, sorting, and pagination.
+  - Develop a user interface for browsing and searching data in the database, with features such as filtering, sorting, and pagination.
 
 Documentation:
 - Provide a README clearly explaining how to run the web scraper and configuring a database.
