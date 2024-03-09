@@ -249,8 +249,7 @@ AlphaTech wants to stay updated with the latest news related to their industry a
 
 Data Storage:
 
-  - Choose an appropriate database system (e.g., MySQL, PostgreSQL, MongoDB)
-for storing and querying data efficiently.
+  - Choose an appropriate database system (e.g., MySQL, PostgreSQL, MongoDB) for storing and querying data efficiently.
 
 Error Handling:
 
