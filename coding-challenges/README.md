@@ -239,7 +239,7 @@ Note: Use websites that allow web scraping for the sake of respecting digital la
 ```bash
 **Context**
 
-AlphaTech wants to stay updated with the latest news related to their industry and competitors. They are interested in developing a web scraper that can fetch data from various websites and aggregate them into a centralized database for analysis and monitoring.
+AlphaTech wants to stay updated with the latest information related to their industry and competitors. They are interested in developing a web scraper that can fetch data from various websites and aggregate them into a centralized database for analysis and monitoring.
 
 **Requirements**
 
