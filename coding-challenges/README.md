@@ -57,7 +57,7 @@ AlphaTech is developing a new microservice for a blogging platform. They want to
 
 **Requirements**
 
-JWT Authentication: 
+JWT Authentication:
 
 - Implement endpoints for user sign up, login, logout and delete.
 - Upon successful authentication (login), issue a JWT containing user information and necessary claims (e.g. user ID, token, iat, exp)
@@ -87,18 +87,18 @@ User:
   - Password
 
 Blog:
-  - ID 
-  - Title 
+  - ID
+  - Title
   - Description
   - Author ID (user's ID)
 
-Security: 
+Security:
 - Use a library like BCrypt to hash passwords securely before storing in the database.
 - Use JWT securely, including proper signing and token validation.
 
 Searching Algorithm: Implement a searching function which returns all blogs which contain the search query, make sure it's case-insensitive.
 
-Bonus: 
+Bonus:
 - Implement Rate Limiting middleware.
 - Implement a Regular Expression pattern for password validation.
 
@@ -131,7 +131,7 @@ You are tasked with developing a simple CLI tool that performs basic file manage
     - `list`: List the contents of a file.
     - `rename`: Rename a file.
     - `delete`: Delete a file.
-    
+
 Note: When using the `create` command, if the folders leading to the file you want to create don't exist yet, the command should create those folders as well. For instance, if you're creating a file at `lib/admin/index.ts`, but the `lib` and `admin` folders are missing, the `create` command should create them along with the file.
 
 2. **Command Syntax**:
@@ -227,4 +227,37 @@ Documentation:
 - The application should provide a smooth and responsive user experience without any latency.
 - User data and chat history should be stored securely in the MongoDB database.
 - Documentation should be clear and comprehensive, enabling users to set up and run the application easily.
+```
+
+6. Build an educational coding game for beginners.
+
+```bash
+**Context**
+
+AlphaTech seeks to inspire the next generation of coders by making the journey into programming more interactive and fun. We aim to develop an educational game that not only introduces but also solidifies fundamental programming concepts in an engaging manner.
+
+**The Project**
+
+Your mission is to create an interactive game that serves as the first stepping stone for beginners into the world of coding. Through a series of thoughtfully designed puzzles and challenges, players will explore and understand the core principles of programming.
+
+**Requirements**
+
+- Create levels that teach basic concepts like variables, loops, and functions.
+- Design a user interface that is intuitive for beginners, including children.
+- Provide instant feedback and hints to guide players through each level.
+- Track player progress and adjust the difficulty accordingly.
+
+Bonus Features:
+
+- Integrate a code editor where players can write and execute code to solve puzzles.
+
+Documentation:
+
+- Offer a comprehensive guide on how to play the game, with examples of educational outcomes.
+
+**Success Criteria**
+
+- The game is engaging and educational for players with little to no prior programming experience.
+- Users should be able to play the coding game without errors.
+- Should illustrate using with real-world examples of how programming concepts apply outside the game.
 ```
