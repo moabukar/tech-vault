@@ -229,6 +229,56 @@ Documentation:
 - Documentation should be clear and comprehensive, enabling users to set up and run the application easily.
 ```
 
+5. Build a Web Scraper Tool that can scrape various pages and store in database.
+
+Note: Use websites that allow web scraping for the sake of respecting digital law:
+
+[Scrape This Site](https://www.scrapethissite.com/pages/),
+[Books to Scrape](https://books.toscrape.com/)
+
+```bash
+**Context**
+
+AlphaTech wants to stay updated with the latest information related to their industry and competitors. They are interested in developing a web scraper that can fetch data from various websites and aggregate them into a centralized database for analysis and monitoring.
+
+**Requirements**
+
+Website Scraping:
+
+  - Implement a web scraping mechanism capable of traversing websites and collecting data.
+  - Use HTML parsing libraries or techniques (e.g., BeautifulSoup, Scrapy) to extract structured data from web pages.
+
+Data Storage:
+
+  - Choose an appropriate database system (e.g., MySQL, PostgreSQL, MongoDB) for storing and querying data efficiently.
+
+Error Handling:
+
+  - Implement error handling mechanisms to deal with various issues encountered during web scraping, such as network errors, HTTP errors, and content parsing errors.
+  - Provide logging and reporting functionalities to track errors and debug issues effectively.
+
+Bonus Features:
+
+  - Add support for custom user-defined rules and filters to scrape specific types of information based on keywords.
+  - Develop a user interface for browsing and searching data in the database, with features such as filtering, sorting, and pagination.
+
+Documentation:
+
+- Provide a README clearly explaining how to run the web scraper and configuring a database.
+
+**Constraints**
+
+  - Adhere to web scraping best practices and ethical guidelines, respecting website terms of service and copyright laws.
+  - Ensure scalability and performance optimization to handle large volumes of data.
+  - Consider privacy and data security implications when storing and processing data, especially if personal or sensitive information is involved.
+
+**Success Criteria**
+
+  - The web scraper should be able to fetch data from various websites and store them in a database accurately and efficiently.
+  - The system should handle errors and exceptions gracefully, providing informative error messages and logs for troubleshooting.
+  - Documentation should be comprehensive, covering installation instructions, usage guidelines, and best practices for configuring and running the web scraper.
+```
+
 6. Build an educational coding game for beginners.
 
 ```bash
