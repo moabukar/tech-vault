@@ -161,10 +161,6 @@ def counting_sort(nums):
 
 ## 4. Conclusion
 
-Sorting algorithms are essential tools in programming. The choice of sorting algorithm depends on the input size, the range of values, and the desired performance. Understanding the characteristics of different sorting algorithms helps us make informed decisions when selecting the most suitable algorithm for a specific task.
-```
-## 4. Conclusion
-
 Understanding various sorting algorithms provides a strong foundation for solving diverse data manipulation challenges. Sorting not only helps us organize data efficiently but also serves as a building block for other algorithms and applications, such as searching, data analysis, and optimization. In this lesson, we covered different approaches:
 
 1. **Comparison Sorting**: Algorithms like **Bubble Sort**, **Selection Sort**, and **Insertion Sort** provide intuitive ways to sort data through element comparisons. Although their time complexity is typically O(n²), they can be useful for small datasets or when a simple implementation is preferred.
