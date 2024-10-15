@@ -86,3 +86,79 @@ def bucket_sort(arr):
 - **Average Case Time Complexity**: O(n + k) – The same reasoning as the best case.
 - **Worst Case Time Complexity**: O(n²) – This can occur when all elements are placed into a single bucket (e.g., all elements are the same), leading to a call to a quadratic sorting algorithm within that bucket.
 - **Space Complexity**: O(n + k) – Additional space is required for the buckets.
+
+## 3. Quick Sort
+
+**Quick Sort** is an efficient, comparison-based sorting algorithm that uses a divide-and-conquer strategy to sort an array. It is one of the most popular sorting algorithms due to its average-case time complexity of O(n log n) and practical performance on large datasets. Quick Sort works by selecting a "pivot" element and partitioning the array into two subarrays based on this pivot.
+
+### How It Works:
+1. **Choose a Pivot:** A pivot element is selected from the array. This can be any element, but common choices include the first element, the last element, or a randomly selected element.
+2. **Partition the Array:** Rearrange the elements such that elements smaller than the pivot are on the left and elements larger than the pivot are on the right.
+3. **Recursively Sort:** Recursively apply Quick Sort to the left and right subarrays.
+4. **Combine:** The array is sorted once all recursive calls are completed.
+
+### Pseudo Code in Python
+```python
+def quick_sort(arr):
+    # Base case: If the array has 1 or 0 elements, it is already sorted
+    if len(arr) <= 1:
+        return arr
+    
+    # Choose the pivot (using the last element here)
+    pivot = arr[-1]
+    
+    # Partition the array into three lists
+    left = [x for x in arr[:-1] if x <= pivot]  # Elements less than or equal to pivot
+    right = [x for x in arr[:-1] if x > pivot]  # Elements greater than pivot
+    
+    # Recursively sort the left and right sub-arrays and combine with pivot
+    return quick_sort(left) + [pivot] + quick_sort(right)
+```
+
+### Time and Space Complexity of Quick Sort
+- **Best Case Time Complexity**: O(n log n) – This occurs when the pivot divides the array into two equal halves at each step.
+- **Average Case Time Complexity**: O(n log n) – On average, the algorithm performs well with most types of input data.
+- **Worst Case Time Complexity**: O(n²) – The worst-case occurs when the smallest or largest element is always chosen as the pivot, leading to unbalanced partitions (e.g., sorted or reverse-sorted arrays).
+- **Space Complexity**: O(log n) – This is due to the recursion stack space needed for balanced partitions.
+- **Stability**: Not stable – Equal elements may not retain their original relative order.
+- **In-Place**: Yes – It doesn't require extra space proportional to the input size.
+
+## 4. Cyclic Sort
+
+Cyclic Sort is an efficient sorting algorithm designed for arrays where the elements are in a specific range from 1 to n. The algorithm works by placing each element in its correct position in a single pass through the array.
+
+### How It Works
+1. Traverse the array from the beginning.
+2. For each element, if it is not in the correct position (i.e., the element `arr[i]` is not equal to `i + 1`), swap it with the element at its correct position (`arr[arr[i] - 1]`).
+3. Repeat this process until all elements are in their correct positions.
+
+### Pseudo Code in Python
+```python
+def cyclic_sort(arr):
+    i = 0
+    while i < len(arr):
+        correct_idx = arr[i] - 1
+        if arr[i] != arr[correct_idx]:
+            # Swap the elements
+            arr[i], arr[correct_idx] = arr[correct_idx], arr[i]
+        else:
+            i += 1
+    return arr
+```
+
+### Time and Space Complexity of Cyclic Sort
+- **Best Case Time Complexity**: O(n) – The algorithm traverses the array once, placing all elements in their correct positions with minimal swaps.
+- **Average Case Time Complexity**: O(n) – In the average case, each element is moved to its correct position in a linear number of operations.
+- **Worst Case Time Complexity**: O(n) – Even in the worst case, each element is swapped at most once, making the total number of operations linear with respect to the input size.
+- **Space Complexity**: O(1) – Cyclic Sort sorts the array in place, so it requires a constant amount of extra memory.
+- **Stability**: Not stable – The algorithm may alter the relative order of equal elements during sorting.
+- **In-Place**: Yes – Sorting is performed without using extra space proportional to the input size.
+
+## 5. Conclusion
+
+Advanced sorting algorithms like **Merge Sort**, **Bucket Sort**, **Quick Sort**, and **Cyclic Sort** play a crucial role in optimizing performance across different scenarios. Each algorithm has unique strengths, making them suitable for specific data distributions and requirements:
+
+- **Merge Sort** excels in handling large datasets with consistent time complexity, providing stability and guaranteeing a predictable O(n log n) performance.
+- **Bucket Sort** leverages the uniform distribution of elements to achieve linear time complexity, making it efficient for sorting floating-point numbers or datasets with a known range.
+- **Quick Sort** is favored for its in-place sorting and average-case efficiency, although it requires careful choice of pivot to avoid worst-case scenarios.
+- **Cyclic Sort** shines in scenarios where elements are in a limited range and need to be placed in a specific order with minimal swaps.

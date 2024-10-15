@@ -158,3 +158,19 @@ def counting_sort(nums):
 
 - **Best, Average, and Worst Case Time Complexity**: O(n + k) – Where `n` is the number of elements in the input array and `k` is the range (maximum value in the array).
 - **Space Complexity**: O(n + k) – We use additional space for the count array and to store the sorted result.
+
+## 4. Conclusion
+
+Sorting algorithms are essential tools in programming. The choice of sorting algorithm depends on the input size, the range of values, and the desired performance. Understanding the characteristics of different sorting algorithms helps us make informed decisions when selecting the most suitable algorithm for a specific task.
+```
+## 4. Conclusion
+
+Understanding various sorting algorithms provides a strong foundation for solving diverse data manipulation challenges. Sorting not only helps us organize data efficiently but also serves as a building block for other algorithms and applications, such as searching, data analysis, and optimization. In this lesson, we covered different approaches:
+
+1. **Comparison Sorting**: Algorithms like **Bubble Sort**, **Selection Sort**, and **Insertion Sort** provide intuitive ways to sort data through element comparisons. Although their time complexity is typically O(n²), they can be useful for small datasets or when a simple implementation is preferred.
+
+2. **Distribution Sorting**: Algorithms such as **Counting Sort** excel when the range of input data is limited. By leveraging the distribution of values, they achieve linear time complexity, making them ideal for sorting large datasets with a known value range.
+
+3. **Stable vs Non-Stable Sorting**: Sorting stability can be crucial when maintaining the relative order of equal elements is important, such as in applications like radix sort or sorting linked lists.
+
+4. **In-Place vs Out-of-Place Sorting**: Depending on memory constraints, choosing an in-place algorithm like insertion sort, which requires minimal extra space, can be beneficial.
