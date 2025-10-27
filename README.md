@@ -7,7 +7,7 @@
   <img width="1000" src="./images/Tech-Vault.png">
 </p>
 
-About
+## About
 
 A comprehensive documentation of carefully curated technical engineering questions and challenges, created by experienced Engineers who have conducted numerous interviews. This collection features popular and essential engineering questions designed to evaluate candidate knowledge across various technical domains.
 Note: Questions sourced from external references are properly credited in the [References](#references) section. 
@@ -51,13 +51,13 @@ Note: Questions sourced from external references are properly credited in the [R
 - [X] [Interpersonal skills](#interpersonal--behavioural-questions)
 - [X] [References](#references)
 
-Vision 
+## Vision 🚀
 
 Breaking into tech from a non-technical background or without prior experience can be challenging. That's why our team created Tech Vault—a centralized resource for both technical and non-technical professionals preparing for technical interviews.
 
 This project is maintained by a passionate community of engineers. We welcome your contributions! See our [Contributing Guidelines](./CONTRIBUTING.md) to get started.
 
-What Makes This Repo Different? 🌟
+## What Makes This Repo Different? 🌟
 
 1. Real Interview Questions - Actual questions asked by and of our engineers (appropriately reworded for clarity)
 2. Scenario-Based Questions - Realistic questions that mirror actual interview situations
