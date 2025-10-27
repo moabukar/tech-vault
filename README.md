@@ -7,10 +7,10 @@
   <img width="1000" src="./images/Tech-Vault.png">
 </p>
 
+About
 
-Note: A documentation of carefully curated technical engineering questions & challenges by experienced Engineers who have conducted many interviews. These are amongst popular and important engineering questions to test knowledge of candidates in interviews. 
-
-Any questions taken from external references are referenced [below](#references).  
+A comprehensive documentation of carefully curated technical engineering questions and challenges, created by experienced Engineers who have conducted numerous interviews. This collection features popular and essential engineering questions designed to evaluate candidate knowledge across various technical domains.
+Note: Questions sourced from external references are properly credited in the [References](#references) section. 
 
 ## Table of Contents
 
@@ -51,27 +51,21 @@ Any questions taken from external references are referenced [below](#references)
 - [X] [Interpersonal skills](#interpersonal--behavioural-questions)
 - [X] [References](#references)
 
-## Vision
+Vision 
 
-- Coming from a non-technical background and without experience can be difficult for many. So my Team & I have decided to create this project where all, non-technical and technical tech professionals, can have a place of reference to technical interview questions and interview prep. This is maintained by a lovely community. If you wish to contribute, feel free to do so. Read this for more info >> [How to Contribute](#contributing-🖊️s) 
+Breaking into tech from a non-technical background or without prior experience can be challenging. That's why our team created Tech Vault—a centralized resource for both technical and non-technical professionals preparing for technical interviews.
 
-## What is different in this repo compared to others?
+This project is maintained by a passionate community of engineers. We welcome your contributions! See our [Contributing Guidelines](./CONTRIBUTING.md) to get started.
 
-1️⃣ Real questions asked by and of our Engineers (obviously reworded questions)
+What Makes This Repo Different? 🌟
 
-2️⃣ Scenario-based questions mirroring actual interviews
-
-3️⃣ Up-to-date and relevant topics
-
-4️⃣ Ongoing updates by experienced Engineers in their fields.
-
-5️⃣ Hands-on questions that are similar to real-life scenarios aka DevOps Challenges
-  - I have created these for that want more hands-on experience when it comes to DevOps.
-  - 
-
-6️⃣ [Random Question Generator](./misc/README.md)
-
-7️⃣ [Tech Vault CLI tool](https://github.com/moabukar/tech-vault-cli)
+1. Real Interview Questions - Actual questions asked by and of our engineers (appropriately reworded for clarity)
+2. Scenario-Based Questions - Realistic questions that mirror actual interview situations
+3. Current & Relevant - Up-to-date topics reflecting modern engineering practices
+4. Expert Maintenance - Continuously updated by experienced engineers in their respective fields
+5. Hands-On Challenges - Practical DevOps challenges that simulate real-world scenarios for hands-on learning
+6. Interactive Tools - [Random Question Generator](./misc/README.md) for practice sessions
+7. CLI Access - [Tech Vault CLI tool for terminal-based access](https://github.com/moabukar/tech-vault-cli)
 
 ## Contributing 🖊️
 
