@@ -1761,35 +1761,35 @@ Advanced:
 <details>
 <summary>What is IaC? What is Terraform?</summary>
 
-Answer goes here
+Terraform state is a file that keeps track of the resources managed by Terraform. It maps real-world resources to your configuration, allowing Terraform to manage updates and changes effectively.
 
 </details>
 
 <details>
 <summary>What is Terraform state?</summary>
 
-Answer goes here
+It’s how Terraform tracks and maps real resources to your code, stored in the state file, enabling accurate plans and applies.
 
 </details>
 
 <details>
 <summary>What are most common Terraform commands?</summary>
 
-Answer goes here
+The most common Terraform commands include `terraform init` (initialize a working directory), `terraform plan` (create an execution plan), `terraform apply` (apply changes), and `terraform destroy` (destroy managed infrastructure).
 
 </details>
 
 <details>
 <summary>What is Terraform backend?</summary>
 
-Answer goes here
+A Terraform backend determines how state is loaded and how operations are executed. It can be local (default) or remote, allowing for collaboration and state management in a shared environment.
 
 </details>
 
 <details>
 <summary>What are modules in Terraform?</summary>
 
-Answer goes here
+Modules in Terraform are containers for multiple resources that are used together. They allow for code reusability and organization, enabling you to create complex infrastructure setups more easily.
 
 </details>
 
@@ -1797,14 +1797,15 @@ Answer goes here
 <details>
 <summary>What is Terragrunt?</summary>
 
-Answer goes here
+Terragrunt extends Terraform with better organization, reusability, and automation for large, complex infrastructures.
 
 </details>
 
 <details>
 <summary>Explain the workflow of the core Terraform?</summary>
 
-Answer goes here
+load → refresh → plan → apply → update state.(short version)
+Terraform Core loads the configuration and the current state, refreshes resource information from providers, builds a dependency graph, and then generates an execution plan. If approved, it applies the plan by calling the provider plugins to create, update, or destroy resources in the right order, and finally updates the state file.(long version)
 
 </details>
 
@@ -1812,35 +1813,35 @@ Answer goes here
 <details>
 <summary>Difference between Terraform, AWS CloudFormation and Azure ARM?</summary>
 
-Answer goes here
+Terraform is provider-agnostic and reusable across clouds, while CloudFormation and ARM are vendor-specific but deeply integrated into their ecosystems.
 
 </details>
 
 <details>
 <summary>What is the difference between Terraform and Ansible?</summary>
 
-Answer goes here
+Terraform is primarily used for provisioning and managing infrastructure, while Ansible is a configuration management tool that automates software provisioning, configuration management, and application deployment.
 
 </details>
 
 <details>
 <summary>What are provisioners in Terraform?</summary>
 
-Answer goes here
+Provisioners in Terraform are used to execute scripts or commands on a local or remote machine as part of the resource creation process. They help in configuring resources after they are created.
 
 </details>
 
 <details>
 <summary>How can two people using the Terraform cloud can create two different sets of infrastructure using the same working directory?</summary>
 
-Answer goes here
+By using Terraform Workspaces. Each workspace has its own isolated state file, so multiple people can apply the same configuration to create separate environments without clashing.
 
 </details>
 
 <details>
 <summary>What is a null resource in Terraform?</summary>
 
-Answer goes here
+A null resource in Terraform is a resource that does not create any real infrastructure but can be used to execute provisioners or manage dependencies between resources.
 
 </details>
 
