@@ -1740,20 +1740,68 @@ To automatically reduce the load on your Amazon EC2 instance when CPU utilizatio
 
 ### :small_blue_diamond: Azure
 
-- What is Azure?
-- What are ARM templates in Azure?
-- What is Azure CDN?
-- How is Azure App Service different from Azure Functions?
-- How to define an Environment Variable on Azure using Azure CLI?
-- How would you choose between Azure Blob Storage vs. Azure File Service?
-- What is difference between Keys and Secrets in Azure Key Vault?
-- What’s the difference between Azure SQL Database and Azure SQL Managed Instance?
-- When should we use Azure Table Storage over Azure SQL?
-- Explain what is the difference between Block Blobs, Append Blobs and Page Blobs in Azure?
+<details>
+  <summary><strong>Click to expand</strong></summary>
 
-Advanced:
+<br>
 
-- What to use: many small Azure Storage Blob containers vs one really large container with tons of blobs?
+<details>
+<summary>What is Azure?</summary>
+Answer goes here
+</details>
+
+<details>
+<summary>What are ARM templates in Azure?</summary>
+Answer goes here
+</details>
+
+<details>
+<summary>What is Azure CDN?</summary>
+Answer goes here
+</details>
+
+<details>
+<summary>How is Azure App Service different from Azure Functions?</summary>
+Answer goes here
+</details>
+
+<details>
+<summary>How to define an Environment Variable on Azure using Azure CLI?</summary>
+Answer goes here
+</details>
+
+<details>
+<summary>How would you choose between Azure Blob Storage vs. Azure File Service?</summary>
+Answer goes here
+</details>
+
+<details>
+<summary>What is difference between Keys and Secrets in Azure Key Vault?</summary>
+Answer goes here
+</details>
+
+<details>
+<summary>What’s the difference between Azure SQL Database and Azure SQL Managed Instance?</summary>
+Answer goes here
+</details>
+
+<details>
+<summary>When should we use Azure Table Storage over Azure SQL?</summary>
+Answer goes here
+</details>
+
+<details>
+<summary>Explain the difference between Block Blobs, Append Blobs and Page Blobs in Azure?</summary>
+Answer goes here
+</details>
+
+### **Advanced**
+<details>
+<summary>What to use: many small Azure Storage Blob containers vs one large container?</summary>
+Answer goes here
+</details>
+
+</details>
 
 
 ### :small_blue_diamond: Terraform
