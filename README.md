@@ -1931,23 +1931,102 @@ Answer goes here
 
 </details>
 
+
+
+### **Advanced**
+
+<details>
+<summary>I have 3 people in my team who want to work on the same AWS Infrastructure on Terraform as well as same state. What can I do to ensure there are no clashes?</summary>
+
+Answer goes here
+
 </details>
 
-**Advanced:**
-- I have 3 people in my team who want to work on the same AWS Infrastructure on Terraform as well as same state. What can I do to ensure there are no clashes?
-- In a pipeline, where would you store the Terraform state?
-- Can I test my terraform modules? If so, how can I test them? Is there a common framework used to Terraform modules?
-- How does state file locking work?
-- What is Checkov?
-- How can I use Terraform in a pipeline?
-- How can one export data from one module to another?
-- How can you import existing resources under Terraform management?
-- Which command can be used to reconcile the Terraform state with the actual real-world infrastructure?
-- What are some best practices when using Terraform modules?
-- How do you handle secrets and sensitive data in Terraform?
-- What are some best practices when writing Terraform code?
-- How do you export data from one module to another?
+<details>
+<summary>In a pipeline, where would you store the Terraform state?</summary>
 
+Answer goes here
+
+</details>
+
+<details>
+<summary>Can I test my terraform modules? If so, how can I test them? Is there a common framework used to Terraform modules?</summary>
+
+Answer goes here
+
+</details>
+
+<details>
+<summary>How does state file locking work?</summary>
+
+Answer goes here
+
+</details>
+
+<details>
+<summary>What is Checkov?</summary>
+
+Answer goes here
+
+</details>
+
+<details>
+<summary>How can I use Terraform in a pipeline?</summary>
+
+Answer goes here
+
+</details>
+
+<details>
+<summary>How can one export data from one module to another?</summary>
+
+Answer goes here
+
+</details>
+
+<details>
+<summary>How can you import existing resources under Terraform management?</summary>
+
+Answer goes here
+
+</details>
+
+<details>
+<summary>Which command can be used to reconcile the Terraform state with the actual real-world infrastructure?</summary>
+
+Answer goes here
+
+</details>
+
+<details>
+<summary>What are some best practices when using Terraform modules?</summary>
+
+Answer goes here
+
+</details>
+
+<details>
+<summary>How do you handle secrets and sensitive data in Terraform?</summary>
+
+Answer goes here
+
+</details>
+
+<details>
+<summary>What are some best practices when writing Terraform code?</summary>
+
+Answer goes here
+
+</details>
+
+<details>
+<summary>How do you export data from one module to another?</summary>
+
+Answer goes here
+
+</details>
+
+</details>
 
 ### :small_blue_diamond: Docker & K8s
 
