@@ -1539,7 +1539,12 @@ Here are the primary functions of `git reset`:
 
 ### :small_blue_diamond: AWS
 
------General--------
+<details>
+  <summary><strong>Click to expand</strong></summary>
+
+<br>
+
+### **General**
 <details>
 <summary>What is AWS?</summary>
 
@@ -1607,7 +1612,7 @@ Each type of load balancer has specific use cases and features, allowing you to 
 </details>
 
 
------Networking-----
+### **AWS Networking**
 <details>
 <summary>What is a VPC?</summary>
 
@@ -1659,7 +1664,7 @@ With these configurations, resources in your VPC can send and receive traffic to
 </details>
 
 
------Scenario-based-----
+### **Scenario based**
 <details>
 <summary>I want to create a 3 Tier Architecture. Can you explain step by step of how I can go about this?</summary>
 
@@ -1737,6 +1742,8 @@ By combining these approaches, your application can automatically adjust its cap
 <details>
 <summary>You have an application running on your Amazon EC2 instance. You want to reduce the load on your instance as soon as the CPU utilization reaches 100 percent. How will you do that?</summary>
 
+<br>
+
 To automatically reduce the load on your Amazon EC2 instance when CPU utilization reaches 100 percent, follow these steps:
 
 - **Create an Auto Scaling Group**: Set up an Auto Scaling Group for your EC2 instance if you haven't already.
@@ -1755,8 +1762,13 @@ To automatically reduce the load on your Amazon EC2 instance when CPU utilizatio
 </details>
 
 
------Others-----
-- Name some managed runtimes for Lambda
+### **Others**
+<details>
+<summary>Name some managed runtimes for Lambda</summary>
+Answer goes here
+</details>
+
+</details>
 
 ### :small_blue_diamond: Azure
 
