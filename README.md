@@ -728,6 +728,11 @@ Method 3
 ### :small_blue_diamond: Networking
 
 <details>
+  <summary><strong>Click to expand</strong></summary>
+
+<br>
+
+<details>
 <summary>What is HTTP?</summary>
 
 The Hypertext Transfer Protocol (HTTP) is the foundation of the World Wide Web, and is used to load webpages using hypertext links. HTTP is an application layer protocol designed to transfer information between networked devices and runs on top of other layers of the network protocol stack. A typical flow over HTTP involves a client machine making a request to a server, which then sends a response message.
@@ -1331,7 +1336,14 @@ Try transferring data between each host and other devices on the network to dete
 
 </details>
 
+</details>
+
 ### :small_blue_diamond: Git
+
+<details>
+  <summary><strong>Click to expand</strong></summary>
+
+<br>
 
 <details>
 <summary>What is Git?</summary>
@@ -1520,6 +1532,8 @@ Here are the primary functions of `git reset`:
 - Resolve any conflicts if they arise during the merge or rebase.
 - Test your branch thoroughly to ensure it works with the latest changes.
 - Commit and push your changes if necessary (`git commit` and `git push origin <branch-name>`).
+
+</details>
 
 </details>
 
