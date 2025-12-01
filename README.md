@@ -1807,6 +1807,11 @@ Answer goes here
 ### :small_blue_diamond: Terraform
 
 <details>
+  <summary><strong>Click to expand</strong></summary>
+
+<br>
+
+<details>
 <summary>What is IaC? What is Terraform?</summary>
 
 Answer goes here
@@ -1906,6 +1911,7 @@ Answer goes here
 
 </details>
 
+</details>
 
 **Advanced:**
 - I have 3 people in my team who want to work on the same AWS Infrastructure on Terraform as well as same state. What can I do to ensure there are no clashes?
