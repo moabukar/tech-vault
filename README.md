@@ -76,6 +76,11 @@ This project is maintained by a passionate community of engineers. We welcome yo
 ### :small_blue_diamond: Linux
 
 <details>
+  <summary><strong>Click to expand</strong></summary>
+
+<br>
+
+<details>
 <summary>What is Linux and difference between UNIX and Linux?</summary>
 
 Linux is an open-source operating system based on the UNIX architecture. It was created by Linus Torvalds in 1991. UNIX, on the other hand, is a family of operating systems that was developed in the late 1960s at Bell Labs. The main differences between UNIX and Linux are:
@@ -718,6 +723,7 @@ Method 3
 
 </details>
 
+</details>
 
 ### :small_blue_diamond: Networking
 
