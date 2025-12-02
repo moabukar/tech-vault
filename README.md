@@ -2410,6 +2410,11 @@ Advanced:
 ### Data Modelling and Schemas: 
 
 <details>
+  <summary><strong>Click to expand</strong></summary>
+
+<br>
+
+<details>
 <summary>Define data modelling and the benefits of implementing a data model?</summary>
 
 Data modeling is the process of creating a visual representation of either a whole information system or parts of it to communicate connections between data. Data modeling concepts create a blueprint for how data is organized and managed in your organization. Data models give developers and non-technical stakeholders a simplified way to have meaningful conversations about the needs of the business and how data insights can fuel better decision making.
@@ -2525,6 +2530,8 @@ Foreign keys are columns in a table that reference the primary key of another ta
 <summary>Desribe cardinality</summary>
 Cardinality refers to the number of relationships between entities in a data model. It describes how many instances of one entity can be related to another entity. Common cardinalities include one-to-one, one-to-many, and many-to-many.
 
+
+</details>
 
 </details>
 
