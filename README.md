@@ -2196,6 +2196,11 @@ Container Orchestration (Kubernetes = K8s):
 
 ### :small_blue_diamond: CDN & Caching
 
+<details>
+  <summary><strong>Click to expand</strong></summary>
+
+<br>
+
 - What is a CDN and why would I use one?
 - What are CDN edge servers?
 - How does CDN caching work?
@@ -2218,6 +2223,8 @@ Container Orchestration (Kubernetes = K8s):
 - What is Load Balancing and how does it work? How does it relate to reverse proxies?
 - Name me some common load balancers
 - What is a microservice architecture and when would I consider using one?
+
+</details>
 
 ### :small_blue_diamond: API Design
 
