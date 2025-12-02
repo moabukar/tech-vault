@@ -1338,10 +1338,10 @@ Try transferring data between each host and other devices on the network to dete
 
 </details>
 
-<h3 id="git">Git</h3>
+
 
 <details>
-  <summary><strong>Click to expand</strong></summary>
+  <summary><h3 id="git">Git</h3></summary>
 
 <br>
 
