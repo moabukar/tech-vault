@@ -2042,6 +2042,10 @@ Answer goes here
 
 ### :small_blue_diamond: Docker & K8s
 
+<details>
+  <summary><strong>Click to expand</strong></summary>
+
+<br>
 
 Container (Docker):
 - What is a container and what are its fundamentals?
@@ -2127,8 +2131,14 @@ Container Orchestration (Kubernetes = K8s):
 - What is the role of ETCD in K8s?
 - Explain what are Taints and Tolerations in K8s?
 
+</details>
 
 ### :small_blue_diamond: Ansible
+
+<details>
+  <summary><strong>Click to expand</strong></summary>
+
+<br>
 
 - What is Ansible? 
 - How does Ansible work?
@@ -2151,13 +2161,22 @@ Container Orchestration (Kubernetes = K8s):
 - How do you test your Ansible roles and tasks?
 - What is Molecule and how does it works?
 
+</details>
+
 ### :small_blue_diamond: CI/CD
+
+<details>
+  <summary><strong>Click to expand</strong></summary>
+
+<br>
 
 - What is meant by Continuous Integration?
 - Explain blue-green deployment
 - What is a CI/CD pipeline?
 - What is a canary deployment?
 - What is a rolling deployment?
+
+</details>
 
 ### :small_blue_diamond: DevOps methodology, practices,  & Agile
 
