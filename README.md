@@ -3110,6 +3110,13 @@ On the other hand, NoSQL databases are non-relational databases that store data 
 
 ## Cyber Security & Info Security
 
+### :small_blue_diamond: General
+
+<details>
+  <summary><strong>Click to expand</strong></summary>
+
+<br>
+
 <details>
 <summary>What is a firewall, and how does it work?</summary>
 A firewall is a network security device that monitors and controls incoming and outgoing network traffic based on predetermined security rules. It can be hardware, software, or a combination of both, and it is designed to prevent unauthorized access to a network while allowing legitimate traffic to pass through. Firewalls typically work by analyzing packets of data and either allowing or blocking them based on rules established by the network administrator.
@@ -3263,6 +3270,8 @@ Example: If someone uses the same password on two different systems and they are
   Malvertising
   Rogue Software
   </details>  
+
+  </details>
 
 ### Encryption and Authentication
    
