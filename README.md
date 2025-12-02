@@ -2407,7 +2407,7 @@ Advanced:
 
 ## Data
 
-### Data Modelling and Schemas: 
+### :small_blue_diamond: Data Modelling and Schemas: 
 
 <details>
   <summary><strong>Click to expand</strong></summary>
@@ -2535,7 +2535,7 @@ Cardinality refers to the number of relationships between entities in a data mod
 
 </details>
 
-### Data Architect
+### :small_blue_diamond: Data Architect
 
 <details>
   <summary><strong>Click to expand</strong></summary>
@@ -2667,7 +2667,7 @@ Design patterns such as the star schema and snowflake schema for data warehousin
 
 </details>
 
-### Data Engineering
+### :small_blue_diamond: Data Engineering
 
 <details>
   <summary><strong>Click to expand</strong></summary>
@@ -2869,7 +2869,7 @@ FIFO scheduling is a scheduling algorithm used in Hadoop that stands for First I
 
 </details>
 
-### SQL
+### :small_blue_diamond: SQL
 
 <details>
   <summary><strong>Click to expand</strong></summary>
@@ -3087,7 +3087,7 @@ On the other hand, NoSQL databases are non-relational databases that store data 
 </details>
 
 
-### ETL & Data Pipelines & more
+### :small_blue_diamond: ETL & Data Pipelines & more
 
 <details>
   <summary><strong>Click to expand</strong></summary>
@@ -3273,7 +3273,7 @@ Example: If someone uses the same password on two different systems and they are
 
   </details>
 
-### Encryption and Authentication
+### :small_blue_diamond: Encryption and Authentication
 
 <details>
   <summary><strong>Click to expand</strong></summary>
@@ -3299,7 +3299,7 @@ Example: If someone uses the same password on two different systems and they are
 
 </details>
   
-### OWASP Top 10, Pentesting and/or Web Applications
+### :small_blue_diamond: OWASP Top 10, Pentesting and/or Web Applications
 
 <details>
   <summary><strong>Click to expand</strong></summary>
@@ -3318,7 +3318,7 @@ Example: If someone uses the same password on two different systems and they are
 
 </details>
 
-### Compliance
+### :small_blue_diamond: Compliance
 
 <details>
   <summary><strong>Click to expand</strong></summary>
