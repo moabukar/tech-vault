@@ -2362,6 +2362,11 @@ Advanced:
 
 ### :small_blue_diamond: Java
 
+<details>
+  <summary><strong>Click to expand</strong></summary>
+
+<br>
+
 - What is JVM?
 - What is JRE?
 - What is JDK?
@@ -2378,6 +2383,7 @@ Advanced:
 - What is the difference between == and .equals()?
 - Explain marshalling and unmarshalling?
 
+</details>
 
 ### :small_blue_diamond: JavaScript (TS,nodeJS...)
 
