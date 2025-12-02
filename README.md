@@ -21,31 +21,31 @@ Note: Questions sourced from external references are properly credited in the [R
 - [X] [Coding Challenges](./coding-challenges/README.md)
 - [X] [Data Structures and Algorithms Challenges](./dsa-challenges/README.md) 
 - [X] [DevOps 🛠](#devops)
-    - [Linux 🐧](#small_blue_diamond-linux)
-    - [Networking 🌐](#small_blue_diamond-networking)
+    - [Linux 🐧](#linux)
+    - [Networking 🌐](#networking)
     - [Git](#git)
-    - [AWS 🌩️](#small_blue_diamond-aws)
-    - [Azure 🌩️](#small_blue_diamond-azure)
-    - [Terraform 🏗️](#small_blue_diamond-terraform)
-    - [Docker & K8s 🐳 🎻](#small_blue_diamond-docker--k8s)
-    - [Ansible 🔧](#small_blue_diamond-ansible)
-    - [CI/CD 🛠️](#small_blue_diamond-cicd)
-    - [DevOps methodology, practices, & Agile](#small_blue_diamond-devops-methodology-practices--agile)
+    - [AWS 🌩️](#aws)
+    - [Azure 🌩️](#azure)
+    - [Terraform 🏗️](#terraform)
+    - [Docker & K8s 🐳 🎻](#dockerandk8s)
+    - [Ansible 🔧](#ansible)
+    - [CI/CD 🛠️](#cicd)
+    - [DevOps methodology, practices, & Agile](#ops)
 - [X] [System Design 🍥](#system-design)
-    - [CDN & Caching ⚡](#small_blue_diamond-cdn--caching)
-    - [Databases 📊](#small_blue_diamond-databases)
+    - [CDN & Caching ⚡](#cdn)
+    - [Databases 📊](#databases)
 - [X] [Software Engineering](#software-engineering)
-    - [General](#small_blue_diamond-general)
-    - [Golang](#small_blue_diamond-golang)
-    - [Python](#small_blue_diamond-python)
-    - [Java](#small_blue_diamond-java)
-    - [JavaScript](#small_blue_diamond-javascript-tsnodejs)
+    - [General](#gen)
+    - [Golang](#go)
+    - [Python](#py)
+    - [Java](#java)
+    - [JavaScript](#js)
 - [X] [Data](#data)
-    - [Data Modelling & Schemas](#data-modelling-and-schemas)
-    - [Data Architect](#data-architect)
-    - [Data Engineering](#data-engineering)
+    - [Data Modelling & Schemas](#modelling)
+    - [Data Architect](#architect)
+    - [Data Engineering](#engineering)
     - [SQL](#sql)
-    - [ETL & Data Pipelines](#etl-pipelines)
+    - [ETL & Data Pipelines](#pipelines)
 - [X] [Machine Learning 🤖](#machine-learning)
 - [X] [Cyber Security & InfoSecurity 🛡️](#cyber-security--info-security)
 - [X] [Interpersonal skills](#interpersonal--behavioural-questions)
@@ -73,10 +73,8 @@ This project is maintained by a passionate community of engineers. We welcome yo
 
 ## DevOps 🛠
 
-### :small_blue_diamond: Linux
-
 <details>
-  <summary><strong>Click to expand</strong></summary>
+  <summary><h3 id="linux">Linux</h3></summary>
 
 <br>
 
@@ -725,10 +723,9 @@ Method 3
 
 </details>
 
-### :small_blue_diamond: Networking
 
 <details>
-  <summary><strong>Click to expand</strong></summary>
+  <summary><h3 id="networking">Networking</h3></summary>
 
 <br>
 
@@ -1537,10 +1534,9 @@ Here are the primary functions of `git reset`:
 
 </details>
 
-### :small_blue_diamond: AWS
 
 <details>
-  <summary><strong>Click to expand</strong></summary>
+  <summary><h3 id="aws">AWS</h3></summary>
 
 <br>
 
@@ -1770,10 +1766,8 @@ Answer goes here
 
 </details>
 
-### :small_blue_diamond: Azure
-
 <details>
-  <summary><strong>Click to expand</strong></summary>
+  <summary><h3 id="azure">Azure</h3></summary>
 
 <br>
 
@@ -1836,10 +1830,8 @@ Answer goes here
 </details>
 
 
-### :small_blue_diamond: Terraform
-
 <details>
-  <summary><strong>Click to expand</strong></summary>
+  <summary><h3 id="terraform">Terraform</h3></summary>
 
 <br>
 
@@ -2040,10 +2032,9 @@ Answer goes here
 
 </details>
 
-### :small_blue_diamond: Docker & K8s
 
 <details>
-  <summary><strong>Click to expand</strong></summary>
+  <summary><h3 id="dockerandk8s">Docker & K8s</h3></summary>
 
 <br>
 
@@ -2133,10 +2124,9 @@ Container Orchestration (Kubernetes = K8s):
 
 </details>
 
-### :small_blue_diamond: Ansible
 
 <details>
-  <summary><strong>Click to expand</strong></summary>
+  <summary><h3 id="ansible">Ansible</h3></summary>
 
 <br>
 
@@ -2163,10 +2153,9 @@ Container Orchestration (Kubernetes = K8s):
 
 </details>
 
-### :small_blue_diamond: CI/CD
 
 <details>
-  <summary><strong>Click to expand</strong></summary>
+  <summary><h3 id="cicd">CI/CD</h3></summary>
 
 <br>
 
@@ -2178,10 +2167,9 @@ Container Orchestration (Kubernetes = K8s):
 
 </details>
 
-### :small_blue_diamond: DevOps methodology, practices,  & Agile
 
 <details>
-  <summary><strong>Click to expand</strong></summary>
+  <summary><h3 id="ops">DevOps methodology, practices, & Agile</h3></summary>
 
 <br>
 
@@ -2194,10 +2182,8 @@ Container Orchestration (Kubernetes = K8s):
 
 ## System Design
 
-### :small_blue_diamond: CDN & Caching
-
 <details>
-  <summary><strong>Click to expand</strong></summary>
+  <summary><h3 id="cdn">CDN & Caching</h3></summary>
 
 <br>
 
@@ -2226,10 +2212,9 @@ Container Orchestration (Kubernetes = K8s):
 
 </details>
 
-### :small_blue_diamond: API Design
 
 <details>
-  <summary><strong>Click to expand</strong></summary>
+  <summary><h3 id="api">API Design</h3></summary>
 
 <br>
 
@@ -2259,10 +2244,9 @@ Container Orchestration (Kubernetes = K8s):
 
 </details>
 
-### :small_blue_diamond: Databases
 
 <details>
-  <summary><strong>Click to expand</strong></summary>
+  <summary><h3 id="dbs">Databases</h3></summary>
 
 <br>
 
@@ -2296,11 +2280,8 @@ Container Orchestration (Kubernetes = K8s):
 
 ## Software Engineering
 
-
-### :small_blue_diamond: General
-
 <details>
-  <summary><strong>Click to expand</strong></summary>
+  <summary><h3 id="gen">General</h3></summary>
 
 <br>
 
@@ -2315,10 +2296,9 @@ Container Orchestration (Kubernetes = K8s):
 
 </details>
 
-### :small_blue_diamond: Golang
 
 <details>
-  <summary><strong>Click to expand</strong></summary>
+  <summary><h3 id="go">Golang</h3></summary>
 
 <br>
 
@@ -2349,10 +2329,8 @@ Advanced:
 </details>
 
 
-### :small_blue_diamond: Python
-
 <details>
-  <summary><strong>Click to expand</strong></summary>
+  <summary><h3 id="py">Python</h3></summary>
 
 <br>
 
@@ -2360,10 +2338,9 @@ Advanced:
 
 </details>
 
-### :small_blue_diamond: Java
 
 <details>
-  <summary><strong>Click to expand</strong></summary>
+  <summary><h3 id="java">Java</h3></summary>
 
 <br>
 
@@ -2385,10 +2362,8 @@ Advanced:
 
 </details>
 
-### :small_blue_diamond: JavaScript (TS,nodeJS...)
-
 <details>
-  <summary><strong>Click to expand</strong></summary>
+  <summary><h3 id="js">JavaScript</h3></summary>
 
 <br>
 
@@ -2405,12 +2380,10 @@ Advanced:
 
 </details>
 
-## Data
-
-### :small_blue_diamond: Data Modelling and Schemas: 
+## Data 
 
 <details>
-  <summary><strong>Click to expand</strong></summary>
+  <summary><h3 id="modelling">Data Modelling and Schemas</h3></summary>
 
 <br>
 
@@ -2535,10 +2508,9 @@ Cardinality refers to the number of relationships between entities in a data mod
 
 </details>
 
-### :small_blue_diamond: Data Architect
 
 <details>
-  <summary><strong>Click to expand</strong></summary>
+  <summary><h3 id="architect">Data Architect</h3></summary>
 
 <br>
 
@@ -2667,10 +2639,9 @@ Design patterns such as the star schema and snowflake schema for data warehousin
 
 </details>
 
-### :small_blue_diamond: Data Engineering
 
 <details>
-  <summary><strong>Click to expand</strong></summary>
+  <summary><h3 id="engineering">Data Engineering</h3></summary>
 
 <br>
 
@@ -2869,10 +2840,9 @@ FIFO scheduling is a scheduling algorithm used in Hadoop that stands for First I
 
 </details>
 
-### :small_blue_diamond: SQL
 
 <details>
-  <summary><strong>Click to expand</strong></summary>
+  <summary><h3 id="sql">SQL</h3></summary>
 
 <br>
 
@@ -3090,7 +3060,7 @@ On the other hand, NoSQL databases are non-relational databases that store data 
 ### :small_blue_diamond: ETL & Data Pipelines & more
 
 <details>
-  <summary><strong>Click to expand</strong></summary>
+  <summary><h3 id="pipelines">ETL & Data Pipelines & more</h3></summary>
 
 <br>
 
@@ -3110,10 +3080,8 @@ On the other hand, NoSQL databases are non-relational databases that store data 
 
 ## Cyber Security & Info Security
 
-### :small_blue_diamond: General
-
 <details>
-  <summary><strong>Click to expand</strong></summary>
+  <summary><h3 id="general">Cyber Scurity & Info Security</h3></summary>
 
 <br>
 
@@ -3273,10 +3241,9 @@ Example: If someone uses the same password on two different systems and they are
 
   </details>
 
-### :small_blue_diamond: Encryption and Authentication
 
 <details>
-  <summary><strong>Click to expand</strong></summary>
+  <summary><h3 id="auth">Encryption and Authentication</h3></summary>
 
 <br>
    
@@ -3299,10 +3266,9 @@ Example: If someone uses the same password on two different systems and they are
 
 </details>
   
-### :small_blue_diamond: OWASP Top 10, Pentesting and/or Web Applications
 
 <details>
-  <summary><strong>Click to expand</strong></summary>
+  <summary><h3 id="owasp">OWASP Top 10, Pentesting and/or Web Applications</h3></summary>
 
 <br>
 
@@ -3318,10 +3284,9 @@ Example: If someone uses the same password on two different systems and they are
 
 </details>
 
-### :small_blue_diamond: Compliance
 
 <details>
-  <summary><strong>Click to expand</strong></summary>
+  <summary><h3 id="compliance">Compliance</h3></summary>
 
 <br>
     
