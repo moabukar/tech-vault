@@ -2180,11 +2180,17 @@ Container Orchestration (Kubernetes = K8s):
 
 ### :small_blue_diamond: DevOps methodology, practices,  & Agile
 
+<details>
+  <summary><strong>Click to expand</strong></summary>
+
+<br>
+
 - What is meant by continuous integratons?
 - What are the advantages of DevOps?
 - Can you describe some branching strategies you have used?
 - What is the blue/green deployment pattern?
 
+</details>
 
 ## System Design
 
