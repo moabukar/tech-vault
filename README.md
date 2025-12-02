@@ -2872,6 +2872,12 @@ FIFO scheduling is a scheduling algorithm used in Hadoop that stands for First I
 ### SQL
 
 <details>
+  <summary><strong>Click to expand</strong></summary>
+
+<br>
+
+
+<details>
 <summary>How can you deal with duplicate data points in an SQL query?</summary>
 To deal with duplicate data points in an SQL query, you can use the DISTINCT keyword in the SELECT statement. The DISTINCT keyword filters out duplicate values from the result set, returning only unique values. Alternatively, you can use the GROUP BY clause in combination with an aggregate function such as COUNT() or SUM() to group the duplicate values together and perform calculations on them.
 </details>
@@ -3077,6 +3083,8 @@ On the other hand, NoSQL databases are non-relational databases that store data 
 - What are aggregate and scalar functions?
 - What are Views used for?
 - What are Local and Global variables?
+
+</details>
 
 
 ### ETL & Data Pipelines & more
