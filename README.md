@@ -2669,6 +2669,11 @@ Design patterns such as the star schema and snowflake schema for data warehousin
 
 ### Data Engineering
 
+<details>
+  <summary><strong>Click to expand</strong></summary>
+
+<br>
+
 
 <details>
 <summary>What made you choose data engineering and what does it mean to you?</summary>
@@ -2860,6 +2865,8 @@ Auditing and monitoring: Hadoop provides tools for auditing and monitoring clust
 <details>
 <summary>What is FIFO Scheduling? </summary>
 FIFO scheduling is a scheduling algorithm used in Hadoop that stands for First In, First Out. In this scheduling algorithm, the tasks are executed in the order in which they are submitted to the JobTracker. The first task submitted to the JobTracker is the first one to be executed, followed by the second task, and so on. This scheduling algorithm is simple and easy to implement, but it may not be the most efficient algorithm for all workloads. In particular, it can lead to long wait times for high-priority jobs if lower-priority jobs are submitted first. Other scheduling algorithms like Fair Scheduler and Capacity Scheduler are also available in Hadoop to address these issues.
+</details>
+
 </details>
 
 ### SQL
