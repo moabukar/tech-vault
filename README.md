@@ -2228,6 +2228,11 @@ Container Orchestration (Kubernetes = K8s):
 
 ### :small_blue_diamond: API Design
 
+<details>
+  <summary><strong>Click to expand</strong></summary>
+
+<br>
+
 - What is an API?
 - What is REST?
 - What is a RESTful API?
@@ -2251,9 +2256,15 @@ Container Orchestration (Kubernetes = K8s):
 - What is a HTTP body?
 - Explain cache-control header?
 - Name some best practices for better RESTful API design?
-- 
+
+</details>
 
 ### :small_blue_diamond: Databases
+
+<details>
+  <summary><strong>Click to expand</strong></summary>
+
+<br>
 
 - What is a database?
 - What is DBMS (Database Management System)?
@@ -2280,6 +2291,8 @@ Container Orchestration (Kubernetes = K8s):
 - Can you explain how an event-driven architecture works?
 - What is an API Gateway? How is this different from load balancers?
 - Explain why CDN (in)availability may be a problem for using WebSockets? 
+
+</details>
 
 ## Software Engineering
 
