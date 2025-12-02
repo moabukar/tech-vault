@@ -2299,6 +2299,11 @@ Container Orchestration (Kubernetes = K8s):
 
 ### :small_blue_diamond: General
 
+<details>
+  <summary><strong>Click to expand</strong></summary>
+
+<br>
+
 - What are some ways that you can version an API?
 - What does it mean for an API to be idempotent?
 - How can you implement idempotency in APIs?
@@ -2307,6 +2312,8 @@ Container Orchestration (Kubernetes = K8s):
 - Define cascading failures and how to deal with those?
 - How can you deploy an API without disrupting traffic?
 - Explain what a Race condition is to a 5 year old?
+
+</details>
 
 ### :small_blue_diamond: Golang
 
