@@ -3319,6 +3319,11 @@ Example: If someone uses the same password on two different systems and they are
 </details>
 
 ### Compliance
+
+<details>
+  <summary><strong>Click to expand</strong></summary>
+
+<br>
     
    * Can you explain SOC 2?
       * What are the five trust criteria?
@@ -3329,6 +3334,8 @@ Example: If someone uses the same password on two different systems and they are
    * What is role-based access control (RBAC) and why is it covered by compliance frameworks?
    * What is the NIST framework and why is it influential?
    * What is the OSI model?
+
+</details>
 
 ## Interpersonal & behavioural questions
 
