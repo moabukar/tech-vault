@@ -3274,6 +3274,11 @@ Example: If someone uses the same password on two different systems and they are
   </details>
 
 ### Encryption and Authentication
+
+<details>
+  <summary><strong>Click to expand</strong></summary>
+
+<br>
    
    * What is a three-way handshake?
    * How do cookies work?
@@ -3291,6 +3296,8 @@ Example: If someone uses the same password on two different systems and they are
    * How do I authenticate you and know you sent the message?
    * Should you encrypt all data at rest?
    * What is Perfect Forward Secrecy?
+
+</details>
   
 ### OWASP Top 10, Pentesting and/or Web Applications
 
