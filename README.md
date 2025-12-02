@@ -2387,6 +2387,11 @@ Advanced:
 
 ### :small_blue_diamond: JavaScript (TS,nodeJS...)
 
+<details>
+  <summary><strong>Click to expand</strong></summary>
+
+<br>
+
 - What is TypeScript?
 - What are the differences between TypeScript and JavaScript?
 - Why use TypeScript?
@@ -2398,6 +2403,7 @@ Advanced:
 - What are interfaces in TypeScript?
 - Interfaces Vs Types?
 
+</details>
 
 ## Data
 
