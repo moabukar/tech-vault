@@ -2351,7 +2351,14 @@ Advanced:
 
 ### :small_blue_diamond: Python
 
+<details>
+  <summary><strong>Click to expand</strong></summary>
+
+<br>
+
 - 
+
+</details>
 
 ### :small_blue_diamond: Java
 
