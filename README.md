@@ -2537,6 +2537,10 @@ Cardinality refers to the number of relationships between entities in a data mod
 
 ### Data Architect
 
+<details>
+  <summary><strong>Click to expand</strong></summary>
+
+<br>
 
 <details>
 <summary>Please state an example of designing, creating, deploying and managing an end to end data architecture project?</summary>
@@ -2659,6 +2663,8 @@ NoSQL databases such as MongoDB and Cassandra.
 Data integration tools such as Informatica and Talend.
 Data visualization and business intelligence tools such as Tableau and Power BI.
 Design patterns such as the star schema and snowflake schema for data warehousing.
+</details>
+
 </details>
 
 ### Data Engineering
