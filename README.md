@@ -2317,6 +2317,11 @@ Container Orchestration (Kubernetes = K8s):
 
 ### :small_blue_diamond: Golang
 
+<details>
+  <summary><strong>Click to expand</strong></summary>
+
+<br>
+
 - What is Go?
 - Why was the Go langauge created?
 - What is a pointer?
@@ -2340,6 +2345,8 @@ Container Orchestration (Kubernetes = K8s):
 Advanced:
 - Implement a function that reverses a slice of integers?
 - What are generics and how do they work?
+
+</details>
 
 
 ### :small_blue_diamond: Python
