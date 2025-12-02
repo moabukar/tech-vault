@@ -3301,6 +3301,11 @@ Example: If someone uses the same password on two different systems and they are
   
 ### OWASP Top 10, Pentesting and/or Web Applications
 
+<details>
+  <summary><strong>Click to expand</strong></summary>
+
+<br>
+
    * Differentiate XSS from CSRF.
    * What do you do if a user brings you a pc that is acting 'weird'? You suspect malware.
    * What is the difference between tcp dump and FWmonitor?
@@ -3310,7 +3315,9 @@ Example: If someone uses the same password on two different systems and they are
    * Describe what are egghunters and their use in exploit development. 
    * How is pad lock icon in browser generated?
    * What is Same Origin Policy and CORS?
-  
+
+</details>
+
 ### Compliance
     
    * Can you explain SOC 2?
