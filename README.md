@@ -23,7 +23,7 @@ Note: Questions sourced from external references are properly credited in the [R
 - [X] [DevOps 🛠](#devops)
     - [Linux 🐧](#small_blue_diamond-linux)
     - [Networking 🌐](#small_blue_diamond-networking)
-    - [Git](<h3>Git</h3>)
+    - [Git](git)
     - [AWS 🌩️](#small_blue_diamond-aws)
     - [Azure 🌩️](#small_blue_diamond-azure)
     - [Terraform 🏗️](#small_blue_diamond-terraform)
@@ -1338,7 +1338,7 @@ Try transferring data between each host and other devices on the network to dete
 
 </details>
 
-<h3>Git</h3>
+<h3 id="git">Git</h3>
 
 <details>
   <summary><strong>Click to expand</strong></summary>
