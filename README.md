@@ -1761,7 +1761,7 @@ To automatically reduce the load on your Amazon EC2 instance when CPU utilizatio
 ### **Others**
 <details>
 <summary>Name some managed runtimes for Lambda</summary>
-Answer goes here
+*Answer coming soon!
 </details>
 
 </details>
@@ -1773,58 +1773,58 @@ Answer goes here
 
 <details>
 <summary>What is Azure?</summary>
-Answer goes here
+*Answer coming soon!
 </details>
 
 <details>
 <summary>What are ARM templates in Azure?</summary>
-Answer goes here
+*Answer coming soon!
 </details>
 
 <details>
 <summary>What is Azure CDN?</summary>
-Answer goes here
+*Answer coming soon!
 </details>
 
 <details>
 <summary>How is Azure App Service different from Azure Functions?</summary>
-Answer goes here
+*Answer coming soon!
 </details>
 
 <details>
 <summary>How to define an Environment Variable on Azure using Azure CLI?</summary>
-Answer goes here
+*Answer coming soon!
 </details>
 
 <details>
 <summary>How would you choose between Azure Blob Storage vs. Azure File Service?</summary>
-Answer goes here
+*Answer coming soon!
 </details>
 
 <details>
 <summary>What is difference between Keys and Secrets in Azure Key Vault?</summary>
-Answer goes here
+*Answer coming soon!
 </details>
 
 <details>
 <summary>What’s the difference between Azure SQL Database and Azure SQL Managed Instance?</summary>
-Answer goes here
+*Answer coming soon!
 </details>
 
 <details>
 <summary>When should we use Azure Table Storage over Azure SQL?</summary>
-Answer goes here
+*Answer coming soon!
 </details>
 
 <details>
 <summary>Explain the difference between Block Blobs, Append Blobs and Page Blobs in Azure?</summary>
-Answer goes here
+*Answer coming soon!
 </details>
 
 ### **Advanced**
 <details>
 <summary>What to use: many small Azure Storage Blob containers vs one large container?</summary>
-Answer goes here
+*Answer coming soon!
 </details>
 
 </details>
@@ -1838,35 +1838,35 @@ Answer goes here
 <details>
 <summary>What is IaC? What is Terraform?</summary>
 
-Answer goes here
+*Answer coming soon!
 
 </details>
 
 <details>
 <summary>What is Terraform state?</summary>
 
-Answer goes here
+*Answer coming soon!
 
 </details>
 
 <details>
 <summary>What are most common Terraform commands?</summary>
 
-Answer goes here
+*Answer coming soon!
 
 </details>
 
 <details>
 <summary>What is Terraform backend?</summary>
 
-Answer goes here
+*Answer coming soon!
 
 </details>
 
 <details>
 <summary>What are modules in Terraform?</summary>
 
-Answer goes here
+*Answer coming soon!
 
 </details>
 
@@ -1874,14 +1874,14 @@ Answer goes here
 <details>
 <summary>What is Terragrunt?</summary>
 
-Answer goes here
+*Answer coming soon!
 
 </details>
 
 <details>
 <summary>Explain the workflow of the core Terraform?</summary>
 
-Answer goes here
+*Answer coming soon!
 
 </details>
 
@@ -1889,35 +1889,35 @@ Answer goes here
 <details>
 <summary>Difference between Terraform, AWS CloudFormation and Azure ARM?</summary>
 
-Answer goes here
+*Answer coming soon!
 
 </details>
 
 <details>
 <summary>What is the difference between Terraform and Ansible?</summary>
 
-Answer goes here
+*Answer coming soon!
 
 </details>
 
 <details>
 <summary>What are provisioners in Terraform?</summary>
 
-Answer goes here
+*Answer coming soon!
 
 </details>
 
 <details>
 <summary>How can two people using the Terraform cloud can create two different sets of infrastructure using the same working directory?</summary>
 
-Answer goes here
+*Answer coming soon!
 
 </details>
 
 <details>
 <summary>What is a null resource in Terraform?</summary>
 
-Answer goes here
+*Answer coming soon!
 
 </details>
 
@@ -1942,91 +1942,91 @@ Answer goes here
 <details>
 <summary>I have 3 people in my team who want to work on the same AWS Infrastructure on Terraform as well as same state. What can I do to ensure there are no clashes?</summary>
 
-Answer goes here
+*Answer coming soon!
 
 </details>
 
 <details>
 <summary>In a pipeline, where would you store the Terraform state?</summary>
 
-Answer goes here
+*Answer coming soon!
 
 </details>
 
 <details>
 <summary>Can I test my terraform modules? If so, how can I test them? Is there a common framework used to Terraform modules?</summary>
 
-Answer goes here
+*Answer coming soon!
 
 </details>
 
 <details>
 <summary>How does state file locking work?</summary>
 
-Answer goes here
+*Answer coming soon!
 
 </details>
 
 <details>
 <summary>What is Checkov?</summary>
 
-Answer goes here
+*Answer coming soon!
 
 </details>
 
 <details>
 <summary>How can I use Terraform in a pipeline?</summary>
 
-Answer goes here
+*Answer coming soon!
 
 </details>
 
 <details>
 <summary>How can one export data from one module to another?</summary>
 
-Answer goes here
+*Answer coming soon!
 
 </details>
 
 <details>
 <summary>How can you import existing resources under Terraform management?</summary>
 
-Answer goes here
+*Answer coming soon!
 
 </details>
 
 <details>
 <summary>Which command can be used to reconcile the Terraform state with the actual real-world infrastructure?</summary>
 
-Answer goes here
+*Answer coming soon!
 
 </details>
 
 <details>
 <summary>What are some best practices when using Terraform modules?</summary>
 
-Answer goes here
+*Answer coming soon!
 
 </details>
 
 <details>
 <summary>How do you handle secrets and sensitive data in Terraform?</summary>
 
-Answer goes here
+*Answer coming soon!
 
 </details>
 
 <details>
 <summary>What are some best practices when writing Terraform code?</summary>
 
-Answer goes here
+*Answer coming soon!
 
 </details>
 
 <details>
 <summary>How do you export data from one module to another?</summary>
 
-Answer goes here
+*Answer coming soon!
 
 </details>
 
@@ -2039,8 +2039,21 @@ Answer goes here
 <br>
 
 Container (Docker):
-- What is a container and what are its fundamentals?
-- What are c-groups and namespaces in Linux?
+
+<details>
+<summary>What is a container and what are its fundamentals?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What are c-groups and namespaces in Linux?</summary>
+
+*Answer coming soon!
+
+</details>
+
   
 <details>
 <summary>What is Docker and how does it work?</summary>
@@ -2060,54 +2073,247 @@ Control groups, which are called by their shorter name cgroups. Cgroups allow ad
 A namespace wraps a global system resource in an abstraction that makes it appear to the processes within the namespace that they have their own isolated instance of the global resource.  Changes to the global resource are visible to other processes that are members of the namespace, but are invisible to other processes. One use of namespaces is to implement containers.
 </details>
 
+<details>
+<summary>When do I use Docker Compose vs Docker Swarm and K8s?</summary>
 
-- What is Docker and how does it work?
-- When do I use Docker Compose vs Docker Swarm and K8s?
-- What is a Dockerfile used for?
-- Can you explain the basic components of a Dockerfile?
-    - What is a FROM in a Dockerfile used for?
-    - What is a COPY in a Dockerfile used for?
-    - What is a ADD in a Dockerfile used for?
-    - What is a CMD & ENTRTPOINT in a Dockerfile used for?
-- How is a container different from a virtual machine?
-- How can I run a container?
-- How can I stop and remove a container?
-- How can I attach a shell to a terminal of a running container?
-- What is a dangling image?
-- What is Docker compose and when is it used?
+*Answer coming soon!
 
+</details>
+
+<details>
+<summary>What is a Dockerfile used for?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>Can you explain the basic components of a Dockerfile?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>How is a container different from a virtual machine?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>How can I run a container?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>How can I stop and remove a container?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>How can I attach a shell to a terminal of a running container?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What is a dangling image?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What is Docker compose and when is it used?</summary>
+
+*Answer coming soon!
+
+</details>
 
 **Advanced:**
 
-- What is the difference between COPY and ADD commands in a Dockerfile?
-- What is the difference between CMD and RUN commands in a Dockerfile?
-- What are some best practices to follow when running containers in production?
-- Name some limitations of containers vs VMs
-- Is it good practice to run stateful applications in containers?
-- Is it possible to generate a Dockerfile from an image
-  - `$ docker history --no-trunc <IMAGE_ID>`
-- How does virtualisation work at a lower level?
-- What is an orphant volume? And how can you remove it?
-- When you limit the memory for a container, does it reserve that memory for the container?
-- What is the difference between Docker RUN, CMD and ENTRYPOINT?
-- What is the difference between "expose" and "publish" in Docker?
-- How do containers work at a lower level?
+<details>
+<summary>What is the difference between COPY and ADD commands in a Dockerfile?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>How do containers work at a lower level?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What is the difference between "expose" and "publish" in Docker?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What is the difference between Docker RUN, CMD and ENTRYPOINT?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>When you limit the memory for a container, does it reserve that memory for the container?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What is an orphant volume? And how can you remove it?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>How does virtualisation work at a lower level?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>Is it possible to generate a Dockerfile from an image</summary>
+
+`$ docker history --no-trunc <IMAGE_ID>`
+
+</details>
+
+<details>
+<summary>Is it good practice to run stateful applications in containers?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>Name some limitations of containers vs VMs</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What are some best practices to follow when running containers in production?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What is the difference between CMD and RUN commands in a Dockerfile?</summary>
+
+*Answer coming soon!
+
+</details>
 
 Container Orchestration (Kubernetes = K8s):
 
-- What is Kubernetes?
-- What problems does Kubernetes solve? 
-- What is the difference between Docker and K8s?
-- What are the core components of the control plane and data plane? What are the components used for?
-- What is a Pod and what does it do?
-- How can containers within a pod communicate with each other?
-- What is a K8s cluster ?
-- What are deployments?
-- What are stateful sets?
-- How do you restrict pod-to-pod communication in a cluster?
-- How can I rollback a deployment?
-- What are namespaces? 
-- What is the role of the kube-apiserver?
+<details>
+<summary>What is Kubernetes?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What problems does Kubernetes solve?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What is the difference between Docker and K8s?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What are the core components of the control plane and data plane? What are the components used for?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What is a Pod and what does it do?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>How can containers within a pod communicate with each other?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What is a K8s cluster ?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What are deployments?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What are stateful sets?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>How do you restrict pod-to-pod communication in a cluster?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>How can I rollback a deployment?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What are namespaces?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What is the role of the kube-apiserver?</summary>
+
+*Answer coming soon!
+
+</details>
 
 
 **Advanced:**
