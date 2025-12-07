@@ -2318,15 +2318,61 @@ Container Orchestration (Kubernetes = K8s):
 
 **Advanced:**
 
-- Take me through a full cycle of an app deployment from code to an app running on a pod/deployment. 
-- Can you mention some good practices to follow when creating containers?
-- Can you explain a simple K8s cluster architecture and the components within it?
-- What happens when a master node fails? 
-- What happens when a worker node fails?
-- What is an Ingress controller?
-- How can one build a highly availabe (HA) cluster in K8s?
-- What is the role of ETCD in K8s?
-- Explain what are Taints and Tolerations in K8s?
+<details>
+<summary>Take me through a full cycle of an app deployment from code to an app running on a pod/deployment.</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>Can you mention some good practices to follow when creating containers?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>Can you explain a simple K8s cluster architecture and the components within it?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What happens when a master node fails?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What is an Ingress controller?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>How can one build a highly availabe (HA) cluster in K8s?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What is the role of ETCD in K8s?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>Explain what are Taints and Tolerations in K8s?</summary>
+
+*Answer coming soon!
+
+</details>
 
 </details>
 
