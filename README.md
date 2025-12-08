@@ -2548,10 +2548,33 @@ Container Orchestration (Kubernetes = K8s):
 
 <br>
 
-- What is meant by continuous integratons?
-- What are the advantages of DevOps?
-- Can you describe some branching strategies you have used?
-- What is the blue/green deployment pattern?
+<details>
+<summary>What is meant by continuous integratons?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What are the advantages of DevOps?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>Can you describe some branching strategies you have used?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What is the blue/green deployment pattern?</summary>
+
+*Answer coming soon!
+
+</details>
 
 </details>
 
