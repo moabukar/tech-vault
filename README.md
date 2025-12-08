@@ -3044,14 +3044,61 @@ Container Orchestration (Kubernetes = K8s):
 
 <br>
 
-- What are some ways that you can version an API?
-- What does it mean for an API to be idempotent?
-- How can you implement idempotency in APIs?
-- What are some ways you could authenticate an API?
-- What are benefits of working with circuit breakers? 
-- Define cascading failures and how to deal with those?
-- How can you deploy an API without disrupting traffic?
-- Explain what a Race condition is to a 5 year old?
+<details>
+<summary>What are some ways that you can version an API?</summary>
+
+*Answer coming soon!
+
+</details> 
+
+<details>
+<summary>What does it mean for an API to be idempotent?</summary>
+
+*Answer coming soon!
+
+</details> 
+
+<details>
+<summary>How can you implement idempotency in APIs?</summary>
+
+*Answer coming soon!
+
+</details> 
+
+<details>
+<summary>What are some ways you could authenticate an API?</summary>
+
+*Answer coming soon!
+
+</details> 
+
+<details>
+<summary>What are benefits of working with circuit breakers?</summary>
+
+*Answer coming soon!
+
+</details> 
+
+<details>
+<summary>Define cascading failures and how to deal with those?</summary>
+
+*Answer coming soon!
+
+</details> 
+
+<details>
+<summary>How can you deploy an API without disrupting traffic?</summary>
+
+*Answer coming soon!
+
+</details> 
+
+<details>
+<summary>Explain what a Race condition is to a 5 year old?</summary>
+
+*Answer coming soon!
+
+</details> 
 
 </details>
 
