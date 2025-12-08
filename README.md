@@ -2382,26 +2382,120 @@ Container Orchestration (Kubernetes = K8s):
 
 <br>
 
-- What is Ansible? 
-- How does Ansible work?
-- What is Ansible Galaxy?
-- What are Ansible handlers?
-- What is Ansible Vault?
-- What aer Ansible collections?
-- How do you get a list of Ansible predefined variables?
-- How is Ansible playbook different from ad-hoc commands?
-- What is the recommended for securing secret information used within Ansible playbooks?
-- What templating language is directly supported within Ansible for creating dynamic playbooks?
-- What protocol does Ansible use for communicating with client systems?
-- What is an inventory file?
+<details>
+<summary>What is Ansible?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>How does Ansible work?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What is Ansible Galaxy?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What are Ansible handlers?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What is Ansible Vault?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What are Ansible collections?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>How do you get a list of Ansible predefined variables?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>How is Ansible playbook different from ad-hoc commands?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What is the recommended for securing secret information used within Ansible playbooks?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What templating language is directly supported within Ansible for creating dynamic playbooks?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What protocol does Ansible use for communicating with client systems?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What is an inventory file?</summary>
+
+*Answer coming soon!
+
+</details>
 
 
 **Advanced:**
 
-- Can you name some Ansible best practices? 
-- How do you handle errors in Ansible?
-- How do you test your Ansible roles and tasks?
-- What is Molecule and how does it works?
+<details>
+<summary>Can you name some Ansible best practices? </summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>How do you handle errors in Ansible?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>How do you test your Ansible roles and tasks?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What is Molecule and how does it works?</summary>
+
+*Answer coming soon!
+
+</details>
 
 </details>
 
@@ -2411,11 +2505,40 @@ Container Orchestration (Kubernetes = K8s):
 
 <br>
 
-- What is meant by Continuous Integration?
-- Explain blue-green deployment
-- What is a CI/CD pipeline?
-- What is a canary deployment?
-- What is a rolling deployment?
+<details>
+<summary>What is meant by Continuous Integration?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>Explain blue-green deployment</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What is a CI/CD pipeline?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What is a canary deployment?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What is a rolling deployment?</summary>
+
+*Answer coming soon!
+
+</details>
 
 </details>
 
