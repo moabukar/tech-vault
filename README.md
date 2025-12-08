@@ -3258,7 +3258,7 @@ Advanced:
 
 <br>
 
-- 
+*Coming soon!
 
 </details>
 
