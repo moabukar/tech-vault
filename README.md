@@ -2655,16 +2655,69 @@ Container Orchestration (Kubernetes = K8s):
 
 </details>
 
+<details>
+<summary>What is the CAP Theorem?</summary>
 
-- What is the CAP Theorem?
-- What is a Partition in CAP theorem?
-- What are A and P in CAP theorem and the difference between them?
-- Explain when CA is used and when CP is used?
-- Explain the difference between horizontal scaling and vertical scaling?
-- Difference between forward proxy and reverse proxy?
-- What is Load Balancing and how does it work? How does it relate to reverse proxies?
-- Name me some common load balancers
-- What is a microservice architecture and when would I consider using one?
+*Answer coming soon!
+
+</details>
+
+
+<details>
+<summary>What is a Partition in CAP theorem?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What are A and P in CAP theorem and the difference between them?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>Explain when CA is used and when CP is used?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>Explain the difference between horizontal scaling and vertical scaling?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>Difference between forward proxy and reverse proxy?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What is Load Balancing and how does it work? How does it relate to reverse proxies?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>Name me some common load balancers</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What is a microservice architecture and when would I consider using one?</summary>
+
+*Answer coming soon!
+
+</details>
 
 </details>
 
