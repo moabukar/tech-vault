@@ -3268,21 +3268,110 @@ Advanced:
 
 <br>
 
-- What is JVM?
-- What is JRE?
-- What is JDK?
-- What is the difference between JDK and JRE?
-- What is the difference between JVM and JRE?
-- How does a HashMap work in Java?
-- What is the difference between an Interface and an Abstract class?
-- How does Garbage Collection work in Java?
-- How does Garbage Collection prevent a Java application from going out of memory?
-- What is the difference between a stack and a heap?
-- What's a deadlock?
-- What is the difference between an ArrayList and a LinkedList?
-- Does Java support multiple inheritance?
-- What is the difference between == and .equals()?
-- Explain marshalling and unmarshalling?
+<details>
+<summary>What is JVM?</summary>
+
+*Answer coming soon!
+
+</details> 
+
+<details>
+<summary>What is JRE?</summary>
+
+*Answer coming soon!
+
+</details> 
+
+<details>
+<summary>What is JDK?</summary>
+
+*Answer coming soon!
+
+</details> 
+
+<details>
+<summary>What is the difference between JDK and JRE?</summary>
+
+*Answer coming soon!
+
+</details> 
+
+<details>
+<summary>What is the difference between JVM and JRE?</summary>
+
+*Answer coming soon!
+
+</details> 
+
+<details>
+<summary>How does a HashMap work in Java?</summary>
+
+*Answer coming soon!
+
+</details> 
+
+<details>
+<summary>What is the difference between an Interface and an Abstract class?</summary>
+
+*Answer coming soon!
+
+</details> 
+
+<details>
+<summary>How does Garbage Collection work in Java?</summary>
+
+*Answer coming soon!
+
+</details> 
+
+<details>
+<summary>How does Garbage Collection prevent a Java application from going out of memory?</summary>
+
+*Answer coming soon!
+
+</details> 
+
+<details>
+<summary>What is the difference between a stack and a heap?</summary>
+
+*Answer coming soon!
+
+</details> 
+
+<details>
+<summary>What's a deadlock?</summary>
+
+*Answer coming soon!
+
+</details> 
+
+<details>
+<summary>What is the difference between an ArrayList and a LinkedList?</summary>
+
+*Answer coming soon!
+
+</details> 
+
+<details>
+<summary>Does Java support multiple inheritance?</summary>
+
+*Answer coming soon!
+
+</details> 
+
+<details>
+<summary>What is the difference between == and .equals()?</summary>
+
+*Answer coming soon!
+
+</details> 
+
+<details>
+<summary>Explain marshalling and unmarshalling?</summary>
+
+*Answer coming soon!
+
+</details> 
 
 </details>
 
