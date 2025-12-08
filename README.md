@@ -2727,29 +2727,153 @@ Container Orchestration (Kubernetes = K8s):
 
 <br>
 
-- What is an API?
-- What is REST?
-- What is a RESTful API?
-- What is a RESTful Web Service?
-- What is a RESTful Web API?
-- What is a RESTful Web Application?
-- What is API design?
-- What is API documentation?
-- What are the core components of a HTTP request?
-- What are the core components of a HTTP response?
-- What is a cached response?
-- What is the difference between a HTTP GET and POST request?
-- What is the difference between a HTTP PUT and PATCH request?
-- What is the difference between a HTTP 301 and 302 response?
-- What is the difference between a HTTP 401 and 403 response?
-- What is the difference between a HTTP 404 and 410 response?
-- What is the difference between a HTTP 500 and 503 response?
-- What is the difference between a HTTP 200 and 201 response?
-- What is payload?
-- What is a HTTP header?
-- What is a HTTP body?
-- Explain cache-control header?
-- Name some best practices for better RESTful API design?
+<details>
+<summary>What is a RESTful API?</summary>
+
+*Answer coming soon!
+
+</details>
+
+
+<details>
+<summary>What is a RESTful Web Service?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What is a RESTful Web API?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What is a RESTful Web Application?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What is API design?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What is API documentation?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What are the core components of a HTTP request?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What are the core components of a HTTP response?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What is a cached response?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What is the difference between a HTTP GET and POST request?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What is the difference between a HTTP PUT and PATCH request?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What is the difference between a HTTP 301 and 302 response?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What is the difference between a HTTP 401 and 403 response?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What is the difference between a HTTP 404 and 410 response?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What is the difference between a HTTP 500 and 503 response?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What is the difference between a HTTP 200 and 201 response?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What is payload?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What is a HTTP header?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What is a HTTP body?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>Explain cache-control header?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>Name some best practices for better RESTful API design?</summary>
+
+*Answer coming soon!
+
+</details>
 
 </details>
 
