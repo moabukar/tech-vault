@@ -3108,29 +3108,154 @@ Container Orchestration (Kubernetes = K8s):
 
 <br>
 
-- What is Go?
-- Why was the Go langauge created?
-- What is a pointer?
-- What is the difference between the = and := operator?
-- What are goroutines?
-- Does Go have exceptions?
-- Can you return multiple values from a function?
-- What is a channel?
-- What is a struct?
-- What is a slice?
-- What is a map?
-- What is a method?
-- What is a package?
-- What is a module?
-- What is a pointer?
-- What is a pointer receiver?
-- How to check if a Map contains a key in Go?
-- When is the `init()` function run?
+<details>
+<summary>What is Go?</summary>
 
+*Answer coming soon!
+
+</details> 
+
+<details>
+<summary>Why was the Go langauge created?</summary>
+
+*Answer coming soon!
+
+</details> 
+
+<details>
+<summary>What is a pointer?</summary>
+
+*Answer coming soon!
+
+</details> 
+
+<details>
+<summary>What is the difference between the = and := operator?</summary>
+
+*Answer coming soon!
+
+</details> 
+
+<details>
+<summary>What are goroutines?</summary>
+
+*Answer coming soon!
+
+</details> 
+
+<details>
+<summary>Does Go have exceptions?</summary>
+
+*Answer coming soon!
+
+</details> 
+
+<details>
+<summary>Can you return multiple values from a function?</summary>
+
+*Answer coming soon!
+
+</details> 
+
+<details>
+<summary>What is a channel?</summary>
+
+*Answer coming soon!
+
+</details> 
+
+<details>
+<summary>What is a struct?</summary>
+
+*Answer coming soon!
+
+</details> 
+
+<details>
+<summary>What is a slice?</summary>
+
+*Answer coming soon!
+
+</details> 
+
+<details>
+<summary></summary>
+
+*Answer coming soon!
+
+</details> 
+
+<details>
+<summary>What is a map?</summary>
+
+*Answer coming soon!
+
+</details> 
+
+<details>
+<summary>What is a method?</summary>
+
+*Answer coming soon!
+
+</details> 
+
+<details>
+<summary>What is a package?</summary>
+
+*Answer coming soon!
+
+</details> 
+
+<details>
+<summary>What is a module?</summary>
+
+*Answer coming soon!
+
+</details> 
+
+<details>
+<summary>What is a pointer?</summary>
+
+*Answer coming soon!
+
+</details> 
+
+<details>
+<summary>What is a pointer receiver?</summary>
+
+*Answer coming soon!
+
+</details> 
+
+<details>
+<summary>How to check if a Map contains a key in Go?</summary>
+
+*Answer coming soon!
+
+</details> 
+
+<details>
+<summary>When is the init() function run?</summary>
+
+*Answer coming soon!
+
+</details> 
 
 Advanced:
-- Implement a function that reverses a slice of integers?
-- What are generics and how do they work?
+
+<details>
+<summary>Implement a function that reverses a slice of integers?</summary>
+
+*Answer coming soon!
+
+</details> 
+
+<details>
+<summary>What are generics and how do they work?</summary>
+
+*Answer coming soon!
+
+</details> 
 
 </details>
 
