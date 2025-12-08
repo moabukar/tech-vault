@@ -2883,31 +2883,157 @@ Container Orchestration (Kubernetes = K8s):
 
 <br>
 
-- What is a database?
-- What is DBMS (Database Management System)?
-- What is the schema referred to in a Database?
-- What are different types of databases?
-- Advantages & Disadvantages of using relational databases?
-- Advantages & Disadvantages of using NoSQL relational databases?
-- What is a key-value database? What are some examples of this?
-- What are graph databases? Name some examples?
-- What is database replication?
-- What is master-slave replication? And what is master-master replication?
-- What is Synchronous vs Asynchronous replication?
-- What are indexes in databases?
-- How can one improve query performance by using index hunting?
-- What do you understand by ‘Atomicity’ and ‘Aggregation’?
-- What is database partitioning?
-- What is database sharding?
+<details>
+<summary>What is a database?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What is DBMS (Database Management System)?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What is the schema referred to in a Database?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What are different types of databases?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>Advantages & Disadvantages of using relational databases?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>Advantages & Disadvantages of using NoSQL relational databases?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What is a key-value database? What are some examples of this?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What are graph databases? Name some examples?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What is database replication?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What is master-slave replication? And what is master-master replication?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What is Synchronous vs Asynchronous replication?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What are indexes in databases?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>How can one improve query performance by using index hunting?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What do you understand by ‘Atomicity’ and ‘Aggregation’?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What is database partitioning?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What is database sharding?</summary>
+
+*Answer coming soon!
+
+</details>
+
+
 
 
 **Advanced:**
 
-- What are message queues? And what are message brokers?
-- How does the publish-subscribe model work?
-- Can you explain how an event-driven architecture works?
-- What is an API Gateway? How is this different from load balancers?
-- Explain why CDN (in)availability may be a problem for using WebSockets? 
+<details>
+<summary>What are message queues? And what are message brokers?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>How does the publish-subscribe model work?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>Can you explain how an event-driven architecture works?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What is an API Gateway? How is this different from load balancers?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>Explain why CDN (in)availability may be a problem for using WebSockets? </summary>
+
+*Answer coming soon!
+
+</details> 
 
 </details>
 
