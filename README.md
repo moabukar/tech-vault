@@ -2585,17 +2585,75 @@ Container Orchestration (Kubernetes = K8s):
 
 <br>
 
-- What is a CDN and why would I use one?
-- What are CDN edge servers?
-- How does CDN caching work?
-- What is cache invalidation? 
-- What are some cache invalidation methods?
-- What is a cache Hit?
-- What is a cache Miss?
-- Can you explain a caching workflow?
-- Explain why CDN availability may be a problem for using WebSockets?
-- What are some best practices for caching?
+<details>
+<summary>What is a CDN and why would I use one?</summary>
 
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What are CDN edge servers?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>How does CDN caching work?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What is cache invalidation?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What are some cache invalidation methods?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What is a cache Hit?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What is a cache Miss?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>Can you explain a caching workflow?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>Explain why CDN availability may be a problem for using WebSockets?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What are some best practices for caching?</summary>
+
+*Answer coming soon!
+
+</details>
 
 
 - What is the CAP Theorem?
