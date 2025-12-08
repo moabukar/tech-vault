@@ -3179,13 +3179,6 @@ Container Orchestration (Kubernetes = K8s):
 </details> 
 
 <details>
-<summary></summary>
-
-*Answer coming soon!
-
-</details> 
-
-<details>
 <summary>What is a map?</summary>
 
 *Answer coming soon!
