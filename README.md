@@ -4308,23 +4308,118 @@ Example: If someone uses the same password on two different systems and they are
   <summary><h3 id="auth">Encryption and Authentication</h3></summary>
 
 <br>
-   
-   * What is a three-way handshake?
-   * How do cookies work?
-   * How do sessions work?
-   * Explain how OAuth works.
-   * What is a public key infrastructure flow and how would I diagram it?
-   * Describe the difference between synchronous and asynchronous encryption.
-   * Describe SSL handshake.
-   * How does HMAC work?
-   * Why HMAC is designed in that way?
-   * What is the difference between authentication vs authorization name spaces?
-   * What’s the difference between Diffie-Hellman and RSA?
-   * How does Kerberos work?
-   * If you're going to compress and encrypt a file, which do you do first and why?
-   * How do I authenticate you and know you sent the message?
-   * Should you encrypt all data at rest?
-   * What is Perfect Forward Secrecy?
+
+<details>
+<summary>What is a three-way handshake?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>How do cookies work?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>How do sessions work?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>Explain how OAuth works.</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What is a public key infrastructure flow and how would I diagram it?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>Describe the difference between synchronous and asynchronous encryption.</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>Describe SSL handshake.</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>How does HMAC work?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>Why HMAC is designed in that way?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What is the difference between authentication vs authorization name spaces?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What’s the difference between Diffie-Hellman and RSA?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>How does Kerberos work?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>If you're going to compress and encrypt a file, which do you do first and why?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>How do I authenticate you and know you sent the message?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>Should you encrypt all data at rest?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What is Perfect Forward Secrecy?</summary>
+
+*Answer coming soon!
+
+</details>
 
 </details>
   
