@@ -4134,7 +4134,7 @@ On the other hand, NoSQL databases are non-relational databases that store data 
 ## Machine Learning
 
 <details>
-  <summary><strong>Click to expand</strong></summary>
+  <summary><strong>*Coming soon!</strong></summary>
 
 <br>
 
