@@ -4559,17 +4559,6 @@ Example: If someone uses the same password on two different systems and they are
 
 </details>
 
-
-
-## References:
-
-- intellipaat.com
-- Add more links to any references.
-
-## Charity 
-- Since this is a community-based project and it is run by the community - we (the creators) do not gain any personal nor financial gain other than helping the community. Instead, any financial gain would be better suited to a charity. So we wanted to take it upon us to help those in need. We, as a community, have chosen a certified charity to donate to. Here is the link to donate to:
-    - To ADD charity donation links here.
-
 ## License
 
 This project is licensed under the Apache License. See the [LICENSE](LICENSE) file for more details.
