@@ -4559,7 +4559,6 @@ Example: If someone uses the same password on two different systems and they are
 
 </details>
 
-## Interpersonal & behavioural questions
 
 
 ## References:
