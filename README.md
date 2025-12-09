@@ -4429,15 +4429,68 @@ Example: If someone uses the same password on two different systems and they are
 
 <br>
 
-   * Differentiate XSS from CSRF.
-   * What do you do if a user brings you a pc that is acting 'weird'? You suspect malware.
-   * What is the difference between tcp dump and FWmonitor?
-   * Do you know what XXE is?
-   * Explain man-in-the-middle attacks.
-   * What is a Server Side Request Forgery attack?
-   * Describe what are egghunters and their use in exploit development. 
-   * How is pad lock icon in browser generated?
-   * What is Same Origin Policy and CORS?
+<details>
+<summary>Differentiate XSS from CSRF.</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What do you do if a user brings you a pc that is acting 'weird'? You suspect malware.</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What is the difference between tcp dump and FWmonitor?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>Do you know what XXE is?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>Explain man-in-the-middle attacks.</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What is a Server Side Request Forgery attack?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>Describe what are egghunters and their use in exploit development.</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>How is pad lock icon in browser generated?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What is Same Origin Policy and CORS?</summary>
+
+*Answer coming soon!
+
+</details>
 
 </details>
 
