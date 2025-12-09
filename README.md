@@ -4128,15 +4128,6 @@ On the other hand, NoSQL databases are non-relational databases that store data 
 
 </details>
 
-
-
-<details>
-  <summary><h3 id="pipelines">ETL & Data Pipelines & more</h3></summary>
-
-<br>
-
-- How would I go about troubleshooting pipelines?
-
 </details>
 
 
