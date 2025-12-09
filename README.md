@@ -4499,16 +4499,63 @@ Example: If someone uses the same password on two different systems and they are
   <summary><h3 id="compliance">Compliance</h3></summary>
 
 <br>
+
+<details>
+<summary>Can you explain SOC 2?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>How is ISO27001 different?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>Can you list examples of controls these frameworks require?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What is the difference between Governance, Risk and Compliance?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What does Zero Trust mean?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What is role-based access control (RBAC) and why is it covered by compliance frameworks?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What is the NIST framework and why is it influential?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What is the OSI model?</summary>
+
+*Answer coming soon!
+
+</details>
     
-   * Can you explain SOC 2?
-      * What are the five trust criteria?
-   * How is ISO27001 different?
-   * Can you list examples of controls these frameworks require?
-   * What is the difference between Governance, Risk and Compliance?  
-   * What does Zero Trust mean?
-   * What is role-based access control (RBAC) and why is it covered by compliance frameworks?
-   * What is the NIST framework and why is it influential?
-   * What is the OSI model?
 
 </details>
 
