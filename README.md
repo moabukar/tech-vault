@@ -3380,16 +3380,75 @@ Advanced:
 
 <br>
 
-- What is TypeScript?
-- What are the differences between TypeScript and JavaScript?
-- Why use TypeScript?
-- What are the advantages of TypeScript?
-- What are Types in TypeScript?
-- What are Type Assertions in TypeScript?
-- What are the Primitive data types?
-- What are the special data types in TypeScript?
-- What are interfaces in TypeScript?
-- Interfaces Vs Types?
+<details>
+<summary>What is TypeScript?</summary>
+
+*Answer coming soon!
+
+</details> 
+
+<details>
+<summary>What are the differences between TypeScript and JavaScript?</summary>
+
+*Answer coming soon!
+
+</details> 
+
+<details>
+<summary>Why use TypeScript?</summary>
+
+*Answer coming soon!
+
+</details> 
+
+<details>
+<summary>What are the advantages of TypeScript?</summary>
+
+*Answer coming soon!
+
+</details> 
+
+<details>
+<summary>What are Types in TypeScript?</summary>
+
+*Answer coming soon!
+
+</details> 
+
+<details>
+<summary>What are Type Assertions in TypeScript?</summary>
+
+*Answer coming soon!
+
+</details> 
+
+<details>
+<summary>What are the Primitive data types?</summary>
+
+*Answer coming soon!
+
+</details> 
+
+<details>
+<summary>What are the special data types in TypeScript?</summary>
+
+*Answer coming soon!
+
+</details> 
+
+<details>
+<summary>What are interfaces in TypeScript?</summary>
+
+*Answer coming soon!
+
+</details> 
+
+<details>
+<summary>Interfaces Vs Types?</summary>
+
+*Answer coming soon!
+
+</details> 
 
 </details>
 
