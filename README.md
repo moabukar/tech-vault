@@ -21,31 +21,31 @@ Note: Questions sourced from external references are properly credited in the [R
 - [X] [Coding Challenges](./coding-challenges/README.md)
 - [X] [Data Structures and Algorithms Challenges](./dsa-challenges/README.md) 
 - [X] [DevOps 🛠](#devops)
-    - [Linux 🐧](#small_blue_diamond-linux)
-    - [Networking 🌐](#small_blue_diamond-networking)
-    - [Git](#small_blue_diamond-git)
-    - [AWS 🌩️](#small_blue_diamond-aws)
-    - [Azure 🌩️](#small_blue_diamond-azure)
-    - [Terraform 🏗️](#small_blue_diamond-terraform)
-    - [Docker & K8s 🐳 🎻](#small_blue_diamond-docker--k8s)
-    - [Ansible 🔧](#small_blue_diamond-ansible)
-    - [CI/CD 🛠️](#small_blue_diamond-cicd)
-    - [DevOps methodology, practices, & Agile](#small_blue_diamond-devops-methodology-practices--agile)
+    - [Linux 🐧](#linux)
+    - [Networking 🌐](#networking)
+    - [Git](#git)
+    - [AWS 🌩️](#aws)
+    - [Azure 🌩️](#azure)
+    - [Terraform 🏗️](#terraform)
+    - [Docker & K8s 🐳 🎻](#dockerandk8s)
+    - [Ansible 🔧](#ansible)
+    - [CI/CD 🛠️](#cicd)
+    - [DevOps methodology, practices, & Agile](#ops)
 - [X] [System Design 🍥](#system-design)
-    - [CDN & Caching ⚡](#small_blue_diamond-cdn--caching)
-    - [Databases 📊](#small_blue_diamond-databases)
+    - [CDN & Caching ⚡](#cdn)
+    - [Databases 📊](#databases)
 - [X] [Software Engineering](#software-engineering)
-    - [General](#small_blue_diamond-general)
-    - [Golang](#small_blue_diamond-golang)
-    - [Python](#small_blue_diamond-python)
-    - [Java](#small_blue_diamond-java)
-    - [JavaScript](#small_blue_diamond-javascript-tsnodejs)
+    - [General](#gen)
+    - [Golang](#go)
+    - [Python](#py)
+    - [Java](#java)
+    - [JavaScript](#js)
 - [X] [Data](#data)
-    - [Data Modelling & Schemas](#data-modelling-and-schemas)
-    - [Data Architect](#data-architect)
-    - [Data Engineering](#data-engineering)
+    - [Data Modelling & Schemas](#modelling)
+    - [Data Architect](#architect)
+    - [Data Engineering](#engineering)
     - [SQL](#sql)
-    - [ETL & Data Pipelines](#etl-pipelines)
+    - [ETL & Data Pipelines](#pipelines)
 - [X] [Machine Learning 🤖](#machine-learning)
 - [X] [Cyber Security & InfoSecurity 🛡️](#cyber-security--info-security)
 - [X] [Interpersonal skills](#interpersonal--behavioural-questions)
@@ -73,7 +73,10 @@ This project is maintained by a passionate community of engineers. We welcome yo
 
 ## DevOps 🛠
 
-### :small_blue_diamond: Linux
+<details>
+  <summary><h3 id="linux">Linux</h3></summary>
+
+<br>
 
 <details>
 <summary>What is Linux and difference between UNIX and Linux?</summary>
@@ -718,8 +721,13 @@ Method 3
 
 </details>
 
+</details>
 
-### :small_blue_diamond: Networking
+
+<details>
+  <summary><h3 id="networking">Networking</h3></summary>
+
+<br>
 
 <details>
 <summary>What is HTTP?</summary>
@@ -1325,7 +1333,14 @@ Try transferring data between each host and other devices on the network to dete
 
 </details>
 
-### :small_blue_diamond: Git
+</details>
+
+
+
+<details>
+  <summary><h3 id="git">Git</h3></summary>
+
+<br>
 
 <details>
 <summary>What is Git?</summary>
@@ -1517,9 +1532,15 @@ Here are the primary functions of `git reset`:
 
 </details>
 
-### :small_blue_diamond: AWS
+</details>
 
------General--------
+
+<details>
+  <summary><h3 id="aws">AWS</h3></summary>
+
+<br>
+
+### **General**
 <details>
 <summary>What is AWS?</summary>
 
@@ -1587,7 +1608,7 @@ Each type of load balancer has specific use cases and features, allowing you to 
 </details>
 
 
------Networking-----
+### **AWS Networking**
 <details>
 <summary>What is a VPC?</summary>
 
@@ -1639,7 +1660,7 @@ With these configurations, resources in your VPC can send and receive traffic to
 </details>
 
 
------Scenario-based-----
+### **Scenario based**
 <details>
 <summary>I want to create a 3 Tier Architecture. Can you explain step by step of how I can go about this?</summary>
 
@@ -1717,6 +1738,8 @@ By combining these approaches, your application can automatically adjust its cap
 <details>
 <summary>You have an application running on your Amazon EC2 instance. You want to reduce the load on your instance as soon as the CPU utilization reaches 100 percent. How will you do that?</summary>
 
+<br>
+
 To automatically reduce the load on your Amazon EC2 instance when CPU utilization reaches 100 percent, follow these steps:
 
 - **Create an Auto Scaling Group**: Set up an Auto Scaling Group for your EC2 instance if you haven't already.
@@ -1735,61 +1758,115 @@ To automatically reduce the load on your Amazon EC2 instance when CPU utilizatio
 </details>
 
 
------Others-----
-- Name some managed runtimes for Lambda
+### **Others**
+<details>
+<summary>Name some managed runtimes for Lambda</summary>
+*Answer coming soon!
+</details>
 
-### :small_blue_diamond: Azure
+</details>
 
-- What is Azure?
-- What are ARM templates in Azure?
-- What is Azure CDN?
-- How is Azure App Service different from Azure Functions?
-- How to define an Environment Variable on Azure using Azure CLI?
-- How would you choose between Azure Blob Storage vs. Azure File Service?
-- What is difference between Keys and Secrets in Azure Key Vault?
-- What’s the difference between Azure SQL Database and Azure SQL Managed Instance?
-- When should we use Azure Table Storage over Azure SQL?
-- Explain what is the difference between Block Blobs, Append Blobs and Page Blobs in Azure?
+<details>
+  <summary><h3 id="azure">Azure</h3></summary>
 
-Advanced:
+<br>
 
-- What to use: many small Azure Storage Blob containers vs one really large container with tons of blobs?
+<details>
+<summary>What is Azure?</summary>
+*Answer coming soon!
+</details>
+
+<details>
+<summary>What are ARM templates in Azure?</summary>
+*Answer coming soon!
+</details>
+
+<details>
+<summary>What is Azure CDN?</summary>
+*Answer coming soon!
+</details>
+
+<details>
+<summary>How is Azure App Service different from Azure Functions?</summary>
+*Answer coming soon!
+</details>
+
+<details>
+<summary>How to define an Environment Variable on Azure using Azure CLI?</summary>
+*Answer coming soon!
+</details>
+
+<details>
+<summary>How would you choose between Azure Blob Storage vs. Azure File Service?</summary>
+*Answer coming soon!
+</details>
+
+<details>
+<summary>What is difference between Keys and Secrets in Azure Key Vault?</summary>
+*Answer coming soon!
+</details>
+
+<details>
+<summary>What’s the difference between Azure SQL Database and Azure SQL Managed Instance?</summary>
+*Answer coming soon!
+</details>
+
+<details>
+<summary>When should we use Azure Table Storage over Azure SQL?</summary>
+*Answer coming soon!
+</details>
+
+<details>
+<summary>Explain the difference between Block Blobs, Append Blobs and Page Blobs in Azure?</summary>
+*Answer coming soon!
+</details>
+
+### **Advanced**
+<details>
+<summary>What to use: many small Azure Storage Blob containers vs one large container?</summary>
+*Answer coming soon!
+</details>
+
+</details>
 
 
-### :small_blue_diamond: Terraform
+<details>
+  <summary><h3 id="terraform">Terraform</h3></summary>
+
+<br>
 
 <details>
 <summary>What is IaC? What is Terraform?</summary>
 
-Answer goes here
+*Answer coming soon!
 
 </details>
 
 <details>
 <summary>What is Terraform state?</summary>
 
-Answer goes here
+*Answer coming soon!
 
 </details>
 
 <details>
 <summary>What are most common Terraform commands?</summary>
 
-Answer goes here
+*Answer coming soon!
 
 </details>
 
 <details>
 <summary>What is Terraform backend?</summary>
 
-Answer goes here
+*Answer coming soon!
 
 </details>
 
 <details>
 <summary>What are modules in Terraform?</summary>
 
-Answer goes here
+*Answer coming soon!
 
 </details>
 
@@ -1797,14 +1874,14 @@ Answer goes here
 <details>
 <summary>What is Terragrunt?</summary>
 
-Answer goes here
+*Answer coming soon!
 
 </details>
 
 <details>
 <summary>Explain the workflow of the core Terraform?</summary>
 
-Answer goes here
+*Answer coming soon!
 
 </details>
 
@@ -1812,35 +1889,35 @@ Answer goes here
 <details>
 <summary>Difference between Terraform, AWS CloudFormation and Azure ARM?</summary>
 
-Answer goes here
+*Answer coming soon!
 
 </details>
 
 <details>
 <summary>What is the difference between Terraform and Ansible?</summary>
 
-Answer goes here
+*Answer coming soon!
 
 </details>
 
 <details>
 <summary>What are provisioners in Terraform?</summary>
 
-Answer goes here
+*Answer coming soon!
 
 </details>
 
 <details>
 <summary>How can two people using the Terraform cloud can create two different sets of infrastructure using the same working directory?</summary>
 
-Answer goes here
+*Answer coming soon!
 
 </details>
 
 <details>
 <summary>What is a null resource in Terraform?</summary>
 
-Answer goes here
+*Answer coming soon!
 
 </details>
 
@@ -1859,28 +1936,124 @@ Answer goes here
 </details>
 
 
-**Advanced:**
-- I have 3 people in my team who want to work on the same AWS Infrastructure on Terraform as well as same state. What can I do to ensure there are no clashes?
-- In a pipeline, where would you store the Terraform state?
-- Can I test my terraform modules? If so, how can I test them? Is there a common framework used to Terraform modules?
-- How does state file locking work?
-- What is Checkov?
-- How can I use Terraform in a pipeline?
-- How can one export data from one module to another?
-- How can you import existing resources under Terraform management?
-- Which command can be used to reconcile the Terraform state with the actual real-world infrastructure?
-- What are some best practices when using Terraform modules?
-- How do you handle secrets and sensitive data in Terraform?
-- What are some best practices when writing Terraform code?
-- How do you export data from one module to another?
+
+### **Advanced**
+
+<details>
+<summary>I have 3 people in my team who want to work on the same AWS Infrastructure on Terraform as well as same state. What can I do to ensure there are no clashes?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>In a pipeline, where would you store the Terraform state?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>Can I test my terraform modules? If so, how can I test them? Is there a common framework used to Terraform modules?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>How does state file locking work?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What is Checkov?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>How can I use Terraform in a pipeline?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>How can one export data from one module to another?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>How can you import existing resources under Terraform management?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>Which command can be used to reconcile the Terraform state with the actual real-world infrastructure?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What are some best practices when using Terraform modules?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>How do you handle secrets and sensitive data in Terraform?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What are some best practices when writing Terraform code?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>How do you export data from one module to another?</summary>
+
+*Answer coming soon!
+
+</details>
+
+</details>
 
 
-### :small_blue_diamond: Docker & K8s
+<details>
+  <summary><h3 id="dockerandk8s">Docker & K8s</h3></summary>
 
+<br>
 
 Container (Docker):
-- What is a container and what are its fundamentals?
-- What are c-groups and namespaces in Linux?
+
+<details>
+<summary>What is a container and what are its fundamentals?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What are c-groups and namespaces in Linux?</summary>
+
+*Answer coming soon!
+
+</details>
+
   
 <details>
 <summary>What is Docker and how does it work?</summary>
@@ -1900,271 +2073,1391 @@ Control groups, which are called by their shorter name cgroups. Cgroups allow ad
 A namespace wraps a global system resource in an abstraction that makes it appear to the processes within the namespace that they have their own isolated instance of the global resource.  Changes to the global resource are visible to other processes that are members of the namespace, but are invisible to other processes. One use of namespaces is to implement containers.
 </details>
 
+<details>
+<summary>When do I use Docker Compose vs Docker Swarm and K8s?</summary>
 
-- What is Docker and how does it work?
-- When do I use Docker Compose vs Docker Swarm and K8s?
-- What is a Dockerfile used for?
-- Can you explain the basic components of a Dockerfile?
-    - What is a FROM in a Dockerfile used for?
-    - What is a COPY in a Dockerfile used for?
-    - What is a ADD in a Dockerfile used for?
-    - What is a CMD & ENTRTPOINT in a Dockerfile used for?
-- How is a container different from a virtual machine?
-- How can I run a container?
-- How can I stop and remove a container?
-- How can I attach a shell to a terminal of a running container?
-- What is a dangling image?
-- What is Docker compose and when is it used?
+*Answer coming soon!
 
+</details>
+
+<details>
+<summary>What is a Dockerfile used for?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>Can you explain the basic components of a Dockerfile?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>How is a container different from a virtual machine?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>How can I run a container?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>How can I stop and remove a container?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>How can I attach a shell to a terminal of a running container?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What is a dangling image?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What is Docker compose and when is it used?</summary>
+
+*Answer coming soon!
+
+</details>
 
 **Advanced:**
 
-- What is the difference between COPY and ADD commands in a Dockerfile?
-- What is the difference between CMD and RUN commands in a Dockerfile?
-- What are some best practices to follow when running containers in production?
-- Name some limitations of containers vs VMs
-- Is it good practice to run stateful applications in containers?
-- Is it possible to generate a Dockerfile from an image
-  - `$ docker history --no-trunc <IMAGE_ID>`
-- How does virtualisation work at a lower level?
-- What is an orphant volume? And how can you remove it?
-- When you limit the memory for a container, does it reserve that memory for the container?
-- What is the difference between Docker RUN, CMD and ENTRYPOINT?
-- What is the difference between "expose" and "publish" in Docker?
-- How do containers work at a lower level?
+<details>
+<summary>What is the difference between COPY and ADD commands in a Dockerfile?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>How do containers work at a lower level?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What is the difference between "expose" and "publish" in Docker?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What is the difference between Docker RUN, CMD and ENTRYPOINT?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>When you limit the memory for a container, does it reserve that memory for the container?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What is an orphant volume? And how can you remove it?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>How does virtualisation work at a lower level?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>Is it possible to generate a Dockerfile from an image</summary>
+
+`$ docker history --no-trunc <IMAGE_ID>`
+
+</details>
+
+<details>
+<summary>Is it good practice to run stateful applications in containers?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>Name some limitations of containers vs VMs</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What are some best practices to follow when running containers in production?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What is the difference between CMD and RUN commands in a Dockerfile?</summary>
+
+*Answer coming soon!
+
+</details>
 
 Container Orchestration (Kubernetes = K8s):
 
-- What is Kubernetes?
-- What problems does Kubernetes solve? 
-- What is the difference between Docker and K8s?
-- What are the core components of the control plane and data plane? What are the components used for?
-- What is a Pod and what does it do?
-- How can containers within a pod communicate with each other?
-- What is a K8s cluster ?
-- What are deployments?
-- What are stateful sets?
-- How do you restrict pod-to-pod communication in a cluster?
-- How can I rollback a deployment?
-- What are namespaces? 
-- What is the role of the kube-apiserver?
+<details>
+<summary>What is Kubernetes?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What problems does Kubernetes solve?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What is the difference between Docker and K8s?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What are the core components of the control plane and data plane? What are the components used for?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What is a Pod and what does it do?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>How can containers within a pod communicate with each other?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What is a K8s cluster ?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What are deployments?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What are stateful sets?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>How do you restrict pod-to-pod communication in a cluster?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>How can I rollback a deployment?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What are namespaces?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What is the role of the kube-apiserver?</summary>
+
+*Answer coming soon!
+
+</details>
 
 
 **Advanced:**
 
-- Take me through a full cycle of an app deployment from code to an app running on a pod/deployment. 
-- Can you mention some good practices to follow when creating containers?
-- Can you explain a simple K8s cluster architecture and the components within it?
-- What happens when a master node fails? 
-- What happens when a worker node fails?
-- What is an Ingress controller?
-- How can one build a highly availabe (HA) cluster in K8s?
-- What is the role of ETCD in K8s?
-- Explain what are Taints and Tolerations in K8s?
+<details>
+<summary>Take me through a full cycle of an app deployment from code to an app running on a pod/deployment.</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>Can you mention some good practices to follow when creating containers?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>Can you explain a simple K8s cluster architecture and the components within it?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What happens when a master node fails?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What is an Ingress controller?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>How can one build a highly availabe (HA) cluster in K8s?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What is the role of ETCD in K8s?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>Explain what are Taints and Tolerations in K8s?</summary>
+
+*Answer coming soon!
+
+</details>
+
+</details>
 
 
-### :small_blue_diamond: Ansible
+<details>
+  <summary><h3 id="ansible">Ansible</h3></summary>
 
-- What is Ansible? 
-- How does Ansible work?
-- What is Ansible Galaxy?
-- What are Ansible handlers?
-- What is Ansible Vault?
-- What aer Ansible collections?
-- How do you get a list of Ansible predefined variables?
-- How is Ansible playbook different from ad-hoc commands?
-- What is the recommended for securing secret information used within Ansible playbooks?
-- What templating language is directly supported within Ansible for creating dynamic playbooks?
-- What protocol does Ansible use for communicating with client systems?
-- What is an inventory file?
+<br>
+
+<details>
+<summary>What is Ansible?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>How does Ansible work?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What is Ansible Galaxy?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What are Ansible handlers?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What is Ansible Vault?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What are Ansible collections?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>How do you get a list of Ansible predefined variables?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>How is Ansible playbook different from ad-hoc commands?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What is the recommended for securing secret information used within Ansible playbooks?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What templating language is directly supported within Ansible for creating dynamic playbooks?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What protocol does Ansible use for communicating with client systems?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What is an inventory file?</summary>
+
+*Answer coming soon!
+
+</details>
 
 
 **Advanced:**
 
-- Can you name some Ansible best practices? 
-- How do you handle errors in Ansible?
-- How do you test your Ansible roles and tasks?
-- What is Molecule and how does it works?
+<details>
+<summary>Can you name some Ansible best practices? </summary>
 
-### :small_blue_diamond: CI/CD
+*Answer coming soon!
 
-- What is meant by Continuous Integration?
-- Explain blue-green deployment
-- What is a CI/CD pipeline?
-- What is a canary deployment?
-- What is a rolling deployment?
+</details>
 
-### :small_blue_diamond: DevOps methodology, practices,  & Agile
+<details>
+<summary>How do you handle errors in Ansible?</summary>
 
-- What is meant by continuous integratons?
-- What are the advantages of DevOps?
-- Can you describe some branching strategies you have used?
-- What is the blue/green deployment pattern?
+*Answer coming soon!
 
+</details>
+
+<details>
+<summary>How do you test your Ansible roles and tasks?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What is Molecule and how does it works?</summary>
+
+*Answer coming soon!
+
+</details>
+
+</details>
+
+
+<details>
+  <summary><h3 id="cicd">CI/CD</h3></summary>
+
+<br>
+
+<details>
+<summary>What is meant by Continuous Integration?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>Explain blue-green deployment</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What is a CI/CD pipeline?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What is a canary deployment?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What is a rolling deployment?</summary>
+
+*Answer coming soon!
+
+</details>
+
+</details>
+
+
+<details>
+  <summary><h3 id="ops">DevOps methodology, practices, & Agile</h3></summary>
+
+<br>
+
+<details>
+<summary>What is meant by continuous integratons?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What are the advantages of DevOps?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>Can you describe some branching strategies you have used?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What is the blue/green deployment pattern?</summary>
+
+*Answer coming soon!
+
+</details>
+
+</details>
 
 ## System Design
 
-### :small_blue_diamond: CDN & Caching
+<details>
+  <summary><h3 id="cdn">CDN & Caching</h3></summary>
 
-- What is a CDN and why would I use one?
-- What are CDN edge servers?
-- How does CDN caching work?
-- What is cache invalidation? 
-- What are some cache invalidation methods?
-- What is a cache Hit?
-- What is a cache Miss?
-- Can you explain a caching workflow?
-- Explain why CDN availability may be a problem for using WebSockets?
-- What are some best practices for caching?
+<br>
+
+<details>
+<summary>What is a CDN and why would I use one?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What are CDN edge servers?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>How does CDN caching work?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What is cache invalidation?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What are some cache invalidation methods?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What is a cache Hit?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What is a cache Miss?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>Can you explain a caching workflow?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>Explain why CDN availability may be a problem for using WebSockets?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What are some best practices for caching?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What is the CAP Theorem?</summary>
+
+*Answer coming soon!
+
+</details>
 
 
+<details>
+<summary>What is a Partition in CAP theorem?</summary>
 
-- What is the CAP Theorem?
-- What is a Partition in CAP theorem?
-- What are A and P in CAP theorem and the difference between them?
-- Explain when CA is used and when CP is used?
-- Explain the difference between horizontal scaling and vertical scaling?
-- Difference between forward proxy and reverse proxy?
-- What is Load Balancing and how does it work? How does it relate to reverse proxies?
-- Name me some common load balancers
-- What is a microservice architecture and when would I consider using one?
+*Answer coming soon!
 
-### :small_blue_diamond: API Design
+</details>
 
-- What is an API?
-- What is REST?
-- What is a RESTful API?
-- What is a RESTful Web Service?
-- What is a RESTful Web API?
-- What is a RESTful Web Application?
-- What is API design?
-- What is API documentation?
-- What are the core components of a HTTP request?
-- What are the core components of a HTTP response?
-- What is a cached response?
-- What is the difference between a HTTP GET and POST request?
-- What is the difference between a HTTP PUT and PATCH request?
-- What is the difference between a HTTP 301 and 302 response?
-- What is the difference between a HTTP 401 and 403 response?
-- What is the difference between a HTTP 404 and 410 response?
-- What is the difference between a HTTP 500 and 503 response?
-- What is the difference between a HTTP 200 and 201 response?
-- What is payload?
-- What is a HTTP header?
-- What is a HTTP body?
-- Explain cache-control header?
-- Name some best practices for better RESTful API design?
-- 
+<details>
+<summary>What are A and P in CAP theorem and the difference between them?</summary>
 
-### :small_blue_diamond: Databases
+*Answer coming soon!
 
-- What is a database?
-- What is DBMS (Database Management System)?
-- What is the schema referred to in a Database?
-- What are different types of databases?
-- Advantages & Disadvantages of using relational databases?
-- Advantages & Disadvantages of using NoSQL relational databases?
-- What is a key-value database? What are some examples of this?
-- What are graph databases? Name some examples?
-- What is database replication?
-- What is master-slave replication? And what is master-master replication?
-- What is Synchronous vs Asynchronous replication?
-- What are indexes in databases?
-- How can one improve query performance by using index hunting?
-- What do you understand by ‘Atomicity’ and ‘Aggregation’?
-- What is database partitioning?
-- What is database sharding?
+</details>
+
+<details>
+<summary>Explain when CA is used and when CP is used?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>Explain the difference between horizontal scaling and vertical scaling?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>Difference between forward proxy and reverse proxy?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What is Load Balancing and how does it work? How does it relate to reverse proxies?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>Name me some common load balancers</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What is a microservice architecture and when would I consider using one?</summary>
+
+*Answer coming soon!
+
+</details>
+
+</details>
+
+
+<details>
+  <summary><h3 id="api">API Design</h3></summary>
+
+<br>
+
+<details>
+<summary>What is a RESTful API?</summary>
+
+*Answer coming soon!
+
+</details>
+
+
+<details>
+<summary>What is a RESTful Web Service?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What is a RESTful Web API?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What is a RESTful Web Application?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What is API design?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What is API documentation?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What are the core components of a HTTP request?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What are the core components of a HTTP response?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What is a cached response?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What is the difference between a HTTP GET and POST request?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What is the difference between a HTTP PUT and PATCH request?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What is the difference between a HTTP 301 and 302 response?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What is the difference between a HTTP 401 and 403 response?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What is the difference between a HTTP 404 and 410 response?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What is the difference between a HTTP 500 and 503 response?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What is the difference between a HTTP 200 and 201 response?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What is payload?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What is a HTTP header?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What is a HTTP body?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>Explain cache-control header?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>Name some best practices for better RESTful API design?</summary>
+
+*Answer coming soon!
+
+</details>
+
+</details>
+
+
+<details>
+  <summary><h3 id="dbs">Databases</h3></summary>
+
+<br>
+
+<details>
+<summary>What is a database?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What is DBMS (Database Management System)?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What is the schema referred to in a Database?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What are different types of databases?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>Advantages & Disadvantages of using relational databases?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>Advantages & Disadvantages of using NoSQL relational databases?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What is a key-value database? What are some examples of this?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What are graph databases? Name some examples?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What is database replication?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What is master-slave replication? And what is master-master replication?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What is Synchronous vs Asynchronous replication?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What are indexes in databases?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>How can one improve query performance by using index hunting?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What do you understand by ‘Atomicity’ and ‘Aggregation’?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What is database partitioning?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What is database sharding?</summary>
+
+*Answer coming soon!
+
+</details>
+
+
 
 
 **Advanced:**
 
-- What are message queues? And what are message brokers?
-- How does the publish-subscribe model work?
-- Can you explain how an event-driven architecture works?
-- What is an API Gateway? How is this different from load balancers?
-- Explain why CDN (in)availability may be a problem for using WebSockets? 
+<details>
+<summary>What are message queues? And what are message brokers?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>How does the publish-subscribe model work?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>Can you explain how an event-driven architecture works?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What is an API Gateway? How is this different from load balancers?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>Explain why CDN (in)availability may be a problem for using WebSockets? </summary>
+
+*Answer coming soon!
+
+</details> 
+
+</details>
 
 ## Software Engineering
 
+<details>
+  <summary><h3 id="gen">General</h3></summary>
 
-### :small_blue_diamond: General
+<br>
 
-- What are some ways that you can version an API?
-- What does it mean for an API to be idempotent?
-- How can you implement idempotency in APIs?
-- What are some ways you could authenticate an API?
-- What are benefits of working with circuit breakers? 
-- Define cascading failures and how to deal with those?
-- How can you deploy an API without disrupting traffic?
-- Explain what a Race condition is to a 5 year old?
+<details>
+<summary>What are some ways that you can version an API?</summary>
 
-### :small_blue_diamond: Golang
+*Answer coming soon!
 
-- What is Go?
-- Why was the Go langauge created?
-- What is a pointer?
-- What is the difference between the = and := operator?
-- What are goroutines?
-- Does Go have exceptions?
-- Can you return multiple values from a function?
-- What is a channel?
-- What is a struct?
-- What is a slice?
-- What is a map?
-- What is a method?
-- What is a package?
-- What is a module?
-- What is a pointer?
-- What is a pointer receiver?
-- How to check if a Map contains a key in Go?
-- When is the `init()` function run?
+</details> 
 
+<details>
+<summary>What does it mean for an API to be idempotent?</summary>
+
+*Answer coming soon!
+
+</details> 
+
+<details>
+<summary>How can you implement idempotency in APIs?</summary>
+
+*Answer coming soon!
+
+</details> 
+
+<details>
+<summary>What are some ways you could authenticate an API?</summary>
+
+*Answer coming soon!
+
+</details> 
+
+<details>
+<summary>What are benefits of working with circuit breakers?</summary>
+
+*Answer coming soon!
+
+</details> 
+
+<details>
+<summary>Define cascading failures and how to deal with those?</summary>
+
+*Answer coming soon!
+
+</details> 
+
+<details>
+<summary>How can you deploy an API without disrupting traffic?</summary>
+
+*Answer coming soon!
+
+</details> 
+
+<details>
+<summary>Explain what a Race condition is to a 5 year old?</summary>
+
+*Answer coming soon!
+
+</details> 
+
+</details>
+
+
+<details>
+  <summary><h3 id="go">Golang</h3></summary>
+
+<br>
+
+<details>
+<summary>What is Go?</summary>
+
+*Answer coming soon!
+
+</details> 
+
+<details>
+<summary>Why was the Go langauge created?</summary>
+
+*Answer coming soon!
+
+</details> 
+
+<details>
+<summary>What is a pointer?</summary>
+
+*Answer coming soon!
+
+</details> 
+
+<details>
+<summary>What is the difference between the = and := operator?</summary>
+
+*Answer coming soon!
+
+</details> 
+
+<details>
+<summary>What are goroutines?</summary>
+
+*Answer coming soon!
+
+</details> 
+
+<details>
+<summary>Does Go have exceptions?</summary>
+
+*Answer coming soon!
+
+</details> 
+
+<details>
+<summary>Can you return multiple values from a function?</summary>
+
+*Answer coming soon!
+
+</details> 
+
+<details>
+<summary>What is a channel?</summary>
+
+*Answer coming soon!
+
+</details> 
+
+<details>
+<summary>What is a struct?</summary>
+
+*Answer coming soon!
+
+</details> 
+
+<details>
+<summary>What is a slice?</summary>
+
+*Answer coming soon!
+
+</details> 
+
+<details>
+<summary>What is a map?</summary>
+
+*Answer coming soon!
+
+</details> 
+
+<details>
+<summary>What is a method?</summary>
+
+*Answer coming soon!
+
+</details> 
+
+<details>
+<summary>What is a package?</summary>
+
+*Answer coming soon!
+
+</details> 
+
+<details>
+<summary>What is a module?</summary>
+
+*Answer coming soon!
+
+</details> 
+
+<details>
+<summary>What is a pointer?</summary>
+
+*Answer coming soon!
+
+</details> 
+
+<details>
+<summary>What is a pointer receiver?</summary>
+
+*Answer coming soon!
+
+</details> 
+
+<details>
+<summary>How to check if a Map contains a key in Go?</summary>
+
+*Answer coming soon!
+
+</details> 
+
+<details>
+<summary>When is the init() function run?</summary>
+
+*Answer coming soon!
+
+</details> 
 
 Advanced:
-- Implement a function that reverses a slice of integers?
-- What are generics and how do they work?
+
+<details>
+<summary>Implement a function that reverses a slice of integers?</summary>
+
+*Answer coming soon!
+
+</details> 
+
+<details>
+<summary>What are generics and how do they work?</summary>
+
+*Answer coming soon!
+
+</details> 
+
+</details>
 
 
-### :small_blue_diamond: Python
+<details>
+  <summary><h3 id="py">Python</h3></summary>
 
-- 
+<br>
 
-### :small_blue_diamond: Java
+*Coming soon!
 
-- What is JVM?
-- What is JRE?
-- What is JDK?
-- What is the difference between JDK and JRE?
-- What is the difference between JVM and JRE?
-- How does a HashMap work in Java?
-- What is the difference between an Interface and an Abstract class?
-- How does Garbage Collection work in Java?
-- How does Garbage Collection prevent a Java application from going out of memory?
-- What is the difference between a stack and a heap?
-- What's a deadlock?
-- What is the difference between an ArrayList and a LinkedList?
-- Does Java support multiple inheritance?
-- What is the difference between == and .equals()?
-- Explain marshalling and unmarshalling?
+</details>
 
 
-### :small_blue_diamond: JavaScript (TS,nodeJS...)
+<details>
+  <summary><h3 id="java">Java</h3></summary>
 
-- What is TypeScript?
-- What are the differences between TypeScript and JavaScript?
-- Why use TypeScript?
-- What are the advantages of TypeScript?
-- What are Types in TypeScript?
-- What are Type Assertions in TypeScript?
-- What are the Primitive data types?
-- What are the special data types in TypeScript?
-- What are interfaces in TypeScript?
-- Interfaces Vs Types?
+<br>
 
+<details>
+<summary>What is JVM?</summary>
 
-## Data
+*Answer coming soon!
 
-### Data Modelling and Schemas: 
+</details> 
+
+<details>
+<summary>What is JRE?</summary>
+
+*Answer coming soon!
+
+</details> 
+
+<details>
+<summary>What is JDK?</summary>
+
+*Answer coming soon!
+
+</details> 
+
+<details>
+<summary>What is the difference between JDK and JRE?</summary>
+
+*Answer coming soon!
+
+</details> 
+
+<details>
+<summary>What is the difference between JVM and JRE?</summary>
+
+*Answer coming soon!
+
+</details> 
+
+<details>
+<summary>How does a HashMap work in Java?</summary>
+
+*Answer coming soon!
+
+</details> 
+
+<details>
+<summary>What is the difference between an Interface and an Abstract class?</summary>
+
+*Answer coming soon!
+
+</details> 
+
+<details>
+<summary>How does Garbage Collection work in Java?</summary>
+
+*Answer coming soon!
+
+</details> 
+
+<details>
+<summary>How does Garbage Collection prevent a Java application from going out of memory?</summary>
+
+*Answer coming soon!
+
+</details> 
+
+<details>
+<summary>What is the difference between a stack and a heap?</summary>
+
+*Answer coming soon!
+
+</details> 
+
+<details>
+<summary>What's a deadlock?</summary>
+
+*Answer coming soon!
+
+</details> 
+
+<details>
+<summary>What is the difference between an ArrayList and a LinkedList?</summary>
+
+*Answer coming soon!
+
+</details> 
+
+<details>
+<summary>Does Java support multiple inheritance?</summary>
+
+*Answer coming soon!
+
+</details> 
+
+<details>
+<summary>What is the difference between == and .equals()?</summary>
+
+*Answer coming soon!
+
+</details> 
+
+<details>
+<summary>Explain marshalling and unmarshalling?</summary>
+
+*Answer coming soon!
+
+</details> 
+
+</details>
+
+<details>
+  <summary><h3 id="js">JavaScript</h3></summary>
+
+<br>
+
+<details>
+<summary>What is TypeScript?</summary>
+
+*Answer coming soon!
+
+</details> 
+
+<details>
+<summary>What are the differences between TypeScript and JavaScript?</summary>
+
+*Answer coming soon!
+
+</details> 
+
+<details>
+<summary>Why use TypeScript?</summary>
+
+*Answer coming soon!
+
+</details> 
+
+<details>
+<summary>What are the advantages of TypeScript?</summary>
+
+*Answer coming soon!
+
+</details> 
+
+<details>
+<summary>What are Types in TypeScript?</summary>
+
+*Answer coming soon!
+
+</details> 
+
+<details>
+<summary>What are Type Assertions in TypeScript?</summary>
+
+*Answer coming soon!
+
+</details> 
+
+<details>
+<summary>What are the Primitive data types?</summary>
+
+*Answer coming soon!
+
+</details> 
+
+<details>
+<summary>What are the special data types in TypeScript?</summary>
+
+*Answer coming soon!
+
+</details> 
+
+<details>
+<summary>What are interfaces in TypeScript?</summary>
+
+*Answer coming soon!
+
+</details> 
+
+<details>
+<summary>Interfaces Vs Types?</summary>
+
+*Answer coming soon!
+
+</details> 
+
+</details>
+
+## Data 
+
+<details>
+  <summary><h3 id="modelling">Data Modelling and Schemas</h3></summary>
+
+<br>
 
 <details>
 <summary>Define data modelling and the benefits of implementing a data model?</summary>
@@ -2285,8 +3578,13 @@ Cardinality refers to the number of relationships between entities in a data mod
 
 </details>
 
-### Data Architect
+</details>
 
+
+<details>
+  <summary><h3 id="architect">Data Architect</h3></summary>
+
+<br>
 
 <details>
 <summary>Please state an example of designing, creating, deploying and managing an end to end data architecture project?</summary>
@@ -2411,7 +3709,13 @@ Data visualization and business intelligence tools such as Tableau and Power BI.
 Design patterns such as the star schema and snowflake schema for data warehousing.
 </details>
 
-### Data Engineering
+</details>
+
+
+<details>
+  <summary><h3 id="engineering">Data Engineering</h3></summary>
+
+<br>
 
 
 <details>
@@ -2606,7 +3910,14 @@ Auditing and monitoring: Hadoop provides tools for auditing and monitoring clust
 FIFO scheduling is a scheduling algorithm used in Hadoop that stands for First In, First Out. In this scheduling algorithm, the tasks are executed in the order in which they are submitted to the JobTracker. The first task submitted to the JobTracker is the first one to be executed, followed by the second task, and so on. This scheduling algorithm is simple and easy to implement, but it may not be the most efficient algorithm for all workloads. In particular, it can lead to long wait times for high-priority jobs if lower-priority jobs are submitted first. Other scheduling algorithms like Fair Scheduler and Capacity Scheduler are also available in Hadoop to address these issues.
 </details>
 
-### SQL
+</details>
+
+
+<details>
+  <summary><h3 id="sql">SQL</h3></summary>
+
+<br>
+
 
 <details>
 <summary>How can you deal with duplicate data points in an SQL query?</summary>
@@ -2815,15 +4126,26 @@ On the other hand, NoSQL databases are non-relational databases that store data 
 - What are Views used for?
 - What are Local and Global variables?
 
+</details>
 
-### ETL & Data Pipelines & more
+</details>
 
-- How would I go about troubleshooting pipelines?
 
 ## Machine Learning
 
+<details>
+  <summary><strong>*Coming soon!</strong></summary>
+
+<br>
+
+</details>
 
 ## Cyber Security & Info Security
+
+<details>
+  <summary><h3 id="general">Cyber Scurity & Info Security</h3></summary>
+
+<br>
 
 <details>
 <summary>What is a firewall, and how does it work?</summary>
@@ -2979,60 +4301,263 @@ Example: If someone uses the same password on two different systems and they are
   Rogue Software
   </details>  
 
-### Encryption and Authentication
-   
-   * What is a three-way handshake?
-   * How do cookies work?
-   * How do sessions work?
-   * Explain how OAuth works.
-   * What is a public key infrastructure flow and how would I diagram it?
-   * Describe the difference between synchronous and asynchronous encryption.
-   * Describe SSL handshake.
-   * How does HMAC work?
-   * Why HMAC is designed in that way?
-   * What is the difference between authentication vs authorization name spaces?
-   * What’s the difference between Diffie-Hellman and RSA?
-   * How does Kerberos work?
-   * If you're going to compress and encrypt a file, which do you do first and why?
-   * How do I authenticate you and know you sent the message?
-   * Should you encrypt all data at rest?
-   * What is Perfect Forward Secrecy?
-  
-### OWASP Top 10, Pentesting and/or Web Applications
+  </details>
 
-   * Differentiate XSS from CSRF.
-   * What do you do if a user brings you a pc that is acting 'weird'? You suspect malware.
-   * What is the difference between tcp dump and FWmonitor?
-   * Do you know what XXE is?
-   * Explain man-in-the-middle attacks.
-   * What is a Server Side Request Forgery attack?
-   * Describe what are egghunters and their use in exploit development. 
-   * How is pad lock icon in browser generated?
-   * What is Same Origin Policy and CORS?
+
+<details>
+  <summary><h3 id="auth">Encryption and Authentication</h3></summary>
+
+<br>
+
+<details>
+<summary>What is a three-way handshake?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>How do cookies work?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>How do sessions work?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>Explain how OAuth works.</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What is a public key infrastructure flow and how would I diagram it?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>Describe the difference between synchronous and asynchronous encryption.</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>Describe SSL handshake.</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>How does HMAC work?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>Why HMAC is designed in that way?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What is the difference between authentication vs authorization name spaces?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What’s the difference between Diffie-Hellman and RSA?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>How does Kerberos work?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>If you're going to compress and encrypt a file, which do you do first and why?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>How do I authenticate you and know you sent the message?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>Should you encrypt all data at rest?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What is Perfect Forward Secrecy?</summary>
+
+*Answer coming soon!
+
+</details>
+
+</details>
   
-### Compliance
+
+<details>
+  <summary><h3 id="owasp">OWASP Top 10, Pentesting and/or Web Applications</h3></summary>
+
+<br>
+
+<details>
+<summary>Differentiate XSS from CSRF.</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What do you do if a user brings you a pc that is acting 'weird'? You suspect malware.</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What is the difference between tcp dump and FWmonitor?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>Do you know what XXE is?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>Explain man-in-the-middle attacks.</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What is a Server Side Request Forgery attack?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>Describe what are egghunters and their use in exploit development.</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>How is pad lock icon in browser generated?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What is Same Origin Policy and CORS?</summary>
+
+*Answer coming soon!
+
+</details>
+
+</details>
+
+
+<details>
+  <summary><h3 id="compliance">Compliance</h3></summary>
+
+<br>
+
+<details>
+<summary>Can you explain SOC 2?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>How is ISO27001 different?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>Can you list examples of controls these frameworks require?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What is the difference between Governance, Risk and Compliance?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What does Zero Trust mean?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What is role-based access control (RBAC) and why is it covered by compliance frameworks?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What is the NIST framework and why is it influential?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What is the OSI model?</summary>
+
+*Answer coming soon!
+
+</details>
     
-   * Can you explain SOC 2?
-      * What are the five trust criteria?
-   * How is ISO27001 different?
-   * Can you list examples of controls these frameworks require?
-   * What is the difference between Governance, Risk and Compliance?  
-   * What does Zero Trust mean?
-   * What is role-based access control (RBAC) and why is it covered by compliance frameworks?
-   * What is the NIST framework and why is it influential?
-   * What is the OSI model?
 
-## Interpersonal & behavioural questions
-
-
-## References:
-
-- intellipaat.com
-- Add more links to any references.
-
-## Charity 
-- Since this is a community-based project and it is run by the community - we (the creators) do not gain any personal nor financial gain other than helping the community. Instead, any financial gain would be better suited to a charity. So we wanted to take it upon us to help those in need. We, as a community, have chosen a certified charity to donate to. Here is the link to donate to:
-    - To ADD charity donation links here.
+</details>
 
 ## License
 
