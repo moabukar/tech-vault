@@ -67,7 +67,7 @@ This project is maintained by a passionate community of engineers. We welcome yo
 6. Interactive Tools - [Random Question Generator](./misc/README.md) for practice sessions
 7. CLI Access - [Tech Vault CLI tool for terminal-based access](https://github.com/moabukar/tech-vault-cli)
 
-## Contributing 🖊️
+## Contributing 🖊️ <a id="contributing"></a>
 
 - To contribute, please read our [Contributing Guidelines](CONTRIBUTING.md). For any fixes, updates or new additions, please make a pull-request (PR). Thank you!
 
