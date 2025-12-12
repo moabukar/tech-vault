@@ -48,8 +48,7 @@ Note: Questions sourced from external references are properly credited in the [R
     - [ETL & Data Pipelines](#pipelines)
 - [X] [Machine Learning 🤖](#machine-learning)
 - [X] [Cyber Security & InfoSecurity 🛡️](#cyber-security--info-security)
-- [X] [Interpersonal skills](#interpersonal--behavioural-questions)
-- [X] [References](#references)
+
 
 ## Vision 🚀 <a id="vision"></a>
 
