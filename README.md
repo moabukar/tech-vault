@@ -51,13 +51,13 @@ Note: Questions sourced from external references are properly credited in the [R
 - [X] [Interpersonal skills](#interpersonal--behavioural-questions)
 - [X] [References](#references)
 
-## Vision 🚀
+## Vision 🚀 <a id="vision"></a>
 
 Breaking into tech from a non-technical background or without prior experience can be challenging. That's why our team created Tech Vault—a centralized resource for both technical and non-technical professionals preparing for technical interviews.
 
 This project is maintained by a passionate community of engineers. We welcome your contributions! See our [Contributing Guidelines](./CONTRIBUTING.md) to get started.
 
-## What Makes This Repo Different? 🌟
+## What Makes This Repo Different? 🌟 <a id="what-is-different-in-this-repo-compared-to-others"></a>
 
 1. Real Interview Questions - Actual questions asked by and of our engineers (appropriately reworded for clarity)
 2. Scenario-Based Questions - Realistic questions that mirror actual interview situations
