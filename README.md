@@ -7,33 +7,33 @@
   <img width="1000" src="./images/Tech-Vault.png">
 </p>
 
-## About
+## About 
 
 A comprehensive documentation of carefully curated technical engineering questions and challenges, created by experienced Engineers who have conducted numerous interviews. This collection features popular and essential engineering questions designed to evaluate candidate knowledge across various technical domains.
 Note: Questions sourced from external references are properly credited in the [References](#references) section. 
 
 ## Table of Contents
 
-- [X] [Vision 🚀](#vision)
-- [X] [What is different in this repo compared to others? 🌟](#what-is-different-in-this-repo-compared-to-others)
-- [X] [Contributing 🖊️](#contributing)
+- [X] [Vision](#vision)
+- [X] [What is different in this repo compared to others?](#what-is-different-in-this-repo-compared-to-others)
+- [X] [Contributing](#contributing)
 - [X] [DevOps Challenges](./devops-challenges/README.md)
 - [X] [Coding Challenges](./coding-challenges/README.md)
 - [X] [Data Structures and Algorithms Challenges](./dsa-challenges/README.md) 
-- [X] [DevOps 🛠](#devops)
-    - [Linux 🐧](#linux)
-    - [Networking 🌐](#networking)
+- [X] [DevOps](#devops)
+    - [Linux](#linux)
+    - [Networking](#networking)
     - [Git](#git)
-    - [AWS 🌩️](#aws)
-    - [Azure 🌩️](#azure)
-    - [Terraform 🏗️](#terraform)
-    - [Docker & K8s 🐳 🎻](#dockerandk8s)
-    - [Ansible 🔧](#ansible)
-    - [CI/CD 🛠️](#cicd)
+    - [AWS](#aws)
+    - [Azure](#azure)
+    - [Terraform](#terraform)
+    - [Docker & K8s](#dockerandk8s)
+    - [Ansible](#ansible)
+    - [CI/CD](#cicd)
     - [DevOps methodology, practices, & Agile](#ops)
-- [X] [System Design 🍥](#system-design)
-    - [CDN & Caching ⚡](#cdn)
-    - [Databases 📊](#databases)
+- [X] [System Design](#system-design)
+    - [CDN & Caching](#cdn)
+    - [Databases](#databases)
 - [X] [Software Engineering](#software-engineering)
     - [General](#gen)
     - [Golang](#go)
@@ -46,32 +46,33 @@ Note: Questions sourced from external references are properly credited in the [R
     - [Data Engineering](#engineering)
     - [SQL](#sql)
     - [ETL & Data Pipelines](#pipelines)
-- [X] [Machine Learning 🤖](#machine-learning)
-- [X] [Cyber Security & InfoSecurity 🛡️](#cyber-security--info-security)
-- [X] [Interpersonal skills](#interpersonal--behavioural-questions)
-- [X] [References](#references)
+- [X] [Machine Learning](#machine-learning)
+- [X] [Cyber Security & InfoSecurity](#cyber-security--info-security)
 
-## Vision 🚀
 
-Breaking into tech from a non-technical background or without prior experience can be challenging. That's why our team created Tech Vault—a centralized resource for both technical and non-technical professionals preparing for technical interviews.
+## Vision <a id="vision"></a>
 
-This project is maintained by a passionate community of engineers. We welcome your contributions! See our [Contributing Guidelines](./CONTRIBUTING.md) to get started.
+Breaking into tech from a non technical background or without prior experience can be challenging. That is exactly why we created Tech Vault, a central hub designed to support both technical and non technical professionals to expand their knowledge and prepare for technical interviews.
 
-## What Makes This Repo Different? 🌟
+Tech Vault goes beyond simple revision. It helps you test your knowledge, build understanding from first principles, and learn how to think like an engineer. Inside, you will find technical questions, scenario based questions, and hands on challenges that reflect what you will actually face in roles and interviews.
 
-1. Real Interview Questions - Actual questions asked by and of our engineers (appropriately reworded for clarity)
-2. Scenario-Based Questions - Realistic questions that mirror actual interview situations
+This project is maintained by a passionate community of engineers, and we welcome contributions from anyone keen to help others break into tech. If you would like to get involved, see our [Contributing Guidelines](./CONTRIBUTING.md) to get started.
+
+## What Makes This Repo Different? <a id="what-is-different-in-this-repo-compared-to-others"></a>
+
+1. Real Interview Questions - Actual questions asked by and to our engineers (appropriately reworded for clarity)
+2. Scenario-Based Questions - Questions that mirror interviews/real-world scenarios
 3. Current & Relevant - Up-to-date topics reflecting modern engineering practices
-4. Expert Maintenance - Continuously updated by experienced engineers in their respective fields
+4. Expert Maintenance - Continuous updates from experienced engineers in their respective fields
 5. Hands-On Challenges - Practical DevOps challenges that simulate real-world scenarios for hands-on learning
-6. Interactive Tools - [Random Question Generator](./misc/README.md) for practice sessions
-7. CLI Access - [Tech Vault CLI tool for terminal-based access](https://github.com/moabukar/tech-vault-cli)
+6. Interactive Tools - Tools such as a [Random Question Generator](./misc/README.md) for practice sessions
+7. CLI Access - A dedicated [Tech Vault CLI tool for terminal-based access](https://github.com/moabukar/tech-vault-cli)
 
-## Contributing 🖊️
+## Contributing  <a id="contributing"></a>
 
 - To contribute, please read our [Contributing Guidelines](CONTRIBUTING.md). For any fixes, updates or new additions, please make a pull-request (PR). Thank you!
 
-## DevOps 🛠
+## DevOps 
 
 <details>
   <summary><h3 id="linux">Linux</h3></summary>
