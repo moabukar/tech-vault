@@ -52,9 +52,11 @@ Note: Questions sourced from external references are properly credited in the [R
 
 ## Vision 🚀 <a id="vision"></a>
 
-Breaking into tech from a non-technical background or without prior experience can be challenging. That's why our team created Tech Vault—a centralized resource for both technical and non-technical professionals preparing for technical interviews.
+Breaking into tech from a non technical background or without prior experience can be challenging. That is exactly why we created Tech Vault, a central hub designed to support both technical and non technical professionals to expand their knowledge and prepare for technical interviews.
 
-This project is maintained by a passionate community of engineers. We welcome your contributions! See our [Contributing Guidelines](./CONTRIBUTING.md) to get started.
+Tech Vault goes beyond simple revision. It helps you test your knowledge, build understanding from first principles, and learn how to think like an engineer. Inside, you will find technical questions, scenario based questions, and hands on challenges that reflect what you will actually face in roles and interviews.
+
+This project is maintained by a passionate community of engineers, and we welcome contributions from anyone keen to help others break into tech. If you would like to get involved, see our [Contributing Guidelines](./CONTRIBUTING.md) to get started.
 
 ## What Makes This Repo Different? 🌟 <a id="what-is-different-in-this-repo-compared-to-others"></a>
 
