@@ -50,7 +50,7 @@ Note: Questions sourced from external references are properly credited in the [R
 - [X] [Cyber Security & InfoSecurity](#cyber-security--info-security)
 
 
-## Vision 🚀 <a id="vision"></a>
+## Vision <a id="vision"></a>
 
 Breaking into tech from a non technical background or without prior experience can be challenging. That is exactly why we created Tech Vault, a central hub designed to support both technical and non technical professionals to expand their knowledge and prepare for technical interviews.
 
@@ -58,7 +58,7 @@ Tech Vault goes beyond simple revision. It helps you test your knowledge, build 
 
 This project is maintained by a passionate community of engineers, and we welcome contributions from anyone keen to help others break into tech. If you would like to get involved, see our [Contributing Guidelines](./CONTRIBUTING.md) to get started.
 
-## What Makes This Repo Different? 🌟 <a id="what-is-different-in-this-repo-compared-to-others"></a>
+## What Makes This Repo Different? <a id="what-is-different-in-this-repo-compared-to-others"></a>
 
 1. Real Interview Questions - Actual questions asked by and of our engineers (appropriately reworded for clarity)
 2. Scenario-Based Questions - Realistic questions that mirror actual interview situations
