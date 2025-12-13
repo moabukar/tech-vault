@@ -60,13 +60,13 @@ This project is maintained by a passionate community of engineers, and we welcom
 
 ## What Makes This Repo Different? <a id="what-is-different-in-this-repo-compared-to-others"></a>
 
-1. Real Interview Questions - Actual questions asked by and of our engineers (appropriately reworded for clarity)
-2. Scenario-Based Questions - Realistic questions that mirror actual interview situations
+1. Real Interview Questions - Actual questions asked by and to our engineers (appropriately reworded for clarity)
+2. Scenario-Based Questions - Questions that mirror interviews/real-world scenarios
 3. Current & Relevant - Up-to-date topics reflecting modern engineering practices
-4. Expert Maintenance - Continuously updated by experienced engineers in their respective fields
+4. Expert Maintenance - Continuous updates from experienced engineers in their respective fields
 5. Hands-On Challenges - Practical DevOps challenges that simulate real-world scenarios for hands-on learning
-6. Interactive Tools - [Random Question Generator](./misc/README.md) for practice sessions
-7. CLI Access - [Tech Vault CLI tool for terminal-based access](https://github.com/moabukar/tech-vault-cli)
+6. Interactive Tools - Tools such as a [Random Question Generator](./misc/README.md) for practice sessions
+7. CLI Access - A dedicated [Tech Vault CLI tool for terminal-based access](https://github.com/moabukar/tech-vault-cli)
 
 ## Contributing  <a id="contributing"></a>
 
