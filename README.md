@@ -2509,36 +2509,33 @@ Container Orchestration (Kubernetes = K8s):
 <details>
 <summary>What is meant by Continuous Integration?</summary>
 
-*Answer coming soon!
+Continuous Integration (CI) is a software development practice where developers frequently merge their code changes into a shared repository, usually multiple times a day. Each merge triggers automated builds and tests to detect integration issues early, ensuring that the codebase remains stable and reducing the risk of bugs.
 
 </details>
 
 <details>
 <summary>Explain blue-green deployment</summary>
 
-*Answer coming soon!
-
+Blue-green deployment is a release strategy where you maintain two identical environments: one (blue) serving live traffic and the other (green) idle. You deploy the new version to the green environment, test it, and then switch the traffic from blue to green. This enables zero-downtime deployments and instant rollback by simply redirecting traffic back to the old environment if issues arise.
 </details>
 
 <details>
 <summary>What is a CI/CD pipeline?</summary>
 
-*Answer coming soon!
-
+A CI/CD pipeline is an automated workflow that handles the building, testing, and release/deployment of code. In Continuous Integration (CI), the pipeline automatically builds and tests code whenever changes are committed. In Continuous Delivery (CD), the pipeline ensures that code is automatically prepared and tested for release, but deployment to production is triggered manually. In Continuous Deployment (also CD), every change that passes automated tests is automatically deployed to production, enabling fully automated, fast, and reliable releases.
 </details>
 
 <details>
 <summary>What is a canary deployment?</summary>
 
-*Answer coming soon!
+A canary deployment is a release strategy where a new version of an application is gradually rolled out to a small subset of users or servers first, while the majority continue using the old version. This allows teams to monitor performance, catch issues early, and minimize risk before fully releasing the update to all users.
 
 </details>
 
 <details>
 <summary>What is a rolling deployment?</summary>
 
-*Answer coming soon!
-
+A rolling deployment is a strategy where a new version of an application is gradually deployed to servers or pods in small batches, replacing the old version without downtime. Traffic is continuously served during the process, and if any issues occur, the rollout can be paused or rolled back, minimizing disruption.
 </details>
 
 </details>
