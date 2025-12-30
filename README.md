@@ -2507,6 +2507,13 @@ Container Orchestration (Kubernetes = K8s):
 <br>
 
 <details>
+<summary>What problem does CI/CD solve in software development?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
 <summary>What is meant by Continuous Integration?</summary>
 
 *Answer coming soon!
@@ -2514,14 +2521,77 @@ Container Orchestration (Kubernetes = K8s):
 </details>
 
 <details>
-<summary>Explain blue-green deployment</summary>
+<summary>What is meant by Continuous Delivery?</summary>
 
 *Answer coming soon!
 
 </details>
 
 <details>
-<summary>What is a CI/CD pipeline?</summary>
+<summary>What is meant by Continuous Deployment?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>Why is automated testing important in CI/CD?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What is a CI/CD pipeline and what are its typical stages?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What happens if a pipeline fails?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>How does Git integrate with CI/CD?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>How does CI/CD help teams release faster?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What is a build and what is a build artifact?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What environments are used in CI/CD and why?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>What is a deployment strategy? </summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
+<summary>Explain blue-green deployment</summary>
 
 *Answer coming soon!
 
@@ -2538,6 +2608,13 @@ Container Orchestration (Kubernetes = K8s):
 <summary>What is a rolling deployment?</summary>
 
 *Answer coming soon!
+
+</details>
+
+<details>
+<summary>Walk me through a CI/CD pipeline youv've worked with, from code commit to production?</summary>
+
+*Tips on answering such question coming soon
 
 </details>
 
