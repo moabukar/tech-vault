@@ -2657,13 +2657,13 @@ This avoids downtime and allows the system to remain available throughout the de
 <details>
 <summary>Walk me through a CI/CD pipeline, from code commit to production?</summary>
 
-From code commit to production, the CI/CD pipeline starts when a developer pushes code to the remote repository or opens a pull request, which automatically triggers the pipeline.
+From code commit to production, the CI/CD pipeline starts when a developer pushes code to the remote repository or opens a pull request, which automatically triggers the continuous integration (CI) process.
 
 The pipeline first runs in the development environment, where the code is checked out, dependencies are resolved, and the application is built. Static checks such as linting and formatting are executed, followed by fast-running unit tests to validate the code in a development context.
 
 If this stage succeeds, the pipeline packages the application into a versioned artefact, such as a binary or container image, and stores it in an artefact repository. This artefact is built once and then promoted unchanged through subsequent environments.
 
-Next, the artefact is deployed to the staging environment, which mirrors production as closely as possible. In staging, integration tests, smoke tests, and health checks are run to verify system behaviour and interactions with external services. Deployment strategies such as rolling or blue–green deployments are commonly used to reduce risk.
+Next, as part of continuous delivery (CD), the artefact is deployed to the staging environment, which mirrors production as closely as possible. In staging, integration tests, smoke tests, and health checks are run to verify system behaviour and interactions with external services. Deployment strategies such as rolling or blue–green deployments are commonly used to reduce risk.
 
 After successful validation in staging, and often following a manual approval step, the same artefact is deployed to the production environment. The deployment is monitored using logs, metrics, and alerts, and automated rollback mechanisms are in place if any issues are detected.
 
