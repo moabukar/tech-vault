@@ -1984,7 +1984,7 @@ An example would be, using Terraform to create a VM, and using Ansible to instal
 <details>
 <summary>What is Checkov?</summary>
 
-*Answer coming soon!
+Chekov is a security scanning tool that scans your desired state and checks for compliance with security best-practices.
 
 </details>
 
