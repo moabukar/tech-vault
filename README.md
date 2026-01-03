@@ -2053,14 +2053,14 @@ Container (Docker):
 <details>
 <summary>What is a container and what are its fundamentals?</summary>
 
-*Answer coming soon!
+A container is a lightweight, portable way to package an application along with everything it needs to run, such as its code, libraries, and dependencies. Containers share the host operating system’s kernel but run in isolated environments, which makes them faster and more efficient than virtual machines. Key fundamentals of containers include isolation, portability, consistency across environments, and the ability to start and stop quickly.
 
 </details>
 
 <details>
 <summary>What are c-groups and namespaces in Linux?</summary>
 
-*Answer coming soon!
+
 
 </details>
 
@@ -2086,63 +2086,65 @@ A namespace wraps a global system resource in an abstraction that makes it appea
 <details>
 <summary>When do I use Docker Compose vs Docker Swarm and K8s?</summary>
 
-*Answer coming soon!
+Docker Compose is used for running and managing multi-container applications on a single machine, mainly for local development and testing. Docker Swarm and Kubernetes are used for orchestrating containers across multiple machines in production, handling scaling, load balancing, and high availability. Swarm is simpler to set up, while Kubernetes is more powerful and widely used for complex, large-scale systems.
 
 </details>
 
 <details>
 <summary>What is a Dockerfile used for?</summary>
 
-*Answer coming soon!
+A Dockerfile is used to define the steps needed to build a Docker image in a clear and repeatable way. It contains instructions such as which base image to use, how to install dependencies, copy application files, and configure how the container runs. This ensures the same image can be built consistently across different environments.
 
 </details>
 
 <details>
 <summary>Can you explain the basic components of a Dockerfile?</summary>
 
-*Answer coming soon!
+A Dockerfile is made up of instructions that describe how a Docker image should be built. Common components include FROM to define the base image, WORKDIR to set the working directory, COPY or ADD to include files, RUN to execute build commands, EXPOSE to document ports, and CMD or ENTRYPOINT to define how the container starts.
 
 </details>
 
 <details>
 <summary>How is a container different from a virtual machine?</summary>
 
-*Answer coming soon!
+A container shares the host operating system’s kernel and runs as an isolated process, making it lightweight and fast to start. A virtual machine includes a full guest operating system on top of a hypervisor, which makes it heavier and slower to boot. Containers are more efficient for running applications, while virtual machines provide stronger isolation.
 
 </details>
 
 <details>
 <summary>How can I run a container?</summary>
 
-*Answer coming soon!
+A container can be run by using a container image and starting it with a container runtime such as Docker. For example, the docker run command is used to create and start a container from an image, optionally exposing ports, setting environment variables, and mounting volumes. This allows the application inside the container to run in an isolated and controlled environment.
 
 </details>
 
 <details>
 <summary>How can I stop and remove a container?</summary>
 
-*Answer coming soon!
+A running container can be stopped using the docker stop command, which safely shuts it down. Once stopped, the container can be removed with the docker rm command. This cleans up the container while leaving the original image unchanged.
 
 </details>
 
 <details>
 <summary>How can I attach a shell to a terminal of a running container?</summary>
 
-*Answer coming soon!
+You can attach a shell to a running container using the docker exec command. For example, docker exec -it 
+< container_name_or_id > /bin/bash opens an interactive terminal inside the container. This allows you to inspect the container’s environment and run commands while it is running.
+
 
 </details>
 
 <details>
 <summary>What is a dangling image?</summary>
 
-*Answer coming soon!
+A dangling image is a Docker image that is no longer tagged and is not referenced by any container. These images are usually created during image rebuilds when old layers are left behind. They take up disk space and can be safely removed if they are no longer needed.
 
 </details>
 
 <details>
 <summary>What is Docker compose and when is it used?</summary>
 
-*Answer coming soon!
+Docker Compose is a tool used to define and run multi-container applications using a single configuration file. It is mainly used for local development and testing, where you need multiple services, such as an application and a database, to run together. Docker Compose makes it easy to start, stop, and manage these containers as one unit.
 
 </details>
 
@@ -2151,49 +2153,49 @@ A namespace wraps a global system resource in an abstraction that makes it appea
 <details>
 <summary>What is the difference between COPY and ADD commands in a Dockerfile?</summary>
 
-*Answer coming soon!
+Both COPY and ADD are used to add files into a Docker image, but COPY is simpler and more predictable. COPY only copies files and directories from the local filesystem into the image. ADD has extra features, such as extracting local tar files and downloading files from URLs, which can make behaviour less explicit, so COPY is generally recommended unless those extra features are needed.
 
 </details>
 
 <details>
 <summary>How do containers work at a lower level?</summary>
 
-*Answer coming soon!
+At a lower level, containers work by using Linux kernel features to isolate and manage processes. Namespaces give containers their own view of system resources, such as processes, networking, and filesystems, while c-groups limit and control resource usage like CPU and memory. A container runtime then uses these features to run applications in isolated environments on the same host operating system.
 
 </details>
 
 <details>
 <summary>What is the difference between "expose" and "publish" in Docker?</summary>
 
-*Answer coming soon!
+In Docker, EXPOSE is used in a Dockerfile to document which ports the application listens on inside the container. It does not make the port accessible from outside the container by itself. Publish refers to mapping a container port to a host port using options like -p with docker run, which actually makes the service accessible externally.
 
 </details>
 
 <details>
 <summary>What is the difference between Docker RUN, CMD and ENTRYPOINT?</summary>
 
-*Answer coming soon!
+RUN, CMD, and ENTRYPOINT serve different purposes in a Dockerfile. RUN executes commands at build time to create image layers, such as installing packages. CMD defines the default command that runs when a container starts and can be overridden. ENTRYPOINT sets the main executable for the container and is usually not overridden, making it useful for defining a fixed container behaviour.
 
 </details>
 
 <details>
 <summary>When you limit the memory for a container, does it reserve that memory for the container?</summary>
 
-*Answer coming soon!
+No, limiting memory for a container does not reserve that memory by default. It sets a maximum amount the container is allowed to use, but the memory is only consumed when the application actually needs it. This helps prevent a container from using too much memory without wasting unused resources.
 
 </details>
 
 <details>
 <summary>What is an orphant volume? And how can you remove it?</summary>
 
-*Answer coming soon!
+An orphaned volume is a Docker volume that is no longer used by any container but still exists on the host. These volumes can remain after containers are removed and continue to take up disk space. They can be removed manually with docker volume rm or cleaned up in bulk using docker volume prune.
 
 </details>
 
 <details>
 <summary>How does virtualisation work at a lower level?</summary>
 
-*Answer coming soon!
+Virtualisation works by using a hypervisor to create and manage virtual machines on a physical host. The hypervisor abstracts the underlying hardware, allowing each virtual machine to run its own full operating system as if it had dedicated resources. Hardware support, such as CPU virtualisation extensions, helps provide isolation and efficient resource sharing.
 
 </details>
 
@@ -2207,28 +2209,28 @@ A namespace wraps a global system resource in an abstraction that makes it appea
 <details>
 <summary>Is it good practice to run stateful applications in containers?</summary>
 
-*Answer coming soon!
+It is generally not ideal to run stateful applications in containers because containers are ephemeral and can be stopped or removed at any time. If stateful data is stored inside the container, it can be lost. Instead, it is best to use external storage, such as volumes or managed databases, to persist data while keeping the application container stateless.
 
 </details>
 
 <details>
 <summary>Name some limitations of containers vs VMs</summary>
 
-*Answer coming soon!
+Containers are lightweight but have some limitations compared with virtual machines. They share the host OS kernel, so they cannot run a different operating system. Containers offer weaker isolation, making them less secure in multi-tenant environments. They also rely on the host OS for compatibility and may not be suitable for applications requiring full OS features or legacy software.
 
 </details>
 
 <details>
 <summary>What are some best practices to follow when running containers in production?</summary>
 
-*Answer coming soon!
+When running containers in production, it’s best to keep them small and focused on a single service, use official or trusted images, and avoid running as root. Always manage secrets securely, use resource limits, and monitor container health. Regularly update images to patch vulnerabilities and consider orchestration tools like Kubernetes for scaling, load balancing, and high availability.
 
 </details>
 
 <details>
 <summary>What is the difference between CMD and RUN commands in a Dockerfile?</summary>
 
-*Answer coming soon!
+The difference is in when they execute. RUN executes commands at build time to create layers in the image, such as installing software. CMD defines the default command that runs when a container starts from the image and can be overridden at runtime. RUN affects the image; CMD affects the container.
 
 </details>
 
