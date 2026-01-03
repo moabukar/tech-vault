@@ -1860,9 +1860,9 @@ Terraform will always match the current state to the desired state.
 <details>
 <summary>What are most common Terraform commands?</summary>
 
-```terraform init```: Initialises Terraform in our directory, installs provider plugins and configures our backend. This allows us to start working with Terraform.
-```terraform plan```: Compares our current & desired states and shows us what changes need to be made to match them
-```terraform apply```: Makes the changes to our current state to meet our desired state
+- ```terraform init```: Initialises Terraform in our directory, installs provider plugins and configures our backend. This allows us to start working with Terraform.
+- ```terraform plan```: Compares our current & desired states and shows us what changes need to be made to match them
+- ```terraform apply```: Makes the changes to our current state to meet our desired state
 
 </details>
 
@@ -1876,7 +1876,7 @@ The Terraform backend is effectively where our Terraform statefile (.tfstate is 
 <details>
 <summary>What are modules in Terraform?</summary>
 
-*Answer coming soon!
+Terraform modules are resuable blocks of Terraform resources that are usually grouped by the services that they fall under. For example, when working with AWS, all of your networking-related resources may be created within a module named 'vpc' and all of your storage-related resources may be placed in an 's3' module.
 
 </details>
 
