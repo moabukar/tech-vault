@@ -1906,7 +1906,9 @@ Terraform modules are resuable blocks of Terraform resources that are usually gr
 <details>
 <summary>What is the difference between Terraform and Ansible?</summary>
 
-*Answer coming soon!
+Terraform allows you to define what infrastructure you want. Ansible allows you to configure your infrastructure.
+
+An example would be, using Terraform to create a VM, and using Ansible to install and run services within it.
 
 </details>
 
