@@ -1848,7 +1848,12 @@ Terraform is one of many tools that fall under IaC. It'a used by engineers acros
 <details>
 <summary>What is Terraform state?</summary>
 
-*Answer coming soon!
+In general terms, the Terraform state is a real-time description of all cloud infrastructure that has been created by terraform. The Terraform state however, branches into two:
+
+- Current state: Description of all infrastructure created by Terrafrom in the present. Usually stored in .tfstate files.
+- Desired state: Description of what you want to be created in the cloud. Stored in .tf files
+
+Terraform will always match the current state to the desired state.
 
 </details>
 
