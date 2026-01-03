@@ -1899,7 +1899,9 @@ Terraform modules are resuable blocks of Terraform resources that are usually gr
 <details>
 <summary>Difference between Terraform, AWS CloudFormation and Azure ARM?</summary>
 
-*Answer coming soon!
+- Terraform is cloud-agnostic (it can be used with multiple cloud providers)
+- CloudFormation is AWS-propietary
+- Azure ARM is Azure-propietary
 
 </details>
 
