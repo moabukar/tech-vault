@@ -1869,7 +1869,7 @@ Terraform will always match the current state to the desired state.
 <details>
 <summary>What is Terraform backend?</summary>
 
-*Answer coming soon!
+The Terraform backend is effectively where our Terraform statefile (.tfstate is stored). The backend can either be local (on your local machine), or remote (S3, Azure blob .etc). 
 
 </details>
 
