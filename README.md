@@ -2561,13 +2561,13 @@ Tests are executed automatically as part of the pipeline using predefined script
 A CI/CD pipeline is an automated, repeatable workflow that takes source code from version control and delivers it into a running environment. It is usually defined as code using configuration files, commonly YAML, which allows the pipeline itself to be versioned, reviewed, and reused.
 
 Typical stages include:
-	•	Source: code checkout triggered by a commit or pull request
-	•	Build: compilation and dependency resolution
-	•	Static analysis: linting, formatting, and security or quality checks
-	•	Test: automated unit, integration, and sometimes end-to-end tests
-	•	Package: creation and versioning of build artefacts such as binaries or container images
-	•	Deploy: automated deployment to staging or production environments
-	•	Post-deployment: smoke tests, health checks, and monitoring validation
+- Source: code checkout triggered by a commit or pull request
+- Build: compilation and dependency resolution
+- Static analysis: linting, formatting, and security or quality checks
+- Test: automated unit, integration, and sometimes end-to-end tests
+- Package: creation and versioning of build artefacts such as binaries or container images
+- Deploy: automated deployment to staging or production environments
+- Post-deployment: smoke tests, health checks, and monitoring validation
 
 CI/CD pipelines enforce consistency, reduce manual errors, and provide visibility and traceability across the software delivery lifecycle.
 
