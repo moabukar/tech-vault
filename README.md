@@ -1839,7 +1839,9 @@ To automatically reduce the load on your Amazon EC2 instance when CPU utilizatio
 <details>
 <summary>What is IaC? What is Terraform?</summary>
 
-*Answer coming soon!
+Infrastructure as Code, or IaC, is the practice of automating the provisioning of your cloud resources through code, rather than manually on the console. It facilitates for better tracking of resources, and allows for infrastructure configurations to be replicated over various projects. 
+
+Terraform is one of many tools that fall under IaC. It'a used by engineers across the board as it's reusable, cloud agnostic and idempotent. 
 
 </details>
 
@@ -1853,7 +1855,9 @@ To automatically reduce the load on your Amazon EC2 instance when CPU utilizatio
 <details>
 <summary>What are most common Terraform commands?</summary>
 
-*Answer coming soon!
+```terraform init```: Initialises Terraform in our directory, installs provider plugins and configures our backend. This allows us to start working with Terraform.
+```terraform plan```: Compares our current & desired states and shows us what changes need to be made to match them
+```terraform apply```: Makes the changes to our current state to meet our desired state
 
 </details>
 
