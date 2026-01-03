@@ -2513,112 +2513,161 @@ Container Orchestration (Kubernetes = K8s):
 <details>
 <summary>What problem does CI/CD solve in software development?</summary>
 
-*Answer coming soon!
+CI/CD solves the problem of unreliable and slow software delivery. In traditional development, teams integrate code late, rely heavily on manual testing, and treat releases as high-risk events. This often leads to last-minute failures, rollbacks, and delayed business value.
+
+CI/CD introduces an automated and repeatable process where code changes are integrated early, validated through automated checks, and prepared for release continuously. This reduces integration issues, improves release confidence, and allows organisations to deliver features and fixes to customers faster while maintaining quality and stability.
 
 </details>
 
 <details>
 <summary>What is meant by Continuous Integration?</summary>
 
-*Answer coming soon!
+Continuous Integration is the practice of frequently merging code changes into a shared version control system, usually several times a day. Each change triggers an automated process that builds the application and runs a defined set of tests.
+
+The goal is to validate that the codebase remains in a working state at all times. By enforcing consistent formatting, build rules, and test execution through pipeline configuration, teams catch errors early and avoid large, difficult integrations later in the cycle.
 
 </details>
 
 <details>
 <summary>What is meant by Continuous Delivery?</summary>
 
-*Answer coming soon!
+Continuous Delivery means that every code change which passes the pipeline is automatically prepared for release. The application is packaged, tested, and deployed to environments such as staging in a consistent and repeatable way.
+
+Releases become a business decision rather than a technical challenge. The codebase is always in a deployable state, and deploying to production is a controlled action, often triggered by an approval step rather than additional development work.
 
 </details>
 
 <details>
 <summary>What is meant by Continuous Deployment?</summary>
 
-*Answer coming soon!
+Continuous Deployment is an extension of Continuous Delivery where changes that pass all pipeline stages are deployed to production automatically.
+
+This relies on strong test coverage, reliable pipeline syntax, clear environment configuration, and monitoring. Because deployments are frequent and incremental, failures are easier to detect and isolate. This approach is common in mature systems where rapid feedback and fast iteration are critical.
 
 </details>
 
 <details>
 <summary>Why is automated testing important in CI/CD?</summary>
 
-*Answer coming soon!
+Automated testing provides the confidence required to release software frequently. Each test validates a specific aspect of the system, such as business logic, integration between services, or user workflows.
+
+Tests are executed automatically as part of the pipeline using predefined scripts and configuration files. This ensures consistency, removes manual bottlenecks, and prevents regressions from reaching production. From a business standpoint, it reduces the risk of outages, protects customer trust, and lowers the cost of fixing defects.
 
 </details>
 
 <details>
 <summary>What is a CI/CD pipeline and what are its typical stages?</summary>
 
-*Answer coming soon!
+A CI/CD pipeline is an automated, repeatable workflow that takes source code from version control and delivers it into a running environment. It is usually defined as code using configuration files, commonly YAML, which allows the pipeline itself to be versioned, reviewed, and reused.
+
+Typical stages include:
+	•	Source: code checkout triggered by a commit or pull request
+	•	Build: compilation and dependency resolution
+	•	Static analysis: linting, formatting, and security or quality checks
+	•	Test: automated unit, integration, and sometimes end-to-end tests
+	•	Package: creation and versioning of build artefacts such as binaries or container images
+	•	Deploy: automated deployment to staging or production environments
+	•	Post-deployment: smoke tests, health checks, and monitoring validation
+
+CI/CD pipelines enforce consistency, reduce manual errors, and provide visibility and traceability across the software delivery lifecycle.
 
 </details>
 
 <details>
 <summary>What happens if a pipeline fails?</summary>
 
-*Answer coming soon!
+When a pipeline fails, execution stops immediately and the failure is reported. This prevents invalid or unstable code from progressing to later stages such as deployment.
+
+Failures are logged with clear output, allowing developers to identify issues such as test failures, syntax errors, misconfigured environment variables, or broken dependencies. Early failure is intentional and protects production systems while encouraging fast correction.
 
 </details>
 
 <details>
 <summary>How does Git integrate with CI/CD?</summary>
 
-*Answer coming soon!
+Git acts as the entry point for CI/CD. Events such as commits, pull requests, or merges trigger the pipeline automatically.
+
+Branching strategies, commit history, and pull request reviews integrate directly with pipeline rules. This ensures that only code that meets defined quality checks and formatting standards can be merged and released. Git also provides traceability, making it easy to link deployments back to specific changes.
 
 </details>
 
 <details>
 <summary>How does CI/CD help teams release faster?</summary>
 
-*Answer coming soon!
+CI/CD reduces manual work and waiting time by automating validation and deployment steps. Code changes are small, well-tested, and consistently packaged, which makes them easier to release.
+
+Because pipelines run on every change, feedback is immediate. Teams spend less time fixing late-stage issues and more time delivering value. Faster releases also mean quicker responses to customer feedback and changing business requirements.
 
 </details>
 
 <details>
-<summary>What is a build and what is a build artifact?</summary>
+<summary>What is a build and what is a build artefact?</summary>
 
-*Answer coming soon!
+A build is the process of converting source code into a deployable format. This may include compiling, resolving dependencies, running build scripts, and applying configuration.
+
+A build artefact is the output of this process, such as a compiled binary, a package file, or a container image. Artefacts are versioned and stored so the same package can be promoted across environments, ensuring consistency between testing and production.
 
 </details>
 
 <details>
 <summary>What environments are used in CI/CD and why?</summary>
 
-*Answer coming soon!
+CI/CD commonly uses multiple environments such as development, test, staging, and production. Each environment has its own configuration and purpose.
+
+This separation allows teams to validate behaviour, configuration, and performance safely before exposing changes to users. It also ensures that environment-specific settings such as secrets, URLs, and scaling rules are managed correctly.
 
 </details>
 
 <details>
 <summary>What is a deployment strategy? </summary>
 
-*Answer coming soon!
+A deployment strategy defines how new application versions are rolled out to users. It focuses on availability, rollback capability, and risk control.
+
+Different strategies balance speed and safety in different ways, allowing teams to align deployment behaviour with business priorities and system criticality.
 
 </details>
 
 <details>
 <summary>Explain blue-green deployment</summary>
 
-*Answer coming soon!
+Blue-green deployment uses two identical production environments. One serves live traffic while the other hosts the new version.
+
+After validation, traffic is switched using a load balancer or routing rule. If issues arise, traffic can be switched back immediately. This approach minimises downtime and simplifies rollback.
 
 </details>
 
 <details>
 <summary>What is a canary deployment?</summary>
 
-*Answer coming soon!
+A canary deployment releases a new version to a small portion of users first. Metrics such as error rates and performance are monitored before expanding the rollout.
+
+This approach limits risk while providing real production feedback. If problems are detected, the rollout can be halted without affecting most users.
 
 </details>
 
 <details>
 <summary>What is a rolling deployment?</summary>
 
-*Answer coming soon!
+A rolling deployment updates instances gradually rather than all at once. Old and new versions run side by side during the rollout.
+
+This avoids downtime and allows the system to remain available throughout the deployment. It is widely used because it balances simplicity, availability, and control.
 
 </details>
 
 <details>
-<summary>Walk me through a CI/CD pipeline youv've worked with, from code commit to production?</summary>
+<summary>Walk me through a CI/CD pipeline, from code commit to production?</summary>
 
-*Tips on answering such question coming soon
+From code commit to production, the CI/CD pipeline starts when a developer pushes code to the remote repository or opens a pull request, which automatically triggers the pipeline.
+
+The pipeline first runs in the development environment, where the code is checked out, dependencies are resolved, and the application is built. Static checks such as linting and formatting are executed, followed by fast-running unit tests to validate the code in a development context.
+
+If this stage succeeds, the pipeline packages the application into a versioned artefact, such as a binary or container image, and stores it in an artefact repository. This artefact is built once and then promoted unchanged through subsequent environments.
+
+Next, the artefact is deployed to the staging environment, which mirrors production as closely as possible. In staging, integration tests, smoke tests, and health checks are run to verify system behaviour and interactions with external services. Deployment strategies such as rolling or blue–green deployments are commonly used to reduce risk.
+
+After successful validation in staging, and often following a manual approval step, the same artefact is deployed to the production environment. The deployment is monitored using logs, metrics, and alerts, and automated rollback mechanisms are in place if any issues are detected.
+
+This pipeline enforces a clear separation between development, staging, and production environments while ensuring consistency, traceability, and a controlled release process from code commit to production.
 
 </details>
 
