@@ -1846,6 +1846,24 @@ Terraform is one of many tools that fall under IaC. It'a used by engineers acros
 </details>
 
 <details>
+<summary>Difference between Terraform, AWS CloudFormation and Azure ARM?</summary>
+
+- Terraform is cloud-agnostic (it can be used with multiple cloud providers)
+- CloudFormation is AWS-propietary
+- Azure ARM is Azure-propietary
+
+</details>
+
+<details>
+<summary>What is the difference between Terraform and Ansible?</summary>
+
+Terraform allows you to define what infrastructure you want. Ansible allows you to configure your infrastructure.
+
+An example would be, using Terraform to create a VM, and using Ansible to install and run services within it.
+
+</details>
+
+<details>
 <summary>What is Terraform state?</summary>
 
 In general terms, the Terraform state is a real-time description of all cloud infrastructure that has been created by terraform. The Terraform state however, branches into two:
@@ -1854,6 +1872,16 @@ In general terms, the Terraform state is a real-time description of all cloud in
 - Desired state: Description of what you want to be created in the cloud. Stored in .tf files
 
 Terraform will always match the current state to the desired state.
+
+</details>
+
+<details>
+<summary>What is a local/remote state and when should I use them?</summary>
+
+A local state is a state that is stored in your machine, whereas a remote state is a state that is stored somewhere in the cloud, like S3 Buckets on AWS or Azure Blob Storage on Azure.
+
+- Use a ```local``` state when you're working independently on infrastructure.
+- Use a ```remote``` state when collaborating as part of a team.
 
 </details>
 
@@ -1880,52 +1908,10 @@ Terraform modules are resuable blocks of Terraform resources that are usually gr
 
 </details>
 
-
-<details>
-<summary>What is Terragrunt?</summary>
-
-Terragrunt is a tool that falls under the umbrella of Terraform. It's purpose is to keep our Terraform code DRY, and is best-used when reusing Terraform configurations across multiple environments, such as desired states and backends.
-
-</details>
-
-
-
-<details>
-<summary>Difference between Terraform, AWS CloudFormation and Azure ARM?</summary>
-
-- Terraform is cloud-agnostic (it can be used with multiple cloud providers)
-- CloudFormation is AWS-propietary
-- Azure ARM is Azure-propietary
-
-</details>
-
-<details>
-<summary>What is the difference between Terraform and Ansible?</summary>
-
-Terraform allows you to define what infrastructure you want. Ansible allows you to configure your infrastructure.
-
-An example would be, using Terraform to create a VM, and using Ansible to install and run services within it.
-
-</details>
-
 <details>
 <summary>What are providers in Terraform?</summary>
 
 Terraform providers are plugins that enable Terraform to make API calls to other services, such as AWS, Azure, GCP and CloudFlare.
-
-</details>
-
-<details>
-<summary>How can two or more people work on the same set of Terraforn infrastructure?</summary>
-
-By configuring a remote state. This when your state is configured somewhere on the cloud rather than locally, for example, S3 or Azure Blob.
-
-</details>
-
-<details>
-<summary>What is a null resource in Terraform?</summary>
-
-*Answer coming soon!
 
 </details>
 
@@ -1946,6 +1932,13 @@ By configuring a remote state. This when your state is configured somewhere on t
 
 
 ### **Advanced**
+
+<details>
+<summary>What is Terragrunt?</summary>
+
+Terragrunt is a tool that falls under the umbrella of Terraform. It's purpose is to keep our Terraform code DRY, and is best-used when reusing Terraform configurations across multiple environments, such as desired states and backends.
+
+</details>
 
 <details>
 <summary>I have 3 people in my team who want to work on the same AWS Infrastructure on Terraform as well as same state. What can I do to ensure there are no clashes?</summary>
