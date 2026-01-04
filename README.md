@@ -1916,6 +1916,13 @@ Terraform providers are plugins that enable Terraform to make API calls to other
 </details>
 
 <details>
+<summary>How can you import existing resources under Terraform management?</summary>
+
+*Answer coming soon!
+
+</details>
+
+<details>
 <summary>Which command is used to perform syntax validation on terraform configuration files?</summary>
 
 `terraform validate`
@@ -1976,13 +1983,6 @@ Chekov is a security scanning tool that scans your desired state and checks for 
 </details>
 
 <details>
-<summary>How can I use Terraform in a pipeline?</summary>
-
-*Answer coming soon!
-
-</details>
-
-<details>
 <summary>How can one export data from one module to another?</summary>
 
 *Answer coming soon!
@@ -1990,21 +1990,7 @@ Chekov is a security scanning tool that scans your desired state and checks for 
 </details>
 
 <details>
-<summary>How can you import existing resources under Terraform management?</summary>
-
-*Answer coming soon!
-
-</details>
-
-<details>
 <summary>Which command can be used to reconcile the Terraform state with the actual real-world infrastructure?</summary>
-
-*Answer coming soon!
-
-</details>
-
-<details>
-<summary>What are some best practices when using Terraform modules?</summary>
 
 *Answer coming soon!
 
@@ -2021,15 +2007,6 @@ Chekov is a security scanning tool that scans your desired state and checks for 
 <summary>What are some best practices when writing Terraform code?</summary>
 
 *Answer coming soon!
-
-</details>
-
-<details>
-<summary>How do you export data from one module to another?</summary>
-
-*Answer coming soon!
-
-</details>
 
 </details>
 
