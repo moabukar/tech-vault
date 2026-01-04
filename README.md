@@ -1922,9 +1922,9 @@ An example would be, using Terraform to create a VM, and using Ansible to instal
 </details>
 
 <details>
-<summary>How can two people using the Terraform cloud can create two different sets of infrastructure using the same working directory?</summary>
+<summary>How can two or more people work on the same set of Terraforn infrastructure?</summary>
 
-*Answer coming soon!
+By configuring a remote state. This when your state is configured somewhere on the cloud rather than locally, for example, S3 or Azure Blob.
 
 </details>
 
