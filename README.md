@@ -1884,16 +1884,10 @@ Terraform modules are resuable blocks of Terraform resources that are usually gr
 <details>
 <summary>What is Terragrunt?</summary>
 
-*Answer coming soon!
+Terragrunt is a tool that falls under the umbrella of Terraform. It's purpose is to keep our Terraform code DRY, and is best-used when reusing Terraform configurations across multiple environments, such as desired states and backends.
 
 </details>
 
-<details>
-<summary>Explain the workflow of the core Terraform?</summary>
-
-*Answer coming soon!
-
-</details>
 
 
 <details>
@@ -1915,9 +1909,9 @@ An example would be, using Terraform to create a VM, and using Ansible to instal
 </details>
 
 <details>
-<summary>What are provisioners in Terraform?</summary>
+<summary>What are providers in Terraform?</summary>
 
-*Answer coming soon!
+Terraform providers are plugins that enable Terraform to make API calls to other services, such as AWS, Azure, GCP and CloudFlare.
 
 </details>
 
