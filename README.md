@@ -1918,8 +1918,8 @@ Terraform providers are plugins that enable Terraform to make API calls to other
 <details>
 <summary>How can you import existing resources under Terraform management?</summary>
 
-- Create an import block with the resource id (for later versions, you can use the 'identity' attribute)
-- Run ```terraform import <resource>```
+- Create an import block with the resource id (for later versions of terraform, you can use the 'identity' attribute)
+- Run ```terraform import <resource>``` (you can just run ```terraform apply``` for later versions of terraform)
 
 </details>
 
@@ -1989,7 +1989,7 @@ Chekov is a security scanning tool that scans your desired state and checks for 
 Import our resources by either:
 
 - Creating an import block with the resource id (for later versions, you can use the 'identity' attribute)
-- Running ```terraform import <resource>```
+- Running ```terraform import <resource>``` (you can just run ```terraform apply``` for later versions of terraform)
 
 </details>
 
