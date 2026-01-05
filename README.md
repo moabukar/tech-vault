@@ -1957,7 +1957,7 @@ Terragrunt is a tool that falls under the umbrella of Terraform. It's purpose is
 <details>
 <summary>In a pipeline, where would you store the Terraform state?</summary>
 
-*Answer coming soon!
+You need to store your state remotely. Pipelines are ephemeral, so with a local state, each runner would have their own state, causing collisions and corruption due to re-creation attempts.
 
 </details>
 
