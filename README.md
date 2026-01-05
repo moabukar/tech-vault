@@ -1918,7 +1918,8 @@ Terraform providers are plugins that enable Terraform to make API calls to other
 <details>
 <summary>How can you import existing resources under Terraform management?</summary>
 
-*Answer coming soon!
+- Create an import block with the resource id (for later versions, you can use the 'identity' attribute)
+- Run ```terraform import <resource>```
 
 </details>
 
@@ -1962,16 +1963,9 @@ You need to store your state remotely. Pipelines are ephemeral, so with a local 
 </details>
 
 <details>
-<summary>Can I test my terraform modules? If so, how can I test them? Is there a common framework used to Terraform modules?</summary>
-
-*Answer coming soon!
-
-</details>
-
-<details>
 <summary>How does state file locking work?</summary>
 
-*Answer coming soon!
+When a ```terraform plan``` or a ```terraform apply``` is run, terraform first acquires a state lock before reading and comparing state, which stops other engineers from making changes to the state. As soon as the plan/apply is done, the state lock is released and the state is free to be changed again.
 
 </details>
 
@@ -1992,7 +1986,10 @@ Chekov is a security scanning tool that scans your desired state and checks for 
 <details>
 <summary>Which command can be used to reconcile the Terraform state with the actual real-world infrastructure?</summary>
 
-*Answer coming soon!
+Import our resources by either:
+
+- Creating an import block with the resource id (for later versions, you can use the 'identity' attribute)
+- Running ```terraform import <resource>```
 
 </details>
 
