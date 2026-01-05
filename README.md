@@ -1951,7 +1951,7 @@ Terragrunt is a tool that falls under the umbrella of Terraform. It's purpose is
 <details>
 <summary>I have 3 people in my team who want to work on the same AWS Infrastructure on Terraform as well as same state. What can I do to ensure there are no clashes?</summary>
 
-*Answer coming soon!
+Configure a remote backend with state-locking enabled.
 
 </details>
 
@@ -1979,7 +1979,7 @@ Chekov is a security scanning tool that scans your desired state and checks for 
 <details>
 <summary>How can one export data from one module to another?</summary>
 
-*Answer coming soon!
+Create output variables in the module you want to export data from, and define them in other modules.
 
 </details>
 
@@ -1996,14 +1996,16 @@ Import our resources by either:
 <details>
 <summary>How do you handle secrets and sensitive data in Terraform?</summary>
 
-*Answer coming soon!
+Store all sensitive data in ```.tfvars``` files, and place them in ```.gitignore```.
 
 </details>
 
 <details>
 <summary>What are some best practices when writing Terraform code?</summary>
 
-*Answer coming soon!
+- Keep code DRY (Don't Repeat Yourself)
+- Break up your Terraform configuration into reusable modules
+- Keep statefiles hidden (.tfstate)
 
 </details>
 
