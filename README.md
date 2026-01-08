@@ -2018,8 +2018,6 @@ Store all sensitive data in ```.tfvars``` files, and place them in ```.gitignore
 
 <br>
 
-Container (Docker):
-
 <details>
 <summary>What is a container and what are its fundamentals?</summary>
 
@@ -2214,91 +2212,91 @@ The difference is in when they execute. RUN executes commands at build time to c
 <details>
 <summary>What is Kubernetes?</summary>
 
-*Answer coming soon!
+Kubernetes is an open-source container orchestration platform used to manage, scale, and deploy containerised applications across multiple hosts. It automates tasks like scheduling, load balancing, rolling updates, and self-healing, ensuring applications run reliably and efficiently in production environments.
 
 </details>
 
 <details>
 <summary>What problems does Kubernetes solve?</summary>
 
-*Answer coming soon!
+Kubernetes solves the challenges of running containerised applications at scale. It handles automated deployment, scaling, and management of containers across multiple hosts, provides load balancing, self-healing for failed containers, and simplifies networking and storage. This ensures applications remain available, resilient, and easy to maintain in production.
 
 </details>
 
 <details>
 <summary>What is the difference between Docker and K8s?</summary>
 
-*Answer coming soon!
+Docker is a platform for building, running, and managing individual containers, while Kubernetes (K8s) is an orchestration system for deploying and managing many containers across multiple hosts. Docker focuses on containerisation itself, whereas Kubernetes handles scaling, load balancing, and maintaining containerised applications in production.
 
 </details>
 
 <details>
 <summary>What are the core components of the control plane and data plane? What are the components used for?</summary>
 
-*Answer coming soon!
+In Kubernetes, the control plane manages the cluster and makes global decisions. Its core components include the API server (handles requests), etcd (stores cluster state), scheduler (assigns workloads to nodes), and controller manager (maintains desired state). The data plane runs workloads on nodes and includes the kubelet (ensures containers run), kube-proxy (handles networking), and the container runtime. The control plane directs the cluster, while the data plane executes workloads.
 
 </details>
 
 <details>
 <summary>What is a Pod and what does it do?</summary>
 
-*Answer coming soon!
+A Pod is the smallest deployable unit in Kubernetes and represents one or more containers that share the same network, storage, and lifecycle. Pods allow containers to communicate easily and manage resources together. They provide isolation, scheduling, and scaling, and are the basic building blocks for running applications in a Kubernetes cluster.
 
 </details>
 
 <details>
 <summary>How can containers within a pod communicate with each other?</summary>
 
-*Answer coming soon!
+Containers within a pod communicate with each other using localhost networking because they share the same network namespace. They can also share volumes for file-based communication. This allows containers in the same pod to easily exchange data and coordinate their tasks.
 
 </details>
 
 <details>
 <summary>What is a K8s cluster ?</summary>
 
-*Answer coming soon!
+A Kubernetes cluster is a set of machines (nodes) that run containerised applications under the control of the Kubernetes control plane. It includes master components that manage the cluster and worker nodes that run application workloads. The cluster provides scalability, load balancing, and high availability for applications.
 
 </details>
 
 <details>
 <summary>What are deployments?</summary>
 
-*Answer coming soon!
+A Deployment in Kubernetes is a resource that manages a set of Pods and ensures the desired number of replicas are running. It handles rolling updates, rollbacks, and scaling, making it easier to deploy and maintain applications reliably in a cluster.
 
 </details>
 
 <details>
 <summary>What are stateful sets?</summary>
 
-*Answer coming soon!
+A StatefulSet in Kubernetes manages stateful applications that require stable, unique network identities and persistent storage. Unlike Deployments, StatefulSets ensure Pods are created and deleted in a defined order and maintain their data across restarts, making them suitable for databases and other stateful services.
 
 </details>
 
 <details>
 <summary>How do you restrict pod-to-pod communication in a cluster?</summary>
 
-*Answer coming soon!
+Pod-to-pod communication in a Kubernetes cluster can be restricted using Network Policies. These define rules specifying which Pods can communicate with each other or with external endpoints. By default, all Pods can communicate, so applying network policies allows you to enforce isolation and control traffic between Pods for security.
 
 </details>
 
 <details>
 <summary>How can I rollback a deployment?</summary>
 
-*Answer coming soon!
+You can rollback a Kubernetes deployment using the kubectl rollout undo command. This restores the deployment to a previous revision, allowing you to quickly recover from failed updates or errors while keeping the desired number of Pods running.
 
 </details>
 
 <details>
 <summary>What are namespaces?</summary>
 
-*Answer coming soon!
+Namespaces in Kubernetes are virtual clusters within a single physical cluster. They help organise and isolate resources, allowing multiple teams or applications to share the same cluster without interfering with each other. Namespaces also enable resource quotas and access control.
 
 </details>
 
 <details>
 <summary>What is the role of the kube-apiserver?</summary>
 
-*Answer coming soon!
+The kube-apiserver is the central component of the Kubernetes control plane. It exposes the Kubernetes API, validates and processes requests, and serves as the gateway for all interactions with the cluster. Other control plane components and users communicate with the cluster through the API server.
 
 </details>
 
@@ -2308,56 +2306,49 @@ The difference is in when they execute. RUN executes commands at build time to c
 <details>
 <summary>Take me through a full cycle of an app deployment from code to an app running on a pod/deployment.</summary>
 
-*Answer coming soon!
-
-</details>
-
-<details>
-<summary>Can you mention some good practices to follow when creating containers?</summary>
-
-*Answer coming soon!
+A full Kubernetes app deployment starts with writing the application code and building a container image, usually with Docker. The image is pushed to a container registry. Next, you create Kubernetes manifests, such as a Deployment and Service, defining how many Pods to run and how they are exposed. Using kubectl apply, the manifests are sent to the API server. The scheduler assigns Pods to nodes, kubelets pull the container image, and the containers start running. The Service exposes the app, allowing users or other Pods to access it. The Deployment ensures the desired state is maintained, handling scaling and updates automatically.
 
 </details>
 
 <details>
 <summary>Can you explain a simple K8s cluster architecture and the components within it?</summary>
 
-*Answer coming soon!
+A simple Kubernetes cluster has a control plane and worker nodes. The control plane includes the API server (handles requests), etcd (stores cluster state), scheduler (assigns Pods to nodes), and controller manager (maintains desired state). Worker nodes run the application workloads and include the kubelet (manages containers), kube-proxy (handles networking), and the container runtime (like Docker or containerd). The control plane manages the cluster, while worker nodes execute the workloads.
 
 </details>
 
 <details>
 <summary>What happens when a master node fails?</summary>
 
-*Answer coming soon!
+If a master node fails in Kubernetes, the cluster’s control plane becomes unavailable, meaning no new Pods can be scheduled, and management operations cannot be processed. However, existing workloads on worker nodes continue to run. To prevent downtime, clusters often have high-availability setups with multiple master nodes so that if one fails, others can take over.
 
 </details>
 
 <details>
 <summary>What is an Ingress controller?</summary>
 
-*Answer coming soon!
+An Ingress controller in Kubernetes is a component that manages external access to services in a cluster, usually via HTTP or HTTPS. It watches Ingress resources and configures a load balancer or reverse proxy to route traffic to the correct service, enabling features like path-based routing, SSL termination, and virtual hosting.
 
 </details>
 
 <details>
 <summary>How can one build a highly availabe (HA) cluster in K8s?</summary>
 
-*Answer coming soon!
+A highly available (HA) Kubernetes cluster is built by running multiple master nodes across different failure zones. Each master node runs components like the API server, scheduler, and controller manager, often behind a load balancer to distribute requests. Etcd is also configured in a clustered, replicated setup. Worker nodes are spread across zones, ensuring workloads continue running if a node or zone fails.
 
 </details>
 
 <details>
 <summary>What is the role of ETCD in K8s?</summary>
 
-*Answer coming soon!
+etcd is a distributed key-value store used by Kubernetes to store all cluster state and configuration data. It holds information about Pods, Services, ConfigMaps, and more. The control plane reads from and writes to etcd to ensure the desired state of the cluster is maintained, making it a critical component for reliability and consistency.
 
 </details>
 
 <details>
 <summary>Explain what are Taints and Tolerations in K8s?</summary>
 
-*Answer coming soon!
+Taints and tolerations in Kubernetes control which Pods can be scheduled on which nodes. A taint is applied to a node to repel certain Pods, while a toleration is applied to a Pod to allow it to be scheduled on nodes with matching taints. This helps isolate workloads, reserve nodes for specific purposes, and manage cluster resources effectively.
 
 </details>
 
