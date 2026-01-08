@@ -45,7 +45,6 @@ Note: Questions sourced from external references are properly credited in the [R
     - [Data Architect](#architect)
     - [Data Engineering](#engineering)
     - [SQL](#sql)
-- [X] [Machine Learning](#machine-learning)
 - [X] [Cyber Security & InfoSecurity](#cyber-security--info-security)
 
 
@@ -4198,15 +4197,6 @@ On the other hand, NoSQL databases are non-relational databases that store data 
 
 </details>
 
-
-## Machine Learning
-
-<details>
-  <summary><strong>*Coming soon!</strong></summary>
-
-<br>
-
-</details>
 
 ## Cyber Security & Info Security
 
