@@ -2648,42 +2648,6 @@ This pipeline enforces a clear separation between development, staging, and prod
 
 </details>
 
-
-<details>
-  <summary><h3 id="ops">DevOps methodology, practices, & Agile</h3></summary>
-
-<br>
-
-<details>
-<summary>What is meant by continuous integratons?</summary>
-
-*Answer coming soon!
-
-</details>
-
-<details>
-<summary>What are the advantages of DevOps?</summary>
-
-*Answer coming soon!
-
-</details>
-
-<details>
-<summary>Can you describe some branching strategies you have used?</summary>
-
-*Answer coming soon!
-
-</details>
-
-<details>
-<summary>What is the blue/green deployment pattern?</summary>
-
-*Answer coming soon!
-
-</details>
-
-</details>
-
 ## System Design
 
 <details>
