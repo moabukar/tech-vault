@@ -27,7 +27,8 @@ Note: Questions sourced from external references are properly credited in the [R
     - [AWS](#aws)
     - [Azure](#azure)
     - [Terraform](#terraform)
-    - [Docker & K8s](#dockerandk8s)
+    - [Docker & K8s](#docker)
+    - [Kubernetes](#k8s)
     - [Ansible](#ansible)
     - [CI/CD](#cicd)
     - [DevOps methodology, practices, & Agile](#ops)
@@ -2013,7 +2014,7 @@ Store all sensitive data in ```.tfvars``` files, and place them in ```.gitignore
 
 
 <details>
-  <summary><h3 id="dockerandk8s">Docker & K8s</h3></summary>
+  <summary><h3 id="docker">Docker</h3></summary>
 
 <br>
 
@@ -2206,7 +2207,9 @@ The difference is in when they execute. RUN executes commands at build time to c
 </details>
 
 <details>
-Container Orchestration (Kubernetes = K8s):
+  <summary><h3 id="k8s">Kubernetes</h3></summary>
+
+<br>
 
 <details>
 <summary>What is Kubernetes?</summary>
