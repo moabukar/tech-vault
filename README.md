@@ -2203,6 +2203,9 @@ The difference is in when they execute. RUN executes commands at build time to c
 
 </details>
 
+</details>
+
+<details>
 Container Orchestration (Kubernetes = K8s):
 
 <details>
@@ -2356,6 +2359,8 @@ Container Orchestration (Kubernetes = K8s):
 </details>
 
 </details>
+
+
 
 
 <details>
