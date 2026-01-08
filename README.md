@@ -31,7 +31,6 @@ Note: Questions sourced from external references are properly credited in the [R
     - [Kubernetes](#k8s)
     - [Ansible](#ansible)
     - [CI/CD](#cicd)
-    - [DevOps methodology, practices, & Agile](#ops)
 - [X] [System Design](#system-design)
     - [CDN & Caching](#cdn)
     - [Databases](#databases)
@@ -46,7 +45,6 @@ Note: Questions sourced from external references are properly credited in the [R
     - [Data Architect](#architect)
     - [Data Engineering](#engineering)
     - [SQL](#sql)
-    - [ETL & Data Pipelines](#pipelines)
 - [X] [Machine Learning](#machine-learning)
 - [X] [Cyber Security & InfoSecurity](#cyber-security--info-security)
 
