@@ -27,10 +27,10 @@ Note: Questions sourced from external references are properly credited in the [R
     - [AWS](#aws)
     - [Azure](#azure)
     - [Terraform](#terraform)
-    - [Docker & K8s](#dockerandk8s)
+    - [Docker & K8s](#docker)
+    - [Kubernetes](#k8s)
     - [Ansible](#ansible)
     - [CI/CD](#cicd)
-    - [DevOps methodology, practices, & Agile](#ops)
 - [X] [System Design](#system-design)
     - [CDN & Caching](#cdn)
     - [Databases](#databases)
@@ -45,8 +45,6 @@ Note: Questions sourced from external references are properly credited in the [R
     - [Data Architect](#architect)
     - [Data Engineering](#engineering)
     - [SQL](#sql)
-    - [ETL & Data Pipelines](#pipelines)
-- [X] [Machine Learning](#machine-learning)
 - [X] [Cyber Security & InfoSecurity](#cyber-security--info-security)
 
 
@@ -1839,86 +1837,87 @@ To automatically reduce the load on your Amazon EC2 instance when CPU utilizatio
 <details>
 <summary>What is IaC? What is Terraform?</summary>
 
-*Answer coming soon!
+Infrastructure as Code, or IaC, is the practice of automating the provisioning of your cloud resources through code, rather than manually on the console. It facilitates for better tracking of resources, and allows for infrastructure configurations to be replicated over various projects. 
+
+Terraform is one of many tools that fall under IaC. It'a used by engineers across the board as it's reusable, cloud agnostic and idempotent. 
 
 </details>
-
-<details>
-<summary>What is Terraform state?</summary>
-
-*Answer coming soon!
-
-</details>
-
-<details>
-<summary>What are most common Terraform commands?</summary>
-
-*Answer coming soon!
-
-</details>
-
-<details>
-<summary>What is Terraform backend?</summary>
-
-*Answer coming soon!
-
-</details>
-
-<details>
-<summary>What are modules in Terraform?</summary>
-
-*Answer coming soon!
-
-</details>
-
-
-<details>
-<summary>What is Terragrunt?</summary>
-
-*Answer coming soon!
-
-</details>
-
-<details>
-<summary>Explain the workflow of the core Terraform?</summary>
-
-*Answer coming soon!
-
-</details>
-
 
 <details>
 <summary>Difference between Terraform, AWS CloudFormation and Azure ARM?</summary>
 
-*Answer coming soon!
+- Terraform is cloud-agnostic (it can be used with multiple cloud providers)
+- CloudFormation is AWS-propietary
+- Azure ARM is Azure-propietary
 
 </details>
 
 <details>
 <summary>What is the difference between Terraform and Ansible?</summary>
 
-*Answer coming soon!
+Terraform allows you to define what infrastructure you want. Ansible allows you to configure your infrastructure.
+
+An example would be, using Terraform to create a VM, and using Ansible to install and run services within it.
 
 </details>
 
 <details>
-<summary>What are provisioners in Terraform?</summary>
+<summary>What is Terraform state?</summary>
 
-*Answer coming soon!
+In general terms, the Terraform state is a real-time description of all cloud infrastructure that has been created by terraform. The Terraform state however, branches into two:
 
-</details>
+- Current state: Description of all infrastructure created by Terrafrom in the present. Usually stored in .tfstate files.
+- Desired state: Description of what you want to be created in the cloud. Stored in .tf files
 
-<details>
-<summary>How can two people using the Terraform cloud can create two different sets of infrastructure using the same working directory?</summary>
-
-*Answer coming soon!
+Terraform will always match the current state to the desired state.
 
 </details>
 
 <details>
-<summary>What is a null resource in Terraform?</summary>
+<summary>What is a local/remote state and when should I use them?</summary>
 
-*Answer coming soon!
+A local state is a state that is stored in your machine, whereas a remote state is a state that is stored somewhere in the cloud, like S3 Buckets on AWS or Azure Blob Storage on Azure.
+
+- Use a ```local``` state when you're working independently on infrastructure.
+- Use a ```remote``` state when collaborating as part of a team.
+
+</details>
+
+<details>
+<summary>What are most common Terraform commands?</summary>
+
+- ```terraform init```: Initialises Terraform in our directory, installs provider plugins and configures our backend. This allows us to start working with Terraform.
+- ```terraform plan```: Compares our current & desired states and shows us what changes need to be made to match them
+- ```terraform apply```: Makes the changes to our current state to meet our desired state
+
+</details>
+
+<details>
+<summary>What is Terraform backend?</summary>
+
+The Terraform backend is effectively where our Terraform statefile (.tfstate is stored). The backend can either be local (on your local machine), or remote (S3, Azure blob .etc). 
+
+</details>
+
+<details>
+<summary>What are modules in Terraform?</summary>
+
+Terraform modules are resuable blocks of Terraform resources that are usually grouped by the services that they fall under. For example, when working with AWS, all of your networking-related resources may be created within a module named 'vpc' and all of your storage-related resources may be placed in an 's3' module.
+
+</details>
+
+<details>
+<summary>What are providers in Terraform?</summary>
+
+Terraform providers are plugins that enable Terraform to make API calls to other services, such as AWS, Azure, GCP and CloudFlare.
+
+</details>
+
+<details>
+<summary>How can you import existing resources under Terraform management?</summary>
+
+- Create an import block with the resource id (for later versions of terraform, you can use the 'identity' attribute)
+- Run ```terraform import <resource>``` (you can just run ```terraform apply``` for later versions of terraform)
 
 </details>
 
@@ -1941,93 +1940,70 @@ To automatically reduce the load on your Amazon EC2 instance when CPU utilizatio
 ### **Advanced**
 
 <details>
+<summary>What is Terragrunt?</summary>
+
+Terragrunt is a tool that falls under the umbrella of Terraform. It's purpose is to keep our Terraform code DRY, and is best-used when reusing Terraform configurations across multiple environments, such as desired states and backends.
+
+</details>
+
+<details>
 <summary>I have 3 people in my team who want to work on the same AWS Infrastructure on Terraform as well as same state. What can I do to ensure there are no clashes?</summary>
 
-*Answer coming soon!
+Configure a remote backend with state-locking enabled.
 
 </details>
 
 <details>
 <summary>In a pipeline, where would you store the Terraform state?</summary>
 
-*Answer coming soon!
-
-</details>
-
-<details>
-<summary>Can I test my terraform modules? If so, how can I test them? Is there a common framework used to Terraform modules?</summary>
-
-*Answer coming soon!
+You need to store your state remotely. Pipelines are ephemeral, so with a local state, each runner would have their own state, causing collisions and corruption due to re-creation attempts.
 
 </details>
 
 <details>
 <summary>How does state file locking work?</summary>
 
-*Answer coming soon!
+When a ```terraform plan``` or a ```terraform apply``` is run, terraform first acquires a state lock before reading and comparing state, which stops other engineers from making changes to the state. As soon as the plan/apply is done, the state lock is released and the state is free to be changed again.
 
 </details>
 
 <details>
 <summary>What is Checkov?</summary>
 
-*Answer coming soon!
-
-</details>
-
-<details>
-<summary>How can I use Terraform in a pipeline?</summary>
-
-*Answer coming soon!
+Chekov is a security scanning tool that scans your desired state and checks for compliance with security best-practices.
 
 </details>
 
 <details>
 <summary>How can one export data from one module to another?</summary>
 
-*Answer coming soon!
-
-</details>
-
-<details>
-<summary>How can you import existing resources under Terraform management?</summary>
-
-*Answer coming soon!
+Create output variables in the module you want to export data from, and define them in other modules.
 
 </details>
 
 <details>
 <summary>Which command can be used to reconcile the Terraform state with the actual real-world infrastructure?</summary>
 
-*Answer coming soon!
+Import our resources by either:
 
-</details>
-
-<details>
-<summary>What are some best practices when using Terraform modules?</summary>
-
-*Answer coming soon!
+- Creating an import block with the resource id (for later versions, you can use the 'identity' attribute)
+- Running ```terraform import <resource>``` (you can just run ```terraform apply``` for later versions of terraform)
 
 </details>
 
 <details>
 <summary>How do you handle secrets and sensitive data in Terraform?</summary>
 
-*Answer coming soon!
+Store all sensitive data in ```.tfvars``` files, and place them in ```.gitignore```.
 
 </details>
 
 <details>
 <summary>What are some best practices when writing Terraform code?</summary>
 
-*Answer coming soon!
-
-</details>
-
-<details>
-<summary>How do you export data from one module to another?</summary>
-
-*Answer coming soon!
+- Keep code DRY (Don't Repeat Yourself)
+- Break up your Terraform configuration into reusable modules
+- Keep statefiles hidden (.tfstate)
 
 </details>
 
@@ -2035,23 +2011,21 @@ To automatically reduce the load on your Amazon EC2 instance when CPU utilizatio
 
 
 <details>
-  <summary><h3 id="dockerandk8s">Docker & K8s</h3></summary>
+  <summary><h3 id="docker">Docker</h3></summary>
 
 <br>
-
-Container (Docker):
 
 <details>
 <summary>What is a container and what are its fundamentals?</summary>
 
-*Answer coming soon!
+A container is a lightweight, portable way to package an application along with everything it needs to run, such as its code, libraries, and dependencies. Containers share the host operating system’s kernel but run in isolated environments, which makes them faster and more efficient than virtual machines. Key fundamentals of containers include isolation, portability, consistency across environments, and the ability to start and stop quickly.
 
 </details>
 
 <details>
 <summary>What are c-groups and namespaces in Linux?</summary>
 
-*Answer coming soon!
+
 
 </details>
 
@@ -2077,63 +2051,65 @@ A namespace wraps a global system resource in an abstraction that makes it appea
 <details>
 <summary>When do I use Docker Compose vs Docker Swarm and K8s?</summary>
 
-*Answer coming soon!
+Docker Compose is used for running and managing multi-container applications on a single machine, mainly for local development and testing. Docker Swarm and Kubernetes are used for orchestrating containers across multiple machines in production, handling scaling, load balancing, and high availability. Swarm is simpler to set up, while Kubernetes is more powerful and widely used for complex, large-scale systems.
 
 </details>
 
 <details>
 <summary>What is a Dockerfile used for?</summary>
 
-*Answer coming soon!
+A Dockerfile is used to define the steps needed to build a Docker image in a clear and repeatable way. It contains instructions such as which base image to use, how to install dependencies, copy application files, and configure how the container runs. This ensures the same image can be built consistently across different environments.
 
 </details>
 
 <details>
 <summary>Can you explain the basic components of a Dockerfile?</summary>
 
-*Answer coming soon!
+A Dockerfile is made up of instructions that describe how a Docker image should be built. Common components include FROM to define the base image, WORKDIR to set the working directory, COPY or ADD to include files, RUN to execute build commands, EXPOSE to document ports, and CMD or ENTRYPOINT to define how the container starts.
 
 </details>
 
 <details>
 <summary>How is a container different from a virtual machine?</summary>
 
-*Answer coming soon!
+A container shares the host operating system’s kernel and runs as an isolated process, making it lightweight and fast to start. A virtual machine includes a full guest operating system on top of a hypervisor, which makes it heavier and slower to boot. Containers are more efficient for running applications, while virtual machines provide stronger isolation.
 
 </details>
 
 <details>
 <summary>How can I run a container?</summary>
 
-*Answer coming soon!
+A container can be run by using a container image and starting it with a container runtime such as Docker. For example, the docker run command is used to create and start a container from an image, optionally exposing ports, setting environment variables, and mounting volumes. This allows the application inside the container to run in an isolated and controlled environment.
 
 </details>
 
 <details>
 <summary>How can I stop and remove a container?</summary>
 
-*Answer coming soon!
+A running container can be stopped using the docker stop command, which safely shuts it down. Once stopped, the container can be removed with the docker rm command. This cleans up the container while leaving the original image unchanged.
 
 </details>
 
 <details>
 <summary>How can I attach a shell to a terminal of a running container?</summary>
 
-*Answer coming soon!
+You can attach a shell to a running container using the docker exec command. For example, docker exec -it 
+< container_name_or_id > /bin/bash opens an interactive terminal inside the container. This allows you to inspect the container’s environment and run commands while it is running.
+
 
 </details>
 
 <details>
 <summary>What is a dangling image?</summary>
 
-*Answer coming soon!
+A dangling image is a Docker image that is no longer tagged and is not referenced by any container. These images are usually created during image rebuilds when old layers are left behind. They take up disk space and can be safely removed if they are no longer needed.
 
 </details>
 
 <details>
 <summary>What is Docker compose and when is it used?</summary>
 
-*Answer coming soon!
+Docker Compose is a tool used to define and run multi-container applications using a single configuration file. It is mainly used for local development and testing, where you need multiple services, such as an application and a database, to run together. Docker Compose makes it easy to start, stop, and manage these containers as one unit.
 
 </details>
 
@@ -2142,49 +2118,49 @@ A namespace wraps a global system resource in an abstraction that makes it appea
 <details>
 <summary>What is the difference between COPY and ADD commands in a Dockerfile?</summary>
 
-*Answer coming soon!
+Both COPY and ADD are used to add files into a Docker image, but COPY is simpler and more predictable. COPY only copies files and directories from the local filesystem into the image. ADD has extra features, such as extracting local tar files and downloading files from URLs, which can make behaviour less explicit, so COPY is generally recommended unless those extra features are needed.
 
 </details>
 
 <details>
 <summary>How do containers work at a lower level?</summary>
 
-*Answer coming soon!
+At a lower level, containers work by using Linux kernel features to isolate and manage processes. Namespaces give containers their own view of system resources, such as processes, networking, and filesystems, while c-groups limit and control resource usage like CPU and memory. A container runtime then uses these features to run applications in isolated environments on the same host operating system.
 
 </details>
 
 <details>
 <summary>What is the difference between "expose" and "publish" in Docker?</summary>
 
-*Answer coming soon!
+In Docker, EXPOSE is used in a Dockerfile to document which ports the application listens on inside the container. It does not make the port accessible from outside the container by itself. Publish refers to mapping a container port to a host port using options like -p with docker run, which actually makes the service accessible externally.
 
 </details>
 
 <details>
 <summary>What is the difference between Docker RUN, CMD and ENTRYPOINT?</summary>
 
-*Answer coming soon!
+RUN, CMD, and ENTRYPOINT serve different purposes in a Dockerfile. RUN executes commands at build time to create image layers, such as installing packages. CMD defines the default command that runs when a container starts and can be overridden. ENTRYPOINT sets the main executable for the container and is usually not overridden, making it useful for defining a fixed container behaviour.
 
 </details>
 
 <details>
 <summary>When you limit the memory for a container, does it reserve that memory for the container?</summary>
 
-*Answer coming soon!
+No, limiting memory for a container does not reserve that memory by default. It sets a maximum amount the container is allowed to use, but the memory is only consumed when the application actually needs it. This helps prevent a container from using too much memory without wasting unused resources.
 
 </details>
 
 <details>
 <summary>What is an orphant volume? And how can you remove it?</summary>
 
-*Answer coming soon!
+An orphaned volume is a Docker volume that is no longer used by any container but still exists on the host. These volumes can remain after containers are removed and continue to take up disk space. They can be removed manually with docker volume rm or cleaned up in bulk using docker volume prune.
 
 </details>
 
 <details>
 <summary>How does virtualisation work at a lower level?</summary>
 
-*Answer coming soon!
+Virtualisation works by using a hypervisor to create and manage virtual machines on a physical host. The hypervisor abstracts the underlying hardware, allowing each virtual machine to run its own full operating system as if it had dedicated resources. Hardware support, such as CPU virtualisation extensions, helps provide isolation and efficient resource sharing.
 
 </details>
 
@@ -2198,121 +2174,126 @@ A namespace wraps a global system resource in an abstraction that makes it appea
 <details>
 <summary>Is it good practice to run stateful applications in containers?</summary>
 
-*Answer coming soon!
+It is generally not ideal to run stateful applications in containers because containers are ephemeral and can be stopped or removed at any time. If stateful data is stored inside the container, it can be lost. Instead, it is best to use external storage, such as volumes or managed databases, to persist data while keeping the application container stateless.
 
 </details>
 
 <details>
 <summary>Name some limitations of containers vs VMs</summary>
 
-*Answer coming soon!
+Containers are lightweight but have some limitations compared with virtual machines. They share the host OS kernel, so they cannot run a different operating system. Containers offer weaker isolation, making them less secure in multi-tenant environments. They also rely on the host OS for compatibility and may not be suitable for applications requiring full OS features or legacy software.
 
 </details>
 
 <details>
 <summary>What are some best practices to follow when running containers in production?</summary>
 
-*Answer coming soon!
+When running containers in production, it’s best to keep them small and focused on a single service, use official or trusted images, and avoid running as root. Always manage secrets securely, use resource limits, and monitor container health. Regularly update images to patch vulnerabilities and consider orchestration tools like Kubernetes for scaling, load balancing, and high availability.
 
 </details>
 
 <details>
 <summary>What is the difference between CMD and RUN commands in a Dockerfile?</summary>
 
-*Answer coming soon!
+The difference is in when they execute. RUN executes commands at build time to create layers in the image, such as installing software. CMD defines the default command that runs when a container starts from the image and can be overridden at runtime. RUN affects the image; CMD affects the container.
 
 </details>
 
-Container Orchestration (Kubernetes = K8s):
+</details>
+
+<details>
+  <summary><h3 id="k8s">Kubernetes</h3></summary>
+
+<br>
 
 <details>
 <summary>What is Kubernetes?</summary>
 
-*Answer coming soon!
+Kubernetes is an open-source container orchestration platform used to manage, scale, and deploy containerised applications across multiple hosts. It automates tasks like scheduling, load balancing, rolling updates, and self-healing, ensuring applications run reliably and efficiently in production environments.
 
 </details>
 
 <details>
 <summary>What problems does Kubernetes solve?</summary>
 
-*Answer coming soon!
+Kubernetes solves the challenges of running containerised applications at scale. It handles automated deployment, scaling, and management of containers across multiple hosts, provides load balancing, self-healing for failed containers, and simplifies networking and storage. This ensures applications remain available, resilient, and easy to maintain in production.
 
 </details>
 
 <details>
 <summary>What is the difference between Docker and K8s?</summary>
 
-*Answer coming soon!
+Docker is a platform for building, running, and managing individual containers, while Kubernetes (K8s) is an orchestration system for deploying and managing many containers across multiple hosts. Docker focuses on containerisation itself, whereas Kubernetes handles scaling, load balancing, and maintaining containerised applications in production.
 
 </details>
 
 <details>
 <summary>What are the core components of the control plane and data plane? What are the components used for?</summary>
 
-*Answer coming soon!
+In Kubernetes, the control plane manages the cluster and makes global decisions. Its core components include the API server (handles requests), etcd (stores cluster state), scheduler (assigns workloads to nodes), and controller manager (maintains desired state). The data plane runs workloads on nodes and includes the kubelet (ensures containers run), kube-proxy (handles networking), and the container runtime. The control plane directs the cluster, while the data plane executes workloads.
 
 </details>
 
 <details>
 <summary>What is a Pod and what does it do?</summary>
 
-*Answer coming soon!
+A Pod is the smallest deployable unit in Kubernetes and represents one or more containers that share the same network, storage, and lifecycle. Pods allow containers to communicate easily and manage resources together. They provide isolation, scheduling, and scaling, and are the basic building blocks for running applications in a Kubernetes cluster.
 
 </details>
 
 <details>
 <summary>How can containers within a pod communicate with each other?</summary>
 
-*Answer coming soon!
+Containers within a pod communicate with each other using localhost networking because they share the same network namespace. They can also share volumes for file-based communication. This allows containers in the same pod to easily exchange data and coordinate their tasks.
 
 </details>
 
 <details>
 <summary>What is a K8s cluster ?</summary>
 
-*Answer coming soon!
+A Kubernetes cluster is a set of machines (nodes) that run containerised applications under the control of the Kubernetes control plane. It includes master components that manage the cluster and worker nodes that run application workloads. The cluster provides scalability, load balancing, and high availability for applications.
 
 </details>
 
 <details>
 <summary>What are deployments?</summary>
 
-*Answer coming soon!
+A Deployment in Kubernetes is a resource that manages a set of Pods and ensures the desired number of replicas are running. It handles rolling updates, rollbacks, and scaling, making it easier to deploy and maintain applications reliably in a cluster.
 
 </details>
 
 <details>
 <summary>What are stateful sets?</summary>
 
-*Answer coming soon!
+A StatefulSet in Kubernetes manages stateful applications that require stable, unique network identities and persistent storage. Unlike Deployments, StatefulSets ensure Pods are created and deleted in a defined order and maintain their data across restarts, making them suitable for databases and other stateful services.
 
 </details>
 
 <details>
 <summary>How do you restrict pod-to-pod communication in a cluster?</summary>
 
-*Answer coming soon!
+Pod-to-pod communication in a Kubernetes cluster can be restricted using Network Policies. These define rules specifying which Pods can communicate with each other or with external endpoints. By default, all Pods can communicate, so applying network policies allows you to enforce isolation and control traffic between Pods for security.
 
 </details>
 
 <details>
 <summary>How can I rollback a deployment?</summary>
 
-*Answer coming soon!
+You can rollback a Kubernetes deployment using the kubectl rollout undo command. This restores the deployment to a previous revision, allowing you to quickly recover from failed updates or errors while keeping the desired number of Pods running.
 
 </details>
 
 <details>
 <summary>What are namespaces?</summary>
 
-*Answer coming soon!
+Namespaces in Kubernetes are virtual clusters within a single physical cluster. They help organise and isolate resources, allowing multiple teams or applications to share the same cluster without interfering with each other. Namespaces also enable resource quotas and access control.
 
 </details>
 
 <details>
 <summary>What is the role of the kube-apiserver?</summary>
 
-*Answer coming soon!
+The kube-apiserver is the central component of the Kubernetes control plane. It exposes the Kubernetes API, validates and processes requests, and serves as the gateway for all interactions with the cluster. Other control plane components and users communicate with the cluster through the API server.
 
 </details>
 
@@ -2322,60 +2303,55 @@ Container Orchestration (Kubernetes = K8s):
 <details>
 <summary>Take me through a full cycle of an app deployment from code to an app running on a pod/deployment.</summary>
 
-*Answer coming soon!
-
-</details>
-
-<details>
-<summary>Can you mention some good practices to follow when creating containers?</summary>
-
-*Answer coming soon!
+A full Kubernetes app deployment starts with writing the application code and building a container image, usually with Docker. The image is pushed to a container registry. Next, you create Kubernetes manifests, such as a Deployment and Service, defining how many Pods to run and how they are exposed. Using kubectl apply, the manifests are sent to the API server. The scheduler assigns Pods to nodes, kubelets pull the container image, and the containers start running. The Service exposes the app, allowing users or other Pods to access it. The Deployment ensures the desired state is maintained, handling scaling and updates automatically.
 
 </details>
 
 <details>
 <summary>Can you explain a simple K8s cluster architecture and the components within it?</summary>
 
-*Answer coming soon!
+A simple Kubernetes cluster has a control plane and worker nodes. The control plane includes the API server (handles requests), etcd (stores cluster state), scheduler (assigns Pods to nodes), and controller manager (maintains desired state). Worker nodes run the application workloads and include the kubelet (manages containers), kube-proxy (handles networking), and the container runtime (like Docker or containerd). The control plane manages the cluster, while worker nodes execute the workloads.
 
 </details>
 
 <details>
 <summary>What happens when a master node fails?</summary>
 
-*Answer coming soon!
+If a master node fails in Kubernetes, the cluster’s control plane becomes unavailable, meaning no new Pods can be scheduled, and management operations cannot be processed. However, existing workloads on worker nodes continue to run. To prevent downtime, clusters often have high-availability setups with multiple master nodes so that if one fails, others can take over.
 
 </details>
 
 <details>
 <summary>What is an Ingress controller?</summary>
 
-*Answer coming soon!
+An Ingress controller in Kubernetes is a component that manages external access to services in a cluster, usually via HTTP or HTTPS. It watches Ingress resources and configures a load balancer or reverse proxy to route traffic to the correct service, enabling features like path-based routing, SSL termination, and virtual hosting.
 
 </details>
 
 <details>
 <summary>How can one build a highly availabe (HA) cluster in K8s?</summary>
 
-*Answer coming soon!
+A highly available (HA) Kubernetes cluster is built by running multiple master nodes across different failure zones. Each master node runs components like the API server, scheduler, and controller manager, often behind a load balancer to distribute requests. Etcd is also configured in a clustered, replicated setup. Worker nodes are spread across zones, ensuring workloads continue running if a node or zone fails.
 
 </details>
 
 <details>
 <summary>What is the role of ETCD in K8s?</summary>
 
-*Answer coming soon!
+etcd is a distributed key-value store used by Kubernetes to store all cluster state and configuration data. It holds information about Pods, Services, ConfigMaps, and more. The control plane reads from and writes to etcd to ensure the desired state of the cluster is maintained, making it a critical component for reliability and consistency.
 
 </details>
 
 <details>
 <summary>Explain what are Taints and Tolerations in K8s?</summary>
 
-*Answer coming soon!
+Taints and tolerations in Kubernetes control which Pods can be scheduled on which nodes. A taint is applied to a node to repel certain Pods, while a toleration is applied to a Pod to allow it to be scheduled on nodes with matching taints. This helps isolate workloads, reserve nodes for specific purposes, and manage cluster resources effectively.
 
 </details>
 
 </details>
+
+
 
 
 <details>
@@ -2507,73 +2483,163 @@ Container Orchestration (Kubernetes = K8s):
 <br>
 
 <details>
+<summary>What problem does CI/CD solve in software development?</summary>
+
+CI/CD solves the problem of unreliable and slow software delivery. In traditional development, teams integrate code late, rely heavily on manual testing, and treat releases as high-risk events. This often leads to last-minute failures, rollbacks, and delayed business value.
+
+CI/CD introduces an automated and repeatable process where code changes are integrated early, validated through automated checks, and prepared for release continuously. This reduces integration issues, improves release confidence, and allows organisations to deliver features and fixes to customers faster while maintaining quality and stability.
+
+</details>
+
+<details>
 <summary>What is meant by Continuous Integration?</summary>
 
-*Answer coming soon!
+Continuous Integration is the practice of frequently merging code changes into a shared version control system, usually several times a day. Each change triggers an automated process that builds the application and runs a defined set of tests.
+
+The goal is to validate that the codebase remains in a working state at all times. By enforcing consistent formatting, build rules, and test execution through pipeline configuration, teams catch errors early and avoid large, difficult integrations later in the cycle.
+
+</details>
+
+<details>
+<summary>What is meant by Continuous Delivery?</summary>
+
+Continuous Delivery means that every code change which passes the pipeline is automatically prepared for release. The application is packaged, tested, and deployed to environments such as staging in a consistent and repeatable way.
+
+Releases become a business decision rather than a technical challenge. The codebase is always in a deployable state, and deploying to production is a controlled action, often triggered by an approval step rather than additional development work.
+
+</details>
+
+<details>
+<summary>What is meant by Continuous Deployment?</summary>
+
+Continuous Deployment is an extension of Continuous Delivery where changes that pass all pipeline stages are deployed to production automatically.
+
+This relies on strong test coverage, reliable pipeline syntax, clear environment configuration, and monitoring. Because deployments are frequent and incremental, failures are easier to detect and isolate. This approach is common in mature systems where rapid feedback and fast iteration are critical.
+
+</details>
+
+<details>
+<summary>Why is automated testing important in CI/CD?</summary>
+
+Automated testing provides the confidence required to release software frequently. Each test validates a specific aspect of the system, such as business logic, integration between services, or user workflows.
+
+Tests are executed automatically as part of the pipeline using predefined scripts and configuration files. This ensures consistency, removes manual bottlenecks, and prevents regressions from reaching production. From a business standpoint, it reduces the risk of outages, protects customer trust, and lowers the cost of fixing defects.
+
+</details>
+
+<details>
+<summary>What is a CI/CD pipeline and what are its typical stages?</summary>
+
+A CI/CD pipeline is an automated, repeatable workflow that takes source code from version control and delivers it into a running environment. It is usually defined as code using configuration files, commonly YAML, which allows the pipeline itself to be versioned, reviewed, and reused.
+
+Typical stages include:
+- Source: code checkout triggered by a commit or pull request
+- Build: compilation and dependency resolution
+- Static analysis: linting, formatting, and security or quality checks
+- Test: automated unit, integration, and sometimes end-to-end tests
+- Package: creation and versioning of build artefacts such as binaries or container images
+- Deploy: automated deployment to staging or production environments
+- Post-deployment: smoke tests, health checks, and monitoring validation
+
+CI/CD pipelines enforce consistency, reduce manual errors, and provide visibility and traceability across the software delivery lifecycle.
+
+</details>
+
+<details>
+<summary>What happens if a pipeline fails?</summary>
+
+When a pipeline fails, execution stops immediately and the failure is reported. This prevents invalid or unstable code from progressing to later stages such as deployment.
+
+Failures are logged with clear output, allowing developers to identify issues such as test failures, syntax errors, misconfigured environment variables, or broken dependencies. Early failure is intentional and protects production systems while encouraging fast correction.
+
+</details>
+
+<details>
+<summary>How does Git integrate with CI/CD?</summary>
+
+Git acts as the entry point for CI/CD. Events such as commits, pull requests, or merges trigger the pipeline automatically.
+
+Branching strategies, commit history, and pull request reviews integrate directly with pipeline rules. This ensures that only code that meets defined quality checks and formatting standards can be merged and released. Git also provides traceability, making it easy to link deployments back to specific changes.
+
+</details>
+
+<details>
+<summary>How does CI/CD help teams release faster?</summary>
+
+CI/CD reduces manual work and waiting time by automating validation and deployment steps. Code changes are small, well-tested, and consistently packaged, which makes them easier to release.
+
+Because pipelines run on every change, feedback is immediate. Teams spend less time fixing late-stage issues and more time delivering value. Faster releases also mean quicker responses to customer feedback and changing business requirements.
+
+</details>
+
+<details>
+<summary>What is a build and what is a build artefact?</summary>
+
+A build is the process of converting source code into a deployable format. This may include compiling, resolving dependencies, running build scripts, and applying configuration.
+
+A build artefact is the output of this process, such as a compiled binary, a package file, or a container image. Artefacts are versioned and stored so the same package can be promoted across environments, ensuring consistency between testing and production.
+
+</details>
+
+<details>
+<summary>What environments are used in CI/CD and why?</summary>
+
+CI/CD commonly uses multiple environments such as development, test, staging, and production. Each environment has its own configuration and purpose.
+
+This separation allows teams to validate behaviour, configuration, and performance safely before exposing changes to users. It also ensures that environment-specific settings such as secrets, URLs, and scaling rules are managed correctly.
+
+</details>
+
+<details>
+<summary>What is a deployment strategy? </summary>
+
+A deployment strategy defines how new application versions are rolled out to users. It focuses on availability, rollback capability, and risk control.
+
+Different strategies balance speed and safety in different ways, allowing teams to align deployment behaviour with business priorities and system criticality.
 
 </details>
 
 <details>
 <summary>Explain blue-green deployment</summary>
 
-*Answer coming soon!
+Blue-green deployment uses two identical production environments. One serves live traffic while the other hosts the new version.
 
-</details>
-
-<details>
-<summary>What is a CI/CD pipeline?</summary>
-
-*Answer coming soon!
+After validation, traffic is switched using a load balancer or routing rule. If issues arise, traffic can be switched back immediately. This approach minimises downtime and simplifies rollback.
 
 </details>
 
 <details>
 <summary>What is a canary deployment?</summary>
 
-*Answer coming soon!
+A canary deployment releases a new version to a small portion of users first. Metrics such as error rates and performance are monitored before expanding the rollout.
+
+This approach limits risk while providing real production feedback. If problems are detected, the rollout can be halted without affecting most users.
 
 </details>
 
 <details>
 <summary>What is a rolling deployment?</summary>
 
-*Answer coming soon!
+A rolling deployment updates instances gradually rather than all at once. Old and new versions run side by side during the rollout.
 
-</details>
-
-</details>
-
-
-<details>
-  <summary><h3 id="ops">DevOps methodology, practices, & Agile</h3></summary>
-
-<br>
-
-<details>
-<summary>What is meant by continuous integratons?</summary>
-
-*Answer coming soon!
+This avoids downtime and allows the system to remain available throughout the deployment. It is widely used because it balances simplicity, availability, and control.
 
 </details>
 
 <details>
-<summary>What are the advantages of DevOps?</summary>
+<summary>Walk me through a CI/CD pipeline, from code commit to production?</summary>
 
-*Answer coming soon!
+From code commit to production, the CI/CD pipeline starts when a developer pushes code to the remote repository or opens a pull request, which automatically triggers the continuous integration (CI) process.
 
-</details>
+The pipeline first runs in the development environment, where the code is checked out, dependencies are resolved, and the application is built. Static checks such as linting and formatting are executed, followed by fast-running unit tests to validate the code in a development context.
 
-<details>
-<summary>Can you describe some branching strategies you have used?</summary>
+If this stage succeeds, the pipeline packages the application into a versioned artefact, such as a binary or container image, and stores it in an artefact repository. This artefact is built once and then promoted unchanged through subsequent environments.
 
-*Answer coming soon!
+Next, as part of continuous delivery (CD), the artefact is deployed to the staging environment, which mirrors production as closely as possible. In staging, integration tests, smoke tests, and health checks are run to verify system behaviour and interactions with external services. Deployment strategies such as rolling or blue–green deployments are commonly used to reduce risk.
 
-</details>
+After successful validation in staging, and often following a manual approval step, the same artefact is deployed to the production environment. The deployment is monitored using logs, metrics, and alerts, and automated rollback mechanisms are in place if any issues are detected.
 
-<details>
-<summary>What is the blue/green deployment pattern?</summary>
-
-*Answer coming soon!
+This pipeline enforces a clear separation between development, staging, and production environments while ensuring consistency, traceability, and a controlled release process from code commit to production.
 
 </details>
 
@@ -4131,15 +4197,6 @@ On the other hand, NoSQL databases are non-relational databases that store data 
 
 </details>
 
-
-## Machine Learning
-
-<details>
-  <summary><strong>*Coming soon!</strong></summary>
-
-<br>
-
-</details>
 
 ## Cyber Security & Info Security
 
