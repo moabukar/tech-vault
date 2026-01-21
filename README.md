@@ -667,6 +667,28 @@ diff chmod chmod.orig
 
 Method 3
 
+- Write a small program that executes the actual `chmod(2)` syscall (#90) to give back the right permissions to the `chmod(1)` command. An example in C
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+#include <sys/stat.h>
+
+
+int main(void) {
+    const char *path = "/bin/chmod";
+    mode_t mode = 0755;
+
+    if (chmod(path, mode) == -1) {
+        perror("chmod failed");
+        return EXIT_FAILURE;
+    }
+
+    printf("Permissions restored to %s (mode %o)\n", path, mode);
+    return EXIT_SUCCESS;
+}
+```
+
 </details>
 
 <details>
