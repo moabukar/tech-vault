@@ -2482,6 +2482,8 @@ Taints and tolerations in Kubernetes control which Pods can be scheduled on whic
 
 <br>
 
+**Foundational questions:**
+
 <details>
 <summary>What problem does CI/CD solve in software development?</summary>
 
@@ -2528,6 +2530,17 @@ Tests are executed automatically as part of the pipeline using predefined script
 </details>
 
 <details>
+<summary>What is a build and what is a build artefact?</summary>
+
+A build is the process of converting source code into a deployable format. This may include compiling, resolving dependencies, running build scripts, and applying configuration.
+
+A build artefact is the output of this process, such as a compiled binary, a package file, or a container image. Artefacts are versioned and stored so the same package can be promoted across environments, ensuring consistency between testing and production.
+
+</details>
+
+**Intermediate questions:**
+
+<details>
 <summary>What is a CI/CD pipeline and what are its typical stages?</summary>
 
 A CI/CD pipeline is an automated, repeatable workflow that takes source code from version control and delivers it into a running environment. It is usually defined as code using configuration files, commonly YAML, which allows the pipeline itself to be versioned, reviewed, and reused.
@@ -2572,14 +2585,6 @@ Because pipelines run on every change, feedback is immediate. Teams spend less t
 
 </details>
 
-<details>
-<summary>What is a build and what is a build artefact?</summary>
-
-A build is the process of converting source code into a deployable format. This may include compiling, resolving dependencies, running build scripts, and applying configuration.
-
-A build artefact is the output of this process, such as a compiled binary, a package file, or a container image. Artefacts are versioned and stored so the same package can be promoted across environments, ensuring consistency between testing and production.
-
-</details>
 
 <details>
 <summary>What environments are used in CI/CD and why?</summary>
@@ -2626,6 +2631,8 @@ This avoids downtime and allows the system to remain available throughout the de
 
 </details>
 
+**CI/CD Advanced/Scenario based questions:**
+
 <details>
 <summary>Walk me through a CI/CD pipeline, from code commit to production?</summary>
 
@@ -2642,6 +2649,31 @@ After successful validation in staging, and often following a manual approval st
 This pipeline enforces a clear separation between development, staging, and production environments while ensuring consistency, traceability, and a controlled release process from code commit to production.
 
 </details>
+
+<details>
+<summary>Your CI pipeline fails during the automated test stage after a code change. How would you investigate the failure, and what does this situation tell you about the role of CI in a development team?</summary>
+
+When a CI pipeline fails during automated testing, the first step is to review the pipeline logs to identify which tests failed and understand the error messages. I would check whether the failure is due to a genuine code regression, a flaky test, or an environmental issue. Reproducing the failure locally or in a controlled test environment helps confirm the root cause. From a CI perspective, this situation demonstrates the value of early feedback and that the pipeline is doing its job by preventing defective code from progressing further in the delivery process. Rather than seeing the failure as a blocker, it should be treated as a safety mechanism that protects the shared codebase and reduces downstream risk. Once the issue is fixed, rerunning the pipeline ensures confidence that the change is safe to merge.
+
+</details>
+
+<details>
+<summary>In a team where many developers commit and merge changes frequently, the main branch becomes unstable. How would you use CI/CD practices to improve stability and collaboration?</summary>
+
+In a high-commit environment, an unstable main branch usually means changes are being integrated without enough automated validation. To address this, I would use CI/CD to introduce strong quality gates before code reaches the main branch. This starts with running automated builds and tests on every pull request so that issues are detected early, before merging.
+
+I would also enforce branch protection rules that require the CI pipeline to pass and, if applicable, require peer reviews before merging. This prevents broken or incomplete changes from being integrated. Encouraging small, frequent commits helps reduce the risk of conflicts and makes failures easier to identify and fix.
+
+From a collaboration standpoint, fast and reliable CI feedback is critical. Developers quickly see whether their change is safe, take ownership of fixing failures, and avoid blocking others. Overall, CI/CD helps keep the main branch in a continuously deployable state while improving team confidence and development velocity.
+
+</details>
+
+<details>
+<summary>A CI/CD pipeline succeeds, but the application fails when deployed to the staging environment. What are the likely causes, and how would you handle it?</summary>
+
+When a pipeline passes in CI but fails in staging, it usually indicates a difference between environments rather than a problem with the code itself. Common causes include missing or incorrect environment variables, misconfigured secrets, infrastructure differences, or deployment scripts that behave differently outside the CI environment.
+
+To handle this, I would start by reviewing deployment and application logs in staging, then verify configuration values and infrastructure dependencies. I would also compare staging and CI environments to identify mismatches. This situation highlights why environment parity is important in CI/CD — staging should closely resemble production so issues are caught earlier. Improving configuration management and standardizing environments helps reduce these failures over time.
 
 </details>
 
