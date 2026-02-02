@@ -2677,6 +2677,8 @@ To handle this, I would start by reviewing deployment and application logs in st
 
 </details>
 
+</details>
+
 ## System Design
 
 <details>
