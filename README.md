@@ -462,6 +462,29 @@ When you check the memory usage using tools like free or top, you will see sever
 
 </details>
 
+<details>
+<summary>What happens when you type "ls" or "cd" into a terminal? (go deep and talk about what happens behind the scenes - kernel level)</summary>
+
+- The terminal program receives the command you typed and identifies the command and any arguments.
+
+- The shell then searches for the location of the command binary within the directories specified in the `PATH` environment variable. It looks for an executable file with a matching name.
+
+- Once the command binary is located, the shell initiates a system call, specifically the `execve()` system call, to load the command into memory and execute it.
+
+- The kernel allocates memory for the command and sets up file descriptors for input, output, and error handling.
+
+- The kernel performs a context switch, transitioning from the shell to the command.
+
+- The command binary is loaded into memory, and its execution begins.
+
+- As the command executes, it may make additional system calls to interact with the kernel. For example, the "ls" command might make system calls to read directory contents or retrieve file metadata.
+
+- The command may manipulate the terminal's display using control codes.
+
+- Once the command completes, the kernel returns control to the shell.
+
+</details>
+
 
 <details>
 <summary>What are cronjobs?</summary>
@@ -598,29 +621,6 @@ Red Hat based (Fedora, CentOS)
 - Hardware monitoring?
 - Security and updates?
 - Backup and recover?
-
-</details>
-
-<details>
-<summary>What happens when you type "ls" or "cd" into a terminal? (go deep and talk about what happens behind the scenes - kernel level)</summary>
-
-- The terminal program receives the command you typed and identifies the command and any arguments.
-
-- The shell then searches for the location of the command binary within the directories specified in the `PATH` environment variable. It looks for an executable file with a matching name.
-
-- Once the command binary is located, the shell initiates a system call, specifically the `execve()` system call, to load the command into memory and execute it.
-
-- The kernel allocates memory for the command and sets up file descriptors for input, output, and error handling.
-
-- The kernel performs a context switch, transitioning from the shell to the command.
-
-- The command binary is loaded into memory, and its execution begins.
-
-- As the command executes, it may make additional system calls to interact with the kernel. For example, the "ls" command might make system calls to read directory contents or retrieve file metadata.
-
-- The command may manipulate the terminal's display using control codes.
-
-- Once the command completes, the kernel returns control to the shell.
 
 </details>
 
