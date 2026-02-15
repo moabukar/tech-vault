@@ -196,6 +196,30 @@ Example: For example, to change the group of file.txt to the group developers, y
 
 </details>
 
+<details>
+<summary>How do you view and edit the system logs in Linux?</summary>
+
+- View logs >> `cat /var/log/syslog` - use SUDO
+- Edit logs >> `vim /var/log/syslog` - use SUDO
+
+</details>
+
+
+<details>
+<summary>Which command do you use to copy one file from one server to another?</summary>
+
+- scp
+
+</details>
+
+<details>
+<summary>Which command do you use to copy directories from one server to another?</summary>
+
+- scp -r
+
+</details>
+
+
 
 Mid:
 
@@ -670,29 +694,6 @@ Method 3
 - Trace Route: Use the traceroute or tracepath command to trace the network path to the remote server >> `traceroute <server_ip_or_hostname>`
 - Review Server Logs: Examine the server's logs for any error messages or indications of connectivity issues. Check logs related to the specific services running on the server, such as Apache logs for web server issues.
 - Check Server Services: Ensure that the necessary services on the remote server are running and properly configured
-
-</details>
-
-<details>
-<summary>How do you view and edit the system logs in Linux?</summary>
-
-- View logs >> `cat /var/log/syslog` - use SUDO
-- Edit logs >> `vim /var/log/syslog` - use SUDO
-
-</details>
-
-
-<details>
-<summary>Which command do you use to copy one file from one server to another?</summary>
-
-- scp
-
-</details>
-
-<details>
-<summary>Which command do you use to copy directories from one server to another?</summary>
-
-- scp -r
 
 </details>
 
