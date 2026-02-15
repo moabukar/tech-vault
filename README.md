@@ -100,29 +100,6 @@ The Linux kernel is the core component of the Linux operating system. It is resp
 </details>
 
 <details>
-<summary>What are inodes in Linux?</summary>
-
-Inodes in Linux are data structures that store important information about files on a file system. Each file or directory in a Linux file system has an associated inode that contains metadata such as the file's size, permissions, ownership, timestamps, and the location of the file's data blocks on the disk.
-
-When you create a file or directory, the file system assigns a unique inode number to it. The inode number serves as an identifier for the file, allowing the file system to access the inode's information and manage the file accordingly.
-
-Here's a summary of what inodes store:
-
-- File type (regular file, directory, symbolic link, etc.)
-- File permissions (read, write, execute)
-- Ownership (user and group)
-- Timestamps (creation, modification, and access times)
-- File size
-- Number of hard links to the file
-- Location of the file's data blocks on the disk
-
-It's important to note that inodes don't store the file's name or the actual file data. The file name is stored in the directory that contains the file, which associates the name with the inode number. The actual file data is stored in separate data blocks on the disk, and the inode points to these blocks.
-
-Inodes play a crucial role in managing files and directories within a Linux file system, providing an efficient way to access and manipulate file metadata.
-
-</details>
-
-<details>
 <summary>What are the different types of permissions in Linux?</summary>
 
 In Linux, there are three main types of permissions for files and directories, which determine how users can interact with them. These permissions are classified into categories based on the user's relationship to the file or directory: owner, group, and others (sometimes referred to as "world" or "public"). The three types of permissions are:
@@ -143,194 +120,6 @@ These permissions are usually represented using a combination of letters (r, w, 
 Alternatively, permissions can also be represented using octal notation (base-8), where read, write, and execute permissions are assigned values of 4, 2, and 1, respectively. The permissions are then represented by a three-digit number, with each digit corresponding to the owner, group, and others. For example, the permission string -rwxr-xr-- can be represented as 754 in octal notation.
 
 </details>
-
-
-<details>
-<summary>Explain the Linux boot process</summary>
-
-The Linux boot process consists of several stages that initialize the system and load the operating system. Here's a brief overview of the key steps:
-
-BIOS/UEFI: When the computer is powered on, the BIOS (Basic Input/Output System) or UEFI (Unified Extensible Firmware Interface) performs initial hardware checks and locates the boot device.
-
-Bootloader: The bootloader (e.g., GRUB) loads from the boot device and presents the available operating systems to the user. It then loads the Linux kernel and initial RAM disk (initrd) into memory.
-
-Kernel initialization: The Linux kernel initializes hardware, sets up memory management, starts essential processes, and mounts the initial RAM disk, which contains essential drivers and tools needed during the boot process.
-
-Root file system: The kernel switches the root file system from the initial RAM disk to the actual root partition on the disk, typically identified by its UUID or device name (e.g., /dev/sda1).
-
-Init process: The first user-space process, called init (e.g., Systemd, SysVinit, or Upstart), starts and manages system services and processes during the boot process and the system's runtime.
-
-Runlevel/target: Init process initializes the predefined runlevel (SysVinit) or target (Systemd), which determines the services and processes to run at startup.
-
-Login prompt: Once all services and processes specified in the runlevel/target have started, the system displays a login prompt, indicating that the boot process is complete and the system is ready for use.
-
-</details>
-
-Mid:
-
-<details>
-<summary>What is a zombie process?</summary>
-
-A zombie process, also known as a defunct process, is a process that has completed its execution but still remains in the process table. This happens because the parent process has not yet read the child process's exit status, which is required to clean up the child process's resources and remove its entry from the process table.
-
-Zombie processes don't consume any system resources, except for the process table entry, which includes the process ID (PID) and the exit status. The operating system keeps this information so that the parent process can eventually retrieve the exit status and perform the necessary clean-up.
-
-More info on zombie processes below:
-
-Typically, a well-behaved parent process will use the wait() or waitpid() system call to collect the exit status of its child processes. However, if the parent process doesn't do this, either due to a programming error or because the parent is still running and hasn't reached the point where it collects the exit status, the child process becomes a zombie.
-
-Zombie processes are usually harmless, but if a system accumulates a large number of them, it could exhaust the available PIDs and prevent new processes from being created. To resolve this issue, the parent process should be fixed to correctly handle its child processes' exit status, or if the parent process is unresponsive or terminated, a system reboot might be necessary.
-
-</details>
-
-<details>
-<summary>Difference between soft links and hardlinks?</summary>
-
-Soft links and hard links are two types of file links in a Unix-like file system, such as Linux. They serve different purposes and have distinct characteristics:
-
-**Soft Link (Symbolic Link):**
-
-- A soft link is a separate file that points to the target file or directory by storing its path.
-- If the target file is deleted, the soft link becomes a "dangling" link, pointing to a nonexistent file.
-- Soft links can span across different file systems and partitions.
-- Soft links can link to directories as well as files.
-- When a soft link is created, the link count of the target file doesn't change.
-- Soft links have different inode numbers than their target files.
-
-**Hard Link:**
-
-- A hard link is a direct reference to the data on the disk, sharing the same inode as the target file.
-- If the target file is deleted, the hard link still points to the data, and the data remains accessible until all hard links to it are removed.
-- Hard links can only be created within the same file system or partition.
-- Hard links cannot link to directories, only to files.
-- When a hard link is created, the link count of the target file increases by one.
-- Hard links have the same inode numbers as their target files.
-
-In summary, a soft link is a more flexible but less reliable type of link that can point to files or directories across file systems, while a hard link is a more robust link that directly references the file's data, but is limited to the same file system and cannot link to directories.
-
-</details>
-
-Senior: 
-
-<details>
-<summary>What are namespaces and c-groups?</summary>
-
-Namespaces and cgroups (control groups) are two Linux kernel features that play a crucial role in implementing process isolation and resource management, especially in containerization technologies like Docker.
-
-**Namespaces:**
-
-Namespaces are a feature that provides process isolation by creating separate instances of certain system resources, which can only be accessed by processes within the same namespace. This isolation helps ensure that processes running in one namespace don't interfere with processes in another namespace
-
-There are several types of namespaces, including:
-
-- PID namespace: Isolates process IDs, allowing each namespace to have its own set of PIDs.
-- Mount namespace: Isolates the file system mount points, so that each namespace has its own mount tree.
-- Network namespace: Isolates network resources, providing each namespace with its own network stack, including interfaces, routes, and firewall rules.
-- IPC namespace: Isolates inter-process communication resources, preventing processes in one namespace from communicating with processes in another namespace.
-- UTS namespace: Isolates system identifiers like hostname, allowing each namespace to have its own unique hostname.
-- User namespace: Isolates user and group ID mappings, enabling each namespace to have its own set of user and group IDs.
-
-**Cgroups (Control Groups):**
-
-Cgroups are a kernel feature that enables the management and limitation of system resources, such as CPU, memory, and I/O, for a group of processes. Cgroups help ensure fair distribution of resources, prevent resource starvation, and enforce limits on resource usage. Some of the key features of cgroups include:
-
-- Resource limiting: Allows setting limits on resource usage for a group of processes, such as maximum CPU usage, memory consumption, and disk I/O bandwidth.
-- Prioritization: Enables setting priorities for resource allocation among different cgroups, helping to ensure that critical processes receive sufficient resources.
-- Accounting: Collects resource usage statistics for processes in a cgroup, which can be useful for monitoring, profiling, and billing purposes.
-- Control: Provides a mechanism to start, stop, or freeze processes in a cgroup, allowing for better management of process groups.
-
-In combination, namespaces and cgroups provide the necessary isolation and resource management capabilities required to build and run containers, enabling multiple containers to coexist on the same host without interfering with each other or consuming excessive resources.
-
-</details>
-
-<details>
-<summary>What are symbolic links?</summary>
-
-Symbolic links, also known as soft links or symlinks, are a type of file link in Unix-like file systems, such as Linux. A symbolic link is a special file that points to another file or directory by storing its path. Symbolic links serve as a reference to the target file or directory, allowing users and applications to access the target through the link.
-
-Symbolic links are useful in various scenarios, such as creating shortcuts, linking to files or directories in different locations, or maintaining multiple versions of a file or directory. Some key characteristics of symbolic links are:
-
-Symbolic links can point to files or directories, and they can span across different file systems and partitions.
-If the target file or directory is moved or deleted, the symbolic link becomes a "dangling" link, pointing to a nonexistent location.
-Symbolic links have different inode numbers than their target files or directories.
-When listing files with the ls command, symbolic links are usually indicated by an "l" at the beginning of the file permissions and an arrow (->) pointing to the target file or directory.
-
-To create a symbolic link in Linux, you can use the ln command with the -s option, followed by the target file or directory and the desired symlink name:
-
-```bash
-ln -s target_file symlink_name
-
-Example:
-
-ln -s /path/to/original/file.txt link_to_file.txt
-
-This command creates a symbolic link named link_to_file.txt that points to the file located at /path/to/original/file.txt.
-```
-
-</details>
-
-<details>
-<summary>What is swap space?</summary>
-
-Swap space is a dedicated area on a storage device (such as a hard drive or SSD) that functions as an extension of a computer's physical memory (RAM). It is used by the operating system to temporarily store data that does not fit into RAM or when the system experiences memory pressure due to high RAM utilization.
-
-When the operating system needs more memory than is physically available, it can move the least recently used or less important data (called pages) from RAM to the swap space. This process is called "paging" or "swapping out." By doing so, it frees up space in RAM for more critical or frequently accessed data. If the swapped-out data is required again, the operating system will move it back into RAM, possibly swapping out other data in the process. This is called "swapping in."
-
-Swap space can be implemented as a dedicated swap partition or a swap file. In Linux, you can manage swap space using commands such as swapon, swapoff, and mkswap. To check the current swap space usage on a Linux system, you can use the free or swapon -s commands.
-
-</details>
-
-
-<details>
-<summary>What is chmod, chown and chgrp in Linux?</summary>
-
-**chmod**
-chmod (change mode) is a command used to change the permissions of a file or directory. You can set read, write, and execute permissions for the owner, group, and others. Permissions can be represented in octal notation (numeric) or using symbolic notation (letters).
-
-Example: For example, to give the owner read, write, and execute permissions, the group read and execute permissions, and others only read permission, you would use:
-- Using octal notation: `chmod 754 file.txt`
-- Using symbolic notation: `chmod u=rwx,g=rx,o=r file.txt`
-
-**chown**
-
-chown (change owner) is a command used to change the ownership of a file or directory. You can specify a new owner and an optional new group for the file or directory.
-
-Example: For example, to change the owner of file.txt to the user john and the group to developers, you would use:
-
-`chown john:developers file.txt`
-
-**chgrp**
-
-chgrp (change group) is a command used to change the group assignment of a file or directory. You can specify a new group for the file or directory.
-
-Example: For example, to change the group of file.txt to the group developers, you would use:
-
-`chgrp developers file.txt`
-
-
-</details>
-
-<details>
-<summary>What are cronjobs?</summary>
-
-Cronjobs, also known as cron jobs or simply cron, are scheduled tasks that run automatically at specified intervals on Unix-like operating systems, such as Linux. The term "cron" comes from the Greek word "chronos," which means "time." Cronjobs are commonly used for automating repetitive tasks, performing system maintenance, running periodic backups, and other similar activities.
-
-Cronjobs are managed by a daemon called "cron," which runs in the background and executes the scheduled tasks. The configuration for cron jobs is stored in a series of files called "crontabs" (short for "cron tables"). Each user on the system can have their own crontab, and there is also a system-wide crontab.
-
-For example, a cron job that runs every day at 3:30 AM would have the following entry in the crontab:
-
-`30 3 * * * /path/to/command arg1 arg2`
-
-To manage cron jobs, you can use the crontab command with various options:
-
-- crontab -l: List the current user's cron jobs.
-- crontab -e: Edit the current user's cron jobs using the default text editor.
-- crontab -r: Remove the current user's cron jobs.
-- crontab -u USER: Perform an operation (list, edit, or remove) on the specified user's cron jobs (requires root privileges).
-
-</details>
-
-**Commands (basic & advanced):**
 
 <details>
 <summary>What does chmod +x FILENAME do?</summary>
@@ -378,139 +167,135 @@ For example, to display memory usage in a human-readable format, you would run:
 
 </details>
 
-
 <details>
-<summary>Write the command that will display all .yaml files including permissions of each file? ()</summary>
+<summary>What is chmod, chown and chgrp in Linux?</summary>
 
-`find . -type f -name "*.yaml" -exec ls -l {} \`;
+**chmod**
+chmod (change mode) is a command used to change the permissions of a file or directory. You can set read, write, and execute permissions for the owner, group, and others. Permissions can be represented in octal notation (numeric) or using symbolic notation (letters).
+
+Example: For example, to give the owner read, write, and execute permissions, the group read and execute permissions, and others only read permission, you would use:
+- Using octal notation: `chmod 754 file.txt`
+- Using symbolic notation: `chmod u=rwx,g=rx,o=r file.txt`
+
+**chown**
+
+chown (change owner) is a command used to change the ownership of a file or directory. You can specify a new owner and an optional new group for the file or directory.
+
+Example: For example, to change the owner of file.txt to the user john and the group to developers, you would use:
+
+`chown john:developers file.txt`
+
+**chgrp**
+
+chgrp (change group) is a command used to change the group assignment of a file or directory. You can specify a new group for the file or directory.
+
+Example: For example, to change the group of file.txt to the group developers, you would use:
+
+`chgrp developers file.txt`
+
 
 </details>
 
 
+Mid:
+
 <details>
-<summary>How can I found the status of a process?</summary>
+<summary>Explain the Linux boot process</summary>
 
-`ps -p <PID>` >> for 1 process
+The Linux boot process consists of several stages that initialize the system and load the operating system. Here's a brief overview of the key steps:
 
-`ps aux` >> display a detailed list of all running processes on the system
+BIOS/UEFI: When the computer is powered on, the BIOS (Basic Input/Output System) or UEFI (Unified Extensible Firmware Interface) performs initial hardware checks and locates the boot device.
+
+Bootloader: The bootloader (e.g., GRUB) loads from the boot device and presents the available operating systems to the user. It then loads the Linux kernel and initial RAM disk (initrd) into memory.
+
+Kernel initialization: The Linux kernel initializes hardware, sets up memory management, starts essential processes, and mounts the initial RAM disk, which contains essential drivers and tools needed during the boot process.
+
+Root file system: The kernel switches the root file system from the initial RAM disk to the actual root partition on the disk, typically identified by its UUID or device name (e.g., /dev/sda1).
+
+Init process: The first user-space process, called init (e.g., Systemd, SysVinit, or Upstart), starts and manages system services and processes during the boot process and the system's runtime.
+
+Runlevel/target: Init process initializes the predefined runlevel (SysVinit) or target (Systemd), which determines the services and processes to run at startup.
+
+Login prompt: Once all services and processes specified in the runlevel/target have started, the system displays a login prompt, indicating that the boot process is complete and the system is ready for use.
 
 </details>
 
 <details>
-<summary>What is the command to show all open ports?</summary>
+<summary>What are symbolic links?</summary>
 
-`netstat -tuln`
+Symbolic links, also known as soft links or symlinks, are a type of file link in Unix-like file systems, such as Linux. A symbolic link is a special file that points to another file or directory by storing its path. Symbolic links serve as a reference to the target file or directory, allowing users and applications to access the target through the link.
 
-</details>
+Symbolic links are useful in various scenarios, such as creating shortcuts, linking to files or directories in different locations, or maintaining multiple versions of a file or directory. Some key characteristics of symbolic links are:
 
+Symbolic links can point to files or directories, and they can span across different file systems and partitions.
+If the target file or directory is moved or deleted, the symbolic link becomes a "dangling" link, pointing to a nonexistent location.
+Symbolic links have different inode numbers than their target files or directories.
+When listing files with the ls command, symbolic links are usually indicated by an "l" at the beginning of the file permissions and an arrow (->) pointing to the target file or directory.
 
-<details>
-<summary>How do you find the process ID of a running process in Linux?</summary>
+To create a symbolic link in Linux, you can use the ln command with the -s option, followed by the target file or directory and the desired symlink name:
 
-- `ps -ef | grep <process_name>`
-- `ps -ef | grep chrome`
+```bash
+ln -s target_file symlink_name
 
+Example:
 
-</details>
+ln -s /path/to/original/file.txt link_to_file.txt
 
-<details>
-<summary>How do you find the dependencies of a package in Linux?</summary>
-
-Debian based (Ubuntu):
-- `apt depends <packagename>`
-- `apt-cache depends <packagename>`
-
-Red Hat based (Fedora, CentOS)
-- `dnf repoquery --requires <packagename>`
-
-
-</details>
-
-**Advanced:**
-
-<details>
-<summary>Does free memory exist on Linux?</summary>
-
-On Linux systems, the concept of "free memory" may be a bit nuanced due to how Linux manages memory. While the term "free memory" is commonly used, Linux uses a sophisticated memory management system that maximizes the utilization of available memory for optimal performance.
-
-In Linux, free memory refers to the memory that is not currently being used by any active processes or cached by the system. However, this does not mean that the memory is entirely unused or wasted. Linux takes advantage of available memory by utilizing it for disk caching, buffering, and other optimizations to improve system performance.
-
-When you check the memory usage using tools like free or top, you will see several memory-related metrics, including "free," "used," "buffers," and "cache." These metrics represent different aspects of memory usage:
+This command creates a symbolic link named link_to_file.txt that points to the file located at /path/to/original/file.txt.
+```
 
 </details>
 
 <details>
-<summary>How can I check if a server is down?</summary>
+<summary>What is swap space?</summary>
 
-1) The ping command is a simple and widely used tool to check the connectivity between your Linux system and a remote server
+Swap space is a dedicated area on a storage device (such as a hard drive or SSD) that functions as an extension of a computer's physical memory (RAM). It is used by the operating system to temporarily store data that does not fit into RAM or when the system experiences memory pressure due to high RAM utilization.
 
-`ping <server_address>`
+When the operating system needs more memory than is physically available, it can move the least recently used or less important data (called pages) from RAM to the swap space. This process is called "paging" or "swapping out." By doing so, it frees up space in RAM for more critical or frequently accessed data. If the swapped-out data is required again, the operating system will move it back into RAM, possibly swapping out other data in the process. This is called "swapping in."
 
-2) The telnet command allows you to establish a connection to a specific port on a server. By attempting to connect to a server's port, you can determine if it's up and accepting connections
-
-`telnet <server_address> <port>`
-
-3) If the telnet command is not available on your system, you can use nc (netcat), which provides similar functionality. 
-
-`nc -zv <server_address> <port>`
+Swap space can be implemented as a dedicated swap partition or a swap file. In Linux, you can manage swap space using commands such as swapon, swapoff, and mkswap. To check the current swap space usage on a Linux system, you can use the free or swapon -s commands.
 
 </details>
 
 <details>
-<summary>What is inside /proc?</summary>
+<summary>What is a zombie process?</summary>
 
-The `/proc` directory is a virtual filesystem that provides an interface to access process-related information dynamically. It contains various files and folders that provide information about running processes and system configuration.
+A zombie process, also known as a defunct process, is a process that has completed its execution but still remains in the process table. This happens because the parent process has not yet read the child process's exit status, which is required to clean up the child process's resources and remove its entry from the process table.
 
-- It holds details about each running process in separate folders identified by their process IDs (PIDs).
-- It also provides system-wide information such as CPU details, memory usage statistics, network-related data, and kernel parameters.
-- The content of /proc changes dynamically based on the current state of the system and running processes.
+Zombie processes don't consume any system resources, except for the process table entry, which includes the process ID (PID) and the exit status. The operating system keeps this information so that the parent process can eventually retrieve the exit status and perform the necessary clean-up.
+
+More info on zombie processes below:
+
+Typically, a well-behaved parent process will use the wait() or waitpid() system call to collect the exit status of its child processes. However, if the parent process doesn't do this, either due to a programming error or because the parent is still running and hasn't reached the point where it collects the exit status, the child process becomes a zombie.
+
+Zombie processes are usually harmless, but if a system accumulates a large number of them, it could exhaust the available PIDs and prevent new processes from being created. To resolve this issue, the parent process should be fixed to correctly handle its child processes' exit status, or if the parent process is unresponsive or terminated, a system reboot might be necessary.
+
+</details>
+<details>
+<summary>What are inodes in Linux?</summary>
+
+Inodes in Linux are data structures that store important information about files on a file system. Each file or directory in a Linux file system has an associated inode that contains metadata such as the file's size, permissions, ownership, timestamps, and the location of the file's data blocks on the disk.
+
+When you create a file or directory, the file system assigns a unique inode number to it. The inode number serves as an identifier for the file, allowing the file system to access the inode's information and manage the file accordingly.
+
+Here's a summary of what inodes store:
+
+- File type (regular file, directory, symbolic link, etc.)
+- File permissions (read, write, execute)
+- Ownership (user and group)
+- Timestamps (creation, modification, and access times)
+- File size
+- Number of hard links to the file
+- Location of the file's data blocks on the disk
+
+It's important to note that inodes don't store the file's name or the actual file data. The file name is stored in the directory that contains the file, which associates the name with the inode number. The actual file data is stored in separate data blocks on the disk, and the inode points to these blocks.
+
+Inodes play a crucial role in managing files and directories within a Linux file system, providing an efficient way to access and manipulate file metadata.
 
 </details>
 
 <details>
-<summary>A process on the system can no longer log files, what can I do?</summary>
-
-- **Check file permissions**: Ensure that the process has the necessary permissions to write to the log files or directories. Verify the ownership and permissions of the log files, and make sure they are writable by the user or group associated with the process
-  
-- **Verify available disk space**:  Insufficient disk space can prevent the process from writing to log files
-- **Restart the process**
-- **Check log file size limit**: Some processes have limits on the maximum size of log files they can generate
-- **Check file system or disk errors**: Perform a file system check (fsck) on the relevant file system or check for disk errors using appropriate tools. File system errors or disk issues can sometimes interfere with file writing.
-- **Verify logging configuration**: Ensure that the log file path and other settings are correctly specified
-- **Check for system-level logging issue**: If multiple processes are unable to log files, there might be a system-wide issue with the logging infrastructure. Check system logs (e.g., /var/log/syslog or /var/log/messages) for any relevant error messages or indications of logging problems.
-
-</details>
-
-<details>
-<summary>What is LILO?</summary>
-
-- LILO, short for "LInux LOader," is a boot loader program used in older versions of Linux distributions.
-- LILO's main function is to load the Linux kernel into memory and initiate the boot process.It presents a menu to the user, allowing the selection of the desired kernel or operating system to boot (if multiple operating systems are installed).
-- LILO writes itself to the Master Boot Record (MBR) of the disk, overwriting the existing boot loader.
-- Its configuration file (/etc/lilo.conf) specifies the location of the Linux kernel image and boot parameters.
-- LILO has been largely replaced by other boot loaders, particularly GRUB (Grand Unified Bootloader), which offers more advanced features and flexibility.
-- GRUB has become the default boot loader for many Linux distributions.
-
-</details>
-
-<details>
-<summary>What are syscalls in Linux and how do they work?</summary>
-
-- Syscalls are the interface between user-space applications and the kernel in Linux.
-- They allow user programs to request services and access operating system resources.
-- User programs invoke syscalls using special instructions, triggering a switch from user mode to kernel mode.
-
-</details>
-
-<details>
-<summary>What is no route to host?</summary>
-
-- "No route to host" is an error message that can occur in Linux when attempting to establish a network connection to a remote host
-
-</details>
-
-<details>
-<summary>What is the difference between a hard link and a symbolic link in Linux? (WITH hands-on example)</summary>
+<summary>What is the difference between a hard link and a symbolic link in Linux?</summary>
 
 **Hard Link**
 
@@ -549,7 +334,43 @@ In summary, with a hard link, you have multiple names for the same file sharing 
 
 </details>
 
-**Linux Internals & Advanced (Scenario based questions):**
+<details>
+<summary>What is inside /proc?</summary>
+
+The `/proc` directory is a virtual filesystem that provides an interface to access process-related information dynamically. It contains various files and folders that provide information about running processes and system configuration.
+
+- It holds details about each running process in separate folders identified by their process IDs (PIDs).
+- It also provides system-wide information such as CPU details, memory usage statistics, network-related data, and kernel parameters.
+- The content of /proc changes dynamically based on the current state of the system and running processes.
+
+</details>
+
+
+<details>
+<summary>How can I found the status of a process?</summary>
+
+`ps -p <PID>` >> for 1 process
+
+`ps aux` >> display a detailed list of all running processes on the system
+
+</details>
+
+<details>
+<summary>What is the command to show all open ports?</summary>
+
+`netstat -tuln`
+
+</details>
+
+
+<details>
+<summary>How do you find the process ID of a running process in Linux?</summary>
+
+- `ps -ef | grep <process_name>`
+- `ps -ef | grep chrome`
+
+
+</details>
 
 <details>
 <summary>Explain the linux boot process (detailed) </summary>
@@ -569,6 +390,153 @@ In summary, with a hard link, you have multiple names for the same file sharing 
 - User Session: After login, the user's session starts with the desktop environment.
 
 In summary, the boot process involves firmware initialization, bootloader loading the OS, kernel taking control, system initialization, login prompt, and user session start.
+
+</details>
+
+
+Senior: 
+
+<details>
+<summary>What are namespaces and c-groups?</summary>
+
+Namespaces and cgroups (control groups) are two Linux kernel features that play a crucial role in implementing process isolation and resource management, especially in containerization technologies like Docker.
+
+**Namespaces:**
+
+Namespaces are a feature that provides process isolation by creating separate instances of certain system resources, which can only be accessed by processes within the same namespace. This isolation helps ensure that processes running in one namespace don't interfere with processes in another namespace
+
+There are several types of namespaces, including:
+
+- PID namespace: Isolates process IDs, allowing each namespace to have its own set of PIDs.
+- Mount namespace: Isolates the file system mount points, so that each namespace has its own mount tree.
+- Network namespace: Isolates network resources, providing each namespace with its own network stack, including interfaces, routes, and firewall rules.
+- IPC namespace: Isolates inter-process communication resources, preventing processes in one namespace from communicating with processes in another namespace.
+- UTS namespace: Isolates system identifiers like hostname, allowing each namespace to have its own unique hostname.
+- User namespace: Isolates user and group ID mappings, enabling each namespace to have its own set of user and group IDs.
+
+**Cgroups (Control Groups):**
+
+Cgroups are a kernel feature that enables the management and limitation of system resources, such as CPU, memory, and I/O, for a group of processes. Cgroups help ensure fair distribution of resources, prevent resource starvation, and enforce limits on resource usage. Some of the key features of cgroups include:
+
+- Resource limiting: Allows setting limits on resource usage for a group of processes, such as maximum CPU usage, memory consumption, and disk I/O bandwidth.
+- Prioritization: Enables setting priorities for resource allocation among different cgroups, helping to ensure that critical processes receive sufficient resources.
+- Accounting: Collects resource usage statistics for processes in a cgroup, which can be useful for monitoring, profiling, and billing purposes.
+- Control: Provides a mechanism to start, stop, or freeze processes in a cgroup, allowing for better management of process groups.
+
+In combination, namespaces and cgroups provide the necessary isolation and resource management capabilities required to build and run containers, enabling multiple containers to coexist on the same host without interfering with each other or consuming excessive resources.
+
+</details>
+
+<details>
+<summary>Does free memory exist on Linux?</summary>
+
+On Linux systems, the concept of "free memory" may be a bit nuanced due to how Linux manages memory. While the term "free memory" is commonly used, Linux uses a sophisticated memory management system that maximizes the utilization of available memory for optimal performance.
+
+In Linux, free memory refers to the memory that is not currently being used by any active processes or cached by the system. However, this does not mean that the memory is entirely unused or wasted. Linux takes advantage of available memory by utilizing it for disk caching, buffering, and other optimizations to improve system performance.
+
+When you check the memory usage using tools like free or top, you will see several memory-related metrics, including "free," "used," "buffers," and "cache." These metrics represent different aspects of memory usage:
+
+</details>
+
+
+<details>
+<summary>What are cronjobs?</summary>
+
+Cronjobs, also known as cron jobs or simply cron, are scheduled tasks that run automatically at specified intervals on Unix-like operating systems, such as Linux. The term "cron" comes from the Greek word "chronos," which means "time." Cronjobs are commonly used for automating repetitive tasks, performing system maintenance, running periodic backups, and other similar activities.
+
+Cronjobs are managed by a daemon called "cron," which runs in the background and executes the scheduled tasks. The configuration for cron jobs is stored in a series of files called "crontabs" (short for "cron tables"). Each user on the system can have their own crontab, and there is also a system-wide crontab.
+
+For example, a cron job that runs every day at 3:30 AM would have the following entry in the crontab:
+
+`30 3 * * * /path/to/command arg1 arg2`
+
+To manage cron jobs, you can use the crontab command with various options:
+
+- crontab -l: List the current user's cron jobs.
+- crontab -e: Edit the current user's cron jobs using the default text editor.
+- crontab -r: Remove the current user's cron jobs.
+- crontab -u USER: Perform an operation (list, edit, or remove) on the specified user's cron jobs (requires root privileges).
+
+</details>
+
+<details>
+<summary>What is LILO?</summary>
+
+- LILO, short for "LInux LOader," is a boot loader program used in older versions of Linux distributions.
+- LILO's main function is to load the Linux kernel into memory and initiate the boot process.It presents a menu to the user, allowing the selection of the desired kernel or operating system to boot (if multiple operating systems are installed).
+- LILO writes itself to the Master Boot Record (MBR) of the disk, overwriting the existing boot loader.
+- Its configuration file (/etc/lilo.conf) specifies the location of the Linux kernel image and boot parameters.
+- LILO has been largely replaced by other boot loaders, particularly GRUB (Grand Unified Bootloader), which offers more advanced features and flexibility.
+- GRUB has become the default boot loader for many Linux distributions.
+
+</details>
+
+<details>
+<summary>What are syscalls in Linux and how do they work?</summary>
+
+- Syscalls are the interface between user-space applications and the kernel in Linux.
+- They allow user programs to request services and access operating system resources.
+- User programs invoke syscalls using special instructions, triggering a switch from user mode to kernel mode.
+
+</details>
+
+<details>
+<summary>How do you find the dependencies of a package in Linux?</summary>
+
+Debian based (Ubuntu):
+- `apt depends <packagename>`
+- `apt-cache depends <packagename>`
+
+Red Hat based (Fedora, CentOS)
+- `dnf repoquery --requires <packagename>`
+
+
+</details>
+
+<details>
+<summary>Write the command that will display all .yaml files including permissions of each file? ()</summary>
+
+`find . -type f -name "*.yaml" -exec ls -l {} \`;
+
+</details>
+
+**Scenario-based:**
+
+<details>
+<summary>How can I check if a server is down?</summary>
+
+1) The ping command is a simple and widely used tool to check the connectivity between your Linux system and a remote server
+
+`ping <server_address>`
+
+2) The telnet command allows you to establish a connection to a specific port on a server. By attempting to connect to a server's port, you can determine if it's up and accepting connections
+
+`telnet <server_address> <port>`
+
+3) If the telnet command is not available on your system, you can use nc (netcat), which provides similar functionality. 
+
+`nc -zv <server_address> <port>`
+
+</details>
+
+<details>
+<summary>A process on the system can no longer log files, what can I do?</summary>
+
+- **Check file permissions**: Ensure that the process has the necessary permissions to write to the log files or directories. Verify the ownership and permissions of the log files, and make sure they are writable by the user or group associated with the process
+  
+- **Verify available disk space**:  Insufficient disk space can prevent the process from writing to log files
+- **Restart the process**
+- **Check log file size limit**: Some processes have limits on the maximum size of log files they can generate
+- **Check file system or disk errors**: Perform a file system check (fsck) on the relevant file system or check for disk errors using appropriate tools. File system errors or disk issues can sometimes interfere with file writing.
+- **Verify logging configuration**: Ensure that the log file path and other settings are correctly specified
+- **Check for system-level logging issue**: If multiple processes are unable to log files, there might be a system-wide issue with the logging infrastructure. Check system logs (e.g., /var/log/syslog or /var/log/messages) for any relevant error messages or indications of logging problems.
+
+</details>
+
+<details>
+<summary>What is no route to host?</summary>
+
+- "No route to host" is an error message that can occur in Linux when attempting to establish a network connection to a remote host
 
 </details>
 
