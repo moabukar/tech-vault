@@ -77,6 +77,10 @@ This project is maintained by a passionate community of engineers, and we welcom
 
 <br>
 
+**Technical:**
+
+Junior:
+
 <details>
 <summary>What is Linux and difference between UNIX and Linux?</summary>
 
@@ -118,6 +122,28 @@ Inodes play a crucial role in managing files and directories within a Linux file
 
 </details>
 
+<details>
+<summary>What are the different types of permissions in Linux?</summary>
+
+In Linux, there are three main types of permissions for files and directories, which determine how users can interact with them. These permissions are classified into categories based on the user's relationship to the file or directory: owner, group, and others (sometimes referred to as "world" or "public"). The three types of permissions are:
+
+Read (r): Read permission allows a user to view the contents of a file or list the contents of a directory. For files, this means the user can open and read the file. For directories, the user can view the names of files and subdirectories within that directory.
+
+Write (w): Write permission allows a user to modify the contents of a file or make changes within a directory. For files, this means the user can edit, append, or delete the file's content. For directories, the user can create, rename, or delete files and subdirectories within that directory. Note that deleting or renaming files within a directory requires write permission on the directory itself, not the individual files.
+
+Execute (x): Execute permission allows a user to run a file as a program or script, or enter and access a directory. For files, this means the user can execute the file if it is a binary executable or script with a proper interpreter (e.g., a shell script or Python script). For directories, the user can change their current working directory to that directory, and access files and subdirectories within it.
+
+These permissions are usually represented using a combination of letters (r, w, x) and dashes (-) for each of the three categories: owner, group, and others. For example, the permission string -rwxr-xr-- indicates:
+
+- The first character - indicates it's a regular file (a d would indicate a directory).
+- The owner has read (r), write (w), and execute (x) permissions: rwx.
+- The group has read (r) and execute (x) permissions, but not write permission: r-x.
+- Others have only read (r) permission: r--.
+
+Alternatively, permissions can also be represented using octal notation (base-8), where read, write, and execute permissions are assigned values of 4, 2, and 1, respectively. The permissions are then represented by a three-digit number, with each digit corresponding to the owner, group, and others. For example, the permission string -rwxr-xr-- can be represented as 754 in octal notation.
+
+</details>
+
 
 <details>
 <summary>Explain the Linux boot process</summary>
@@ -139,6 +165,8 @@ Runlevel/target: Init process initializes the predefined runlevel (SysVinit) or 
 Login prompt: Once all services and processes specified in the runlevel/target have started, the system displays a login prompt, indicating that the boot process is complete and the system is ready for use.
 
 </details>
+
+Mid:
 
 <details>
 <summary>What is a zombie process?</summary>
@@ -181,6 +209,8 @@ Soft links and hard links are two types of file links in a Unix-like file system
 In summary, a soft link is a more flexible but less reliable type of link that can point to files or directories across file systems, while a hard link is a more robust link that directly references the file's data, but is limited to the same file system and cannot link to directories.
 
 </details>
+
+Senior: 
 
 <details>
 <summary>What are namespaces and c-groups?</summary>
@@ -236,28 +266,6 @@ ln -s /path/to/original/file.txt link_to_file.txt
 
 This command creates a symbolic link named link_to_file.txt that points to the file located at /path/to/original/file.txt.
 ```
-
-</details>
-
-<details>
-<summary>What are the different types of permissions in Linux?</summary>
-
-In Linux, there are three main types of permissions for files and directories, which determine how users can interact with them. These permissions are classified into categories based on the user's relationship to the file or directory: owner, group, and others (sometimes referred to as "world" or "public"). The three types of permissions are:
-
-Read (r): Read permission allows a user to view the contents of a file or list the contents of a directory. For files, this means the user can open and read the file. For directories, the user can view the names of files and subdirectories within that directory.
-
-Write (w): Write permission allows a user to modify the contents of a file or make changes within a directory. For files, this means the user can edit, append, or delete the file's content. For directories, the user can create, rename, or delete files and subdirectories within that directory. Note that deleting or renaming files within a directory requires write permission on the directory itself, not the individual files.
-
-Execute (x): Execute permission allows a user to run a file as a program or script, or enter and access a directory. For files, this means the user can execute the file if it is a binary executable or script with a proper interpreter (e.g., a shell script or Python script). For directories, the user can change their current working directory to that directory, and access files and subdirectories within it.
-
-These permissions are usually represented using a combination of letters (r, w, x) and dashes (-) for each of the three categories: owner, group, and others. For example, the permission string -rwxr-xr-- indicates:
-
-- The first character - indicates it's a regular file (a d would indicate a directory).
-- The owner has read (r), write (w), and execute (x) permissions: rwx.
-- The group has read (r) and execute (x) permissions, but not write permission: r-x.
-- Others have only read (r) permission: r--.
-
-Alternatively, permissions can also be represented using octal notation (base-8), where read, write, and execute permissions are assigned values of 4, 2, and 1, respectively. The permissions are then represented by a three-digit number, with each digit corresponding to the owner, group, and others. For example, the permission string -rwxr-xr-- can be represented as 754 in octal notation.
 
 </details>
 
