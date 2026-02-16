@@ -705,6 +705,8 @@ Method 3
 
 <br>
 
+**Junior:**
+
 <details>
 <summary>What is HTTP?</summary>
 
