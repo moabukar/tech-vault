@@ -1498,6 +1498,30 @@ git stash pop     # Apply and remove stash
 </details>
 
 <details>
+<summary>What is git squash?</summary>
+
+<code>git squash</code> is not a separate Git command, but a technique used during an **interactive rebase** to combine multiple commits into a single commit. This helps clean up your commit history before merging a feature branch into the main branch.
+
+Steps to squash commits:
+
+1. Start an interactive rebase for the last N commits:
+
+<pre><code>git rebase -i HEAD~N</code></pre>
+
+2. In the editor, change `pick` to `squash` (or `s`) for the commits you want to combine with the previous commit.  
+3. Edit the commit message as needed.  
+4. Continue the rebase:
+
+<pre><code>git rebase --continue</code></pre>
+
+Benefits:
+- Creates a cleaner, more readable commit history.
+- Groups related changes into a single commit for easier review.
+- Useful before merging a feature branch into main or master.
+
+</details>
+
+<details>
 <summary>What does git reset do?</summary>
 
 <code>git reset</code> is used to move the HEAD and optionally the staging area to a specific commit. It can be used to unstage changes, undo commits, or adjust branch history.
