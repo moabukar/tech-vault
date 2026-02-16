@@ -1033,7 +1033,7 @@ DHCP stands for Dynamic Host Configuration Protocol. It is a network protocol us
 
 </details>
 
-#### Advanced + Scenario based questions:
+**Scenario-based:**
 
 <details>
 <summary>When I type google.com into the browser, what actually happens? (basic version)</summary>
