@@ -1324,467 +1324,198 @@ Try transferring data between each host and other devices on the network to dete
 
 <br>
 
-**Junior-level questions:**
-
 <details>
 <summary>What is Git?</summary>
-
-Git is a distributed version control system used to track changes in source code during software development. It allows multiple developers to collaborate on a project, maintain a complete history of changes, create branches for new features or fixes, and revert to previous versions if necessary.
-
-Because Git is distributed, every developer has a full copy of the repository, including its history, which enables fast operations and the ability to work offline.
-
+  
+Most widely used modern version control system in the world today. It is used to gather code contributions from multiple users in a single place (repository). Provides full history, workflow and allows for rollback of code and patching.
+  
 </details>
-
 <details>
 <summary>Difference between Git and SVN?</summary>
+  
+SVN and Git are both powerful version control systems that each use a different approach to managing and merging code changes. Git uses a distributed model, whereas SVN uses a centralized model.
 
-SVN and Git are both powerful version control systems that use different approaches to managing and merging code changes. Git uses a distributed model, whereas SVN uses a centralised model.
+SVN’s centralized repository model makes it easier to manage contributions and contributors. Git does not support codebase access restrictions — a contributor who has access to the repository has access to the entire repository. SVN, by contrast, provides granular control, allowing for limits on particular contributors down to the directory, and file levels.
 
-SVN’s centralised repository model makes it easier to manage contributions and contributors. Git does not support codebase access restrictions — a contributor who has access to the repository has access to the entire repository. SVN, by contrast, provides granular control, allowing restrictions down to directory and file level.
+The ability to work locally and offline is one major advantage to Git. SVN requires contributors to be connected to the main repository server, which essentially eliminates working offline.
 
-The ability to work locally and offline is a major advantage of Git. SVN requires contributors to be connected to the main repository server, which effectively removes the ability to work offline.
-
-Git also generally outperforms SVN when it comes to branching, merging, and conflict resolution. It is designed to support collaborative and open-source development environments.
+Git also outperforms SVN when it comes to merging and conflict resolution. Git has been designed for an open-source setting where numerous contributors may be working on the same parts of a codebase. To allow for this type of collaboration, Git has built up a robust system for resolving merge conflicts that makes the process smoother, and more manageable.
 
 </details>
-
 <details>
 <summary>What is the basic Git workflow?</summary>
 
-The basic Git workflow follows this sequence:
-
-Working Directory → Staging Area → Local Repository → Remote Repository
-
-1. Make changes in your working directory.
-2. Use <code>git add</code> to move changes to the staging area.
-3. Use <code>git commit</code> to save changes to the local repository.
-4. Use <code>git push</code> to upload commits to the remote repository.
-
-This structured workflow helps maintain version control and collaboration across teams.
+Working directory >   staging area >  local repo >   remote repo
+            git add           git commit    git push 
 
 </details>
-
 <details>
-<summary>Difference between git pull and Git fetch?</summary>
+  <summary>Difference between git pull and Git fetch</summary>
+  
+The key difference between git fetch and pull is that git pull copies changes from a remote repository directly into your working directory, while git fetch does not. The git fetch command only copies changes into your local Git repo. The git pull command does both.
 
-The key difference between <code>git fetch</code> and <code>git pull</code> is how they update your local environment.
+Benefit of git pull: The local Git repo is now in sync with the remote repo. The local filesystem has the latest, most up to date files.
 
-- <code>git fetch</code> downloads changes from the remote repository into your local repository but does not modify your working directory.
-- <code>git pull</code> performs a fetch followed by a merge (or rebase), updating both your local repository and your working directory.
-
-Use <code>git fetch</code> when you want to review changes before integrating them. Use <code>git pull</code> when you want to immediately update your branch with remote changes.
-
-</details>
-
-<details>
-<summary>What is the HEAD in Git?</summary>
-
-In Git, HEAD is a pointer to the most recent commit on the currently checked-out branch. It represents your current position in the repository’s history.
-
-If you check out a specific commit rather than a branch, Git enters a “detached HEAD” state, meaning HEAD points directly to a commit instead of a branch reference.
+Benefit of git fetch: If you are actively working on files tracked by Git, but you still want to update your local repository with the latest changes from a remote repository, use the git fetch command.
 
 </details>
-
-<details>
-<summary>What is a branch in Git?</summary>
-
-A branch in Git is an independent line of development. It allows developers to work on features, bug fixes, or experiments without affecting the main codebase.
-
-Branches make it possible to develop in parallel and later merge changes back into the main branch once the work is complete.
-
-</details>
-
-<details>
-<summary>What is a commit in Git?</summary>
-
-A commit is a snapshot of your project at a specific point in time. Each commit contains a unique identifier (SHA hash), a message describing the changes, and references to previous commits.
-
-Commits allow you to track progress, review history, and revert to earlier versions if required.
-
-</details>
-
-<details>
-<summary>What is the difference between git clone and git fork?</summary>
-
-<code>git clone</code> creates a local copy of an existing remote repository on your machine. It includes the full project history.
-
-A fork is a copy of a repository hosted on a Git platform (such as GitHub or GitLab). It is typically used to contribute to someone else’s project without affecting the original repository.
-
-In short:
-- Clone → Local copy
-- Fork → Remote copy under your own account
-
-</details>
-
-<details>
-<summary>How do you create and switch branches in Git?</summary>
-
-To create a new branch:
-
-<code>git branch branch-name</code>
-
-To switch to a branch:
-
-<code>git checkout branch-name</code>
-
-You can also create and switch in one command:
-
-<code>git checkout -b branch-name</code>
-
-In newer versions of Git, you can use:
-
-<code>git switch -c branch-name</code>
-
-</details>
-
-<details>
-<summary>What is the purpose of git add?</summary>
-
-The <code>git add</code> command moves changes from the working directory to the staging area. It allows you to choose which changes will be included in the next commit.
-
-This provides control over commits, enabling you to group related changes together before committing them to the repository.
-
-</details>
-
-**Mid-level questions:**
-
 <details>
 <summary>What is git cherry-pick?</summary>
 
-<code>git cherry-pick</code> is a Git command used to apply a specific commit (or range of commits) from one branch to another. Instead of merging an entire branch, cherry-pick allows you to select individual commits to include.
+git cherry-pick is a Git command used to apply a specific commit (or a range of commits) from one branch to another. It allows you to select and "cherry-pick" individual commits from one branch's history and apply them onto another branch. This can be useful when you want to bring specific changes or fixes from one branch into another without merging the entire branch.
 
-Syntax:
+The basic syntax of git cherry-pick is as follows:
 
-<pre><code>git cherry-pick &lt;commit-hash&gt;</code></pre>
+```bash
 
-Where <code>&lt;commit-hash&gt;</code> is the unique identifier of the commit you wish to apply.
+git cherry-pick <commit-hash>
 
-Use cases include applying bug fixes from one branch to another without merging all other changes.
+<commit-hash> is the unique identifier (SHA-1 hash) of the commit you want to apply.
+
+```
 
 </details>
+<details>
+<summary>What is the HEAD in Git?</summary>
 
+
+In Git, HEAD is a pointer to the latest commit in the currently checked-out branch. It represents the current state of the branch and is used for navigating the commit history and tracking changes. When in a "detached" state, HEAD points directly to a specific commit.
+
+</details>
 <details>
 <summary>When do I use Git stash?</summary>
 
-<code>git stash</code> is used to temporarily save changes in your working directory without committing them. This is useful when you need a clean working directory to switch branches, pull updates, or test something.
+You use git stash in Git when you need to temporarily save changes in your working directory without committing them. This is typically done in scenarios where you want to switch to a different branch, pull changes from a remote repository, or perform some other operation that requires a clean working directory
 
-Common scenarios:
-- **Switching branches**: Save unfinished work before switching.
-- **Pulling updates**: Avoid conflicts when pulling changes from a remote.
-- **Temporary fixes**: Test or implement quick changes without committing them immediately.
+Here are common situations when you should use git stash:
 
-Basic usage:
+**Switching Branches**: When you're working on one branch and need to switch to another, but you have uncommitted changes in your working directory. Using git stash allows you to save those changes, switch branches, and then later apply the changes to the new branch.
 
-<pre><code>git stash        # Save changes
-git checkout branch-name   # Switch branch
-git stash apply  # Apply stashed changes
-</code></pre>
+```bash
+git stash        # Save changes
+git checkout another-branch   # Switch branches
+git stash apply  # Apply saved changes to the new branch
+
+```
+
+**Pulling or Fetching Changes**: Before pulling or fetching changes from a remote repository, you can stash your local changes to ensure a clean working directory. This helps prevent conflicts that might arise when Git tries to merge the incoming changes with your local modifications.
+
+```bash
+git stash        # Save changes
+git pull origin main   # Pull changes from the remote
+git stash apply  # Apply saved changes to your working directory
+```
+
+**Temporary Changes**: If you're working on a feature but need to make a quick fix or test something unrelated, you can stash your current changes before making the temporary changes. Afterward, you can apply the stashed changes back.
+
+```bash
+git stash        # Save feature changes
+# Make and test quick fix or unrelated changes
+git stash apply  # Apply saved feature changes back
+```
+
+**Resolving Conflicts**: When resolving merge or rebase conflicts, git stash can help. You can stash your changes, then perform the merge or rebase. After resolving conflicts, you can apply your stashed changes again.
+
+```bash
+git stash        # Save changes
+# Resolve conflicts during merge or rebase
+git stash apply  # Apply saved changes after conflicts are resolved
+```
 
 </details>
-
-<details>
-<summary>What is difference between git stash pop and git stash apply?</summary>
-
-- <code>git stash pop</code> applies the most recent stash and removes it from the stash list.  
-- <code>git stash apply</code> applies the stash but keeps it in the stash list for future use.
-
-Example:
-
-<pre><code>git stash apply   # Apply but keep stash
-git stash pop     # Apply and remove stash
-</code></pre>
-
-</details>
-
 <details>
 <summary>What does git reset do?</summary>
 
-<code>git reset</code> is used to move the HEAD and optionally the staging area to a specific commit. It can be used to unstage changes, undo commits, or adjust branch history.
+`git reset` is a Git command used to move the HEAD and optionally the index (staging area) to a specified commit. It has different modes, including soft (moves HEAD only), mixed (default, moves HEAD and unstages changes), and hard (moves HEAD, unstages changes, and discards changes in the working directory). You can use it to unstage changes, move the branch pointer, undo commits, and amend the last commit. Use it carefully as it can affect commit history.
 
-Modes:
-- <code>--soft</code>: Moves HEAD only. Keeps staged and working directory changes.  
-- <code>--mixed</code> (default): Moves HEAD and unstages changes, keeping working directory changes.  
-- <code>--hard</code>: Moves HEAD, unstages changes, and discards working directory changes.
+Here are the primary functions of `git reset`:
 
-Example:
+- Unstaging Changes
+- Moving the HEAD
+- Undoing Commits: git reset
+- Mixed-Mode for Amend
 
-<pre><code>git reset --hard &lt;commit-hash&gt;</code></pre>
 
 </details>
-
 <details>
-<summary>What is the command to check the difference between two commits?</summary>
+<summary>What is Git fork? What is difference between git fork, clone and branch?</summary>
 
-To see changes between two commits, use:
-
-<pre><code>git diff &lt;commit1&gt; &lt;commit2&gt;</code></pre>
-
-This will show line-by-line differences between the specified commits.
+- **Git Fork**: Creating a copy of a repository on a Git hosting platform, often for collaborative contributions.
+- **Git Clone**: Creating a local copy of a Git repository from a remote, enabling local development.
+- **Git Branch**: Creating separate lines of development within a repository, typically for features or bug fixes.
 
 </details>
-
 <details>
-<summary>When do you use git rebase instead of git merge?</summary>
-
-Use <code>git rebase</code> when you want a cleaner, linear commit history. Rebasing integrates changes from one branch onto another without creating a merge commit.
-
-Use <code>git merge</code> when you want to preserve the full branch history, including all merge points.
-
-Example:
-
-<pre><code>git checkout feature-branch
-git rebase main</code></pre>
-
+  <summary>What is difference between `git stash pop` and `git stash apply`?</summary>
+  
+- `git stash pop` applies and removes the most recent stash.
+- `git stash apply` applies the most recent stash but leaves it in the stash list for future use or reference.git stash pop applies and removes the most recent stash.
+  
 </details>
 
-<details>
-<summary>What is a merge conflict and how do you resolve it?</summary>
-
-A merge conflict occurs when Git cannot automatically combine changes from two branches. Conflicts typically happen when the same line of code is modified in both branches.
-
-Steps to resolve:
-1. Identify conflicts marked in files with <code>&lt;&lt;&lt;&lt;&lt;&lt;&lt;</code>, <code>=======</code>, <code>&gt;&gt;&gt;&gt;&gt;&gt;&gt;</code>.  
-2. Edit files to resolve conflicts manually.  
-3. Stage resolved files: <code>git add filename</code>.  
-4. Continue merge or rebase: <code>git commit</code> or <code>git rebase --continue</code>.
-
-</details>
-
-<details>
-<summary>What is a detached HEAD state?</summary>
-
-A detached HEAD occurs when HEAD points directly to a specific commit instead of a branch. In this state, any commits you make are not associated with a branch and can be lost if not handled.
-
-To recover or save changes:
-- Create a new branch to preserve commits:
-
-<pre><code>git checkout -b new-branch</code></pre>
-
-- Or return to a branch:
-
-<pre><code>git checkout branch-name</code></pre>
-
-</details>
-
-**Senior-level questions:**
-
-<details>
-<summary>How can I amend an older commit?</summary>
-
-To amend an older commit in Git, you can use an **interactive rebase**:
-
-1. Start an interactive rebase from the commit before the one you want to change:
-
-<pre><code>git rebase -i &lt;commit-hash&gt;~1</code></pre>
-
-2. In the editor, change `pick` to `edit` for the commit you want to amend.  
-3. Make the necessary changes and stage them:
-
-<pre><code>git add .</code></pre>
-
-4. Amend the commit:
-
-<pre><code>git commit --amend</code></pre>
-
-5. Continue the rebase:
-
-<pre><code>git rebase --continue</code></pre>
-
-This updates the commit while keeping the following history intact.
-
-</details>
-
-<details>
-<summary>Do you know how to undo a git rebase?</summary>
-
-If a rebase goes wrong, you can undo it using **reflog**:
-
-1. Check the reflog to find the commit before the rebase:
-
-<pre><code>git reflog</code></pre>
-
-2. Reset your branch to that commit:
-
-<pre><code>git reset --hard &lt;commit-hash&gt;</code></pre>
-
-This restores your branch to the state before the rebase. If you’ve already pushed, you may need to force push carefully.
-
-</details>
-
-<details>
-<summary>What is the difference between git reset --soft, --mixed, and --hard?</summary>
-
-- <code>git reset --soft &lt;commit&gt;</code>  
-  Moves HEAD to the specified commit. Keeps staged and working directory changes intact.  
-
-- <code>git reset --mixed &lt;commit&gt;</code> (default)  
-  Moves HEAD and unstages changes, but preserves working directory changes.  
-
-- <code>git reset --hard &lt;commit&gt;</code>  
-  Moves HEAD, unstages changes, and discards any changes in the working directory.
-
-</details>
-
-<details>
-<summary>What is git reflog and when would you use it?</summary>
-
-<code>git reflog</code> records updates to the HEAD and branch references. It shows a history of where HEAD and branches have pointed, including commits that are no longer in the branch history.
-
-Use cases:
-- Recover lost commits after a reset or rebase.
-- Undo accidental branch moves.
-- Track recent activity on your repository.
-
-Example:
-
-<pre><code>git reflog
-git reset --hard &lt;commit-hash&gt;</code></pre>
-
-</details>
-
-<details>
-<summary>How do you squash commits in Git?</summary>
-
-Squashing combines multiple commits into a single commit, usually to clean up history before merging.
-
-Steps:
-1. Start an interactive rebase for the last N commits:
-
-<pre><code>git rebase -i HEAD~N</code></pre>
-
-2. Change `pick` to `squash` (or `s`) for commits you want to combine.  
-3. Edit the commit message as needed.  
-4. Continue the rebase:
-
-<pre><code>git rebase --continue</code></pre>
-
-</details>
-
-<details>
-<summary>How do you safely force push in a shared repository?</summary>
-
-Force pushing overwrites the remote branch and can disrupt others. To do it safely:
-
-1. Ensure your changes are intentional and coordinate with the team.  
-2. Use the safer `--force-with-lease` instead of `--force`:
-
-<pre><code>git push --force-with-lease origin branch-name</code></pre>
-
-This will only force push if your local branch is based on the latest remote state, preventing accidental overwrites of other people's work.
-
-</details>
-
-**Scenario-based questions:**
+#### Advanced:
 
 <details>
 <summary>I need to update my local repos, what commands do I use?</summary>
 
-To update your local repository with changes from the remote:
 
-1. Fetch the latest changes:
-
-<pre><code>git fetch</code></pre>
-
-2. Merge or rebase the changes into your branch:
-
-<pre><code>git merge origin/main   # or
-git rebase origin/main</code></pre>
-
-3. Resolve any conflicts if they arise.  
-4. Optionally, push your local commits back to the remote:
-
-<pre><code>git push origin branch-name</code></pre>
-
-This ensures your local repository is in sync with the remote.
+- Use `git fetch` to retrieve remote changes.
+- Choose to merge with `git merge` or rebase with `git rebase`.
+- Resolve conflicts if any.
+- Optionally, push local changes with git push to update the remote repository.
 
 </details>
-
 <details>
-<summary>I need to rollback to a previous commit and I don’t need my recent changes, what do I use?</summary>
+<summary>I need to rollback to a previous commit and I don't need my recent changes, what do I use?</summary>
 
-Use <code>git reset --hard</code> to move your branch to a previous commit and discard all recent changes:
-
-<pre><code>git reset --hard &lt;commit-hash&gt;</code></pre>
-
-Warning: This permanently removes uncommitted and committed changes after the specified commit.
+- `git reset --hard <commit>`
 
 </details>
+<details>
+<summary>How can I amend an older commit?</summary>
 
+- Use `git rebase -i <commit>~1` to start an interactive rebase.
+- Change "pick" to "edit" for the commit you want to amend.
+- Make your changes and stage them with `git add .`
+- Use `git commit --amend` to update the commit.
+- Continue the rebase with `git rebase --continue`
+
+</details>
+<details>
+<summary>What is the command to check the difference between two commits?</summary>
+
+`git diff <commit1> <commit2>`
+
+
+</details>
+<details>
+<summary>When do you use `git rebase` instead of `git merge`?</summary>
+
+- Use `git rebase` instead of `git merge` when you want to create a cleaner, linear commit history, squash commits, or integrate changes from one branch into another. Use `git merge` when preserving the branch's history is more important, especially in collaborative scenarios.
+
+</details>
+<details>
+<summary>Do you know how to undo a git rebase?</summary>
+
+- Use `git reflog` to find the commit hash before the rebase.
+- Run `git reset --hard <commit-hash>` to reset your branch to that commit.
+- Optionally, force push to update the remote branch if necessary.
+
+</details>
 <details>
 <summary>How do you bring down updates from main branch if your local branch becomes stale?</summary>
 
-1. Switch to your local branch:
-
-<pre><code>git checkout branch-name</code></pre>
-
-2. Fetch latest updates from remote:
-
-<pre><code>git fetch origin</code></pre>
-
-3. Integrate updates from main:
-
-<pre><code>git merge origin/main   # or
-git rebase origin/main</code></pre>
-
-4. Resolve any conflicts.  
-5. Test your branch and push if necessary:
-
-<pre><code>git push origin branch-name</code></pre>
+- Use `git checkout <branch-name>` to switch to your local branch.
+- Run `git fetch` to get the latest changes from the remote repository.
+- Choose either `git merge main` or `git rebase main` to integrate the updates (pick one based on your workflow).
+- Resolve any conflicts if they arise during the merge or rebase.
+- Test your branch thoroughly to ensure it works with the latest changes.
+- Commit and push your changes if necessary (`git commit` and `git push origin <branch-name>`).
 
 </details>
 
-<details>
-<summary>You accidentally committed sensitive data to a remote repository. What should you do?</summary>
-
-Steps to remove sensitive data:
-
-1. Remove it from the latest commit:
-
-<pre><code>git rm --cached sensitive-file
-git commit --amend</code></pre>
-
-2. If it exists in history, use <code>git filter-branch</code> or the safer <code>BFG Repo-Cleaner</code> to purge it.  
-3. Force push the cleaned history:
-
-<pre><code>git push --force --all</code></pre>
-
-4. Invalidate any exposed credentials (e.g., API keys, passwords).  
-5. Inform the team and rotate secrets if necessary.
-
 </details>
 
-<details>
-<summary>You need to move a specific commit from one branch to another. How would you do it?</summary>
-
-Use <code>git cherry-pick</code>:
-
-1. Switch to the target branch:
-
-<pre><code>git checkout target-branch</code></pre>
-
-2. Apply the commit:
-
-<pre><code>git cherry-pick &lt;commit-hash&gt;</code></pre>
-
-This applies the changes from the specific commit without merging the entire source branch.
-
-</details>
-
-<details>
-<summary>You are in the middle of work and need to switch tasks quickly without losing changes. What do you do?</summary>
-
-Use <code>git stash</code> to temporarily save changes:
-
-<pre><code>git stash        # Save current changes
-git checkout other-branch   # Switch to another task
-git stash apply  # Apply saved changes when returning
-</code></pre>
-
-Alternatively, you can create a temporary branch to preserve work:
-
-<pre><code>git checkout -b temp-branch</code></pre>
-
-</details>
 
 <details>
   <summary><h3 id="aws">AWS</h3></summary>
