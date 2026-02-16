@@ -951,34 +951,7 @@ In summary, HTTPS is a protocol for securing web communication, while WebSockets
 <details>
 <summary>Explain how a 3 way handshake works?</summary>
 
-A three-way handshake is a method used in a TCP/IP network to create a connection between a host and a client. It’s called a three-way handshake because it is a three-step method in which the client and server exchanges packets. The three steps are as follows: The client sends a SYN(Synchronize) packet to the server check if the server is up or has open ports. The server sends SYN-ACK packet to the client if it has open ports. The client acknowledges this and sends an ACK(Acknowledgment) packet back to the server.
-
-</details>
-
-**Mid:**
-
-<details>
-<summary>Stateless vs Stateful firewalls?</summary>
-
-Stateless and stateful firewalls are two types of network security devices that filter and control incoming and outgoing network traffic, but they do so in different ways:
-
-**Stateless Firewall:**
-
-- Stateless firewalls filter traffic based solely on the source and destination IP addresses, as well as port numbers.
-They do not maintain any information about the state of ongoing network connections.
-- Stateless firewalls are simpler and faster but lack the ability to make decisions based on the context or state of a connection.
-- Each packet is evaluated in isolation, without considering whether it's part of an established connection or whether it's a legitimate response to an outbound request.
-- Stateless firewalls are often used in basic network security setups and are suitable for scenarios where a basic level of security is sufficient.
-
-**Stateful Firewall:**
-
-- Stateful firewalls, also known as dynamic packet filtering firewalls, maintain a table of the state of active network connections.
-- They keep track of the state of TCP and UDP sessions, including the state of each connection (e.g., established, related, new) and their associated ports.
-- Stateful firewalls make decisions based on the context of network traffic, allowing them to permit or deny packets based on whether they are part of a legitimate, established connection.
-- This context-awareness makes stateful firewalls more effective at protecting against various types of attacks, such as port scanning and certain forms of packet-level attacks.
-- They are commonly used in enterprise networks and provide a higher level of security compared to stateless firewalls.
-
-In summary, stateless firewalls filter traffic based solely on basic information like IP addresses and port numbers, while stateful firewalls maintain information about the state of active connections and make decisions based on the context of the traffic. Stateful firewalls are generally more advanced and provide better security for modern network environments.
+A three-way handshake is a method used in a TCP/IP network to create a connection between a host and a client. It's called a three-way handshake because it is a three-step method in which the client and server exchanges packets. The three steps are as follows: The client sends a SYN(Synchronize) packet to the server check if the server is up or has open ports. The server sends SYN-ACK packet to the client if it has open ports. The client acknowledges this and sends an ACK(Acknowledgment) packet back to the server.
 
 </details>
 
@@ -1030,6 +1003,66 @@ DHCP stands for Dynamic Host Configuration Protocol. It is a network protocol us
 - When a device (client) connects to a network, it sends a DHCP request to a DHCP server, typically a router or dedicated DHCP server.
 - The DHCP server responds with an available IP address, subnet mask, default gateway, DNS server addresses, and other configuration parameters.
 - The client then configures itself with the provided information, making it ready to communicate on the network.
+
+</details>
+
+**Mid:**
+
+<details>
+<summary>Stateless vs Stateful firewalls?</summary>
+
+Stateless and stateful firewalls are two types of network security devices that filter and control incoming and outgoing network traffic, but they do so in different ways:
+
+**Stateless Firewall:**
+
+- Stateless firewalls filter traffic based solely on the source and destination IP addresses, as well as port numbers.
+They do not maintain any information about the state of ongoing network connections.
+- Stateless firewalls are simpler and faster but lack the ability to make decisions based on the context or state of a connection.
+- Each packet is evaluated in isolation, without considering whether it's part of an established connection or whether it's a legitimate response to an outbound request.
+- Stateless firewalls are often used in basic network security setups and are suitable for scenarios where a basic level of security is sufficient.
+
+**Stateful Firewall:**
+
+- Stateful firewalls, also known as dynamic packet filtering firewalls, maintain a table of the state of active network connections.
+- They keep track of the state of TCP and UDP sessions, including the state of each connection (e.g., established, related, new) and their associated ports.
+- Stateful firewalls make decisions based on the context of network traffic, allowing them to permit or deny packets based on whether they are part of a legitimate, established connection.
+- This context-awareness makes stateful firewalls more effective at protecting against various types of attacks, such as port scanning and certain forms of packet-level attacks.
+- They are commonly used in enterprise networks and provide a higher level of security compared to stateless firewalls.
+
+In summary, stateless firewalls filter traffic based solely on basic information like IP addresses and port numbers, while stateful firewalls maintain information about the state of active connections and make decisions based on the context of the traffic. Stateful firewalls are generally more advanced and provide better security for modern network environments.
+
+</details>
+
+<details>
+<summary>When and why would one use a TCP over UDP?</summary>
+
+TCP (Transmission Control Protocol) and UDP (User Datagram Protocol) are two transport layer protocols used in networking, and each has its own strengths and weaknesses. The choice between TCP and UDP depends on the specific requirements of the application or service being used. Here's when and why you might choose TCP over UDP:
+
+**Use TCP When:**
+
+- Reliability is Critical: TCP provides a reliable and error-checked connection. It ensures that data is delivered accurately and in the correct order. This makes it suitable for applications where data integrity is crucial, such as file transfers, email, and web browsing.
+
+- Ordered Data Delivery: If your application requires data to be delivered in the same order it was sent, TCP is the better choice. It maintains a sequencing mechanism to guarantee ordered data delivery.
+
+- Flow Control: TCP includes flow control mechanisms to prevent overwhelming the receiver with too much data too quickly. This is essential for applications that require rate limiting, like streaming video or real-time communication apps.
+
+- Error Recovery: TCP can detect and recover from errors that may occur during transmission. It retransmits lost or corrupted packets to ensure data reliability.
+
+- Connection-Oriented: TCP establishes a connection before data transfer begins and releases it after the transfer is complete. This connection-oriented nature is suitable for applications that require a reliable, well-defined start and end to communication sessions.
+
+**Use UDP When:**
+
+- Low Latency is Critical: UDP is faster than TCP due to its minimal overhead. It's suitable for applications that prioritize low latency, such as online gaming, live streaming, and VoIP (Voice over IP).
+
+- Loss Tolerance: UDP does not guarantee data delivery or order, so it's a good choice for applications where occasional packet loss is acceptable, such as real-time data feeds, video conferencing, and some IoT applications.
+
+- Reduced Network Overhead: UDP has less overhead than TCP because it doesn't involve establishing connections, maintaining sequencing, or performing extensive error checking. This can be advantageous for applications with limited bandwidth or high data rates.
+
+- Broadcast or Multicast: UDP supports broadcast and multicast communication, which allows data to be sent to multiple recipients simultaneously. This is useful for applications like online gaming and video streaming.
+
+- Simple Implementation: UDP is easier to implement because it doesn't have the complexities of connection establishment and error recovery. This makes it a good choice for lightweight applications and protocols.
+
+In summary, use TCP when data reliability, ordered delivery, and error recovery are critical. Choose UDP when low latency, reduced overhead, and loss tolerance are more important, and you can handle potential data loss or out-of-order delivery at the application level. The decision depends on the specific needs of your application and the trade-offs you are willing to make between reliability and performance.
 
 </details>
 
@@ -1249,39 +1282,6 @@ ACK: The initial party acknowledges the FIN from the other side, completing the 
 **6. Connection Closed:**
 
 After the four-way handshake, the connection is closed, and no further data can be exchanged.
-
-</details>
-
-<details>
-<summary>When and why would one use a TCP over UDP?</summary>
-
-TCP (Transmission Control Protocol) and UDP (User Datagram Protocol) are two transport layer protocols used in networking, and each has its own strengths and weaknesses. The choice between TCP and UDP depends on the specific requirements of the application or service being used. Here's when and why you might choose TCP over UDP:
-
-**Use TCP When:**
-
-- Reliability is Critical: TCP provides a reliable and error-checked connection. It ensures that data is delivered accurately and in the correct order. This makes it suitable for applications where data integrity is crucial, such as file transfers, email, and web browsing.
-
-- Ordered Data Delivery: If your application requires data to be delivered in the same order it was sent, TCP is the better choice. It maintains a sequencing mechanism to guarantee ordered data delivery.
-
-- Flow Control: TCP includes flow control mechanisms to prevent overwhelming the receiver with too much data too quickly. This is essential for applications that require rate limiting, like streaming video or real-time communication apps.
-
-- Error Recovery: TCP can detect and recover from errors that may occur during transmission. It retransmits lost or corrupted packets to ensure data reliability.
-
-- Connection-Oriented: TCP establishes a connection before data transfer begins and releases it after the transfer is complete. This connection-oriented nature is suitable for applications that require a reliable, well-defined start and end to communication sessions.
-
-**Use UDP When:**
-
-- Low Latency is Critical: UDP is faster than TCP due to its minimal overhead. It's suitable for applications that prioritize low latency, such as online gaming, live streaming, and VoIP (Voice over IP).
-
-- Loss Tolerance: UDP does not guarantee data delivery or order, so it's a good choice for applications where occasional packet loss is acceptable, such as real-time data feeds, video conferencing, and some IoT applications.
-
-- Reduced Network Overhead: UDP has less overhead than TCP because it doesn't involve establishing connections, maintaining sequencing, or performing extensive error checking. This can be advantageous for applications with limited bandwidth or high data rates.
-
-- Broadcast or Multicast: UDP supports broadcast and multicast communication, which allows data to be sent to multiple recipients simultaneously. This is useful for applications like online gaming and video streaming.
-
-- Simple Implementation: UDP is easier to implement because it doesn't have the complexities of connection establishment and error recovery. This makes it a good choice for lightweight applications and protocols.
-
-In summary, use TCP when data reliability, ordered delivery, and error recovery are critical. Choose UDP when low latency, reduced overhead, and loss tolerance are more important, and you can handle potential data loss or out-of-order delivery at the application level. The decision depends on the specific needs of your application and the trade-offs you are willing to make between reliability and performance.
 
 </details>
 
