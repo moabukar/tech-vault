@@ -1066,114 +1066,6 @@ In summary, use TCP when data reliability, ordered delivery, and error recovery 
 
 </details>
 
-**Scenario-based:**
-
-<details>
-<summary>When I type google.com into the browser, what actually happens? (basic version)</summary>
-
-When you type "google.com" into your web browser's address bar and hit Enter, several steps occur behind the scenes to display the Google homepage. Here's a simple breakdown of what happens:
-
-**DNS Resolution:**
-
-- Your web browser first checks its local cache to see if it already knows the IP address associated with "google.com." If it does, it skips the next steps.
-- If not found in the cache, your browser sends a DNS (Domain Name System) resolution request to a DNS resolver. This is usually provided by your internet service provider (ISP) or a public DNS service like Google's 8.8.8.8.
-- The DNS resolver checks its cache to see if it has the IP address for "google.com." If not, it initiates the DNS resolution process.
-
-**DNS Resolution Process:**
-
-- The DNS resolver queries root DNS servers to find the authoritative DNS server for the top-level domain (TLD), which is "com" in this case.
-- The root DNS server responds with the IP address of the authoritative DNS server for the "com" TLD.
-- The resolver then queries the authoritative DNS server for the "com" TLD to find the authoritative DNS server for "google.com."
-- The authoritative DNS server for "google.com" responds with the IP address associated with "google.com."
-
-**IP Address Retrieval:**
-
-- The DNS resolver returns the IP address of "google.com" to your web browser.
-
-**HTTP Request:**
-
-- Your browser initiates an HTTP (Hypertext Transfer Protocol) request to the IP address it received for "google.com."
-- The request includes additional information like the specific web page you're trying to access (e.g., "/", which typically represents the homepage).
-
-**Server Processing:**
-
-- Google's web server, located at the provided IP address, receives the HTTP request.
-- The server processes the request and generates an appropriate response.
-
-**Response Transmission:**
-
-- The web server sends back an HTTP response, which includes the HTML, CSS, JavaScript, and other resources needed to render the Google homepage.
-
-**Rendering the Web Page:**
-
-Your browser receives the HTTP response and begins rendering the Google homepage on your screen.
-It may also make additional requests for images, stylesheets, and scripts referenced in the HTML to fully load and display the page.
-
-**Page Display:**
-
-Once all resources are loaded, your web browser displays the Google homepage on your screen, and you can interact with it.
-In summary, when you type "google.com" into your browser, a complex series of steps involving DNS resolution, HTTP requests, and server responses occurs to retrieve and display the webpage you requested. This process ensures that you can access websites using human-readable domain names while the internet works behind the scenes using IP addresses to route and deliver content.
-
-</details>
-
-<details>
-<summary>I can't reach a website, how can I troubleshoot? (use deep Linux + networking knowledge)</summary>
-
-**Check Network Connectivity:**
-
-- Ensure your Linux machine has a working internet connection. Try pinging a reliable website or an IP address (e.g., `ping google.com` or `ping 8.8.8.8` for Google's DNS).
-
-**DNS Resolution:**
-
-- Verify that DNS resolution is working correctly. Try to resolve the website's IP address using `nslookup` or `dig` (e.g., `nslookup website.com` or `dig website.com`).
-- Check your DNS server configuration in /etc/resolv.conf. Ensure it points to a valid DNS server (e.g., `nameserver 8.8.8.8` for Google's DNS).
-
-**Check Hosts File:**
-
-- Make sure the website is not blocked by entries in the `/etc/hosts` file. Check for any entries that may be redirecting the website.
-
-**Firewall Rules:**
-
-- Check if a firewall is blocking outgoing or incoming traffic. Use the `iptables` or firewall-cmd command to inspect firewall rules.
-
-**Web Proxy:**
-
-- If you are behind a proxy server, ensure that proxy settings are correctly configured in your environment, including `HTTP_PROXY` and `HTTPS_PROXY` environment variables.
-
-**Browser Issues:**
-
-- Try accessing the website from a different web browser or an incognito/private browsing window to rule out browser-related problems.
-
-**SSL/TLS Issues:**
-
-- If you are getting SSL/TLS-related errors, ensure your system has up-to-date CA certificates installed. You can also check for SSL/TLS issues using the openssl command (e.g., `openssl s_client -connect website.com:443`).
-
-**Check DNS Cache:**
-
-- If you've made changes to DNS configurations, clear your DNS cache using `systemctl restart systemd-resolved` (on systems using systemd-resolved) or `sudo /etc/init.d/nscd restart` (on systems using nscd).
-
-**Trace Route (Traceroute):**
-
-- Use the traceroute or tracepath command to trace the network path to the website (e.g., `traceroute website.com` or `tracepath website.com`).
-
-**Check System Logs:**
-
-- Inspect system logs in `/var/log` (e.g., `/var/log/syslog`, `/var/log/messages`, `/var/log/auth.log`) for any network-related errors or issues.
-
-**Check DNS Server Status:**
-
-- Verify the availability and responsiveness of your DNS servers by pinging them or using tools like `dig`.
-
-**Check Website Status:**
-
-It's possible that the website itself is down. Check its status on a service like "DownDetector" or "Is It Down Right Now?".
-
-**Packet Capture (Optional):**
-
-- As a last resort, you can use packet capture tools like `tcpdump` or `wireshark` to capture network traffic and analyze it for issues.
-
-</details>
-
 **Senior:**
 
 <details>
@@ -1282,6 +1174,114 @@ ACK: The initial party acknowledges the FIN from the other side, completing the 
 **6. Connection Closed:**
 
 After the four-way handshake, the connection is closed, and no further data can be exchanged.
+
+</details>
+
+**Scenario-based:**
+
+<details>
+<summary>When I type google.com into the browser, what actually happens? (basic version)</summary>
+
+When you type "google.com" into your web browser's address bar and hit Enter, several steps occur behind the scenes to display the Google homepage. Here's a simple breakdown of what happens:
+
+**DNS Resolution:**
+
+- Your web browser first checks its local cache to see if it already knows the IP address associated with "google.com." If it does, it skips the next steps.
+- If not found in the cache, your browser sends a DNS (Domain Name System) resolution request to a DNS resolver. This is usually provided by your internet service provider (ISP) or a public DNS service like Google's 8.8.8.8.
+- The DNS resolver checks its cache to see if it has the IP address for "google.com." If not, it initiates the DNS resolution process.
+
+**DNS Resolution Process:**
+
+- The DNS resolver queries root DNS servers to find the authoritative DNS server for the top-level domain (TLD), which is "com" in this case.
+- The root DNS server responds with the IP address of the authoritative DNS server for the "com" TLD.
+- The resolver then queries the authoritative DNS server for the "com" TLD to find the authoritative DNS server for "google.com."
+- The authoritative DNS server for "google.com" responds with the IP address associated with "google.com."
+
+**IP Address Retrieval:**
+
+- The DNS resolver returns the IP address of "google.com" to your web browser.
+
+**HTTP Request:**
+
+- Your browser initiates an HTTP (Hypertext Transfer Protocol) request to the IP address it received for "google.com."
+- The request includes additional information like the specific web page you're trying to access (e.g., "/", which typically represents the homepage).
+
+**Server Processing:**
+
+- Google's web server, located at the provided IP address, receives the HTTP request.
+- The server processes the request and generates an appropriate response.
+
+**Response Transmission:**
+
+- The web server sends back an HTTP response, which includes the HTML, CSS, JavaScript, and other resources needed to render the Google homepage.
+
+**Rendering the Web Page:**
+
+Your browser receives the HTTP response and begins rendering the Google homepage on your screen.
+It may also make additional requests for images, stylesheets, and scripts referenced in the HTML to fully load and display the page.
+
+**Page Display:**
+
+Once all resources are loaded, your web browser displays the Google homepage on your screen, and you can interact with it.
+In summary, when you type "google.com" into your browser, a complex series of steps involving DNS resolution, HTTP requests, and server responses occurs to retrieve and display the webpage you requested. This process ensures that you can access websites using human-readable domain names while the internet works behind the scenes using IP addresses to route and deliver content.
+
+</details>
+
+<details>
+<summary>I can't reach a website, how can I troubleshoot? (use deep Linux + networking knowledge)</summary>
+
+**Check Network Connectivity:**
+
+- Ensure your Linux machine has a working internet connection. Try pinging a reliable website or an IP address (e.g., `ping google.com` or `ping 8.8.8.8` for Google's DNS).
+
+**DNS Resolution:**
+
+- Verify that DNS resolution is working correctly. Try to resolve the website's IP address using `nslookup` or `dig` (e.g., `nslookup website.com` or `dig website.com`).
+- Check your DNS server configuration in /etc/resolv.conf. Ensure it points to a valid DNS server (e.g., `nameserver 8.8.8.8` for Google's DNS).
+
+**Check Hosts File:**
+
+- Make sure the website is not blocked by entries in the `/etc/hosts` file. Check for any entries that may be redirecting the website.
+
+**Firewall Rules:**
+
+- Check if a firewall is blocking outgoing or incoming traffic. Use the `iptables` or firewall-cmd command to inspect firewall rules.
+
+**Web Proxy:**
+
+- If you are behind a proxy server, ensure that proxy settings are correctly configured in your environment, including `HTTP_PROXY` and `HTTPS_PROXY` environment variables.
+
+**Browser Issues:**
+
+- Try accessing the website from a different web browser or an incognito/private browsing window to rule out browser-related problems.
+
+**SSL/TLS Issues:**
+
+- If you are getting SSL/TLS-related errors, ensure your system has up-to-date CA certificates installed. You can also check for SSL/TLS issues using the openssl command (e.g., `openssl s_client -connect website.com:443`).
+
+**Check DNS Cache:**
+
+- If you've made changes to DNS configurations, clear your DNS cache using `systemctl restart systemd-resolved` (on systems using systemd-resolved) or `sudo /etc/init.d/nscd restart` (on systems using nscd).
+
+**Trace Route (Traceroute):**
+
+- Use the traceroute or tracepath command to trace the network path to the website (e.g., `traceroute website.com` or `tracepath website.com`).
+
+**Check System Logs:**
+
+- Inspect system logs in `/var/log` (e.g., `/var/log/syslog`, `/var/log/messages`, `/var/log/auth.log`) for any network-related errors or issues.
+
+**Check DNS Server Status:**
+
+- Verify the availability and responsiveness of your DNS servers by pinging them or using tools like `dig`.
+
+**Check Website Status:**
+
+It's possible that the website itself is down. Check its status on a service like "DownDetector" or "Is It Down Right Now?".
+
+**Packet Capture (Optional):**
+
+- As a last resort, you can use packet capture tools like `tcpdump` or `wireshark` to capture network traffic and analyze it for issues.
 
 </details>
 
