@@ -1141,6 +1141,8 @@ It's possible that the website itself is down. Check its status on a service lik
 
 </details>
 
+**Senior:**
+
 <details>
 <summary>Can you break down the OSI model and what does it signify?</summary>
 
