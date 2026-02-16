@@ -955,6 +955,8 @@ A three-way handshake is a method used in a TCP/IP network to create a connectio
 
 </details>
 
+**Mid:**
+
 <details>
 <summary>Stateless vs Stateful firewalls?</summary>
 
