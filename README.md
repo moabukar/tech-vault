@@ -1325,7 +1325,7 @@ Try transferring data between each host and other devices on the network to dete
 <br>
 
 
-**Junior-level questions:**
+**Junior:**
 
 <details>
 <summary>What is Git?</summary>
@@ -1447,7 +1447,7 @@ This provides control over commits, enabling you to group related changes togeth
 
 </details>
 
-**Mid-level questions:**
+**Mid:**
 
 <details>
 <summary>What is git cherry-pick?</summary>
@@ -1567,7 +1567,7 @@ To recover or save changes:
 
 </details>
 
-**Senior-level questions:**
+**Senior:**
 
 <details>
 <summary>How can I amend an older commit?</summary>
@@ -1675,7 +1675,7 @@ This will only force push if your local branch is based on the latest remote sta
 
 </details>
 
-**Scenario-based questions:**
+**Scenario-based:**
 
 <details>
 <summary>I need to update my local repos, what commands do I use?</summary>
