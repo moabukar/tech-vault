@@ -705,7 +705,9 @@ Method 3
 
 <br>
 
-**Junior:**
+**Technical:**
+
+Junior:
 
 <details>
 <summary>What is HTTP?</summary>
@@ -1006,7 +1008,7 @@ DHCP stands for Dynamic Host Configuration Protocol. It is a network protocol us
 
 </details>
 
-**Mid:**
+Mid:
 
 <details>
 <summary>Stateless vs Stateful firewalls?</summary>
@@ -1066,7 +1068,7 @@ In summary, use TCP when data reliability, ordered delivery, and error recovery 
 
 </details>
 
-**Senior:**
+Senior:
 
 <details>
 <summary>Can you break down the OSI model and what does it signify?</summary>
