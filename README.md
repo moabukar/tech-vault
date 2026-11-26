@@ -1512,11 +1512,15 @@ Here are the primary functions of `git reset`:
 
 </details>
 <details>
-<summary>Do you know how to undo a git rebase?</summary>
+<summary>How do you recover the old branch tip after a completed rebase?</summary>
 
-- Use `git reflog` to find the commit hash before the rebase.
-- Run `git reset --hard <commit-hash>` to reset your branch to that commit.
-- Optionally, force push to update the remote branch if necessary.
+1. Run `git reflog` in the same clone and find the branch tip from before the rebase.
+2. Run `git show <commit-hash>` to confirm it contains the changes you want.
+3. Run `git branch rescue-before-rebase <commit-hash>`. Choose an unused branch name so you have a reference to the recovered commits.
+
+Use `git rebase --abort` if a rebase is still in progress and you want to return to its starting state. A hard reset can discard uncommitted work. Coordinate with your team before rewriting a branch you have already pushed.
+
+To practice these steps after a local reset, try the [free Git reflog exercise](https://hiredin60.com/lessons/159/#git-recovery-title).
 
 </details>
 <details>
